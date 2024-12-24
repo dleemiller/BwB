@@ -102,10 +102,12 @@ class BeamSearchRanker:
                     )
 
             # Update global terms/results
-            terms.update(best_terms_set)
+            terms.update(" ".join(best_terms_set).split())
             results_set.update(best_results_set)
 
         # Once expansions are done, gather top results
+        all_terms_results = self.bm25_search.query(" ".join(terms), k=self.k)
+        scorer.score_results(query, all_terms_results, self.reward_model)
         final_results, final_score = scorer.get_topk()
         # Summarize
         summary = self.answer_question(query=query, context=final_results)

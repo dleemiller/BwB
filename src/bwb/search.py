@@ -1,104 +1,170 @@
 # src/bwb/search.py
 
-import bm25s
-import Stemmer
-from datasets import load_dataset
 import logging
 import os
+from typing import List, Optional
+
+import bm25s
+import Stemmer
+import pandas as pd
+from datasets import load_dataset
+
 from .config import BM25SConfig
 
 
 class BM25Search:
-    """
-    Encapsulates the logic for building, indexing, and querying a BM25S model.
-    """
+    """Encapsulates the logic for building, indexing, and querying a BM25 model."""
 
     def __init__(self, config: BM25SConfig):
-        """
-        :param config: BM25S configuration (method, k1, b, delta, etc)
+        """Initializes a BM25Search instance.
+
+        Args:
+            config: BM25S configuration object (method, k1, b, delta, etc.).
         """
         self.logger = logging.getLogger(__name__)
         self.config = config
-        self.stemmer = Stemmer.Stemmer("english")  # Could also be made config-based
+        self.stemmer = Stemmer.Stemmer("english")
         self.corpus = None
         self.retriever = None
 
     def index_hf_dataset(
         self,
         dataset_name: str,
-        subset: str | None = None,
+        subset: Optional[str] = None,
         split: str = "train",
         column: str = "text",
-    ):
-        """
-        Index data from a Hugging Face dataset.
-        :param dataset_name: e.g. "BeIR/scidocs"
-        :param subset: e.g. "corpus" for scidocs
-        :param split: e.g. "train", "test", "validation"
-        :param column: the text field to index
+    ) -> None:
+        """Indexes data from a Hugging Face dataset.
+
+        Args:
+            dataset_name: Name of the HF dataset (e.g., 'BeIR/scidocs').
+            subset: Subset name of the dataset (e.g., 'corpus' for scidocs). If None, no subset is used.
+            split: Split of the dataset to load (e.g., 'train', 'test', 'validation').
+            column: Name of the text field to index.
         """
         self.logger.info(
-            f"Loading dataset from HF: {dataset_name}, subset={subset}, split={split}, column={column}"
+            "Loading dataset from HF: %s, subset=%s, split=%s, column=%s",
+            dataset_name,
+            subset,
+            split,
+            column,
         )
-
         if subset:
             ds = load_dataset(dataset_name, subset, split=split)
         else:
             ds = load_dataset(dataset_name, split=split)
 
-        # Convert to plain Python list of strings
-        # NOTE: if the dataset is huge, you might want streaming or batch indexing
         self.corpus = ds[column]
-
-        # Tokenize
-        self.logger.info(f"Tokenizing {len(self.corpus)} documents...")
+        self.logger.info("Tokenizing %d documents...", len(self.corpus))
         corpus_tokens = bm25s.tokenize(
             self.corpus, stopwords="en", stemmer=self.stemmer
         )
 
-        # Create BM25 model with user config
-        self.retriever = bm25s.BM25(
-            method=self.config.method,
-            k1=self.config.k1,
-            b=self.config.b,
-            delta=self.config.delta,
-        )
-        self.logger.info("Indexing BM25 model (this may take some time)...")
-        self.retriever.index(corpus_tokens)
-        self.logger.info("Indexing complete.")
+        self._build_index(corpus_tokens)
 
-    # Future extension:
-    # def index_parquet(self, parquet_path: str, column: str = "text"): ...
-    # def index_local_text(self, dir_path: str): ...
+    def index_parquet(self, parquet_path: str, column: str = "text") -> None:
+        """Indexes data from a local Parquet file.
 
-    def query(self, query_text: str, k: int = 5) -> list[str]:
+        Args:
+            parquet_path: Path to the local Parquet file containing text data.
+            column: Name of the column in the Parquet file that contains text.
+
+        Raises:
+            FileNotFoundError: If the specified Parquet file does not exist.
+            ValueError: If the specified column does not exist in the Parquet file.
         """
-        Return top-k documents for the query.
+        if not os.path.isfile(parquet_path):
+            raise FileNotFoundError(f"Parquet file not found: {parquet_path}")
+
+        df = pd.read_parquet(parquet_path)
+        if column not in df.columns:
+            raise ValueError(f"Column '{column}' not found in the Parquet file.")
+
+        self.corpus = df[column].tolist()
+        self.logger.info(
+            "Tokenizing %d documents from %s...", len(self.corpus), parquet_path
+        )
+        corpus_tokens = bm25s.tokenize(
+            self.corpus, stopwords="en", stemmer=self.stemmer
+        )
+
+        self._build_index(corpus_tokens)
+
+    def index_local_text(self, dir_path: str, extension: str = ".txt") -> None:
+        """Indexes text from all files in a local directory.
+
+        Args:
+            dir_path: Path to the local directory containing text files.
+            extension: File extension to filter by (defaults to '.txt').
+
+        Raises:
+            FileNotFoundError: If the directory does not exist.
+        """
+        if not os.path.isdir(dir_path):
+            raise FileNotFoundError(f"Directory not found: {dir_path}")
+
+        texts = []
+        for root, _, files in os.walk(dir_path):
+            for file_name in files:
+                if file_name.endswith(extension):
+                    file_path = os.path.join(root, file_name)
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        text = f.read().strip()
+                        if text:
+                            texts.append(text)
+
+        self.logger.info(
+            "Found %d %s files in directory %s.", len(texts), extension, dir_path
+        )
+        self.corpus = texts
+        self.logger.info("Tokenizing %d documents...", len(self.corpus))
+        corpus_tokens = bm25s.tokenize(
+            self.corpus, stopwords="en", stemmer=self.stemmer
+        )
+
+        self._build_index(corpus_tokens)
+
+    def query(self, query_text: str, k: int = 5) -> List[str]:
+        """Returns the top-k documents for a given query.
+
+        Args:
+            query_text: Query string.
+            k: Number of top documents to retrieve.
+
+        Returns:
+            A list of top-k documents relevant to the query.
+
+        Raises:
+            RuntimeError: If no index has been built prior to querying.
         """
         if not self.retriever:
             raise RuntimeError(
-                "BM25Search has no retriever indexed. Call index_hf_dataset or load_index first."
+                "BM25Search has no retriever indexed. Call one of the indexing methods or load_index first."
             )
 
         query_tokens = bm25s.tokenize(
             query_text, stemmer=self.stemmer, show_progress=False
         )
-        # retrieve returns (doc_ids, scores)
         results, _scores = self.retriever.retrieve(
             query_tokens, k=k, show_progress=False
         )
-        # convert doc_ids to actual text from self.corpus
         return [self.corpus[i] for i in results[0]]
 
-    def save_index(self, load_corpus: bool = True):
-        """
-        Save the BM25 index to disk. The directory is taken from self.config.save_dir.
-        :param load_corpus: if True, we also save the corpus (so we can do retrieval later).
+    def save_index(self, load_corpus: bool = True) -> None:
+        """Saves the BM25 index to disk.
+
+        Args:
+            load_corpus: If True, includes the corpus in the saved index.
+
+        Raises:
+            RuntimeError: If there is no retriever available to save.
         """
         if not self.retriever:
             raise RuntimeError("No retriever available to save.")
         self.logger.info(
-            f"Saving BM25 index to {self.config.save_dir} (load_corpus={load_corpus})..."
+            "Saving BM25 index to %s (load_corpus=%s)...",
+            self.config.save_dir,
+            load_corpus,
         )
         os.makedirs(self.config.save_dir, exist_ok=True)
         self.retriever.save(
@@ -106,18 +172,46 @@ class BM25Search:
         )
         self.logger.info("BM25 index saved successfully.")
 
-    def load_index(self, save_dir: str | None = None, load_corpus: bool = True):
-        """
-        Load a BM25 index from disk into self.retriever. By default, uses self.config.save_dir.
-        :param save_dir: directory containing the index files
-        :param load_corpus: if True, also load the corpus from disk
+    def load_index(
+        self, save_dir: Optional[str] = None, load_corpus: bool = True
+    ) -> None:
+        """Loads a BM25 index from disk.
+
+        Args:
+            save_dir: Directory containing the index files. If None, uses self.config.save_dir.
+            load_corpus: If True, loads the corpus along with the index.
+
+        Raises:
+            FileNotFoundError: If the specified directory does not exist or is invalid.
         """
         save_dir = save_dir or self.config.save_dir
         self.logger.info(
-            f"Loading BM25 index from {save_dir} (load_corpus={load_corpus})..."
+            "Loading BM25 index from %s (load_corpus=%s)...", save_dir, load_corpus
         )
+        if not os.path.isdir(save_dir):
+            raise FileNotFoundError(f"Index directory not found: {save_dir}")
+
         self.retriever = bm25s.BM25.load(
             save_dir, load_corpus=load_corpus, mmap=self.config.use_mmap
         )
         self.corpus = self.retriever.corpus if load_corpus else None
         self.logger.info("BM25 index loaded successfully.")
+
+    def _build_index(self, corpus_tokens: List[List[str]]) -> None:
+        """Builds the BM25 index using the provided corpus tokens.
+
+        Args:
+            corpus_tokens: A list of tokenized documents to index.
+        """
+        self.retriever = bm25s.BM25(
+            method=self.config.method,
+            k1=self.config.k1,
+            b=self.config.b,
+            delta=self.config.delta,
+        )
+        self.logger.info(
+            "Indexing BM25 model with %d documents (this may take some time)...",
+            len(corpus_tokens),
+        )
+        self.retriever.index(corpus_tokens)
+        self.logger.info("Indexing complete.")
