@@ -1,4 +1,5 @@
 import logging
+import textwrap
 import dspy
 from typing import Tuple, Set
 from .search import BM25Search
@@ -47,10 +48,12 @@ class BeamSearchRanker:
         self.predictors = [
             dspy.ChainOfThought(GenerateNewSearchTerms) for _ in range(depth)
         ]
-        self.summarizer = dspy.ChainOfThought("query, context: list[str] -> answer")
+        self.answer_question = dspy.ChainOfThought(
+            "query, context: list[str] -> answer"
+        )
         self.bm25_search = bm25_search or BM25Search()
 
-    def rank(self, query: str) -> Prediction:
+    def rank(self, query: str, progress_update=None) -> Prediction:
         """
         Perform a beam-search ranking using expansions from dspy.
         """
@@ -91,6 +94,13 @@ class BeamSearchRanker:
                     best_terms_set = set(new_search_terms)
                     best_results_set = set(expanded_results)
 
+                if progress_update:
+                    wrapped_text = textwrap.fill(prediction.strategy, width=100)
+                    progress_update(
+                        description=wrapped_text,
+                        advance=1.0 / (self.expansions * self.depth),
+                    )
+
             # Update global terms/results
             terms.update(best_terms_set)
             results_set.update(best_results_set)
@@ -98,7 +108,7 @@ class BeamSearchRanker:
         # Once expansions are done, gather top results
         final_results, final_score = scorer.get_topk()
         # Summarize
-        summary = self.summarizer(query=query, context=final_results)
+        summary = self.answer_question(query=query, context=final_results)
 
         return Prediction(
             terms=list(terms), results=final_results, score=final_score, summary=summary

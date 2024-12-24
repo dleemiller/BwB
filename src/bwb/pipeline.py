@@ -38,6 +38,7 @@ def search_and_rank(
     index_mode: str = "auto",
     data_source: str = "huggingface",
     data_config: Optional[Dict[str, Any]] = None,
+    progress_update=None,
 ):
     logger = logging.getLogger(__name__)
     if not config:
@@ -77,7 +78,7 @@ def search_and_rank(
         bm25_search=bm25_search,
     )
 
-    result = ranker.rank(query)
+    result = ranker.rank(query, progress_update=progress_update)
     return result
 
 

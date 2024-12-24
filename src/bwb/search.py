@@ -80,9 +80,13 @@ class BM25Search:
                 "BM25Search has no retriever indexed. Call index_hf_dataset or load_index first."
             )
 
-        query_tokens = bm25s.tokenize(query_text, stemmer=self.stemmer)
+        query_tokens = bm25s.tokenize(
+            query_text, stemmer=self.stemmer, show_progress=False
+        )
         # retrieve returns (doc_ids, scores)
-        results, _scores = self.retriever.retrieve(query_tokens, k=k)
+        results, _scores = self.retriever.retrieve(
+            query_tokens, k=k, show_progress=False
+        )
         # convert doc_ids to actual text from self.corpus
         return [self.corpus[i] for i in results[0]]
 
