@@ -1,0 +1,37 @@
+# my_config.toml
+
+[models]
+# The local or remote model name/path for your base model
+base_model = "ollama_chat/gemma2:2b-instruct-q8_0"
+
+# Temperature for the generation
+temperature = 1.0
+
+# The teacher model name/path
+teacher_model = "openrouter/qwen/qwen-2.5-72b-instruct"
+teacher_temperature = 0.8
+
+# Reward model name/path
+reward_model = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+[dataset]
+# The name of the dataset to be used for indexing or retrieval
+# In this example, we use a BEIR dataset.
+# If you want to index the corpus split of scidocs, it usually is "BeIR/scidocs" + subset = "corpus".
+name = "BeIR/scidocs"
+
+[bm25s]
+# BM25S index/scoring parameters
+# Method can be one of: "lucene", "robertson", "bm25+", "bm25l", "atire"
+method = "lucene"
+k1 = 1.2
+b = 0.75
+delta = 1.0
+
+# Where to save/load the BM25S index
+save_dir = "bm25s_index"
+
+# Whether to load the BM25 index from a memory-mapped file
+# (this reduces RAM usage on very large corpora)
+use_mmap = false
+
