@@ -7,24 +7,40 @@ from .scorer import Scorer
 from dspy import Prediction
 
 GENERATE_TERMS = """
-Help improve the BM25 search results by writing new, unique search terms that won't overlap with previous results.
-Focus on different facets or synonyms relevant to the original query.
+You are creatively brainstorming novel terms that generate new, different results based on a user’s query.
+
+The goal is to propose broader search terms, different from any in the "previous search terms" list.
+
+To accomplish this, use these steps:
+
+- Determine the objective of the query
+- Using previous search terms and results, determine what terms NOT to use (avoid replicating them)
+- Write new search terms
+
+Important Requirements:
+
+- DO NOT repeat or rehash any of the search terms in "previous search terms"
+- Generate new words, phrases, synonyms, or angles that might help retrieve new/different results relevant to the query.
 """
 
 
 class GenerateNewSearchTerms(dspy.Signature):
     __doc__ = GENERATE_TERMS
 
-    query: str = dspy.InputField(desc="The original search query")
+    query: str = dspy.InputField(
+        desc="The query you are trying to obtain the best results for."
+    )
     previous_search_terms: list[str] = dspy.InputField(desc="Previous search terms")
     previous_results: list[str] = dspy.InputField(desc="Previously retrieved results")
-    strategy: str = dspy.OutputField(
-        desc="One sentence on how you’ll improve the search terms"
+    # steps: str = dspy.OutputField(
+    #    desc="Steps following the instructions to create new terms"
+    # )
+    new_search_terms: list[str] = dspy.OutputField(
+        desc="New unique terms (tokens) to search."
     )
-    new_search_terms: list[str] = dspy.OutputField(desc="New unique terms to try")
 
 
-class BeamSearchRanker:
+class BeamSearchRanker(dspy.Module):
     def __init__(
         self,
         reward_model,
@@ -40,6 +56,7 @@ class BeamSearchRanker:
         :param k: # top results to keep
         :param bm25_search: an instance of BM25Search (or we create a new one if None)
         """
+        super().__init__()
         self.logger = logging.getLogger(__name__)
         self.reward_model = reward_model
         self.depth = depth
@@ -53,7 +70,7 @@ class BeamSearchRanker:
         )
         self.bm25_search = bm25_search or BM25Search()
 
-    def rank(self, query: str, progress_update=None) -> Prediction:
+    def forward(self, query: str, progress_update=None) -> Prediction:
         """
         Perform a beam-search ranking using expansions from dspy.
         """
@@ -78,10 +95,17 @@ class BeamSearchRanker:
                     previous_search_terms=list(terms),
                     previous_results=list(results_set),
                 )
-                self.logger.info(
-                    f"Expansion {expansion+1}/{self.expansions}: {prediction.strategy}"
-                )
+                # self.logger.info(
+                #     f"Expansion {expansion+1}/{self.expansions}: {prediction.steps}"
+                # )
                 new_search_terms = prediction.new_search_terms
+                dspy.Suggest(
+                    len(new_search_terms) > 0, "Search terms must be provided."
+                )
+
+                overlap = set(" ".join(new_search_terms).split()) & terms
+                dspy.Suggest(len(overlap) < 5, f"Too much overlap in terms: {overlap}")
+
                 # Retrieve new results from BM25
                 new_query = " ".join(new_search_terms)
                 expanded_results = self.bm25_search.query(new_query, k=self.k)
@@ -95,9 +119,12 @@ class BeamSearchRanker:
                     best_results_set = set(expanded_results)
 
                 if progress_update:
-                    wrapped_text = textwrap.fill(prediction.strategy, width=100)
+                    wrapped_text = textwrap.fill(
+                        ",".join(prediction.new_search_terms), width=100
+                    )
                     progress_update(
-                        description=wrapped_text,
+                        # description=wrapped_text,
+                        description=f"Searching... {wrapped_text}",
                         advance=1.0 / (self.expansions * self.depth),
                     )
 

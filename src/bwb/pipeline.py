@@ -76,9 +76,9 @@ def search_and_rank(
         expansions=3,  # or from config
         k=5,  # or from config
         bm25_search=bm25_search,
-    )
+    ).activate_assertions()
 
-    result = ranker.rank(query, progress_update=progress_update)
+    result = ranker(query, progress_update=progress_update)
     return result
 
 
