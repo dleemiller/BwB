@@ -1,0 +1,63 @@
+{
+  "reasoning": "The query aims to understand the difference in protein ubiquitination rates between growth cones and cell bodies. While existing results touch upon ubiquitination's role in growth cone function, they lack a direct comparison as stated. The focus should shift from general ubiquitination mechanisms to specific aspects related to local protein turnover and regulation at these cellular compartments.",
+  "query_goals": [
+    "Identify proteins with differential ubiquitination rates between growth cones and cell bodies",
+    "Explore regulatory mechanisms governing protein ubiquitination in growth cones",
+    "Understand the functional consequences of altered ubiquitination levels at the growth cone"
+  ],
+  "ineffective_terms": [
+    "proteins",
+    "ubiquitinated",
+    "metabolic"
+  ],
+  "breadth_expansion": [
+    "degradation",
+    "proteasome",
+    "lysosome",
+    "signaling pathways",
+    "actin cytoskeleton",
+    "axon guidance",
+    "neurodevelopment"
+  ],
+  "depth_chain": [
+    "proteasome",
+    "26S proteasome",
+    "ubiquitin ligases",
+    "deubiquitinases",
+    "protein degradation pathways"
+  ],
+  "augmented_query": "\"growth cone cell body 26S proteasome ubiquitin ligases deubiquitinases axon guidance\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.",
+  "query_id": "982",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for \"Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.\" I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for differences in protein ubiquitination rates between growth cones and cell bodies, which suggests they are interested in the specific mechanisms and regulations governing protein turnover in these cellular compartments.\n\nTo expand this query, I am playing a mind game involving breadth and depth expansion techniques. This technique requires me to first identify the primary objectives and gaps in the original query, then pinpoint ineffective or broad terms that should be avoided. Next, I will apply breadth expansion to introduce new, increasingly distant concepts related to the original query, followed by a depth expansion into a selected topic to uncover more specific and relevant terms.\n\nStarting with goal elucidation, the primary objectives are to identify proteins with differential ubiquitination rates and explore regulatory mechanisms in growth cones. The gaps include a lack of direct comparison between growth cones and cell bodies regarding ubiquitination rates. Ineffective terms such as \"proteins,\" \"ubiquitinated,\" and \"metabolic\" are too broad and should be avoided.\n\nFor breadth expansion, I consider terms like \"degradation,\" \"proteasome,\" \"lysosome,\" \"signaling pathways,\" \"actin cytoskeleton,\" \"axon guidance,\" and \"neurodevelopment.\" These terms introduce new dimensions to the query, focusing on processes and structures relevant to protein turnover and regulation in growth cones.\n\nNext, I apply depth expansion by selecting the proteasome as a key topic. I delve deeper into related terms such as \"26S proteasome,\" \"ubiquitin ligases,\" \"deubiquitinases,\" and \"protein degradation pathways.\" This step allows me to uncover more specific mechanisms and components involved in protein ubiquitination and degradation at the growth cone.\n\nTherefore, the optimal BM25 search terms are growth cone, cell body, 26S proteasome, ubiquitin ligases, deubiquitinases, axon guidance, which directly reflect the targeted expansion into specific mechanisms of protein regulation and turnover in growth cones, omitting ineffective and broad terms.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

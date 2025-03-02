@@ -1,0 +1,60 @@
+{
+  "reasoning": "The query seeks to understand the precise link between transmurality of late gadolinium enhancement (LGE) on MRI and the severity of cardiac involvement in amyloidosis. While existing research establishes LGE's value, it lacks a direct focus on quantifying this relationship.",
+  "query_goals": [
+    "Quantify the correlation between LGE transmurality and amyloidosis severity",
+    "Identify specific LGE patterns associated with different disease stages",
+    "Explore potential clinical applications of LGE in managing amyloidosis"
+  ],
+  "ineffective_terms": [
+    "severity",
+    "can be described by"
+  ],
+  "breadth_expansion": [
+    "Cardiac function assessment",
+    "Disease staging",
+    "Imaging biomarkers",
+    "Prognostic factors",
+    "Therapeutic targets"
+  ],
+  "depth_chain": [
+    "Imaging biomarkers",
+    "LGE signal intensity",
+    "Regional wall motion abnormalities",
+    "Diastolic dysfunction",
+    "Ejection fraction"
+  ],
+  "augmented_query": "regional wall motion, diastolic dysfunction, ejection fraction, LGE signal intensity",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.",
+  "query_id": "1271",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for \"The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.\" I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for a precise link between the transmurality of late gadolinium enhancement (LGE) on MRI and the severity of cardiac involvement in amyloidosis.\n\nTo achieve this, I will play a mind game using the expansion technique provided, which involves enhancing the query through various augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. The goal is to discover new, relevant documents across various domains without overlapping the original terms.\n\nFirst, I will examine the original query to understand its primary objectives and gaps. The query goals include quantifying the correlation between LGE transmurality and amyloidosis severity, identifying specific LGE patterns associated with different disease stages, and exploring potential clinical applications of LGE in managing amyloidosis. The existing reasoning establishes the value of LGE but lacks a direct focus on quantifying this relationship.\n\nNext, I will identify ineffective terms that should be avoided, such as \"severity\" and \"can be described by,\" as they are broad or non-precise. Then, I will perform a breadth expansion by listing candidate terms with increasingly distant concepts to the original query, including cardiac function assessment, disease staging, imaging biomarkers, prognostic factors, and therapeutic targets.\n\nAfter that, I will choose one distant but important topic from the breadth expansion, which is imaging biomarkers, and go increasingly deeper in the related terms on that one selection. This depth expansion will include terms such as LGE signal intensity, regional wall motion abnormalities, diastolic dysfunction, and ejection fraction.\n\nBy applying this expansion technique, I have uncovered new, relevant search terms that are novel and free from overlapping the original terms. These terms include regional wall motion, diastolic dysfunction, ejection fraction, and LGE signal intensity.\n\nTherefore, the optimal BM25 search terms are regional wall motion diastolic dysfunction ejection fraction LGE signal intensity.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

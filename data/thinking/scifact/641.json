@@ -1,0 +1,60 @@
+{
+  "reasoning": "The query focuses on insomnia treatment using cognitive behavioral therapy (CBT). It implies a desire to understand CBT's effectiveness and potential applications.  The document types suggest research on medical treatments, including therapeutic interventions. Strengths point to concise summaries of findings, while weaknesses highlight a lack of detailed methodological information.",
+  "query_goals": [
+    "Understand the effectiveness of CBT for insomnia",
+    "Explore applications of CBT beyond weight loss"
+  ],
+  "ineffective_terms": [
+    "insomnia can be effectively treated"
+  ],
+  "breadth_expansion": [
+    "sleep disorders",
+    "psychological therapies",
+    "behavioral interventions",
+    "stress management",
+    "anxiety reduction",
+    "depression treatment"
+  ],
+  "depth_chain": [
+    "stress management techniques",
+    "mindfulness exercises",
+    "relaxation strategies",
+    "sleep hygiene practices",
+    "cognitive restructuring",
+    "exposure therapy"
+  ],
+  "augmented_query": "stress management techniques mindfulness exercises relaxation strategies sleep hygiene practices cognitive restructuring exposure therapy",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.16845,
+  "instruction": "expand",
+  "query": "Insomnia can be effectively treated with cognitive behavioral therapy.",
+  "query_id": "641",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for 'Insomnia can be effectively treated with cognitive behavioral therapy'. I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for effective treatments for insomnia, specifically focusing on cognitive behavioral therapy (CBT). To expand this query, I will play the mind game of applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology.\n\nFirst, I identify the primary objectives and gaps in the original query. The main goal is to understand the effectiveness of CBT for insomnia, and there's a gap in exploring applications of CBT beyond its common uses. I notice that terms like 'insomnia can be effectively treated' are too broad and should be avoided in the expansion process.\n\nTo expand the query, I start by listing candidate terms that introduce new dimensions but are still relevant. This includes concepts like 'sleep disorders', 'psychological therapies', 'behavioral interventions', 'stress management', 'anxiety reduction', and 'depression treatment'. These terms offer a broader perspective on the topic without overlapping with the original query.\n\nNext, I choose a distant but important topic from this breadth expansion, which is 'stress management', and delve deeper into related terms. This depth expansion leads me to consider 'stress management techniques', 'mindfulness exercises', 'relaxation strategies', 'sleep hygiene practices', 'cognitive restructuring', and 'exposure therapy'. These terms are not only relevant but also targeted and diverse, ensuring non-overlapping results from the original query.\n\nBy applying these augmentation techniques, I've uncovered a set of high-quality search terms that enhance the original query without introducing generic or overlapping terms. The focus on specificity, diversity, and relevance ensures that the augmented query will yield novel and useful results across various domains.\n\nTherefore, the optimal BM25 search terms are stress management techniques mindfulness exercises relaxation strategies sleep hygiene practices cognitive restructuring exposure therapy.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

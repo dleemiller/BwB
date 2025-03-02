@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query focuses on the impact of ultrasound guidance on traumatic procedures, particularly needle insertion. It seeks to understand the relationship between this guidance technique and an increase in such procedures.",
+  "query_goals": [
+    "Identify the reasons for increased traumatic procedures with ultrasound guidance",
+    "Determine the specific types of traumatic procedures affected",
+    "Analyze the potential risks and benefits of ultrasound guidance in these contexts",
+    "Explore alternative techniques compared to ultrasound guidance"
+  ],
+  "ineffective_terms": [
+    "ultrasonic",
+    "guidance"
+  ],
+  "breadth_expansion": [
+    " minimally invasive surgery",
+    " percutaneous procedures",
+    "biopsy",
+    " interventional radiology",
+    " surgical navigation",
+    " image-guided therapy"
+  ],
+  "depth_chain": [
+    " minimally invasive surgery",
+    "laparoscopic surgery",
+    " robotic surgery",
+    " tissue retraction",
+    " surgical stapling"
+  ],
+  "augmented_query": "minimally invasive laparoscopic robotic  tissue retraction surgical stapling",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.",
+  "query_id": "1339",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for 'Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion'. I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for the relationship between ultrasound guidance and the increase in traumatic procedures during needle insertion.\n\nTo expand this query, I am playing a mind game called \"Conceptual Expansion and Depth Chain Analysis\". This technique involves identifying the key concepts in the original query and then expanding upon them by exploring related ideas and terms. The goal is to find new, relevant terms that can enhance the search query without overlapping with the original terms.\n\nFirst, I examine the original query to understand its primary objectives and gaps. The query focuses on the impact of ultrasound guidance on traumatic procedures, particularly needle insertion. The main gap in this query is the lack of specificity regarding the types of procedures and techniques involved.\n\nNext, I identify ineffective terms that should be avoided, such as 'ultrasonic' and 'guidance', as they are too broad or non-precise. Then, I perform a breadth expansion by listing candidate terms with increasingly distant concepts to the original query. These terms include 'minimally invasive surgery', 'percutaneous procedures', 'biopsy', 'interventional radiology', 'surgical navigation', and 'image-guided therapy'.\n\nAfter that, I choose one distant but important topic from the breadth expansion, which is 'minimally invasive surgery', and perform a depth expansion by going increasingly deeper into related terms. This leads to terms like 'laparoscopic surgery', 'robotic surgery', 'tissue retraction', and 'surgical stapling'.\n\nBy analyzing these terms and their relationships, I can see that they are all relevant to the original query and can enhance the search results. The terms 'minimally invasive', 'laparoscopic', 'robotic', 'tissue retraction', and 'surgical stapling' are all specific and diverse, and they introduce new dimensions to the query.\n\nTherefore, the optimal BM25 search terms are minimally invasive laparoscopic robotic tissue retraction surgical stapling.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

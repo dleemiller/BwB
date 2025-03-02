@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query centers on the role of TCR/CD3 microdomains in inducing T cell activation through the immunological synapse.  We need to map this concept by understanding its core components (TCR, CD3, synapse formation, signal transduction) and their relationships within the broader context of T cell immunology.",
+  "central_coordinates": [
+    "TCR/CD3 Microdomains",
+    "Immunological Synapse",
+    "T Cell Activation"
+  ],
+  "boundary_areas": [
+    "Signal Transduction Pathways",
+    "Lipid Rafts",
+    "MHC-peptide Complex Recognition",
+    "Co-stimulatory Molecules",
+    "T Cell Differentiation"
+  ],
+  "key_landmarks": [
+    "TCR/CD3 Complex",
+    "Lck Kinase",
+    "PI3K Pathway",
+    "MAPK Pathway",
+    "NFAT Transcription Factor",
+    "Cytoskeletal Rearrangement",
+    "APC (Antigen Presenting Cell)"
+  ],
+  "detail_features": [
+    "Lipid Bilayer Clustering",
+    "Synaptic Polarization",
+    "Signal Amplification",
+    "Co-localization of Signaling Proteins",
+    "Kinetic Engagement Model",
+    "TCR Affinity Tuning"
+  ],
+  "navigation_terms": [
+    "Immunological Synapse",
+    "T Cell Receptor (TCR)",
+    "CD3 Complex",
+    "Signal Transduction",
+    "Activation Threshold",
+    "Antigen Recognition",
+    "Immune Response"
+  ],
+  "augmented_query": "TCR/CD3 microdomains AND signal transduction pathways AND immunological synapse formation AND T cell activation",
+  "ndcg": {
+    "NDCG@10": 0.2372,
+    "NDCG@100": 0.3872,
+    "NDCG@1000": 0.3872,
+    "NDCG@10000": 0.3872
+  },
+  "map": {
+    "MAP@10": 0.1,
+    "MAP@100": 0.1625,
+    "MAP@1000": 0.1625,
+    "MAP@10000": 0.1625
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.028449999999999975,
+  "instruction": "cartography",
+  "query": "TCR/CD3 microdomains are a required to induce the immunologic synapse to activate T cells.",
+  "query_id": "1132",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for 'TCR/CD3 microdomains are required to induce the immunologic synapse to activate T cells'. I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for a deeper understanding of how TCR/CD3 microdomains contribute to the formation of the immunological synapse and subsequently activate T cells, which implies a need to explore the intricate processes and components involved in this immunological event.\n\nTo expand this query, I will play the mind game of Conceptual Territory Mapping. This technique involves treating the query as a geographical map where concepts, processes, and entities related to the query are plotted to understand their relationships and boundaries better. \n\nFirst, I identify the central coordinates of the query: TCR/CD3 microdomains, their role in inducing the immunologic synapse, and T cell activation. These are the core concepts around which the query revolves. The scale for exploration seems to be quite granular, focusing on the molecular and cellular level interactions.\n\nNext, I explore the boundaries of this query. The immediate territory includes signal transduction pathways, as the activation of T cells through the immunological synapse involves complex signaling events. Neighboring domains include immunology, cell biology, and molecular biology, with overlaps in biochemistry and pharmacology, especially concerning immunomodulatory drugs.\n\nThen, I identify landmarks within this territory. Key landmarks include the TCR/CD3 complex itself, Lck kinase, the PI3K and MAPK pathways, NFAT transcription factor, and the process of cytoskeletal rearrangement. These are crucial for understanding how the signal from the TCR/CD3 microdomains is transduced into the cell to activate it.\n\nFurther detailing involves filling in specialized features such as lipid bilayer clustering, synaptic polarization, signal amplification, and the kinetic engagement model. These features are essential for a comprehensive understanding of the immunological synapse's formation and function.\n\nIn creating a cartographic legend, I would classify terms by their region (e.g., TCR/CD3 complex under 'Signal Initiation', PI3K and MAPK pathways under 'Signal Transduction', etc.) and significance (e.g., T cell activation as a primary outcome, NFAT as a key transcription factor). The most critical terms for navigating this knowledge landscape would include TCR, CD3, immunological synapse, signal transduction, and T cell activation.\n\nTherefore, the optimal BM25 search terms are TCR, CD3, microdomains, immunological synapse, signal transduction, pathways, T cell, activation, and the specific components and processes involved in these events, such as Lck, PI3K, MAPK, NFAT, and cytoskeletal rearrangement.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

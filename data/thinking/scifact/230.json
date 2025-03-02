@@ -1,0 +1,60 @@
+{
+  "reasoning": "The query focuses on the relationship between alcohol aldehyde dehydrogenase deficiency mutation carriers and their alcohol consumption habits. It suggests a potential correlation but lacks specifics about the type of alcohol, quantity consumed, or demographic factors.",
+  "query_goals": [
+    "Identify alcohol consumption patterns in individuals with the ALDH2*1 gene variant.",
+    "Compare alcohol intake between ALDH2*1 carriers and non-carriers.",
+    "Explore potential physiological mechanisms linking ALDH2 deficiency to reduced alcohol consumption."
+  ],
+  "ineffective_terms": [
+    "drink",
+    "less"
+  ],
+  "breadth_expansion": [
+    "ethanol metabolism",
+    "genetics of alcoholism",
+    "alcohol sensitivity",
+    "asian flush",
+    "biochemical pathways"
+  ],
+  "depth_chain": [
+    "gene variants",
+    "ALDH2 gene",
+    "acetaldehyde toxicity",
+    "oxidative stress",
+    "complications of alcohol metabolism"
+  ],
+  "augmented_query": "genetic predisposition, acetaldehyde, oxidative stress, ethanol metabolism, ALDH2 gene variant, asian flush, complications, alcohol sensitivity",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.",
+  "query_id": "230",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for \"Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.\" I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for information on how a specific genetic mutation affects alcohol consumption habits.\n\nTo expand this query, I am playing the mind game of \"Conceptual Expansion,\" which involves identifying key concepts in the original query and then exploring related ideas, synonyms, and more specific or broader terms. This technique allows me to discover new dimensions of the query that can lead to novel and relevant search results.\n\nFirst, I examine the original query to understand its primary objectives and gaps. The query focuses on the relationship between carriers of the alcohol aldehyde dehydrogenase deficiency mutation and their drinking habits. However, it lacks specifics about the type of alcohol, quantity consumed, or demographic factors.\n\nNext, I identify ineffective terms that should be avoided. In this case, terms like \"drink\" and \"less\" are too broad and do not provide much insight into the user's search intent. These terms will be replaced or expanded upon to create a more targeted search query.\n\nFor breadth expansion, I consider concepts that are increasingly distant from the original query but still relevant. Terms like \"ethanol metabolism,\" \"genetics of alcoholism,\" \"alcohol sensitivity,\" \"asian flush,\" and \"biochemical pathways\" offer new dimensions to the query and can lead to a more comprehensive understanding of the topic.\n\nFinally, for depth expansion, I choose one distant but important topic from the breadth expansion and delve deeper into related terms. The concept of \"ALDH2 gene variant\" is a crucial aspect of the original query, and exploring terms like \"acetaldehyde toxicity,\" \"oxidative stress,\" and \"complications of alcohol metabolism\" provides a deeper understanding of the physiological mechanisms involved.\n\nTherefore, the optimal BM25 search terms are: genetic predisposition, acetaldehyde, oxidative stress, ethanol metabolism, ALDH2 gene variant, asian flush, complications, alcohol sensitivity.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query seeks to understand the prevalence of HTLV-1 infection in individuals of African origin. While existing results provide context on SIV and retroviral transmission, they lack specific data on HTLV-1 rates in Africa.  Therefore, the query should be expanded to include more precise terms related to HTLV-1 infection epidemiology and geographical distribution.",
+  "query_goals": [
+    "find HTLV-1 prevalence",
+    "identify geographic distribution of HTLV-1",
+    "understand risk factors for HTLV-1 in Africa"
+  ],
+  "node_classes": [
+    "Virus",
+    "Infection",
+    "Epidemiology",
+    "Population",
+    "Geography",
+    "Africa"
+  ],
+  "query_nodes": [
+    "Human T-cell lymphotropic virus type 1",
+    "African origin",
+    "Prevalence"
+  ],
+  "nearest_neighbors": [
+    "HTLV-1 infection rates",
+    "AIDS prevalence in Africa",
+    "retroviral epidemiology in Africa",
+    "HIV transmission patterns in Africa",
+    "endemic diseases in Africa"
+  ],
+  "augmented_query": "\"HTLV-1 prevalence in Africa, HTLV-1 epidemiology, African origin, risk factors for HTLV-1 infection\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.5,
+  "instruction": "graph",
+  "query": "Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.",
+  "query_id": "628",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for \"Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.\" I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for information on the prevalence and distribution of HTLV-1 infection, specifically in individuals of African origin.\n\nTo expand this query, I will be playing the mind game of \"Query Expansion via Conceptual Graph Traversal.\" This technique involves constructing a conceptual graph and traversing it to find high-value expansion terms. I will start by identifying core concepts and entities in the original query, such as \"HTLV-1,\" \"infection,\" \"African origin,\" and \"prevalence.\" The search intent appears to be informational, as the user is seeking data on the epidemiology of HTLV-1 in Africa.\n\nNext, I will build a conceptual graph with core nodes, first-order connections, second-order connections, and domain contexts. The core nodes will include \"HTLV-1,\" \"infection,\" and \"African origin.\" First-order connections will involve properties and attributes of these concepts, such as \"prevalence,\" \"epidemiology,\" and \"geographic distribution.\" Second-order connections will include related concepts like \"risk factors,\" \"transmission patterns,\" and \"endemic diseases.\" Domain contexts will be specialized fields such as \"virology,\" \"epidemiology,\" and \"public health.\"\n\nI will then identify promising directions for query expansion, including synonymous terms, hierarchical terms, compositional terms, contextual terms, and domain-specific terminology. For example, synonymous terms might include \"HTLV-1 prevalence\" and \"HTLV-1 epidemiology.\" Hierarchical terms could involve broader concepts like \"retroviral infections\" or narrower concepts like \"HTLV-1 subtype distribution.\" Compositional terms might include \"HTLV-1 transmission\" and \"HTLV-1 risk factors.\" Contextual terms could involve settings like \"Africa\" or \"sub-Saharan Africa,\" while domain-specific terminology might include \"seroprevalence\" and \"molecular epidemiology.\"\n\nAs I traverse the conceptual graph, I will extract high-value terms from each expansion path and filter them based on relevance, distinctiveness, specificity, and searchability. This process will yield a set of high-quality expansion terms that maintain the original search intent while providing valuable alternative pathways for retrieval.\n\nTherefore, the optimal BM25 search terms are HTLV-1, prevalence, epidemiology, Africa, African origin, risk factors, transmission, retroviral, infection, seroprevalence, molecular epidemiology, geographic distribution, endemic diseases, public health, virology.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

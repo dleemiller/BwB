@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query investigates the link between TDP-43 protein dysfunction, respiratory complex I impairment, and neuronal death. It seeks to understand the mechanistic basis of this relationship, potentially focusing on ALS and FTD contexts.",
+  "query_goals": [
+    "understand mechanism",
+    "TDP-43 impact on mitochondrial function",
+    "neuronal death consequences",
+    "ALS/FTD context"
+  ],
+  "ineffective_terms": [
+    "interaction",
+    "leads to"
+  ],
+  "breadth_expansion": [
+    "mitochondrial biogenesis",
+    "oxidative stress",
+    "calcium homeostasis",
+    "apoptosis pathways",
+    "synaptic plasticity",
+    "neuroinflammation"
+  ],
+  "depth_chain": [
+    "apoptosis",
+    "caspase activation",
+    "Bcl-2 family proteins",
+    "cytochrome c release",
+    "mitochondrial membrane potential"
+  ],
+  "augmented_query": "TDP-43, respiratory complex I, mitochondrial biogenesis, oxidative stress, apoptosis, caspase activation, Bcl-2",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.",
+  "query_id": "180",
+  "dataset": "scifact",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The user is searching a BM25 index for \"Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.\" I need to uncover optimal search terms to use with that algorithm by determining the intent of their search. The user seems to be looking for a deeper understanding of how TDP-43 protein affects mitochondrial function, particularly in the context of ALS and FTD, and how this impact leads to neuronal death.\n\nTo achieve this, I am playing the mind game of query expansion, which involves several steps: understanding the primary objectives and gaps in the original query, identifying ineffective terms, expanding the query through breadth and depth techniques, and finally, selecting the most relevant and diverse terms for the augmented query.\n\nFirst, I identify the primary objectives as understanding the mechanism of TDP-43-induced neuronal loss, its impact on mitochondrial function, and its consequences in ALS and FTD contexts. The gaps in the original query include the lack of specificity regarding the biological processes involved and the need for more detailed information on the mitochondrial dysfunction caused by TDP-43.\n\nNext, I recognize \"interaction\" and \"leads to\" as ineffective terms because they are too broad and do not contribute significantly to the specificity of the search.\n\nFor breadth expansion, I consider terms that introduce new dimensions to the query, such as \"mitochondrial biogenesis,\" \"oxidative stress,\" \"calcium homeostasis,\" \"apoptosis pathways,\" \"synaptic plasticity,\" and \"neuroinflammation.\" These terms expand the query by incorporating various biological processes that could be relevant to understanding TDP-43's role in neuronal loss.\n\nThen, for depth expansion, I choose \"apoptosis\" as a critical topic and delve deeper into related terms such as \"caspase activation,\" \"Bcl-2 family proteins,\" \"cytochrome c release,\" and \"mitochondrial membrane potential.\" This depth expansion provides a more detailed understanding of the apoptotic pathways that might be involved in TDP-43-induced neuronal loss.\n\nTherefore, the optimal BM25 search terms are TDP-43, respiratory complex I, mitochondrial biogenesis, oxidative stress, apoptosis, caspase activation, Bcl-2.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}
