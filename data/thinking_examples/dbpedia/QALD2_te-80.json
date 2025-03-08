@@ -1,0 +1,81 @@
+{
+  "reasoning": "The user is looking for books by William Goldman with more than 300 pages. Since the existing results don't include page counts, the query needs to be augmented with terms that would help surface that information. The weaknesses suggest expanding the search to include 'length', 'detailed descriptions'. Examining Q&A patterns helps to explore intent (what are people *really* trying to find out?) and surface the language they use.",
+  "augmented_query": "William Goldman books length page count detailed descriptions",
+  "ndcg": {
+    "NDCG@10": 0.93375,
+    "NDCG@100": 0.94851,
+    "NDCG@1000": 0.94851,
+    "NDCG@10000": 0.94851
+  },
+  "map": {
+    "MAP@10": 0.55625,
+    "MAP@100": 0.81444,
+    "MAP@1000": 0.81444,
+    "MAP@10000": 0.81444
+  },
+  "recall": {
+    "Recall@10": 0.5625,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.9,
+    "P@100": 0.16,
+    "P@1000": 0.016,
+    "P@10000": 0.0016
+  },
+  "delta": 0.04853,
+  "instruction": "community",
+  "query": "Give me all books by William Goldman with more than 300 pages.",
+  "query_id": "QALD2_te-80",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "dbpedia",
+  "question_variations": [
+    "Which William Goldman books are the longest?",
+    "Can anyone recommend William Goldman books over 300 pages based on personal experience?",
+    "What do people think are William Goldman's best long-form works?",
+    "Is 'The Princess Bride' or 'Marathon Man' the longer read?",
+    "Has anyone read all of William Goldman's longer works? Which would you recommend?"
+  ],
+  "underlying_motivations": [
+    "Seeking recommendations for lengthy books by William Goldman.",
+    "Trying to decide which William Goldman book to invest time in reading.",
+    "Looking for a comprehensive list of Goldman's major works.",
+    "Wanting to compare the lengths of different Goldman books before choosing one.",
+    "Looking for assurance that spending time on a specific book is worth the investment"
+  ],
+  "valuable_responses": [
+    "A list of William Goldman books with confirmed page counts from a reliable source.",
+    "Personal reviews comparing the reading experience of Goldman's longer books.",
+    "Recommendations based on the book's length and the reader's preferred genre.",
+    "A discussion of which books cover a lot of ground.",
+    "Comparisons between different editions of the same book and their page counts."
+  ],
+  "interaction_patterns": [
+    "Follow-up questions about the book's content and themes.",
+    "Debates about which editions have the most complete content.",
+    "Requests for summaries to determine if the book sounds interesting enough to read given its length.",
+    "Related questions about reading time estimates.",
+    "Discussions evolving into recommendations of other authors with similar styles."
+  ],
+  "qa_terminology": [
+    "long read",
+    "page-turner",
+    "substantial",
+    "in-depth",
+    "dense",
+    "worth the time",
+    "cover a lot of ground",
+    "complete edition",
+    "abridged version",
+    "detailed descriptions",
+    "how long is it?"
+  ],
+  "cleaned_augmented_query": "william goldman books length page count detailed descriptions",
+  "final_delta": 0.04853,
+  "initial_results": "### Text snippet from document at k=1\n: Hype and Glory is a 1990 memoir from William Goldman which details his experiences as a judge at the 1988 Cannes Film Festival and Miss America Pageant. The book includes an interview with Clint Eastwood and a profile on Robert Redford. Much of the book contains autobiographical material from Goldman, including accounts of his recent divorce.Goldman later recalled:I didn't know that I was going to write the damn thing. My wife had left me.\n\n### Text snippet from document at k=2\n: Wait Till Next Year is a 1988 memoir by Mike Lupica and William Goldman.Lupica and Goldman had been friends for thirty years when Lupica suggested to Goldman they collaborate on a book together, from his point of view and Goldman's point of view. Goldman:I wanted to be a sports columnist when I was a kid and then I learned more about what they did for a living and I decided I didn't want to do it. You have to go see all that shit. It's fun to go to a ball game occasionally.\n\n### Text snippet from document at k=10\n: Blood, Sweat and Stanley Poole is a 1961 play by William Goldman and James Goldman. Both Goldman brothers had served in the army and the play is about a supply sergeant at an army post in the south.William Goldman later recalled \"we had both been in the army at the same time and it seemed like a decent enough idea and magically we got it on.\"\n",
+  "thought_process": "Looking at the original query, \"Give me all books by William Goldman with more than 300 pages,\" this makes me think of how someone might be searching for a substantial read from a specific author, perhaps looking for a way to immerse themselves in a detailed story or comprehensive work. Though the user might actually be trying to find out which books are the most engaging or offer the most value in terms of reading time, the query itself is straightforward but lacks the specificity needed to surface results that include page counts or detailed descriptions of the books.\n\nAnalyzing the results of the original query, I notice that the existing texts provided don't directly answer the query in terms of page count but offer insights into William Goldman's works and life. This suggests that the query needs to be expanded to include terms that would help find books with detailed descriptions or page counts. The weaknesses in the current query and results suggest expanding the search to include terms like 'length', 'detailed descriptions', and possibly even genres or types of books that are known to be lengthy.\n\nI'm seeing several possibilities here, but to approach this systematically, I'll use the Community Q&A Patterns technique for query expansion. This technique involves reframing the original query into various question types that people might ask in a community setting, identifying hidden motivations behind the query, looking at valuable response patterns, mapping community interactions, and extracting relevant vocabulary from these interactions.\n\nStarting with question reframing, I reframe the query into personal experience questions like \"What is it like to read a long William Goldman book?\" or advice-seeking questions like \"How should I choose a William Goldman book to read if I want something lengthy?\" This helps to simulate how people might discuss or seek advice on the topic in a community forum. Then, I consider the hidden motivations, such as seeking validation for choosing a lengthy book, looking for personal recommendations, or wanting insider knowledge on which books offer the most engaging long reads.\n\nNext, I look at answer archetypes that would be valuable in a community Q&A setting, such as first-person experience narratives from readers who have enjoyed lengthy books by William Goldman, expert opinions from literary critics or authors themselves, and step-by-step advice on how to select a book based on reading time or page count. I also map out common follow-up questions, frequently debated aspects like the definition of a \"long\" book, clarifications people often request such as more information on the plot or characters, and related questions that might lead to discussions on other authors with similar writing styles.\n\nFinally, I extract vocabulary from the community interactions, focusing on terms related to the length and engagement of books, such as \"long read,\" \"page-turner,\" \"substantial,\" \"in-depth,\" \"dense,\" and \"worth the time.\" These terms reflect how people naturally discuss books in a conversational setting and can help in expanding the query to capture more relevant results.\n\nApplying the Community Q&A Patterns technique systematically, I start by identifying question variations that reflect different aspects of the query, such as \"Which William Goldman books are the longest?\" or \"Can anyone recommend William Goldman books over 300 pages based on personal experience?\" Then, I analyze the underlying motivations behind these questions, recognizing that users might be seeking not just a list of books but recommendations based on reading experience, genre preferences, or the assurance that a lengthy book is worth the investment of time.\n\nAs I balance the structured approach of the technique with natural thought patterns, I consider occasional false starts or reconsiderations, such as initially thinking to focus solely on page count before realizing the importance of including terms related to reading experience and book engagement. I also make intuitive connections between the technique's steps and the natural way people discuss books, recognizing that terms like \"detailed descriptions\" and \"long read\" can capture both the explicit and implicit aspects of what the user is seeking.\n\nThrough this process, insights emerge from both the structure of the technique and my intuition about how people discuss and seek recommendations for books. Applying specific aspects of the Community Q&A Patterns technique, such as question reframing and vocabulary extraction, leads me to discover terms like \"page count\" and \"detailed descriptions\" that are crucial for expanding the query. My instinct also suggests including terms related to the reading experience, such as \"engaging\" or \"worth the time,\" to capture the user's implicit desire for a book that is not just lengthy but also enjoyable and satisfying.\n\nIn synthesizing these insights with clarity, I conclude that the expanded query should include terms that reflect both the explicit request for books with more than 300 pages and the implicit desire for engaging, detailed reads. Thus, the final expanded query, \"William Goldman books length page count detailed descriptions,\" emerges logically from both the systematic application of the Community Q&A Patterns technique and the natural, intuitive connections made during the thought process.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,66 @@
+{
+  "reasoning": "The original query seeks to understand how control theory is applied in radar tracking, particularly in the context of developing \"cognitive\" radar systems. The existing results primarily cover the historical development and basic principles of radar technology without delving into the specific application of control theory for cognitive functions.",
+  "query_goals": [
+    "Understand control theory applications in radar tracking",
+    "Explore algorithms and methodologies used for implementing control strategies in radar",
+    "Identify research on cognitive radar and its relation to control theory"
+  ],
+  "ineffective_terms": [
+    "First step",
+    "towards",
+    "cognition"
+  ],
+  "breadth_expansion": [
+    "adaptive",
+    "predictive",
+    "decision-making",
+    "pattern recognition",
+    "environment modeling",
+    "artificial intelligence",
+    "machine learning",
+    "robustness"
+  ],
+  "depth_chain": [
+    "adaptive control",
+    "adaptive filtering",
+    "optimal control",
+    "Kalman filter",
+    "Bayesian estimation",
+    "model predictive control"
+  ],
+  "augmented_query": "adaptive control  optimal control Kalman filter Bayesian estimation model predictive control radar target tracking",
+  "ndcg": {
+    "NDCG@10": 0.46928,
+    "NDCG@100": 0.57451,
+    "NDCG@1000": 0.57451,
+    "NDCG@10000": 0.61937
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.36508,
+    "MAP@1000": 0.36508,
+    "MAP@10000": 0.36579
+  },
+  "recall": {
+    "Recall@10": 0.33333,
+    "Recall@100": 0.66667,
+    "Recall@1000": 0.66667,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0003
+  },
+  "delta": 0.04707,
+  "instruction": "expand",
+  "query": "Control theoretic approach to tracking radar: First step towards cognition",
+  "query_id": "39959bc480d2972d8bb925708e6e8ad59664bcdb",
+  "dataset": "scidocs",
+  "cleaned_augmented_query": "adaptive control optimal control kalman filter bayesian estimation model predictive control radar target tracking",
+  "final_delta": 0.04707,
+  "initial_results": "### Text snippet from document at k=1\n: This article discusses a new idea called cognitive radar. Three ingredients are basic to the constitution of cognitive radar: 1) intelligent signal processing, which builds on learning through interactions of the radar with the surrounding environment; 2) feedback from the receiver to the transmitter, which is a facilitator of intelligence; and 3) preservation of the information content of radar returns, which is realized by the Bayesian approach to target detection through tracking. All three of these ingredients feature in the echo-location system of a bat, which may be viewed as a physical realization (albeit in neurobiological terms) of cognitive radar. Radar is a remote-sensing system that is widely used for surveillance, tracking, and imaging applications, for both civilian and military needs. In this article, we focus on future possibilities of radar with particular emphasis on the issue of cognition. As an illustrative case study along the way, we consider the problem of radar surveillance applied to an ocean environment.\n\n### Text snippet from document at k=2\n: In this paper the evolution of silicon based automotive radar for the 76-81 GHz range is described. Starting with SiGe bare-die chips in 2009, today packaged MMICs are available for low-cost radar applications. Future SiGe BiCMOS technology will enable highly integrated single chip radars with superior performance at lower power consumption. This will pave the way for automotive radar safety for everyone and will be an important step towards autonomous driving.\n\n### Text snippet from document at k=10\n: Designing and simulating realistic clothing is challenging. Previous methods addressing the capture of clothing from 3D scans have been limited to single garments and simple motions, lack detail, or require specialized texture patterns. Here we address the problem of capturing regular clothing on fully dressed people in motion. People typically wear multiple pieces of clothing at a time. To estimate the shape of such clothing, track it over time, and render it believably, each garment must be segmented from the others and the body. Our ClothCap approach uses a new multi-part 3D model of clothed bodies, automatically segments each piece of clothing, estimates the minimally clothed body shape and pose under the clothing, and tracks the 3D deformations of the clothing over time. We estimate the garments and their motion from 4D scans; that is, high-resolution 3D scans of the subject in motion at 60 fps. ClothCap is able to capture a clothed person in motion, extract their clothing, and retarget the clothing to new body shapes; this provides a step towards virtual try-on.\n",
+  "thought_process": "Looking at the original query, \"Control theoretic approach to tracking radar: First step towards cognition,\" this makes me think of how control theory can be applied to radar systems to make them more adaptive and intelligent. Though the user might actually be trying to understand the fundamentals of radar tracking and how control theory enhances its capabilities, the phrase \"first step towards cognition\" suggests an interest in more advanced, cognitive radar systems. \n\nAnalyzing the results of the original query, I notice that the initial returns primarily cover the historical development and basic principles of radar technology but lack depth in the application of control theory for cognitive functions. This indicates a gap in the search results that needs to be addressed by expanding the query to include more specific and relevant terms related to control theory and cognitive radar.\n\nTo approach this systematically, I'll use the expansion technique that involves identifying ineffective terms, performing breadth expansion, and then depth expansion. Starting with ineffective term identification, terms like \"first step,\" \"towards,\" and \"cognition\" are too broad and don't add much precision to the query. These terms need to be replaced or augmented with more specific and technical vocabulary.\n\nMoving on to breadth expansion, I consider terms that introduce new dimensions to the query but are still relevant. Terms like \"adaptive,\" \"predictive,\" \"decision-making,\" \"pattern recognition,\" \"environment modeling,\" \"artificial intelligence,\" \"machine learning,\" and \"robustness\" offer a broader perspective on how control theory can be applied in radar tracking for cognitive functions. \n\nHowever, to really drill down into the specifics of control theory in radar tracking, I need to perform a depth expansion. Focusing on \"adaptive control\" as a key concept, I explore related terms such as \"adaptive filtering,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" and \"model predictive control.\" These terms not only provide a deeper understanding of control theory applications in radar but also start to bridge the gap towards cognitive radar capabilities.\n\nAs I apply the expansion technique, I notice that the terms \"adaptive control,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" and \"model predictive control\" are particularly relevant and could form the basis of an augmented query. The connection between these control theory concepts and radar tracking becomes clearer, especially when considering the goal of developing cognitive radar systems that can adapt, predict, and make decisions based on the environment and targets.\n\nOccasionally, I find myself reconsidering the inclusion of certain terms, wondering if they might be too generic or if they truly add value to the query. For instance, while \"artificial intelligence\" and \"machine learning\" are relevant to cognitive radar, they might be too broad for the specific focus on control theory in radar tracking. \n\nStepping back to reassess, I realize that the augmented query needs to balance specificity with diversity, ensuring that it captures both the explicit and implicit aspects of what the user is seeking. The terms \"adaptive control,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" and \"model predictive control\" emerge as key components, offering a targeted approach to understanding control theory in radar tracking. Adding \"radar target tracking\" to the query helps to maintain focus on the application of these control theory concepts within radar systems.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms \"adaptive control,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" \"model predictive control,\" and \"radar target tracking\" would be most effective for expanding the query. They capture the essence of control theory applications in radar tracking and move towards the development of cognitive radar capabilities, enhancing the original query with specificity, diversity, and relevance.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,77 @@
+{
+  "reasoning": "The original query seeks specific locations in Mexico where Dia de los Muertos is celebrated. While existing documents provide cultural context and significance, they lack detailed geographic information about particular celebrations. To enrich this search, we can employ insights from multiple disciplines to uncover deeper and more specific understandings of how the holiday is observed across different regions.\n\n1. **Expert Selection**: We need experts from diverse fields that address cultural geography, anthropology, history, tourism, and sociology.\n2. **Individual Consultations**: Each expert will provide unique perspectives on regional variations in celebrations and suggest resources or terminology relevant to their field.\n3. **Panel Discussion**: The experts' insights help identify cross-disciplinary connections such as historical migrations affecting celebration styles or how cultural identity is showcased regionally.\n4. **Recommendations**: From this discussion, we derive specific locations known for their unique festivities, regional customs, and important cultural landmarks related to Dia de los Muertos in Mexico.\n5. **Term Synthesis**: We extract specialized terms that could enhance the original search query by adding geographic and thematic specificity.",
+  "augmented_query": "\"Where is Dia de los Muertos celebrated in Mexico, particularly focusing on regional variations and cultural influences in central and southern Mexico, such as Oaxaca, Michoac\u00e1n, Guanajuato, P\u00e1tzcuaro, Xochimilco, and Jalisco?\"",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.24408,
+  "instruction": "expert",
+  "query": "where is dia de los muertos celebrated in mexico",
+  "query_id": "test2598",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "extracted_terms": [
+    "Cultural geography",
+    "Migration patterns",
+    "Indigenous customs",
+    "Catholic syncretism",
+    "La Alh\u00f3ndiga de Granaditas",
+    "Ofrendas (altars)",
+    "Community identity",
+    "Urban versus rural celebrations"
+  ],
+  "selected_experts": [
+    "Dr. Maria Gonzales - Cultural Geographer",
+    "Professor Juan Alvarez - Anthropologist",
+    "Dr. Rosa Martinez - Historian",
+    "Mr. Carlos Lopez - Tourism Specialist",
+    "Dr. Elena Ramirez - Sociologist"
+  ],
+  "expert_insights": [
+    "Dr. Maria Gonzales notes that regional celebrations of Dia de los Muertos are influenced by local geography and migration patterns, suggesting a focus on central and southern Mexico where indigenous influences are strong.",
+    "Professor Juan Alvarez highlights the importance of understanding traditional rituals in specific communities, recommending studies on how indigenous customs have been integrated into urban settings like Oaxaca and Michoac\u00e1n.",
+    "Dr. Rosa Martinez points to historical events such as the Spanish colonization that introduced Catholic elements into the celebration, emphasizing regions where this blend is most apparent, like Guanajuato with its famous La Alh\u00f3ndiga de Granaditas.",
+    "Mr. Carlos Lopez advises on popular tourist destinations for Dia de los Muertos celebrations, noting P\u00e1tzcuaro in Michoac\u00e1n and Xochimilco near Mexico City as vibrant centers of public festivities, including parades and altars (ofrendas).",
+    "Dr. Elena Ramirez explores the social significance of these events within communities, explaining how festivals serve to reinforce local identity and societal bonds, particularly in towns with strong indigenous roots like those found in Jalisco."
+  ],
+  "cross_connections": [
+    "Connection between historical colonization and current celebratory practices showing a fusion of Catholic traditions with indigenous beliefs.",
+    "Geographical impact on celebration styles; for example, rural versus urban festivities may vary significantly due to migration influences.",
+    "Tourism's role in preserving traditional customs while also potentially commodifying cultural elements.",
+    "The influence of social structures and community identity reinforcement through the observance of Dia de los Muertos."
+  ],
+  "recommended_resources": [
+    "Cultural Atlas of Mexico for geographical insights into indigenous populations and their traditions",
+    "Ethnographic studies on indigenous rituals in modern Mexican cities by Professor Juan Alvarez's research group",
+    "Historical accounts of Spanish colonization impact on native practices, particularly in Guanajuato",
+    "Tourism guidebooks featuring top Dia de los Muertos destinations such as P\u00e1tzcuaro and Xochimilco",
+    "Sociological papers discussing community identity and cultural preservation through public festivals"
+  ],
+  "cleaned_augmented_query": "dia de los muertos celebrated mexico particularly focusing regional variations cultural influences central southern oaxaca michoac\u00e1n guanajuato p\u00e1tzcuaro xochimilco jalisco",
+  "final_delta": 0.24408,
+  "initial_results": "### Text snippet from document at k=1\n: Pan de muerto (Spanish for bread of the dead), also called pan de los muertos or dead bread in the United States, is a type of sweet roll traditionally baked in Mexico during the weeks leading up to the D\u00eda de Muertos, which is celebrated on November 1 and 2.[1] It is a sweetened soft bread shaped like a bun, often decorated with bone-shaped phalanges pieces. Pan de muerto is eaten on D\u00eda de Muertos, at the gravesite or altar of the deceased. In some regions, it is eaten for months before the official celebration of Dia de Muertos. In Oaxaca, pan de muerto is the same bread that is usually baked, with the addition of decorations. As part of the celebration, loved ones eat pan de muerto as well as the relative's favorite foods. The bones represent the deceased one (difuntos or difuntas) and there is normally a baked tear drop on the bread to represent goddess Chimalma's tears for the living. The bones are represented in a circle to portray the circle of life. The bread is topped with sugar. This bread can be found in Mexican grocery stores in the U.S.\n\n### Text snippet from document at k=2\n: The Roman Catholic church celebrates three days of Allhallowtide from 31 October to 1 November, marking All Saints' Eve All Saints' Day and the second of November as All Souls' Day. The Mexican holiday celebrated at Hallowtide is called Dia de Los Muertos or Day of the Dead - prior to the Spanish colonisation and the conversion of local people to Christianity, this festival was celebrated in the summer time.[4]\n\n### Text snippet from document at k=10\n: The most recognizable icon of Mexico City is the golden Angel of Independence on the wide, elegant avenue Paseo de la Reforma, modeled by the order of the Emperor Maximilian of Mexico after the Champs-\u00c9lys\u00e9es in Paris. This avenue was designed over the Americas' oldest known major roadway in the 19th century to connect the National Palace (seat of government) with the Castle of Chapultepec, the imperial residence. Today, this avenue is an important financial district in which the Mexican Stock Exchange and several corporate headquarters are located. Another important avenue is the Avenida de los Insurgentes, which extends 28.8\u00a0km (17.9\u00a0mi) and is one of the longest single avenues in the world.\n",
+  "thought_process": "Looking at the original query, \"where is Dia de los Muertos celebrated in Mexico,\" this makes me think of the vibrant cultural practices and traditions that surround this holiday. Though the user might actually be trying to find specific locations in Mexico where they can experience these celebrations firsthand, I'm not sure yet what aspects of the celebration they're most interested in - the historical significance, the modern-day festivities, or perhaps the regional variations.\n\nAs I analyze the results of the original query, I notice that while there's a wealth of information on the cultural context and significance of Dia de los Muertos, there's a lack of detailed geographic information about particular celebrations. The text snippets from the initial results provide some insight into the traditions and foods associated with the holiday, such as pan de muerto, but they don't directly answer the user's question about locations.\n\nI'm seeing several possibilities here... Let me approach this using the Query Expansion via Multi-Disciplinary Expert Panel technique, which involves convening a panel of experts from diverse fields to analyze the query and contribute their specialized knowledge, terminology, and perspectives. This should help because it will allow us to tap into a broad range of insights and expertise, from cultural geography to tourism, and synthesize them into a more comprehensive understanding of where and how Dia de los Muertos is celebrated in Mexico.\n\nFollowing the expert panel approach, I should first identify the relevant disciplines for this query. This could include cultural geography, anthropology, history, tourism, and sociology, among others. For each discipline, I would create an expert persona with specific credentials and experience. For instance, Dr. Maria Gonzales, a cultural geographer, could provide insights into how regional celebrations are influenced by local geography and migration patterns.\n\nAs I proceed with individual consultations, each expert analyzes the query from their disciplinary perspective, identifying key concepts, methodologies, and specialized vocabulary. Dr. Juan Alvarez, an anthropologist, might note the importance of understanding traditional rituals in specific communities and recommend studies on how indigenous customs have been integrated into urban settings like Oaxaca and Michoac\u00e1n. Meanwhile, Mr. Carlos Lopez, a tourism specialist, could advise on popular tourist destinations for Dia de los Muertos celebrations, such as P\u00e1tzcuaro in Michoac\u00e1n and Xochimilco near Mexico City.\n\nThe panel discussion would then bring these experts together to debate different approaches to the query, identify cross-disciplinary connections, and highlight complementary tools and frameworks. They might discuss how historical events, such as the Spanish colonization, have introduced Catholic elements into the celebration, and how these elements vary by region. They could also explore the social significance of these events within communities, including how festivals serve to reinforce local identity and societal bonds.\n\nApplying this approach leads me to several key insights. Firstly, the celebration of Dia de los Muertos is not uniform across Mexico but is heavily influenced by regional cultural, historical, and geographical factors. Secondly, understanding the indigenous customs and their integration into modern celebrations, particularly in urban areas, is crucial. Lastly, recognizing the impact of tourism on these celebrations, both in terms of cultural preservation and commodification, is essential for a comprehensive query expansion.\n\nI just had a realization that connects to what we were exploring earlier - the importance of considering both urban and rural celebrations, as well as the blend of indigenous and Catholic traditions. This realization suggests that our expanded query should include terms that reflect these aspects, such as \"regional variations,\" \"cultural influences,\" and specific locations known for their unique festivities, like Oaxaca, Michoac\u00e1n, Guanajuato, P\u00e1tzcuaro, Xochimilco, and Jalisco.\n\nThrough this process of applying the expert panel technique and exploring related threads, I believe the terms that would be most effective for a BM25 index are those that capture both the explicit and implicit aspects of what the user is seeking. This includes not just the locations but also the cultural and historical contexts that make Dia de los Muertos celebrations in these locations unique and significant.\n\nThe final expanded query, \"Where is Dia de los Muertos celebrated in Mexico, particularly focusing on regional variations and cultural influences in central and southern Mexico, such as Oaxaca, Michoac\u00e1n, Guanajuato, P\u00e1tzcuaro, Xochimilco, and Jalisco?\" reflects a synthesis of the insights gained from the expert panel discussion and the analysis of the original query and its results. This query is designed to yield more specific and relevant information about the locations and celebrations of Dia de los Muertos in Mexico, taking into account the rich cultural geography, historical context, and community identities that shape this significant holiday.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

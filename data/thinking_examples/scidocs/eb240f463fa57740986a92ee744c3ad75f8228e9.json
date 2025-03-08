@@ -1,0 +1,82 @@
+{
+  "reasoning": "The query focuses on using Support Vector Machines (SVMs) and Neural Networks (NNs) for Intrusion Detection. The strengths of current results relate to their relevance and coverage of performance comparisons. The weaknesses relate to practical implementation details, computational complexity, and over-simplification.\n\nI will generate metaphors that can expand the understanding of Intrusion Detection with SVMs/NNs which will then be used to extract relevant query augmentations. The metaphors are:\n\n1.  **Immune System:** Intrusion detection is like the human immune system.\n2.  **Fraud Detection:** Intrusion detection mirrors fraud detection in financial transactions.\n3.  **Quality Control:** Intrusion detection is similar to quality control in a manufacturing process.\n4.  **Surveillance System:** Intrusion detection resembles a surveillance system monitoring activity.\n5.  **Ecosystem Balance:** Intrusion detection is akin to maintaining the balance of an ecosystem.\n\nI will then map each domain to the target domain, extract language, extend the metaphors, extract cross-domain terms, and generate an augmented query.",
+  "augmented_query": "\"Intrusion Detection: SVM, NN, Adaptive Response, Risk Profiling, Anomaly Scoring, Behavioral Patterns, Resilience Engineering, Root Cause Analysis, Threat Landscape, Statistical Process Control, Ecosystem Monitoring, Situational Awareness\"",
+  "ndcg": {
+    "NDCG@10": 0.44615,
+    "NDCG@100": 0.57778,
+    "NDCG@1000": 0.57778,
+    "NDCG@10000": 0.57778
+  },
+  "map": {
+    "MAP@10": 0.25,
+    "MAP@100": 0.28974,
+    "MAP@1000": 0.28974,
+    "MAP@10000": 0.28974
+  },
+  "recall": {
+    "Recall@10": 0.4,
+    "Recall@100": 0.8,
+    "Recall@1000": 0.8,
+    "Recall@10000": 0.8
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.04,
+    "P@1000": 0.004,
+    "P@10000": 0.0004
+  },
+  "delta": 0.23665,
+  "instruction": "metaphor",
+  "query": "Intrusion Detection : Support Vector Machines and Neural Networks",
+  "query_id": "eb240f463fa57740986a92ee744c3ad75f8228e9",
+  "dataset": "scidocs",
+  "generated_metaphors": [
+    "Intrusion Detection as an Immune System",
+    "Intrusion Detection as Fraud Detection",
+    "Intrusion Detection as Quality Control",
+    "Intrusion Detection as a Surveillance System",
+    "Intrusion Detection as Ecosystem Balance"
+  ],
+  "domain_mappings": [
+    "Immune System: Antigens -> Intrusions, Antibodies -> Detection Mechanisms, Immune Response -> Security Actions, White Blood Cells -> SVM/NN Classifiers",
+    "Fraud Detection: Fraudulent Transactions -> Intrusions, Transaction Patterns -> Network Traffic, Auditors -> Security Analysts, Red Flags -> Anomaly Scores",
+    "Quality Control: Defective Products -> Intrusions, Production Line -> Network Traffic, Quality Inspectors -> Detection Systems, Error Rate -> Intrusion Frequency",
+    "Surveillance System: Suspicious Activities -> Intrusions, Security Cameras -> Network Sensors, Control Room -> Security Operations Center, Threat Level -> Risk Score",
+    "Ecosystem Balance: Invasive Species -> Intrusions, Native Species -> Normal Network Behavior, Biodiversity -> Network Diversity, Disruptions -> Attacks"
+  ],
+  "metaphorical_language": [
+    "Vaccination, autoimmune response, pathogen, mutation, immune memory",
+    "Anomaly detection, risk assessment, profiling, suspicious behavior, flagging",
+    "Defect analysis, statistical process control, tolerance limits, root cause analysis, inspection",
+    "Pattern recognition, behavior analysis, threat assessment, monitoring, tracking",
+    "Resilience, adaptation, diversity, equilibrium, cascading effects"
+  ],
+  "extended_metaphors": [
+    "The immune system metaphor highlights the need for continuous adaptation (like evolving viruses). Autoimmune responses could be false positives. Vaccination represents proactive security measures.",
+    "Fraud detection reveals the importance of profiling normal behavior to identify anomalies. Risk assessment and prioritization become crucial.",
+    "Quality control demonstrates the necessity of setting tolerance limits and conducting root cause analysis to prevent future intrusions. Statistical process control offers a framework for monitoring network traffic.",
+    "The surveillance system metaphor emphasizes the need for comprehensive monitoring and threat assessment. Behavior analysis and pattern recognition are essential components. Tracking suspicious activities helps in preventing attacks",
+    "The ecosystem balance metaphor highlights the importance of resilience and adaptability. Diversity in network behavior and monitoring tools can create a more robust system. Cascading effects of intrusions need to be understood and mitigated."
+  ],
+  "cross_domain_terms": [
+    "Adaptive response",
+    "Risk profiling",
+    "Tolerance thresholds",
+    "Behavioral patterns",
+    "Resilience engineering",
+    "Anomaly scoring",
+    "Root cause analysis",
+    "Threat Landscape",
+    "Ecosystem monitoring",
+    "Mutation analysis",
+    "Flagging signals",
+    "Inspection protocols",
+    "Situational awareness",
+    "Diversity metrics"
+  ],
+  "cleaned_augmented_query": "intrusion detection svm nn adaptive response risk profiling anomaly scoring behavioral patterns resilience engineering root cause analysis threat landscape statistical process control ecosystem monitoring situational awareness",
+  "final_delta": 0.23665,
+  "initial_results": "### Text snippet from document at k=1\n: Network security technology has become crucial in protecting government and industry computing infrastructure. Modern intrusion detection applications face complex requirements; they need to be reliable, extensible, easy to manage, and have low maintenance cost. In recent years, machine learning-based intrusion detection systems have demonstrated high accuracy, good generalization to novel types of intrusion, and robust behavior in a changing environment. This work aims to compare efficiency of machine learning methods in intrusion detection system, including artificial neural networks and support vector machine, with the hope of providing reference for establishing intrusion detection system in future. Compared with other related works in machine learning-based intrusion detectors, we propose to calculate the mean value via sampling different ratios of normal data for each measurement, which lead us to reach a better accuracy rate for observation data in real world. We compare the accuracy, detection rate, false alarm rate for 4 attack types. The extensive experimental results on the KDD-cup intrusion detection benchmark dataset demonstrate that the proposed approach produces higher performance than KDD Winner, especially for U2R and U2L type attacks.\n\n### Text snippet from document at k=2\n... In those 23 related papers, 7 research papers use ANN and 4 ones use SVM, because of ANN and SVM are more reliable than other models and structures. In addition, 8 researches use the DARPA1998 tuples and 13 researches use the KDDCup1999, because the standard tuples are much more credible than others. There is no best intrusion detection model in present time. However, future research directions for intrusion detection should be explored in this paper. Keywords\u2014 intrusion detection, data mining, ANN\n\n### Text snippet from document at k=10\n: Network-based attacks have become common and sophisticated. For this reason, intrusion detection systems are now shifting their focus from the hosts and their operating systems to the network itself. Network-based intrusion detection is challenging because network auditing produces large amounts of data, and different events related to a single intrusion may be visible in different places on the network. This paper presents NetSTAT, a new approach to network intrusion detection. By using a formal model of both the network and the attacks, NetSTAT is able to determine which network events have to be monitored and where they can be monitored.\n",
+  "thought_process": "As I delve into the query \"Intrusion Detection: Support Vector Machines and Neural Networks,\" my initial impressions are that this is a highly specialized topic within the realm of cybersecurity and machine learning. The user is likely seeking information on how Support Vector Machines (SVMs) and Neural Networks (NNs) can be utilized for detecting intrusions in computer systems or networks. The query itself is quite specific, suggesting that the user has a good understanding of the technical aspects of intrusion detection and is looking for detailed information on the application of these machine learning techniques.\n\nAnalyzing the results of the original query, I notice that the strengths lie in their relevance to the topic, with many results discussing the performance comparisons of SVMs and NNs in intrusion detection. However, a weakness of the current results is the lack of depth in discussing practical implementation details, computational complexity, and potential over-simplification of the models. This tells me that while the user is getting some relevant information, there might be a need to expand the query to capture more nuanced discussions around the implementation and optimization of SVMs and NNs in intrusion detection.\n\nTransitioning to a structured approach, I decide to use the \"Query Expansion via Metaphorical Thinking\" technique. This involves generating metaphors for the query topic and mining them for conceptually related terminology from diverse domains. By doing so, I aim to enrich the query with terms that can help retrieve more comprehensive and insightful results. The technique is particularly appealing because it leverages the power of analogical thinking to uncover connections between seemingly unrelated concepts, which can lead to innovative solutions and deeper understanding.\n\nStarting with metaphor generation, I come up with five diverse metaphors for understanding intrusion detection with SVMs and NNs: the immune system, fraud detection, quality control, surveillance systems, and ecosystem balance. Each metaphor is chosen for its unique perspective on detection, adaptation, and response. For instance, the immune system metaphor highlights the importance of continuous adaptation and the distinction between self and non-self, which can be mapped to distinguishing between normal network behavior and intrusions. The fraud detection metaphor, on the other hand, emphasizes the role of profiling and risk assessment, which can inform how we approach intrusion detection.\n\nAs I map each domain to the target domain of intrusion detection, I extract language and extend the metaphors to discover additional connections. The immune system, for example, suggests terms like vaccination (proactive security measures), autoimmune response (false positives), and immune memory (learning from past intrusions). Fraud detection contributes terms like anomaly detection, risk profiling, and suspicious behavior. Quality control introduces concepts like defect analysis, statistical process control, and root cause analysis. The surveillance system metaphor brings in ideas of comprehensive monitoring, threat assessment, and behavior analysis. Lastly, the ecosystem balance metaphor underscores the importance of resilience, adaptation, diversity, and understanding cascading effects in network security.\n\nThrough this process, I compile a list of cross-domain terms that offer fresh perspectives on intrusion detection with SVMs and NNs. Terms like adaptive response, risk profiling, anomaly scoring, behavioral patterns, resilience engineering, and threat landscape emerge as particularly relevant. These terms not only reflect the diverse metaphors but also complement each other, suggesting a holistic approach to intrusion detection that combines machine learning with strategic security planning.\n\nAs I synthesize these insights, it becomes clear that the expanded query should incorporate these metaphorically derived terms to capture a broader range of relevant results. The final augmented query, \"Intrusion Detection: SVM, NN, Adaptive Response, Risk Profiling, Anomaly Scoring, Behavioral Patterns, Resilience Engineering, Root Cause Analysis, Threat Landscape, Statistical Process Control, Ecosystem Monitoring, Situational Awareness,\" reflects this comprehensive approach. By leveraging metaphors and analogical thinking, we can move beyond the limitations of the original query and uncover new paths for understanding and improving intrusion detection systems.\n\nThrough this thought process, I demonstrate how structured techniques like query expansion via metaphorical thinking can be balanced with natural cognitive patterns to yield innovative and effective search queries. This approach not only enhances the search process but also mirrors how experts in the field might think about complex problems, combining systematic analysis with creative, intuitive insights.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

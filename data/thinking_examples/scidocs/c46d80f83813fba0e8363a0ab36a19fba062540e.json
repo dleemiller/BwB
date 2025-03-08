@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query 'Learning Actionable Representations with Goal-Conditioned Policies' primarily aims to uncover research at the intersection of learning representations conditioned on goals within the field of reinforcement learning (RL) and artificial intelligence. The focus seems to be on techniques that enable agents to learn representations which directly facilitate goal achievement, particularly in complex environments. Current strengths lie in providing diverse technical insights into this topic through various machine learning approaches, including model-based RL and policy optimization methods. However, weaknesses indicate a lack of specificity beyond the first result, suggesting that there is room for exploration into more nuanced or application-specific contexts within AI and ML research related to goal-conditioned policies. This might include diving deeper into specific use cases such as robotics or autonomous systems where these concepts are highly applicable. The breadth of topics currently covered includes dialog systems and relational planning, which diverge from the central theme of actionable representations conditioned on goals. As a result, expanding the query will aim to introduce terms that align more closely with the specificity of goal-conditioned representation learning within targeted application domains.",
+  "query_goals": [
+    "Discover research on goal-conditioned policies specifically focusing on representation learning.",
+    "Explore techniques applicable in real-world AI applications like robotics and autonomous systems.",
+    "Identify methods that optimize policy representations conditioned on specific goals."
+  ],
+  "ineffective_terms": [
+    "dialog",
+    "relational planning",
+    "rule-based"
+  ],
+  "breadth_expansion": [
+    "robotics",
+    "autonomous navigation",
+    "task-oriented learning",
+    "human-robot interaction",
+    "sensorimotor representations"
+  ],
+  "depth_chain": [
+    "robotics",
+    "autonomous agents",
+    "robot perception",
+    "sensor fusion",
+    "perception-action loop"
+  ],
+  "augmented_query": "robotic systems autonomous agents sensor fusion perception-action loop",
+  "ndcg": {
+    "NDCG@10": 0.33916,
+    "NDCG@100": 0.48321,
+    "NDCG@1000": 0.52114,
+    "NDCG@10000": 0.55265
+  },
+  "map": {
+    "MAP@10": 0.2,
+    "MAP@100": 0.23922,
+    "MAP@1000": 0.24085,
+    "MAP@10000": 0.24142
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.6,
+    "Recall@1000": 0.8,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.03,
+    "P@1000": 0.004,
+    "P@10000": 0.0005
+  },
+  "delta": 0.20301,
+  "instruction": "expand",
+  "query": "Learning Actionable Representations with Goal-Conditioned Policies",
+  "query_id": "c46d80f83813fba0e8363a0ab36a19fba062540e",
+  "dataset": "scidocs",
+  "cleaned_augmented_query": "robotic systems autonomous agents sensor fusion perception action loop",
+  "final_delta": 0.20301,
+  "initial_results": "### Text snippet from document at k=1\n: A key challenge in complex visuomotor control is learning abstract representations that are effective for specifying goals, planning, and generalization. To this end, we introduce universal planning networks (UPN). UPNs embed differentiable planning within a goal-directed policy. This planning computation unrolls a forward model in a latent space and infers an optimal action plan through gradient descent trajectory optimization. The plan-by-gradient-descent process and its underlying representations are learned end-to-end to directly optimize a supervised imitation learning objective. We find that the representations learned are not only effective for goal-directed visual imitation via gradient-based trajectory optimization, but can also provide a metric for specifying goals using images. The learned representations can be leveraged to specify distance-based rewards to reach new target states for model-free reinforcement learning, resulting in substantially more effective learning when solving new tasks described via imagebased goals. Visit https://sites.google. com/view/upn-public/home for video highlights.\n\n### Text snippet from document at k=2\n: We propose a new approach to the problem of searching a space of policies for a Markov decision process (MDP) or a partially observable Markov decision process (POMDP), given a model. Our approach is based on the following observation: Any (PO)MDP can be transformed into an \u201cequivalent\u201d POMDP in which all state transitions (given the current state and action) are deterministic. This reduces the general problem of policy search to one in which we need only consider POMDPs with deterministic transitions. We give a natural way of estimating the value of all policies in these transformed POMDPs. Policy search is then simply performed by searching for a policy with high estimated value. We also establish conditions under which our value estimates will be good, recovering theoretical results similar to those of Kearns, Mansour and Ng [7], but with \u201csample complexity\u201d bounds that have only a polynomial rather than exponential dependence on the horizon time. Our method applies to arbitrary POMDPs, including ones with infinite state and action spaces. We also present empirical results for our approach on a small discrete problem, and on a complex continuous state/continuous action problem involving learning to ride a bicycle.\n\n### Text snippet from document at k=10\n: In this work, we have invesigated the action recognition problem using the Charades Action Recognition Dataset with 157 action classes. We have compared the results of different techniques such as extreme learning machines, support vector machines, and decision trees, applied on the features extracted with deep neural networks and the scene-action conditional probabilities.\n",
+  "thought_process": "As I delve into the original query, \"Learning Actionable Representations with Goal-Conditioned Policies,\" my initial impressions are that this is a highly specialized topic within the realm of reinforcement learning (RL) and artificial intelligence (AI). The focus seems to be on techniques that enable agents to learn representations which directly facilitate goal achievement, particularly in complex environments. I think about how this relates to real-world applications, such as robotics and autonomous systems, where the ability to learn and adapt to new situations is crucial.\n\nAnalyzing the results of the original query, I notice that while there are diverse technical insights into this topic, there's a lack of specificity beyond the first result. This suggests that there's room for exploration into more nuanced or application-specific contexts within AI and ML research related to goal-conditioned policies. I identify terms like \"dialog\" and \"relational planning\" as less relevant to the core theme of actionable representations conditioned on goals.\n\nTo expand the query, I decide to apply a structured approach using the guidelines provided. First, I examine the original query to understand its primary objectives and gaps. The main goal appears to be discovering research on goal-conditioned policies specifically focusing on representation learning. However, there's a gap in exploring techniques applicable in real-world AI applications like robotics and autonomous systems.\n\nNext, I identify broad or non-precise terms that should be avoided, such as \"dialog\" and \"relational planning.\" These terms seem to diverge from the central theme of actionable representations conditioned on goals. I also consider the ineffective terms listed, including \"rule-based,\" which might not be directly relevant to the goal-conditioned policy learning.\n\nFor breadth expansion, I list candidate terms with increasingly distant concepts to the original query. Terms like \"robotics,\" \"autonomous navigation,\" \"task-oriented learning,\" \"human-robot interaction,\" and \"sensorimotor representations\" seem promising. These terms introduce new dimensions to the query and align more closely with the specificity of goal-conditioned representation learning within targeted application domains.\n\nTo further expand the query, I choose one distant but important topic from the breadth expansion, \"robotics,\" and go increasingly deeper in the related terms on that one selection. This leads me to consider terms like \"autonomous agents,\" \"robot perception,\" \"sensor fusion,\" and \"perception-action loop.\" These terms are more specific and targeted, and they seem to capture the essence of goal-conditioned policy learning in robotics and autonomous systems.\n\nAs I apply the expansion technique, I notice that the terms \"robotic systems,\" \"autonomous agents,\" \"sensor fusion,\" and \"perception-action loop\" emerge as key terms. These terms are not only relevant to the original query but also introduce new dimensions and specificity to the search. I realize that these terms can be used to construct an augmented query that is novel, diverse, and targeted.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe that the terms \"robotic systems,\" \"autonomous agents,\" \"sensor fusion,\" and \"perception-action loop\" would be most effective for a BM25 index. They capture both the explicit and implicit aspects of what the user is seeking, and they introduce a new level of specificity and relevance to the search query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

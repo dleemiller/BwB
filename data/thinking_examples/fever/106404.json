@@ -1,0 +1,66 @@
+{
+  "reasoning": "The query seeks information about specific, technologically advanced aircraft produced in Burbank, California. While the current results identify Lockheed's Skunk Works and the U-2 spy plane, there's potential to expand the search by exploring:\n\n* **Specific aircraft models:**  Beyond the U-2, what other notable aircraft were developed at Skunk Works?\n* **Historical context:** What era was this production focused on?  Were these aircraft tied to specific events or conflicts?\n* **Technological advancements:**  What made these planes \"technologically advanced\" for their time? \n\nAugmenting the query with these terms can yield more precise and detailed results.",
+  "query_goals": [
+    "identify specific aircraft models",
+    "determine historical context",
+    "explore technological advancements"
+  ],
+  "augmented_query": "secret airplanes AND technologically advanced airplanes AND Burbank, California AND Lockheed's Skunk Works AND (U-2 spy plane OR SR-71 Blackbird OR F-117 Nighthawk) AND Cold War",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "Secret and technologically advanced airplanes were produced in Burbank, California.",
+  "query_id": "106404",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "fever",
+  "node_classes": [
+    "Aircraft",
+    "Organization",
+    "Location",
+    "Historical Period",
+    "Technology"
+  ],
+  "query_nodes": [
+    "secret airplanes",
+    "technologically advanced airplanes",
+    "Burbank, California",
+    "Lockheed's Skunk Works"
+  ],
+  "nearest_neighbors": [
+    "U-2 spy plane",
+    "SR-71 Blackbird",
+    "F-117 Nighthawk",
+    "Cold War",
+    "Jet Engine",
+    "Stealth Technology"
+  ],
+  "cleaned_augmented_query": "secret airplanes technologically advanced burbank california lockheed skunk works u 2 spy plane sr 71 blackbird f 117 nighthawk cold war",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Burbank is a city in Los Angeles County in Southern California , United States , 12 mi northwest of downtown Los Angeles . The population at the 2010 census was 103,340 .   Billed as the `` Media Capital of the World '' and only a few miles northeast of Hollywood , numerous media and entertainment companies are headquartered or have significant production facilities in Burbank , including The Walt Disney Company , Warner Bros. . Entertainment , Nickelodeon Animation Studios , NBC , Cartoon Network Studios with the West Coast branch of Cartoon Network , and Insomniac Games . The city is also home to Bob Hope Airport . It was the location of Lockheed 's Skunk Works , which produced some of the most secret and technologically advanced airplanes , including the U-2 spy planes that uncovered the Soviet Union missile components in Cuba in October 1962 .   Burbank consists of two distinct areas : a downtown/foothill section , in the foothills of the Verdugo Mountains , and the flatland section . Burbank is the easternmost city in the San Fernando Valley . Burbank 's neighbor , Glendale , is the westernmost city in the San Gabriel Valley . The city was referred to as `` Beautiful Downtown Burbank '' on Laugh-In and The Tonight Show Starring Johnny Carson . The city was named after David Burbank , a New Hampshire-born dentist and entrepreneur who established a sheep ranch there in 1867 .\n\n### Text snippet from document at k=2\n: Burbank Western Channel ( also known as Burbank Western Wash ) is a 6.3 mi tributary of the Los Angeles River in the eastern San Fernando Valley of Los Angeles County , California .   The stream begins at the confluence of Hansen Heights Channel and La Tuna Canyon Lateral in Sun Valley . It runs adjacent to Interstate 5 for most of its length and is entirely encased in a concrete flood control channel . The stream travels southeast through downtown Burbank , the Riverside Rancho area of Glendale , ultimately joining the Los Angeles River by the edge of the Los Angeles Equestrian Center .   In 1991 , the city of Burbank was sued by the EPA for allowing companies to exceed discharge limits into the channel . Leading pollutants in the stream include algae , ammonia , cadmium , odors , unnatural scum/foam , and trash .   Under the American Recovery and Reinvestment Act of 2009 , the U.S. Army Corps of Engineers has planned to allocate $ 700,000 to repair the channel wall which is `` currently in danger of failing . ''   In October 2009 , Burbank reached an agreement with the state on the 12 mile San Fernando Bikeway , a new bicycle path along San Fernando Boulevard from Sylmar to Burbank . This would include a portion next to the channel that connects to the Downtown Burbank Metrolink Station .\n\n### Text snippet from document at k=10\n: `` Paper Airplane '' is the twentieth episode of the ninth season of the American comedy television series The Office . It originally aired on NBC on April 25 , 2013 . The episode features a guest appearance from Roseanne Barr as Andy 's agent Carla Fern . It was also the final half-hour episode of the series , being the fourth-to-last episode aired .   The series -- presented as if it were a real documentary -- depicts the everyday lives of office employees in the Scranton , Pennsylvania , branch of the fictional Dunder Mifflin Paper Company . In the episode , the office staff compete against each other in a paper airplane contest . Meanwhile , Andy Bernard ( Ed Helms ) prepares for a potential acting job , and Jim ( John Krasinski ) and Pam Halpert ( Jenna Fischer ) utilize new skills that they learned in couples ' counseling .   The episode received mostly mixed reviews from critics ; some felt that the episode was humorous , whereas others were critical of the main plot involving Pam and Jim . The episode was viewed by 3.25 million viewers and received a 1.7 / 5 rating among adults between the ages of 18 and 49 , giving it the lowest viewership rating of any episode of The Office . `` Paper Airplane '' ranked fourth in its timeslot , but was nevertheless the highest-rated NBC series of the night .\n",
+  "thought_process": "Looking at the original query, \"Secret and technologically advanced airplanes were produced in Burbank, California,\" this makes me think of the Lockheed Skunk Works and the various clandestine projects they've been involved in. Though the user might actually be trying to find information on a specific type of aircraft or the historical context of these productions, it's not entirely clear. The mention of \"secret\" and \"technologically advanced\" implies a focus on military or espionage-related aircraft, which narrows down the potential topics.\n\nAnalyzing the results of the original query, we see that Lockheed's Skunk Works and the U-2 spy plane are already identified, which aligns with our initial thoughts. However, the results also touch upon the geographical and industrial aspects of Burbank, California, which, while relevant, don't directly address the technological or secrecy aspects of the aircraft in question. This indicates a need to refine the search terms to better capture the essence of what the user is looking for.\n\nTo approach this systematically, I'll use the Query Expansion via Conceptual Graph Traversal technique. This involves constructing a conceptual graph based on the original query and then traversing it to find relevant expansion terms. The core concepts here are \"secret airplanes,\" \"technologically advanced,\" and \"Burbank, California.\" The search intent seems to be informational, aiming to uncover specific details about aircraft produced under these conditions.\n\nStarting with query analysis, we identify the core concepts and entities: secret airplanes, technological advancements, and the location of Burbank, California. The implicit assumption is that the user is interested in military or highly advanced civilian aircraft. \n\nMoving to graph construction, we have core nodes for \"secret airplanes,\" \"Burbank, California,\" and \"technologically advanced.\" First-order connections include Lockheed's Skunk Works, known for producing such aircraft. Second-order connections might involve specific models like the U-2, SR-71, or F-117, and the historical context, such as the Cold War era. Domain contexts include aerospace, military, and espionage.\n\nFor expansion path selection, promising directions include synonymous terms (e.g., \"classified aircraft\"), hierarchical terms (broader: \"military aircraft,\" narrower: \"stealth planes\"), compositional terms (components or attributes like \"jet engine\" or \"stealth technology\"), contextual terms (settings like \"Cold War\"), and domain-specific terminology (\"skunk works\").\n\nExtracting and filtering terms, we consider relevance, distinctiveness, specificity, and searchability. Terms like \"Lockheed,\" \"Skunk Works,\" \"U-2 spy plane,\" \"SR-71 Blackbird,\" and \"F-117 Nighthawk\" are highly relevant and distinctive. The historical context, such as \"Cold War,\" adds specificity and is searchable.\n\nThrough this process, insights emerge from both the structured approach and natural thought patterns. Applying the conceptual graph traversal technique leads to the discovery of specific aircraft models and historical contexts that are directly related to the original query. The technique also prompts considerations of technological advancements and the secrecy surrounding these aircraft, which are crucial for understanding the user's search intent.\n\nSynthesizing these findings, the expanded query should include terms that capture the essence of secret, technologically advanced airplanes produced in Burbank, California, while also considering the historical and technological contexts. The final expanded query, \"secret airplanes technologically advanced burbank california lockheed skunk works u 2 spy plane sr 71 blackbird f 117 nighthawk cold war,\" reflects a balance between the structured technique and natural thought processes, aiming to provide more precise and relevant search results.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

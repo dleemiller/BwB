@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query delves into the ethical and practical complexities of animal testing.  Existing materials present arguments from both sides but lack in-depth scientific analysis and exploration of alternatives.  A conceptual map can illuminate the multifaceted nature of this debate by identifying key concepts, stakeholders, and potential solutions.",
+  "augmented_query": "animal testing alternatives, ethical framework for animal research, impact of animal testing on scientific progress, regulatory landscape of animal experimentation, public opinion on animal use in research",
+  "ndcg": {
+    "NDCG@10": 0.66183,
+    "NDCG@100": 0.70798,
+    "NDCG@1000": 0.79277,
+    "NDCG@10000": 0.79277
+  },
+  "map": {
+    "MAP@10": 0.18175,
+    "MAP@100": 0.38868,
+    "MAP@1000": 0.42777,
+    "MAP@10000": 0.42777
+  },
+  "recall": {
+    "Recall@10": 0.22222,
+    "Recall@100": 0.81481,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.6,
+    "P@100": 0.22,
+    "P@1000": 0.027,
+    "P@10000": 0.0027
+  },
+  "delta": 0.10929,
+  "instruction": "cartography",
+  "query": "Should animals be used for scientific or commercial testing?",
+  "query_id": "15",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "touche2020",
+  "central_coordinates": [
+    "Animal Testing",
+    "Ethics",
+    "Science"
+  ],
+  "boundary_areas": [
+    "Animal Welfare",
+    "Research Methods",
+    "Legislation & Policy",
+    "Public Perception",
+    "Alternatives to Animal Testing"
+  ],
+  "key_landmarks": [
+    "3Rs (Replacement, Reduction, Refinement)",
+    "In vitro methods",
+    "Ethical Guidelines (e.g., IACUC)",
+    "Vivisection History",
+    "Scientific Discoveries Dependent on Animal Models"
+  ],
+  "detail_features": [
+    "Species-specific regulations",
+    "Pain management techniques",
+    "Informed consent for research animals",
+    "Animal rights activism",
+    "Economic impact of testing bans",
+    "Development of humanized models"
+  ],
+  "navigation_terms": [
+    "Animal Welfare",
+    "Ethical Considerations",
+    "Scientific Validity",
+    "Alternatives Research",
+    "Policy Implications",
+    "Public Engagement"
+  ],
+  "cleaned_augmented_query": "animal testing alternatives ethical framework animal research impact animal testing scientific progress regulatory landscape animal experimentation public opinion animal use research",
+  "final_delta": 0.10929,
+  "initial_results": "### Text snippet from document at k=1\n... However, the ten percent that does succeed are huge scientific discoveries. One huge discovery, for example, is Ketamine. Ketamine is also known as a brand name called Ketalar. This medication is used as anesthesia at the start of surgery and throughout surgery. Ketalar is a key medicine that allows surgeons to operate because it puts a person in a trance-like state, provides pain relief, sedates people, and creates short-term memory loss of the surgical experience (Wikipedia). When this drug was made it was tested on zebrafish. The scientists that tested this drug had tanks full of zebrafish; furthermore, within each tank, the water had different amount of this drug in it. If too much drug was in the water the fish \"mutated.\" ...\n\n### Text snippet from document at k=2\n... It just begs the question and assumes humans are intrinsically valuable. I argue that affirming such is absurd. Pro also appeals to the fact that animals kill each other, and would be brutal in our own shoes. My response is, so what? This is known as a \"tu torque fallacy\", and is irrelevant to this debate. Just because they would do it too doesn't make it right or just. Sheep will follow each other a cliff to their deaths, would it be right for us to do the same 'in their shoes'. Of course not! ...\n\n### Text snippet from document at k=10\n... Many of these chemicals are never even approved for humans. At the same time many scientist believe that in order to cure diseases like Alzheimer\"s a few animals should die if it is for a greater cause. \"Animals do not have the cognitive ability or moral judgment that humans do and because of this they have been treated differently than humans by nearly every culture throughout recorded history. But we could still achieve great things without animals being affected. Equally important, our bodies and animals bodies are different. Something that can be harmful to a rat might not be for humans. 94% of drugs that pass animal tests fail in human clinical trials. \"Pick any drug you\"ve heard of; it was probably tested on by rats. But there is significant room for improvement,\" (Ericson). Knowing that animals and humans are not perfectly alike humans should not put that many animals lives at risk. However many scientist believe that with a rats body being only 95% different then human that it is worth risking their life if that means getting closer to making it safer for humans by just adjusting a few things. ...\n",
+  "thought_process": "Looking at the query \"Should animals be used for scientific or commercial testing?\"... this makes me think of the ethical and practical complexities involved. The user might actually be trying to understand the balance between the need for scientific progress and the welfare of animals, but it's also possible they're looking for a more nuanced exploration of the alternatives to animal testing. Hmm, not sure yet...\n\nAnalyzing the results of the original query, I notice that there are strong arguments from both sides, but the discussion often lacks a deep scientific analysis and exploration of alternatives. The text snippets provided show a range of perspectives, from the success of animal testing in leading to significant scientific discoveries like Ketamine, to ethical arguments against animal testing, citing the intrinsic value of animals and the limitations of animal models in predicting human outcomes.\n\nI'm seeing several possibilities here... Let me approach this using the Query Expansion via Conceptual Territory Mapping technique, which involves creating a detailed map of the conceptual territory surrounding the topic. This should help because it allows us to systematically explore the central coordinates, boundaries, landmarks, and detailed features of the query, ultimately leading to a more comprehensive understanding and identification of key terms for query expansion.\n\nStarting with the central coordinates, I identify \"Animal Testing\" as the core concept, with ethics and science as the primary cardinal directions. The scale for exploration seems to be quite broad, encompassing both practical and theoretical aspects. \n\nAs I explore the boundaries, I notice neighboring domains such as animal welfare, research methods, legislation, public perception, and alternatives to animal testing. These areas often overlap, particularly in discussions about the ethical framework for animal research and the impact of animal testing on scientific progress.\n\nPlotting major landmarks, I find key concepts like the 3Rs (Replacement, Reduction, Refinement), in vitro methods, ethical guidelines, and the history of vivisection. These landmarks are connected by \"routes\" such as methodologies for alternative research and processes for ethical review.\n\nFilling in the detailed features, I note specialized terms and concepts like species-specific regulations, pain management techniques, and the economic impact of testing bans. Historical sites include the development of ethical guidelines for animal research, while emerging developments are seen in the advancement of humanized models and in vitro testing.\n\nCreating a cartographic legend, I classify the most important terms by region and significance. Terms related to animal welfare, ethical considerations, scientific validity, alternatives research, policy implications, and public engagement stand out as crucial for navigating this knowledge landscape.\n\nThrough this process of applying Conceptual Territory Mapping and exploring related threads, I believe the terms that would be most effective for a BM25 index are indeed \"animal testing alternatives,\" \"ethical framework for animal research,\" \"impact of animal testing on scientific progress,\" \"regulatory landscape of animal experimentation,\" and \"public opinion on animal use in research.\" These terms capture both the explicit and implicit aspects of what the user is seeking, reflecting a balanced consideration of ethical, scientific, and practical perspectives.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

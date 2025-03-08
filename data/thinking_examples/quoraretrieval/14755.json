@@ -1,0 +1,63 @@
+{
+  "reasoning": "The query seeks information about the frequency of masturbation, likely driven by curiosity or concerns about its health implications. The current results indicate a lack of definitive answers and highlight the need for authoritative sources on sexual health.",
+  "query_goals": [
+    "understand appropriate masturbation frequency",
+    "identify potential health impacts of masturbation frequency",
+    "determine if there are cultural norms around masturbation frequency"
+  ],
+  "augmented_query": "how often is it healthy to masturbate and what are the potential effects on well-being",
+  "ndcg": {
+    "NDCG@10": 0.91972,
+    "NDCG@100": 0.91972,
+    "NDCG@1000": 0.91972,
+    "NDCG@10000": 0.91972
+  },
+  "map": {
+    "MAP@10": 0.83333,
+    "MAP@100": 0.83333,
+    "MAP@1000": 0.83333,
+    "MAP@10000": 0.83333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "How often is it good to masturbate?",
+  "query_id": "14755",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "quoraretrieval",
+  "node_classes": [
+    "health",
+    "sexuality",
+    "behavior",
+    "frequency",
+    "well-being"
+  ],
+  "query_nodes": [
+    "masturbation",
+    "frequency"
+  ],
+  "nearest_neighbors": [
+    "sexual health",
+    "wellness",
+    "body image",
+    "self-care",
+    "relationships"
+  ],
+  "cleaned_augmented_query": "often healthy masturbate potential effects well",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: How often should I masturbate?\n\n### Text snippet from document at k=2\n: How often should you masturbate?\n\n### Text snippet from document at k=10\n: Why does masturbating not feel good for me?\n",
+  "thought_process": "As I delve into the query \"How often is it good to masturbate?\", my initial impression is that this is a sensitive and personal topic, likely driven by curiosity or concerns about health implications. The existing reasoning highlights a lack of definitive answers and the need for authoritative sources on sexual health. My first association is to think about the various factors that could influence the frequency of masturbation, such as age, health status, and cultural background.\n\nAnalyzing the results of the original query, I notice that the top snippets are straightforward and repeat the question, indicating a lack of clear guidance. The snippet at k=10, however, catches my attention, as it introduces a related but distinct concern about the subjective experience of masturbation. This makes me think that the query could be expanded to address not just the frequency but also the quality and potential effects of masturbation on well-being.\n\nTo approach this systematically, I'll use the Query Expansion via Conceptual Graph Traversal technique. First, I identify core concepts: \"masturbation,\" \"frequency,\" \"health,\" and \"well-being.\" The search intent is informational, and there's an implicit assumption that the user is seeking guidance from a health perspective.\n\nConstructing the conceptual graph, I start with core nodes for \"masturbation\" and \"health.\" First-order connections include \"frequency,\" \"sexual health,\" and \"well-being.\" Second-order connections bring in related concepts like \"body image,\" \"self-care,\" and \"relationships.\" Domain contexts include \"sexual health education\" and \"psychology.\"\n\nFor expansion path selection, I choose to explore synonymous terms (e.g., \"self-pleasure\"), hierarchical terms (e.g., \"sexual activity\"), compositional terms (e.g., \"physical health benefits\"), contextual terms (e.g., \"during adolescence\"), and domain-specific terminology (e.g., \"autoeroticism\").\n\nAs I extract and filter terms, I consider relevance, distinctiveness, specificity, and searchability. This process leads me to high-value terms like \"self-pleasure,\" \"sexual wellness,\" \"libido,\" \"erectile function,\" and \"mental health benefits.\" I also consider terms related to different life stages, such as \"teenage masturbation\" or \"masturbation in older adults,\" to capture a broader range of experiences.\n\nThrough this structured approach, complemented by my intuitive understanding of the topic, I identify key themes that can guide the expansion of the query. The original intent was to understand the frequency of masturbation, but it's clear that the user's concern extends to how masturbation affects overall well-being and health. By incorporating terms that address these aspects, we can create a more comprehensive and informative search query.\n\nSynthesizing my findings, I believe the expanded query should include terms that reflect the complexities of human sexuality and health. The final expanded terms should maintain the original search intent while providing valuable alternative pathways for retrieval. This process has shown me that even in sensitive topics, a systematic approach combined with natural cognition can lead to a more nuanced understanding of the user's needs.\n\nThe key insights here are the connections between masturbation, sexual health, and overall well-being, along with the recognition of the importance of considering different contexts and life stages. By applying the Query Expansion via Conceptual Graph Traversal technique and allowing for natural thought patterns to influence the process, I've been able to suggest a more informed and detailed approach to addressing the user's query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

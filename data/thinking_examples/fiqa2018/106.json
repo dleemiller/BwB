@@ -1,0 +1,77 @@
+{
+  "reasoning": "The query seeks practical advice on pricing strategies for small businesses. Existing results offer general guidance but lack depth in terms of actionable tactics and industry-specific considerations.",
+  "augmented_query": "small business pricing strategies for [industry] / small business pricing models / how to price competitively in [industry]",
+  "ndcg": {
+    "NDCG@10": 0.5,
+    "NDCG@100": 0.5,
+    "NDCG@1000": 0.5,
+    "NDCG@10000": 0.5
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.33333,
+    "MAP@1000": 0.33333,
+    "MAP@10000": 0.33333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.27576,
+  "instruction": "community",
+  "query": "What approaches are there for pricing a small business?",
+  "query_id": "106",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "question_variations": [
+    "How do I figure out the right price for my small business?",
+    "What are some pricing models that work well for startups?",
+    "What factors should I consider when setting prices for my products/services?",
+    "Is there a formula for pricing small businesses?",
+    "How can I price competitively while still making a profit?"
+  ],
+  "underlying_motivations": [
+    "Need for validation and reassurance regarding pricing decisions",
+    "Desire for practical guidance and actionable strategies",
+    "Seeking to understand industry-specific pricing norms",
+    "Aiming to find a balance between profitability and competitiveness"
+  ],
+  "valuable_responses": [
+    "Real-life examples of successful pricing strategies for similar businesses",
+    "Step-by-step guides on calculating costs, determining profit margins, and setting prices",
+    "Discussion of different pricing models (value-based, cost-plus, etc.)",
+    "Insights into how to adjust prices based on market demand and competition",
+    "Expert opinions from experienced entrepreneurs or business consultants"
+  ],
+  "interaction_patterns": [
+    "Follow-up questions about specific industries or product types",
+    "Debate over the pros and cons of different pricing models",
+    "Requests for clarification on pricing terminology or calculations",
+    "Questions about marketing strategies to support pricing decisions",
+    "Sharing of personal anecdotes about pricing challenges and successes"
+  ],
+  "qa_terminology": [
+    "bootstrapping",
+    "startup costs",
+    "profit margin",
+    "market research",
+    "competitive advantage",
+    "value proposition",
+    "customer lifetime value",
+    "pricing psychology"
+  ],
+  "cleaned_augmented_query": "small business pricing strategies industry small business pricing models price competitively industry",
+  "final_delta": 0.77576,
+  "initial_results": "### Text snippet from document at k=1\n: Probably means cutting the travel short. A small business owner employing specialist staff needs to identify and plan for this risk.   The plan might be to personally cover for the staff until a replacement is found.   Ideally in this situation the business will be able to support the salary of two staff in the role, even if one is part time or an apprentice/trainee. This is the approach our business takes with key staff.\n\n### Text snippet from document at k=2\n: There are many ways to value a business. Here is a simple method to get a ball park number on most businesses. This business is made of two parts. For the real estate: For the business:  I would consider this type of small business riskier than the stock market and so you should expect a higher return. Maybe 15 or 20%? If the rental business makes $50k profit (not revenue) and that is 20% return of your investment, the business is worth $250k. If the business makes no money or if they only make money because they don't take a salary then this is a hobby and not a business. There's no business to buy here and you are just bidding on the real estate to do with what you please. The assets worth $600k and the business worth $250k would be added together for a fair sale price of $850k. Adjust for your actual numbers and you should be able to get a ball park of what you think the business is worth. If you do the math and it works out that you'll make 1-3% on your business, compare that to investing in other places. If it works out that you'll make 40% on your money that's pretty awesome too.\n\n### Text snippet from document at k=10\n: Generally speaking no person or program is really going to be able to help you lower your current tax burden, most tax decisions are done well before you reach the tax time. You either qualify for the deduction/credit or your don't. Where a good accountant will really be able to help you out is in planning that will limit your future tax burden. Particularly if you run a small business or are very wealthy you will probably want to consider using an accountant. I would always avoid the large scale tax prep places like HR Block they provide the same or lower quality service for a higher price than the software. I run a small business and do my own taxes using turbo tax, but my business isn't overly complex Sole prop, no employees, couple 1099's simple expenses (nothing to amortize) etc.\n",
+  "thought_process": "Looking at the original query \"What approaches are there for pricing a small business?\" this makes me think of the complexities involved in determining the right price for a product or service. The user might actually be trying to figure out how to balance profitability with competitiveness, but they might not know where to start or what factors to consider. \n\nThe initial results provide some general guidance on business valuation and risk management, but they lack depth in terms of actionable pricing strategies for small businesses. For instance, the text snippet from document at k=1 discusses the importance of planning for staff risks, which, while relevant to business operations, doesn't directly address pricing. The snippet from k=2 offers a method for valuing a business, which touches on the concept of return on investment but doesn't delve into pricing models or competitive pricing. The snippet from k=10 talks about tax planning and the role of accountants, which is somewhat tangential to the pricing query.\n\nTo expand this query effectively, I'll use the Query Expansion via Community Q&A Patterns technique. This involves reframing the original query into various question types that might be asked in a community setting, identifying the hidden motivations behind the query, pinpointing valuable response patterns, mapping community interactions, and extracting relevant vocabulary.\n\nFirst, let's reframe the query:\n- Personal experience: \"What is it like to price a product for a small business?\"\n- Advice-seeking: \"How should I determine the pricing for my small business?\"\n- Opinion-based: \"What do people think is the most effective pricing strategy for small businesses?\"\n- Comparison: \"Which pricing model is better for a small business, cost-plus or value-based?\"\n- Story-soliciting: \"Has anyone successfully implemented a dynamic pricing strategy for their small business?\"\n\nThe user might be seeking validation or reassurance about their pricing decisions, looking for personal decision support, or wanting insider knowledge on successful pricing strategies. They might also be interested in diverse perspectives or emotional support from others who have faced similar challenges.\n\nValuable responses would include first-person narratives, expert opinions, step-by-step practical advice, contrarian viewpoints, and nuanced conditional answers. For example, an expert might explain how to conduct market research to determine competitive prices, while someone with personal experience could share how they adjusted their pricing strategy based on customer feedback.\n\nCommunity interactions might involve follow-up questions about specific industries, debates over the pros and cons of different pricing models, requests for clarification on pricing terminology, and questions about marketing strategies to support pricing decisions. People might also share personal anecdotes about their pricing challenges and successes.\n\nExtracting terminology from these interactions could yield terms like \"pricing strategy,\" \"competitive pricing,\" \"value-based pricing,\" \"cost-plus pricing,\" \"market research,\" \"customer lifetime value,\" and \"pricing psychology.\" These terms reflect how real people discuss pricing strategies in conversational contexts.\n\nBy applying the Query Expansion via Community Q&A Patterns technique and considering the natural thought processes and interactions that occur in community discussions, we can expand the original query to better capture the user's needs and provide more relevant results. For instance, the expanded query might look like \"small business pricing strategies for [industry] / small business pricing models / how to price competitively in [industry],\" which incorporates terms and concepts that are likely to be relevant to the user's search.\n\nThrough this process, insights emerge from both the structured approach of the technique and the intuitive connections made through considering community interactions and natural language patterns. The final expanded query terms\u2014such as \"small business pricing strategies,\" \"pricing models,\" and \"competitive pricing\"\u2014logically follow from both the technique's steps and the natural insights gained from exploring how people discuss pricing in community Q&A contexts.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

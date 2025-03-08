@@ -1,0 +1,78 @@
+{
+  "reasoning": "The query asks about the advantage of a non-deductible IRA over a taxable account. To answer this, I'll use metaphorical thinking to explore different perspectives on investments and tax benefits. This approach will generate terms that can be added to enhance the original query, hopefully including more recent discussion on the topic or from different perspectives.",
+  "augmented_query": "Is there an advantage to a traditional but non-deductible IRA over a taxable account? Tax drag. Tax-loss harvesting. Basis. Capital gains. Qualified dividends. Asset location. Backdoor Roth. Recent discussions. Forum. Financial Planning. Tax strategy.",
+  "ndcg": {
+    "NDCG@10": 0.29608,
+    "NDCG@100": 0.29608,
+    "NDCG@1000": 0.40861,
+    "NDCG@10000": 0.40861
+  },
+  "map": {
+    "MAP@10": 0.16667,
+    "MAP@100": 0.16667,
+    "MAP@1000": 0.17205,
+    "MAP@10000": 0.17205
+  },
+  "recall": {
+    "Recall@10": 0.33333,
+    "Recall@100": 0.33333,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.003,
+    "P@10000": 0.0003
+  },
+  "delta": 0.0707,
+  "instruction": "metaphor",
+  "query": "Is there an advantage to a traditional but non-deductable IRA over a taxable account? [duplicate]",
+  "query_id": "10447",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "generated_metaphors": [
+    "A non-deductible IRA is like a toll bridge: you might pay a small price now (taxes later) to get to a valuable destination (tax-advantaged growth).",
+    "A taxable account is like a garden: you have complete control and can harvest whenever you want, but the government gets a share of your produce each year.",
+    "Investing in a non-deductible IRA vs. a Taxable Account is similar to Choosing between a regular savings strategy or a long term timed deposit account in the sense that there is a trade-off between accessibility and long-term tax savings",
+    "A non-deductible IRA is like seeding a cloud: the process isn't immediately apparent but the intent is to create a bigger outcome, like tax-free growth after backdoor Roth conversion.",
+    "Taxable account as an open-door policy, giving immediate access to funds, whereas the non-deductible IRA is a contract that holds the funds until retirement, with unique tax implications based on eligibility."
+  ],
+  "domain_mappings": [
+    "Toll bridge (IRA): initial cost (basis), valuable destination (tax-advantaged growth). Garden (Taxable): shares of produce (tax liability each year).",
+    "Savings vs. Deposit: upfront deposit (initial contribution), accessibility (liquidity), and rewards(long-term tax savings).",
+    "Seeding clouds (IRA): outcome is initially unseen, but the intention is to create tax-free returns. Open door (taxable): readily available cash. ",
+    "Taxable account - open door: immediate access to your assets. Non-deductible IRA as contract: holds funds until retirement given the required eligibility.",
+    "The toll bridge is the investment, the toll collected represents taxes due at distribution, and the valuable destination is the tax-advantaged growth. This only works if you follow the correct rules converting it."
+  ],
+  "metaphorical_language": [
+    "Toll, bridge, destination, tax-advantaged",
+    "Garden, harvest, produce, share",
+    "Savings, Deposit, accessibility,liquidity and rewards",
+    "Seeding, outcome, returns",
+    "Open door, assets, contract,holds funds,retirement,eligibility,tax implications"
+  ],
+  "extended_metaphors": [
+    "The toll bridge is made of variable materials: the earlier years are more risky/ volatile but later years are made of sturdier and more predictable holdings.",
+    "Tend your garden well (diversify), protect it from pests (inflation/market downturns), and you will have a bountiful harvest (strong returns).",
+    "Backdoor Roth: transforming the toll bridge into a private road, eliminating future tolls.",
+    "Back-door Roth Conversion: you may need to work with an experience financial planner to avoid problems when seeding the cloud.",
+    "Taxable as a revolving door based on gains, IRA as a safety box until retirement."
+  ],
+  "cross_domain_terms": [
+    "Tax drag",
+    "Harvesting losses",
+    "Tax-loss harvesting",
+    "Basis",
+    "Capital gains",
+    "Qualified dividends",
+    "Asset location",
+    "Backdoor Roth"
+  ],
+  "cleaned_augmented_query": "advantage traditional non deductible ira taxable account tax drag tax loss harvesting basis capital gains qualified dividends asset location backdoor roth recent discussions forum financial planning tax strategy",
+  "final_delta": 0.07142,
+  "initial_results": "### Text snippet from document at k=1\n: if you have a work-sponsored retirement plan  A 401k plan counts as a work-sponsored retirement plan. If you are a highly compensated employee (this is $115,000 for 2012), even your 401k contributions are limited.  Given that, is there any difference at all between having a traditional IRA and a normal, taxable (non-retirement) investment account?  You should consider a Roth IRA if you are making too much for a traditional IRA. When you make even more, then you can't contribute to a Roth, but can only contribute post-tax money to a traditional IRA.  Use Form 8606 to keep track of non-deductable contributions over the years. Publication 590 is the official IRS explanation of what is deductable or not.\n\n### Text snippet from document at k=2\n: \"Summary: It's because you are effectively contributing more money in the second case, so you have more money at the end.  The effect of being covered by an employer retirement plan (in the case of a 401(k), that means either you or your employer contributed to it during the year) is that it prevents you from deducting Traditional IRA contributions unless your income is below a very low level (for Single filing status, it phases out at an MAGI of between $62k and $72k). Since you are unable to deduct the Traditional IRA contribution, but you entered that you are still making the full $5500 contribution every year, that means you are making a non-deductible contribution of $5500 every year instead of a deductible contribution. Nondeductible contributions are \"\"after-tax\"\", whereas deductible contributions are \"\"pre-tax\"\" (because your taxable income is reduced by the amount of the contribution, so you effectively don't pay income tax on the income you used to contribute). $1 of pre-tax money is not the same as $1 of after-tax money. If your marginal tax rate is 25%, then $1 of pre-tax money is equivalent to $0.75 of after-tax money. ...\n\n### Text snippet from document at k=10\n: Your math is correct. As you point out, because of the commutative property of multiplication, Roth and traditional IRAs offer the same terminal wealth if your tax rate is the same when you pull it out as when you put it in.  Roth does lock in your tax rate as of today as you point out, which is why it frequently does not maximize wealth (most of us have a higher tax bracket when we are saving than when we are withdrawing from savings). There are a few other potential considerations/advantages of a Roth: Roth and traditional IRAs have the same maximum contribution amount.  This means the effective amount you can contribute to a Roth is higher ($5,500 after tax instead of before).  If this constraint is binding for you and you don't expect your tax rate to change, Roth is better. Roth IRAs allow you to withdraw your contributed money (not the gains) at any time without any tax or penalty whatsoever.  This can be an advantage to some who would like to use it for something like a down payment instead of keeping it all the way to retirement.  In this sense the Roth is more flexible. ...\n",
+  "thought_process": "As I begin to explore the query \"Is there an advantage to a traditional but non-deductible IRA over a taxable account?\", I find myself thinking about the various financial instruments and their implications on tax savings and growth. The user seems to be looking for a comparison between a non-deductible IRA and a taxable account, which makes me consider the trade-offs between tax-advantaged growth and liquidity.\n\nMy initial impression is that a non-deductible IRA might offer some benefits in terms of tax-deferred growth, but the lack of deductibility might limit its appeal. On the other hand, a taxable account provides immediate access to funds but is subject to taxes on gains. I start to think about the user's potential goals and risk tolerance - are they prioritizing long-term growth or short-term liquidity?\n\nAs I analyze the results of the original query, I notice that the text snippets from documents at k=1 and k=2 discuss the limitations of traditional IRA contributions when an individual is covered by an employer-sponsored retirement plan. This makes me realize that the user's situation might be affected by their employment status and income level. I also see that the text snippet at k=10 mentions the commutative property of multiplication and how Roth and traditional IRAs offer the same terminal wealth if the tax rate remains constant. This sparks my interest in exploring the tax implications and potential benefits of each option.\n\nAt this point, I decide to approach the query expansion using the metaphorical thinking technique. I start by generating diverse metaphors for understanding the topic, such as comparing a non-deductible IRA to a toll bridge, a taxable account to a garden, and investing in a non-deductible IRA versus a taxable account to choosing between a regular savings strategy or a long-term timed deposit account. These metaphors help me map elements from the source domain to the target domain and identify key features of the topic.\n\nAs I apply the metaphorical thinking technique, I start to extract terminology from each metaphorical domain. I notice that terms like \"tax drag,\" \"tax-loss harvesting,\" \"basis,\" \"capital gains,\" and \"asset location\" provide valuable insights into the topic. I also consider the user's potential goals and risk tolerance, thinking about how these factors might influence their decision.\n\nOne potential false start I encounter is thinking that a non-deductible IRA is always less desirable than a taxable account. However, as I delve deeper into the metaphors and terminology, I realize that there are scenarios where a non-deductible IRA might be more beneficial, such as when the user expects to be in a lower tax bracket during retirement.\n\nI also have a moment of reconsideration when I think about the role of tax strategy in the user's decision. I realize that tax strategy is not just about minimizing taxes but also about optimizing growth and liquidity. This makes me think about the importance of considering multiple factors, including the user's income level, employment status, and risk tolerance.\n\nAs I continue to apply the metaphorical thinking technique, I start to notice interesting patterns and connections between the metaphors. For example, the idea of a \"toll bridge\" makes me think about the concept of \"tax-advantaged growth,\" while the \"garden\" metaphor reminds me of the importance of \"harvesting losses\" and \"tax-loss harvesting.\" These connections help me to identify potential terms that could be added to the original query to enhance its clarity and specificity.\n\nThrough this process, I begin to see insights emerging from both the structured technique and my natural thought patterns. I realize that the user's decision between a non-deductible IRA and a taxable account depends on a complex interplay of factors, including tax implications, growth potential, and liquidity needs. I start to think about how these factors might interact and influence the user's choice.\n\nAs I synthesize my thoughts, I believe that the terms \"tax drag,\" \"tax-loss harvesting,\" \"basis,\" \"capital gains,\" \"qualified dividends,\" \"asset location,\" and \"backdoor Roth\" would be most effective for a BM25 index. These terms capture both the explicit and implicit aspects of what the user is seeking, including the trade-offs between tax-advantaged growth and liquidity.\n\nIn conclusion, my thought process has been a dynamic interplay between structured technique and natural thought patterns. By applying the metaphorical thinking technique and considering the user's potential goals and risk tolerance, I have been able to identify potential terms that could enhance the original query and provide a more comprehensive understanding of the topic.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

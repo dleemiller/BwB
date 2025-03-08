@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query expresses a conspiracy theory, implying a desire to find evidence supporting the claim that cancer is a fabricated issue driven by financial motives.  The existing results fail to address this underlying intent.",
+  "query_goals": [
+    "Find evidence supporting the idea of cancer as a profitable industry",
+    "Identify organizations potentially profiting from cancer",
+    "Discover arguments used to promote the 'cancer as business' theory"
+  ],
+  "ineffective_terms": [
+    "disease",
+    "is"
+  ],
+  "breadth_expansion": [
+    "pharmaceutical companies",
+    "medical research funding",
+    "health insurance industry",
+    "profit margins in healthcare",
+    "alternative medicine",
+    "government regulation of healthcare"
+  ],
+  "depth_chain": [
+    "big pharma",
+    "drug pricing",
+    "clinical trials",
+    "cancer treatment costs",
+    "lobbying efforts",
+    "public perception of cancer"
+  ],
+  "augmented_query": "big pharma drug pricing clinical trials cancer treatment costs lobbying",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Is it true that cancer is not a disease its a business?",
+  "query_id": "177580",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "quoraretrieval",
+  "cleaned_augmented_query": "big pharma drug pricing clinical trials cancer treatment costs lobbying",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Is it true that cancer is not a disease but business?\n\n### Text snippet from document at k=2\n: How true is the statement that every business is a technology business?\n\n### Text snippet from document at k=10\n: Do you think obesity is a disease?\n",
+  "thought_process": "Looking at the original query, \"Is it true that cancer is not a disease its a business?\" this makes me think of the motivations behind such a statement. The user might actually be trying to find evidence supporting the claim that cancer is a fabricated issue driven by financial motives, rather than a legitimate health concern. However, the existing results fail to address this underlying intent, which suggests that we need to dig deeper and expand the query to capture the essence of what the user is looking for.\n\nAnalyzing the results of the original query, I notice that they don't provide any concrete evidence or substantial arguments to support the 'cancer as business' theory. The terms used, such as \"disease\" and \"is,\" are too broad and don't contribute much to the search. This tells me that we need to identify more specific and targeted terms that can help us find relevant information.\n\nTo expand the query, I'll use a structured approach based on the guidelines provided. I'll start by elucidating the primary objectives and gaps in the original query. The main goal is to find evidence supporting the idea that cancer is a profitable industry, identify organizations potentially profiting from cancer, and discover arguments used to promote the 'cancer as business' theory. The gaps in the original query are the lack of specific terms and the failure to address the underlying intent.\n\nNext, I'll identify ineffective terms that should be avoided. In this case, the terms \"disease\" and \"is\" are too broad and don't contribute much to the search. I'll also consider the text snippets from the initial results, which suggest that the user is looking for information on the business side of cancer, rather than its medical aspects.\n\nFor breadth expansion, I'll list candidate terms with increasingly distant concepts to the original query. These terms include \"pharmaceutical companies,\" \"medical research funding,\" \"health insurance industry,\" \"profit margins in healthcare,\" \"alternative medicine,\" and \"government regulation of healthcare.\" These terms can help us find information on the financial and business aspects of cancer.\n\nFor depth expansion, I'll choose one distant but important topic from the breadth expansion and go increasingly deeper in the related terms. Let's take \"pharmaceutical companies\" as an example. Related terms could include \"big pharma,\" \"drug pricing,\" \"clinical trials,\" \"cancer treatment costs,\" and \"lobbying efforts.\" These terms can help us find specific information on how pharmaceutical companies are involved in the cancer industry and how they might be profiting from it.\n\nAs I apply the expansion technique, I notice that the terms \"big pharma,\" \"drug pricing,\" \"clinical trials,\" \"cancer treatment costs,\" and \"lobbying\" are emerging as key concepts. These terms are not only relevant to the original query but also provide a more nuanced understanding of the business side of cancer. I'll use these terms to construct the augmented query, making sure to avoid any logical operators, duplicates, and ineffective words.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms \"big pharma,\" \"drug pricing,\" \"clinical trials,\" \"cancer treatment costs,\" and \"lobbying\" would be most effective for a BM25 index. They capture both the explicit and implicit aspects of what the user is seeking, providing a more targeted and relevant search query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

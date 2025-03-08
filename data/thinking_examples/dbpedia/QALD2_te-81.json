@@ -1,0 +1,62 @@
+{
+  "reasoning": "The original query is focused on identifying books by Jack Kerouac that were specifically published by Viking Press. The main strengths of existing results are directly relevant information about a specific book (\"Atop an Underwood: Early Stories and Other Writings\"). However, weaknesses include a lack of comprehensive listing or details beyond one example. To enhance the search query:\n\n1. **Clarify objectives** (Task 1): Focus on identifying all works by Kerouac published by Viking Press rather than isolated examples.\n2. **Identify ineffective terms** (Task 2): Avoid general terms that do not contribute to specifying the publisher's identity or limit results excessively, such as \"Beat Generation.\"\n3. **Expand breadth** (Task 3): Introduce more specific concepts related to publishing and literary works by Kerouac.\n4. **Deepen depth** (Task 4): Focus on a detailed aspect such as the types of publications under Viking Press or particular periods in Kerouac's career with this publisher.",
+  "query_goals": [
+    "Identify all books published by Viking Press",
+    "Ensure inclusion of titles specifically from Viking Press catalog",
+    "Exclude unrelated biographical or tangential content"
+  ],
+  "ineffective_terms": [
+    "Beat Generation",
+    "literary works in general"
+  ],
+  "breadth_expansion": [
+    "novels",
+    "anthologies",
+    "unpublished manuscripts",
+    "Viking Press publications",
+    "Kerouac's Viking collaborations"
+  ],
+  "depth_chain": [
+    "Viking Press catalog",
+    "mid-20th century American literature publishers",
+    "The Dharma Bums and its publication history",
+    "On the Road publication background"
+  ],
+  "augmented_query": "\"Jack Kerouac novels anthologies unpublished manuscripts Viking collaborations The Dharma Bums On the Road mid-century American literature publishers\"",
+  "ndcg": {
+    "NDCG@10": 0.67073,
+    "NDCG@100": 0.81707,
+    "NDCG@1000": 0.81707,
+    "NDCG@10000": 0.81707
+  },
+  "map": {
+    "MAP@10": 0.46181,
+    "MAP@100": 0.54123,
+    "MAP@1000": 0.54123,
+    "MAP@10000": 0.54123
+  },
+  "recall": {
+    "Recall@10": 0.625,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.5,
+    "P@100": 0.08,
+    "P@1000": 0.008,
+    "P@10000": 0.0008
+  },
+  "delta": 0.11816,
+  "instruction": "expand",
+  "query": "Which books by Kerouac were published by Viking Press?",
+  "query_id": "QALD2_te-81",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "dbpedia",
+  "cleaned_augmented_query": "jack kerouac novels anthologies unpublished manuscripts viking collaborations dharma bums road mid century american literature publishers",
+  "final_delta": 0.11816,
+  "initial_results": "### Text snippet from document at k=1\n: Atop an Underwood: Early Stories and Other Writings is an anthology of American Beat writer Jack Kerouac's early work, published by Viking Press in 1999. It includes writings from Kerouac's high school years, poetry, short stories, essays and other previously unpublished works. The book includes an introduction by its editor Paul Marion along with notes on the stories included throughout the book.\n\n### Text snippet from document at k=2\n: You Have Seen Their Faces is a book by photographer Margaret Bourke-White and novelist Erskine Caldwell. It was first published in 1937 by Viking Press, with a paperback version by Modern Age Books following quickly. Bourke-White and Caldwell married in 1939.\n\n### Text snippet from document at k=10\n: Dead Fingers Talk, first published in 1963, was the fifth novel published by Beat Generation author William S. Burroughs. The book was originally published by John Calder in association with Olympia Press.The book combines sections from Burroughs' earlier novels, Naked Lunch, The Soft Machine and The Ticket That Exploded, in an attempt to create a new narrative. It is sometimes referred to as a compilation, but this is technically incorrect.\n",
+  "thought_process": "As I begin to expand the query about books by Kerouac published by Viking Press, my initial impression is that we're looking for a very specific subset of Kerouac's works. The user might be interested in understanding the relationship between Kerouac and Viking Press or perhaps focusing on a particular period of Kerouac's career. However, the original query's results, such as the mention of \"Atop an Underwood: Early Stories and Other Writings,\" indicate a good starting point but lack comprehensiveness.\n\nAnalyzing the results of the original query, I notice strengths in providing direct information about specific books published by Viking Press, like \"Atop an Underwood.\" However, a significant weakness is the lack of a comprehensive list of Kerouac's works published by Viking Press. The results also indicate a potential for tangential information, such as the mention of other authors and their works with Viking Press, which, while interesting, do not directly address the query's objectives.\n\nTo systematically approach the expansion, I'll introduce the \"Varied Augmentation Techniques\" method, which involves applying synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. This technique should help in uncovering new, relevant documents without overlapping the original terms.\n\nStarting with Task 1, Goal Elucidation & Gaps, it's clear the primary objective is to identify all books by Kerouac published by Viking Press, ensuring a comprehensive listing beyond isolated examples. Task 2, Ineffective Term Identification, highlights the need to avoid broad terms like \"Beat Generation\" that do not contribute to specifying the publisher's identity or limit results excessively.\n\nMoving to Task 3, Breadth Expansion, I consider introducing terms related to publishing and literary works by Kerouac, such as \"novels,\" \"anthologies,\" \"unpublished manuscripts,\" and \"Viking collaborations.\" This expansion aims to capture a wider range of relevant documents without losing focus on the specific relationship between Kerouac and Viking Press.\n\nFor Task 4, Depth Expansion, focusing on a detailed aspect such as the types of publications under Viking Press or a particular period in Kerouac's career with this publisher seems promising. Delving deeper into topics like \"Viking Press catalog,\" \"mid-20th century American literature publishers,\" and specific publication histories of notable works like \"The Dharma Bums\" and \"On the Road\" could yield valuable insights and terms for the augmented query.\n\nAs I apply these tasks systematically, I find myself occasionally reconsidering the inclusion of certain terms or exploring tangential concepts that might offer unexpected insights. For instance, recognizing the importance of \"mid-century American literature publishers\" leads me to consider the broader literary context in which Kerouac and Viking Press operated, potentially uncovering related terms or authors that could inform the query.\n\nThe process of applying the \"Varied Augmentation Techniques\" and exploring related threads leads to several key insights. Firstly, the importance of specificity in the query terms to ensure relevance and comprehensiveness. Secondly, the value of considering the broader literary and historical context in which Kerouac's works were published. Finally, the need to balance structured technique with natural, intuitive connections to uncover terms that might not be immediately apparent through systematic expansion alone.\n\nThrough this process, I arrive at an augmented query that aims to capture both the explicit and implicit aspects of the user's search: \"jack kerouac novels anthologies unpublished manuscripts viking collaborations dharma bums road mid century american literature publishers.\" This query synthesizes the systematic application of the expansion technique with the natural insights and connections made during the thought process, aiming to provide a comprehensive and relevant set of search terms for identifying books by Kerouac published by Viking Press.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

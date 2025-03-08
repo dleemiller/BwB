@@ -1,0 +1,68 @@
+{
+  "reasoning": "The query asks a straightforward question about food safety. The core concepts are \"cooked Italian sausage\" and \"refrigerator\" implying a search for safe storage duration. The document types are food safety guidelines and cooking advice, so the goal is to find reliable recommendations from trusted sources.\nThe strengths and weaknesses analysis suggests expanding the terms from this specific query to related terms, such as general types of sausages to increase retrieval and clarifying the temperature to be used when talking of refrigerator.",
+  "query_goals": [
+    "Determine safe storage duration",
+    "Identify reputable sources for food safety guidelines",
+    "Clarify storage conditions (temperature of refrigerator)"
+  ],
+  "augmented_query": "\"how long can i keep cooked italian sausage in refrigerator OR refrigeration OR cooked sausage OR pork sausage at 40\u00b0F for food safety\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "graph",
+  "query": "how long can i keep cooked italian sausage in refrigerator",
+  "query_id": "242107",
+  "dataset": "msmarco",
+  "node_classes": [
+    "Food Product",
+    "Cooking State",
+    "Cuisine",
+    "Storage Method",
+    "Time Duration",
+    "Temperature"
+  ],
+  "query_nodes": [
+    "italian sausage",
+    "cooked",
+    "refrigerator"
+  ],
+  "nearest_neighbors": [
+    "cooked sausage",
+    "refrigeration",
+    "pork sausage",
+    "beef sausage",
+    "poultry sausage",
+    "storage time",
+    "food safety",
+    "40\u00b0F",
+    "0-4\u00b0C",
+    "shelf life"
+  ],
+  "cleaned_augmented_query": "long keep cooked italian sausage refrigerator refrigeration pork 40 f food safety",
+  "final_delta": 0.36907,
+  "initial_results": "### Text snippet from document at k=1\n: If you are wondering how long can you keep cooked sausage in the refrigerator, you've come to the right place. Cooked sausage can be kept in the refrigerator longer than raw sausage, so it is best to go ahead and cook it. According to the U.S. Department of Agriculture, fresh uncooked sausage can be kept in the refrigerator only one to two days although it can be kept in the freezer for one to two months. Once cooked, they recommend being able to keep it in the refrigerator for only three to four days (or two to three months in the freezer).\n\n### Text snippet from document at k=2\n: Other sources say that you can keep the fresh cooked sausage in the refrigerator up to seven days if kept at 40 degrees F (which is the normal setting in both restaurant and home refrigerators). Another says up to five days for cooked Italian sausage, lightly smoked sausage, or breakfast sausage.\n\n### Text snippet from document at k=10\n: here s a guide to help you know how long you can keep cuts of meat around according to the u s department of agriculture fresh uncooked sausage can be kept in the refrigerator only one to two days although it can be kept in the freezer for one to two months\n",
+  "thought_process": "As I delve into the query \"how long can i keep cooked italian sausage in refrigerator,\" my initial impression is that this is a straightforward question about food safety. The core concepts are clearly \"cooked Italian sausage\" and \"refrigerator,\" implying a search for the safe storage duration. However, I also consider that the user might be looking for general guidelines on storing cooked sausages, not just limited to Italian sausage. This breadth of potential inquiry suggests that expanding the query to include related types of sausages and specific storage conditions could yield more comprehensive results.\n\nAnalyzing the strengths and weaknesses of the search terms, I notice that while \"cooked Italian sausage\" and \"refrigerator\" are specific, they might not capture the full range of relevant information available. For instance, the query does not specify the temperature of the refrigerator, which is crucial for food safety guidelines. Expanding the terms to include general types of sausages (like \"cooked sausage\" or \"pork sausage\") and clarifying the storage temperature (such as \"at 40\u00b0F\") could enhance the retrieval of relevant documents.\n\nTo systematically approach this query expansion, I will use the technique of Query Expansion via Conceptual Graph Traversal. This involves constructing a conceptual graph with core nodes (direct entities/concepts from the query), first-order connections (direct properties, attributes, and relationships), second-order connections (related concepts one step removed), and domain contexts (specialized fields where this query has meaning).\n\nThe core concepts from the original query are \"cooked Italian sausage\" and \"refrigerator.\" The search intent is informational, aiming to find out how long the sausage can be safely stored. Implicit assumptions include the importance of storage conditions, such as temperature, and the relevance of food safety guidelines.\n\nBuilding the conceptual graph, I identify first-order connections like the type of sausage (Italian, pork, beef), the state of the sausage (cooked), and storage methods (refrigeration). Second-order connections might include related concepts like \"food safety,\" \"storage time,\" and \"temperature control.\" The domain context is clearly food safety and storage.\n\nFor expansion path selection, I consider synonymous terms (e.g., \"refrigeration\" instead of \"refrigerator\"), hierarchical terms (broader concepts like \"cooked sausage\" or narrower ones like \"lightly smoked sausage\"), compositional terms (attributes like \"cooked\" or \"Italian\"), contextual terms (settings like \"home refrigerator\" or \"restaurant\"), and domain-specific terminology (terms used in food safety guidelines like \"shelf life\").\n\nExtracting and filtering terms, I look for relevance, distinctiveness, specificity, and searchability. Terms like \"cooked sausage,\" \"pork sausage,\" \"40\u00b0F,\" \"food safety,\" and \"refrigeration\" emerge as high-value expansion terms. They are relevant to the original query, provide distinct pathways for retrieval, are specific enough to yield precise results, and are likely to appear in relevant documents.\n\nThrough this process, insights emerge from both the structured approach of conceptual graph traversal and natural thought patterns. For instance, considering the temperature (\"40\u00b0F\") as a critical factor for safe storage leads to a more precise query. Similarly, recognizing the importance of food safety guidelines and the variability in storage durations based on the type of sausage (as seen in the initial results) refines the search terms.\n\nIn synthesizing this information, I conclude that the expanded query should include terms that capture the essence of the original query while providing a broader and more specific set of search terms. The final expanded query, \"how long can i keep cooked italian sausage in refrigerator OR refrigeration OR cooked sausage OR pork sausage at 40\u00b0F for food safety,\" reflects this synthesis. It maintains the original search intent while incorporating valuable alternative pathways for retrieval, enhancing the likelihood of finding relevant and reliable information on the safe storage duration of cooked Italian sausage.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

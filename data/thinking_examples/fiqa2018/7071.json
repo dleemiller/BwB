@@ -1,0 +1,95 @@
+{
+  "reasoning": "The query is about the optimal strategy (sell immediately or hold) for shares acquired through an Employee Stock Purchase Plan (ESPP). The goal is comprehensive financial guidance, going beyond anecdotal advice found in forum posts. I will consider financial, tax, and risk management aspects, viewing this decision from multiple angles: a new employee, a seasoned investor, a tax planner, etc. I will then create headlines that reflect different strategies and concerns, extract useful terms, and use all of this to augment the original query.",
+  "query_goals": [
+    "Determine the optimal holding period for ESPP shares to maximize returns while minimizing risk.",
+    "Understand the tax implications of selling ESPP shares immediately versus holding them long-term.",
+    "Assess individual risk tolerance and financial goals to determine the most suitable ESPP strategy.",
+    "Evaluate the company's financial health and future prospects to inform the decision of whether or not to hold the ESPP shares.",
+    "Compare ESPP strategies with alternative investment options to make informed financial decisions."
+  ],
+  "augmented_query": "ESPP strategy - Sell immediately or hold? tax implications, risk tolerance, portfolio diversification, qualified disposition, disqualifying disposition, holding period, company stock performance.",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.78418,
+    "NDCG@1000": 0.78418,
+    "NDCG@10000": 0.78418
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.59091,
+    "MAP@1000": 0.59091,
+    "MAP@10000": 0.59091
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.48525,
+  "instruction": "headline",
+  "query": "ESPP strategy - Sell right away or hold?",
+  "query_id": "7071",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "important_events": [
+    "Grant date of ESPP shares.",
+    "Purchase date of ESPP shares.",
+    "Date of sale of ESPP shares (if sold).",
+    "Company performance updates (quarterly/annual reports).",
+    "Changes in tax laws related to ESPPs.",
+    "Vesting schedule of ESPP shares"
+  ],
+  "questions": [
+    "What are the specific terms of the ESPP, including the discount, purchase frequency, and look-back period?",
+    "What is the individual's marginal tax rate and how will selling ESPP shares affect their overall tax liability?",
+    "What are the potential short-term and long-term capital gains tax implications?",
+    "What is individual's risk tolerance and how does it align with the volatility of the company's stock?",
+    "What are their long-term financial goals and how do ESPP shares fit into their overall investment portfolio?",
+    "What are the alternative investment options available and how do they compare to holding ESPP shares?"
+  ],
+  "headlines": [
+    "ESPP Strategy Showdown: Sell Immediately vs. Hold for Long-Term Gains",
+    "Tax Implications of ESPP Sales: Minimizing Your Liabilities",
+    "Risk Tolerance and ESPPs: Finding the Right Balance for Your Portfolio",
+    "Company Stock Performance: A Key Factor in Your ESPP Decision",
+    "ESPPs vs. Other Investments: Diversifying Your Portfolio",
+    "ESPPs Demystified: A Beginner's Guide to Employee Stock Purchase Plans",
+    "Beyond the Discount: Maximizing ESPP Returns with Strategic Planning",
+    "ESPP Cliff: Financial Planning After Your Stock Grant",
+    "Navigating the Look-Back Period: Smart ESPP Purchase Strategies"
+  ],
+  "extracted_terms": [
+    "ESPP",
+    "Employee Stock Purchase Plan",
+    "sell immediately",
+    "hold long-term",
+    "tax implications",
+    "marginal tax rate",
+    "capital gains tax",
+    "risk tolerance",
+    "portfolio diversification",
+    "company stock performance",
+    "look-back period",
+    "grant date",
+    "purchase date",
+    "discounted stock",
+    "qualified disposition",
+    "disqualifying disposition",
+    "short-term capital gains",
+    "long-term capital gains",
+    "holding period"
+  ],
+  "cleaned_augmented_query": "espp strategy sell immediately hold tax implications risk tolerance portfolio diversification qualified disposition disqualifying holding period company stock performance",
+  "final_delta": 0.48525,
+  "initial_results": "### Text snippet from document at k=1\n: Other than the guaranteed 5% bonus (assuming you sell it right away), no benefits. Keep in mind that the price from which the discount is calculated is not necessarily the market price at the date of the ESPP purchase, so the actual discount may be more than 5% (depending on the volatility of the stock - much more).\n\n### Text snippet from document at k=2\n: I think people in general tend to unnecessarily over-complicate this issue.  Here's what I think you should do in any situation like this: First and foremost, put all tax considerations aside and decide whether it makes sense to sell the stock now or hold on to it for the long term based on its merits as an investment.  Tax considerations have absolutely nothing to do with whether the stock is a good investment.  If you consider all non-tax factors and decide to hold on to it for the long term, then you can use the tax considerations as a very minor input to how long you should hold it - in other words, don't set your time horizon to 17.5 months if waiting another 2 weeks gives you better tax treatment. You're going to pay taxes on your gains no matter what.  The only difference is whether you pay capital gains tax or income tax.  Granted, the income tax rate is higher, but wouldn't it suck if you pay a LOT less tax only because you have a LOT less value in your stock? So to answer your question - I would say, absolutely not, tax consequences do not make it worthwhile to hold on to your ESPP shares.  If you decide to hold on to your ESPP for other reasons (and they better be good ones to put that much free profit at risk), only then should you look at the tax consequences to help fine-tune your strategy.\n\n### Text snippet from document at k=10\n: \"The best strategy for RSU's, specifically, is to sell them as they vest. Usually, vesting is not all in one day, but rather spread over a period of time, which assures that you won't sell in one extremely unfortunate day when the stock dipped. For regular investments, there are two strategies I personally would follow: Sell when you need. If you need to cash out - cash out. Rebalance - if you need to rebalance your portfolio (i.e.: not cash out, but reallocate investments or move investment from one company to another) - do it periodically on schedule. For example, every 13 months (in the US, where the long term cap. gains tax rates kick in after 1 year of holding) - rebalance. You wouldn't care about specific price drops on that day, because they also affect the new investments. Speculative strategies trying to \"\"sell high buy low\"\" usually bring to the opposite results: you end up selling low and buying high. But if you want to try and do that - you'll have to get way more technical than just \"\"dollar cost averaging\"\" or similar strategies. Most people don't have neither time nor the knowledge for that, and even those who do rarely can beat the market (and never can, in the long run).\"\n",
+  "thought_process": "As I delve into the query \"ESPP strategy - Sell right away or hold?\", I find myself pondering the intricacies of financial decision-making. The user is seeking guidance on the optimal approach to handling shares acquired through an Employee Stock Purchase Plan (ESPP), and it's clear that this decision involves a delicate balance of short-term gains, long-term investment strategies, and tax implications.\n\nMy initial impression is that the user might be overwhelmed by the plethora of advice available online, much of which may be anecdotal or biased towards specific investment strategies. To provide comprehensive guidance, I need to consider the query from multiple angles: the financial aspects, tax implications, risk management, and individual goals.\n\nUpon analyzing the existing reasoning provided, I notice that the query has been augmented with terms such as \"tax implications,\" \"risk tolerance,\" \"portfolio diversification,\" and \"holding period.\" These terms suggest a deeper exploration of the financial and investment aspects of ESPPs.\n\nUsing the journalistic investigation technique for query expansion, I start by assessing the query's underlying needs. The user is seeking practical advice on whether to sell ESPP shares immediately or hold them long-term, considering factors like tax implications, risk tolerance, and portfolio diversification.\n\nI then identify real-world contexts where this query is relevant, including professional settings, educational environments, and personal financial planning. This helps me understand the diverse scenarios in which individuals might encounter ESPPs and the various factors that influence their decisions.\n\nNext, I investigate authoritative sources and experts in the field of finance and investment. I come across terms like \"qualified disposition,\" \"disqualifying disposition,\" and \"look-back period,\" which are crucial in understanding the tax implications of ESPPs. I also explore the concepts of capital gains tax, risk tolerance, and portfolio diversification, recognizing their significance in informing the user's decision.\n\nThe headlines created during this process reveal different aspects of the query, from beginner-oriented explanations to expert-level analyses. For instance, \"ESPP Strategy Showdown: Sell Immediately vs. Hold for Long-Term Gains\" and \"Tax Implications of ESPP Sales: Minimizing Your Liabilities\" highlight the core concerns of the user.\n\nAs I extract specific terms from these headlines, I notice a pattern of concepts that recur throughout the query expansion process. Terms like \"ESPP,\" \"tax implications,\" \"risk tolerance,\" and \"portfolio diversification\" emerge as key themes, while others, such as \"qualified disposition\" and \"look-back period,\" provide additional context.\n\nThrough this systematic application of the journalistic investigation technique, I've uncovered a wealth of information that can inform the user's decision. By considering the query from multiple angles, exploring real-world contexts, and investigating authoritative sources, I've developed a comprehensive understanding of the factors at play.\n\nThe final augmented query, \"espp strategy sell immediately hold tax implications risk tolerance portfolio diversification qualified disposition disqualifying holding period company stock performance,\" reflects the depth and breadth of my investigation. This expanded query captures the essence of the user's concerns, incorporating both the explicit and implicit aspects of their search.\n\nIn conclusion, my thought process has been a journey of discovery, navigating the complexities of ESPPs and the factors that influence the decision to sell or hold. By balancing structured techniques with natural cognitive patterns, I've developed a nuanced understanding of the query and its underlying needs. The resulting augmented query is a testament to the power of investigative research in uncovering meaningful insights and providing comprehensive guidance.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

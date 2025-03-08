@@ -1,0 +1,75 @@
+{
+  "reasoning": "The user is asking for a single, impactful piece of life advice. The current results are question prompts, not answers, indicating a need to broaden the search to include actual pieces of advice. The query's intent is informational. I will expand the query by focusing on synonyms of \"advice,\" related areas of life where advice is frequently given (career, relationships, personal growth), and the types of advice that are often considered valuable (e.g., wisdom, life lessons).",
+  "query_goals": [
+    "Find specific pieces of advice rather than prompts",
+    "Explore different categories/domains of life where advice is relevant",
+    "Identify synonyms and related terms for \"advice\"",
+    "Find wise or insightful pieces of advice"
+  ],
+  "augmented_query": "\"one piece of life advice\" OR \"wisdom\" OR \"life lessons\" OR \"pro-tip\" OR \"guidance for life\" OR \"tips for success and happiness\" OR \"advice on personal growth\" OR \"relationship guidance\" OR \"career wisdom\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "graph",
+  "query": "If you could give me one piece of advice about life, what would it be?",
+  "query_id": "344845",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "quoraretrieval",
+  "node_classes": [
+    "Advice",
+    "Life",
+    "Wisdom",
+    "Guidance",
+    "Personal Development",
+    "Relationships",
+    "Career",
+    "Finance",
+    "Health"
+  ],
+  "query_nodes": [
+    "advice",
+    "life"
+  ],
+  "nearest_neighbors": [
+    "wisdom",
+    "life lessons",
+    "pro-tips",
+    "guidance",
+    "recommendations",
+    "tips for success",
+    "personal growth strategies",
+    "relationship advice",
+    "career advice",
+    "financial advice",
+    "health advice",
+    "parenting advice"
+  ],
+  "cleaned_augmented_query": "one piece life advice wisdom life lessons pro tip guidance life tips success happiness advice personal growth relationship guidance career wisdom",
+  "final_delta": 0.36907,
+  "initial_results": "### Text snippet from document at k=1\n: If you could give one piece of advice to any person in history, what would that advice be?\n\n### Text snippet from document at k=2\n: If you had to give one piece of advice for life, what would it be and why?\n\n### Text snippet from document at k=10\n: If you could change one thing about yourself, what would it be and why?\n",
+  "thought_process": "Looking at the original query, \"If you could give me one piece of advice about life, what would it be?\"... this makes me think of wisdom, life lessons, and guidance. Though the user might actually be trying to seek something more profound, perhaps a piece of advice that could change their life's trajectory. Hmm, not sure yet... The query seems straightforward, but there might be layers to it, such as the context in which this advice is being sought or the specific area of life the user is interested in.\n\nAnalyzing the results of the original query, I notice that the top results are question prompts rather than actual pieces of advice. This indicates a gap in the retrieval process - we're not finding the kind of content the user is likely looking for. The search terms are too narrow or not specific enough to lead to actionable advice. The strengths of the current search terms lie in their simplicity and directness, but their weakness is in not capturing the complexity or breadth of what the user might be seeking.\n\nI'm seeing several possibilities here... Let me approach this using Query Expansion via Conceptual Graph Traversal, which involves constructing a conceptual graph based on the query's core concepts and then traversing it to find related, high-value terms. This should help because it allows us to systematically explore semantic relationships and expand our search in a directed manner.\n\nFirst, I identify the core concepts: \"advice,\" \"life,\" and implicitly, \"wisdom\" or \"guidance.\" The search intent is informational, with the user seeking a specific, impactful piece of advice. There's an implicit assumption that this advice should be universally applicable or at least relevant to a broad audience.\n\nConstructing the conceptual graph, I start with these core nodes and then add first-order connections like \"personal growth,\" \"relationships,\" and \"career,\" as these are common domains where advice is frequently sought and given. Second-order connections might include specific types of advice, like \"financial advice\" or \"health advice,\" which are one step removed but still relevant.\n\nFor expansion path selection, I identify several promising directions: synonymous terms for \"advice\" like \"wisdom\" or \"life lessons,\" hierarchical terms such as broader concepts (\"guidance\") or narrower ones (\"career advice\"), and contextual terms (\"advice for young adults\" or \"advice on overcoming obstacles\").\n\nAs I extract and filter terms, I'm looking for relevance, distinctiveness, specificity, and searchability. Terms like \"pro-tip,\" \"guidance for life,\" and \"tips for success and happiness\" seem promising because they're specific, yet broad enough to capture a variety of relevant documents.\n\nFollowing the Query Expansion via Conceptual Graph Traversal approach, I should first identify the core concepts and then systematically explore related terms. Wait, that's not quite right for this query. Let me adjust my approach to also consider the implicit desire for something impactful and universally applicable. This step of the technique is revealing the importance of considering the context and domain of the advice, which actually reminds me of related concepts like \"life coaching\" or \"mentoring\" that might also be relevant.\n\nI need to consider the next step in the technique, which involves filtering terms for their relevance and distinctiveness, but I'm also noticing this interesting pattern where terms related to \"personal growth\" and \"success\" are frequently appearing in my expanded list. This pattern suggests that the user might be looking for advice that not only pertains to everyday life but also to achieving goals or overcoming challenges.\n\nApplying the specific aspect of the technique that involves looking at synonymous terms leads me to \"wisdom\" and \"life lessons,\" which are very relevant. I just had a realization that connects to what we were exploring earlier - the idea that the best advice often comes from lessons learned through experience, which might mean including terms related to \"life experiences\" or \"stories of overcoming adversity.\"\n\nThrough this process of applying Query Expansion via Conceptual Graph Traversal and exploring related threads, I believe the terms that would be most effective for expanding the query are those that capture both the explicit and implicit aspects of what the user is seeking. Terms like \"one piece of life advice,\" \"wisdom,\" \"life lessons,\" \"pro-tip,\" \"guidance for life,\" \"tips for success and happiness,\" \"advice on personal growth,\" \"relationship guidance,\" and \"career wisdom\" seem to strike a balance between being specific enough to guide the search towards relevant content and broad enough to encompass the variety of contexts in which advice might be sought.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

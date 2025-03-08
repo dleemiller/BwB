@@ -1,0 +1,62 @@
+{
+  "reasoning": "The original query aims to identify who laid the foundation stone of Islamia College Peshawar, a specific historical event. The results provide valuable context but are limited by irrelevant information and ambiguity regarding different events. Therefore, enhancing this query involves addressing these weaknesses and expanding it to include broader historical, educational, or cultural contexts associated with Islamia College Peshawar, while maintaining specificity.",
+  "query_goals": [
+    "Identify key figures related to the foundation stone of Islamia College Peshawar.",
+    "Provide detailed context about the circumstances surrounding its establishment.",
+    "Exclude irrelevant institutions and clarify events for accurate historical understanding."
+  ],
+  "ineffective_terms": [
+    "who",
+    "laid"
+  ],
+  "breadth_expansion": [
+    "historical figures",
+    "Islamia College history",
+    "Peshawar educational institutions",
+    "educational development in the NWFP",
+    "significant events at Islamia College Peshawar"
+  ],
+  "depth_chain": [
+    "Haji Sahib Sial",
+    "Ahmad Khan Abdali's role",
+    "political influence on education in early 20th century NWFP",
+    "historical significance of founding educational institutions in British India"
+  ],
+  "augmented_query": "Haji Sahib Sial Ahmad Khan Abdali historical influence education NWFP colonial history Islamia College significant events Peshawar",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "expand",
+  "query": "who laid foundation stone of islamia college peshawar",
+  "query_id": "test1805",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "cleaned_augmented_query": "haji sahib sial ahmad khan abdali historical influence education nwfp colonial history islamia college significant events peshawar",
+  "final_delta": 0.36907,
+  "initial_results": "### Text snippet from document at k=1\n: In the beginning, the college was affiliated with the University of Calcutta[6] for the matriculation examination but became an affiliate of Allahabad University in 1885. In 1877, the school was raised to college level and Lord Lytton laid the foundation stone of the college building.[7]\n\n### Text snippet from document at k=2\n: Haji Sahib of Turangzai, the most famous Pukhtun religious leader of the time was requested by Nawab Sir Sahibzada Abdul Qayyum to lay the foundation stone of Islamia College. Haji Sahib agreed to the request, however, he had been declared a proclaimed offender by the British for his anti-British activities and his entry was banned into British controlled territory. He was residing in tribal territory, which was outside British control, so Nawab Sahib prevailed upon Sir George Roos-Keppel and the British to permit Haji Sahib to enter British controlled territory for one day so he could lay the foundation stone of Islamia College. The British agreed to this request with the understanding that Haji Sahib would return to tribal territory once he had laid the foundation stone. Haji Sahib was permitted to enter British controlled territory for the ceremony and spent the night in the 'Pokh' Mosque of Tehkal. At the foundation stone laying ceremony, Sir Roos Keppel and other British officials were present, so Haji Sahib hid his face in his sheet (Chadar) from them and was led by Sheikh Muhammad Ibrahim to the place where he was to lay the foundation stone. After laying the stone Haji Sahib went to Tehkal and then returned to the tribal territory.\n\n### Text snippet from document at k=10\n: Peshawar formed the eastern capital of the empire of Gandhara under the Kushan emperor Kanishka I who reigned from at least 127 CE and, perhaps, for a few years prior to this. Peshawar also became a great centre of Buddhist learning.\n",
+  "thought_process": "Looking at the original query \"who laid foundation stone of islamia college peshawar\", this makes me think of historical events and figures related to the establishment of educational institutions in the region. Though the user might actually be trying to understand the broader context of Islamia College Peshawar's founding, the query itself is quite specific. Hmm, not sure yet how to expand this while maintaining relevance.\n\nAnalyzing the results of the original query, I notice that the text snippets provide valuable information about the college's history, including its affiliation with universities and the laying of the foundation stone. However, there are also some ambiguities and irrelevant details that need to be addressed. For instance, the mention of Lord Lytton laying the foundation stone in one snippet, while another snippet talks about Haji Sahib of Turangzai being requested to do so. This discrepancy suggests that the query needs to be expanded to account for different perspectives and historical accounts.\n\nLet me approach this using the expansion technique, which involves identifying ineffective terms, breadth expansion, and depth expansion. This should help because it allows me to systematically analyze the query and its context, while also introducing new dimensions and terminology. By applying this technique, I can create a more comprehensive and accurate search query.\n\nStarting with the ineffective terms, I notice that \"who\" and \"laid\" are quite broad and don't add much specificity to the query. These terms should be avoided in the expanded query. Moving on to breadth expansion, I can consider terms like \"historical figures\", \"Islamia College history\", \"Peshawar educational institutions\", and \"educational development in the NWFP\". These terms introduce new concepts and contexts that can help expand the query.\n\nFor depth expansion, I can focus on one of the distant but important topics, such as \"Haji Sahib Sial\" and explore related terms like \"Ahmad Khan Abdali's role\", \"political influence on education in early 20th century NWFP\", and \"historical significance of founding educational institutions in British India\". This allows me to delve deeper into the historical context and significance of Islamia College Peshawar's establishment.\n\nAs I apply the expansion technique, I start to see connections and patterns emerge. For instance, the role of Haji Sahib Sial and Ahmad Khan Abdali highlights the complex political and historical context of the region during the early 20th century. This insight can be complemented by considering the broader educational development in the NWFP and the significance of founding institutions like Islamia College Peshawar.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms \"Haji Sahib Sial\", \"Ahmad Khan Abdali\", \"historical influence\", \"education\", \"NWFP\", \"colonial history\", \"Islamia College\", and \"significant events\" would be most effective for a BM25 index. These terms capture both the explicit and implicit aspects of what the user is seeking, providing a more comprehensive and accurate search query.\n\nThe augmented query \"haji sahib sial ahmad khan abdali historical influence education nwfp colonial history islamia college significant events peshawar\" emerges logically from both the technique and natural insights, addressing the weaknesses of the original query while introducing new dimensions and terminology. This query should yield more targeted and relevant results, providing a deeper understanding of the historical context and significance of Islamia College Peshawar's establishment.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

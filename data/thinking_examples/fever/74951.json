@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query seeks specific information about Orson Welles's play \"Caesar,\" likely going beyond general biographical details. The current results are too broad, focusing on Welles's career rather than the play itself.",
+  "query_goals": [
+    "Find critical reviews of 'Caesar'",
+    "Discover historical context surrounding the play's creation",
+    "Analyze themes and character development in 'Caesar'"
+  ],
+  "ineffective_terms": [
+    "Orson Welles"
+  ],
+  "breadth_expansion": [
+    "Shakespearean tragedy",
+    "Adaptation",
+    "1940s theater",
+    "Classical literature",
+    "Political commentary"
+  ],
+  "depth_chain": [
+    "Political commentary",
+    "Ancient Roman history",
+    "Julius Caesar's legacy",
+    "Power dynamics in leadership",
+    "Allegory and symbolism"
+  ],
+  "augmented_query": "ancient roman history, julius caesar, power dynamics, allegory, symbolism, tragedy adaptation",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Caesar is an original play by Orson Welles.",
+  "query_id": "74951",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "fever",
+  "cleaned_augmented_query": "ancient roman history julius caesar power dynamics allegory symbolism tragedy adaptation",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Caesar is the title of Orson Welles 's innovative 1937 adaptation of William Shakespeare 's Julius Caesar , a modern-dress bare-stage production that evoked comparison to contemporary Fascist Italy and Nazi Germany . Considered Welles 's highest achievement in the theatre , it premiered November 11 , 1937 , as the first production of the Mercury Theatre , an independent repertory theatre company that presented an acclaimed series of productions on Broadway through 1941 .\n\n### Text snippet from document at k=2\n: Ivan Orsen J. Caesar II ( January 7 , 1967 -- April 28 , 2008 ) was an American football linebacker who played one season with the Minnesota Vikings of the NFL as well as four seasons in the Arena Football League . He also played for the London Monarchs in 1996 . Caesar attended Dorchester High School in Dorchester , Massachusetts and Boston College .   Caesar was shot and killed in his Orlando , Florida home on April 28 , 2008 .\n\n### Text snippet from document at k=10\n: Othello is a character in Shakespeare 's Othello ( c. 1601 -- 1604 ) . The character 's origin is traced to the tale `` Un Capitano Moro '' in Gli Hecatommithi by Giovanni Battista Giraldi Cinthio . There , he is simply referred to as the Moor .   Othello is a brave and competent soldier of advanced years and Moorish background in the service of the Venetian Republic . He elopes with Desdemona , the beautiful daughter of a respected Venetian senator . After being deployed to Cyprus , Othello is manipulated by his Ancient ( pronounced Ensign ) Iago into believing Desdemona is an adulteress . Othello murders her and , upon discovering Iago 's deceit , kills himself .   Othello was first mentioned in a Revels account of 1604 when the play was performed on 1 November at Whitehall Palace with Richard Burbage almost certainly Othello 's first interpreter . Modern notable performers of the role include Paul Robeson , Orson Welles , Richard Burton , James Earl Jones , Laurence Fishburne and Laurence Olivier and Avery Brooks .\n",
+  "thought_process": "Looking at the original query \"Caesar is an original play by Orson Welles,\" this makes me think of Shakespeare's Julius Caesar, though the user might actually be trying to explore the specific adaptation by Orson Welles, not just the play itself. The mention of Orson Welles indicates a potential interest in the director's interpretation or the historical context of the play's production.\n\nAnalyzing the results of the original query, I notice that the current results are too broad, focusing on Welles's career rather than the play \"Caesar\" specifically. This suggests a need to refine the search terms to capture more targeted information about the play, its themes, and its historical context.\n\nTo approach this, I'll use the expansion technique provided, which involves being specific and diverse in the expansion, applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. The task structure includes goal elucidation and gaps, ineffective term identification, breadth expansion, and depth expansion.\n\nStarting with goal elucidation, the primary objectives seem to be finding critical reviews of \"Caesar,\" discovering its historical context, and analyzing its themes and character development. The ineffective term identified is \"Orson Welles,\" as it yields too broad results.\n\nFor breadth expansion, terms like \"Shakespearean tragedy,\" \"adaptation,\" \"1940s theater,\" \"classical literature,\" and \"political commentary\" are considered. These terms aim to introduce new dimensions to the query without overlapping with the original terms.\n\nTransitioning to depth expansion, focusing on \"political commentary\" as a distant but important topic, we can delve deeper into related terms such as \"ancient Roman history,\" \"Julius Caesar's legacy,\" \"power dynamics in leadership,\" and \"allegory and symbolism.\" These terms are chosen because they offer a more nuanced exploration of the play's themes and context.\n\nApplying the technique systematically, I consider each step's relevance to the original query's objectives. The breadth expansion provides a wider context, while the depth expansion narrows down to specific, relevant concepts. This balance between structure and intuition is crucial, as it allows for both a systematic approach and the incorporation of insightful connections that might not be immediately apparent.\n\nThrough this process, insights emerge from both the structured technique and natural thought patterns. For instance, applying the depth expansion leads to the discovery of terms like \"ancient Roman history\" and \"allegory,\" which are directly relevant to understanding the play's context and themes. Intuitively, connecting these terms back to the original query reveals how they can enhance the search for targeted information about \"Caesar.\"\n\nIn synthesizing these findings, it becomes clear that the most effective terms for expanding the query are those that capture both the explicit and implicit aspects of what the user is seeking. The final augmented query, \"ancient roman history julius caesar power dynamics allegory symbolism tragedy adaptation,\" reflects this synthesis, offering a diverse and targeted set of terms that should yield more precise and relevant results.\n\nThis thought process demonstrates how an expert would expand a search query, balancing structured techniques with natural cognitive patterns to achieve a more effective and nuanced search strategy.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

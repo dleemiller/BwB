@@ -1,0 +1,66 @@
+{
+  "reasoning": "The original query seeks a clear understanding of the definition of voluntary muscles. The existing document types suggest an academic or educational context, which aligns with the need for detailed, scientifically accurate information. The current results provide a comprehensive look at voluntary muscles but lack focus and clarity due to information redundancy and verbosity. Thus, the augmentation requires emphasizing clarity, covering key aspects of voluntary muscles succinctly, and addressing misunderstandings by eliminating repetitive content. Recognizing core concepts and potential connections in a conceptual graph aids in pinpointing valuable expansion terms. These terms can enhance the search by covering synonyms, hierarchical terms, and domain-specific relevant aspects. The augmented query should secure relevant, concise results focused on the essence of voluntary muscles without redundant phrasing or excessive detail deviations.",
+  "query_goals": [
+    "Understand the clear definition of voluntary muscles.",
+    "Distinguish voluntary muscles from other muscle types concisely.",
+    "Identify examples and practical applications of voluntary muscles.",
+    "Clarify biological distinctions between voluntary and involuntary muscles.",
+    "Streamline information to avoid redundancy and enhance clarity."
+  ],
+  "augmented_query": "voluntary muscle definition in skeletal system striated muscle with conscious control distinguish from involuntary muscles examples neurology",
+  "ndcg": {
+    "NDCG@10": 0.5,
+    "NDCG@100": 0.5,
+    "NDCG@1000": 0.5,
+    "NDCG@10000": 0.5
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.33333,
+    "MAP@1000": 0.33333,
+    "MAP@10000": 0.33333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.32856,
+  "instruction": "graph",
+  "query": "voluntary muscle definition",
+  "query_id": "538333",
+  "dataset": "msmarco",
+  "node_classes": [
+    "Muscle Types",
+    "Muscle Control",
+    "Skeletal System",
+    "Neurological Influence",
+    "Muscle Examples"
+  ],
+  "query_nodes": [
+    "voluntary muscle",
+    "definition",
+    "striated muscle",
+    "conscious control",
+    "skeletal system"
+  ],
+  "nearest_neighbors": [
+    "skeletal muscle",
+    "sarcoplasmic contraction",
+    "neuromuscular junction",
+    "voluntary movement",
+    "myofibrils"
+  ],
+  "cleaned_augmented_query": "voluntary muscle definition skeletal system striated conscious control distinguish involuntary muscles examples neurology",
+  "final_delta": 0.32856,
+  "initial_results": "### Text snippet from document at k=1\n: Definition. noun, plural: voluntary muscles. A muscle that can be controlled voluntarily. Supplement. Some of the muscles of the body may be controlled voluntarily.Other muscles act below the level of consciousness. Those muscles that can be controlled at one's will (volition) are called voluntary muscles.oun, plural: voluntary muscles. A muscle that can be controlled voluntarily. Supplement. Some of the muscles of the body may be controlled voluntarily.\n\n### Text snippet from document at k=2\n: Skeletal muscles are voluntary muscles, while cardiac and smooth muscles are not. Voluntary muscles are connected throughout the skeletal system. The tongue is a voluntary muscle. A voluntary muscle also is called a skeletal muscle.\n\n### Text snippet from document at k=10\n: Submit. \u00b7 just now. Report Abuse. involuntary muscles-all the visceral muscles-like muscles of the stomach, muscles of heart, oesophagus-the activities is each activity done by the above organ voluntary-all the skeletal muscles attached to bones, tongue, detrusor muscles in urethra. they are used for voluntary movement.ubmit. \u00b7 just now. Report Abuse. involuntary muscles-all the visceral muscles-like muscles of the stomach, muscles of heart, oesophagus-the activities is each activity done by the above organ voluntary-all the skeletal muscles attached to bones, tongue, detrusor muscles in urethra. they are used for voluntary movement.\n",
+  "thought_process": "When I first saw the query \"voluntary muscle definition,\" my initial impression was that the user is looking for a clear and concise explanation of what voluntary muscles are. This makes me think of the skeletal system and how voluntary muscles are controlled by conscious thought, as opposed to involuntary muscles which operate autonomously. However, to provide a thorough understanding, it's essential to distinguish between voluntary and involuntary muscles, understand the role of the skeletal system, and identify practical examples of voluntary muscles.\n\nAnalyzing the results of the original query, I noticed that while the current results provide a comprehensive overview, they lack focus and clarity due to repetitive content. The text snippets from the documents at positions k=1, k=2, and k=10 offer valuable insights but also highlight the need for concise information that directly addresses the user's query without unnecessary details.\n\nLet me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph to identify high-value expansion terms. This should help because it allows for a systematic exploration of related concepts and terms that can enhance the search query.\n\nFirst, I'll identify the core concepts in the original query: voluntary muscles, muscle definition, and the distinction between voluntary and involuntary muscles. The search intent is informational, aiming to understand the concept of voluntary muscles. Implicit assumptions include the need for accuracy and clarity in the definition, as well as the relevance of the skeletal system and neurological control.\n\nTo construct the conceptual graph, I'll consider core nodes like \"voluntary muscle,\" \"definition,\" \"skeletal system,\" and \"conscious control.\" First-order connections will include properties like \"striated muscle\" and \"neurological influence.\" Second-order connections might involve related concepts such as \"muscle types\" (e.g., skeletal, smooth, cardiac), \"muscle control\" (voluntary vs. involuntary), and \"examples\" of voluntary muscles in the human body.\n\nFor expansion path selection, I'm considering synonymous terms (e.g., \"skeletal muscle\" for \"voluntary muscle\"), hierarchical terms (e.g., \"muscle\" as a broader concept), compositional terms (e.g., \"myofibrils\" as components of muscles), contextual terms (e.g., \"neurology\" as a field of study), and domain-specific terminology (e.g., \"sarcoplasmic contraction\" in muscle physiology).\n\nAs I traverse the conceptual graph, I'm extracting and filtering terms based on relevance, distinctiveness, specificity, and searchability. Terms like \"striated muscle,\" \"conscious control,\" \"skeletal system,\" and \"distinguish from involuntary muscles\" emerge as high-value terms for expanding the query. These terms maintain the original search intent while offering alternative pathways for retrieval.\n\nThe process involves some reconsideration and refinement. Initially, I thought to include more detailed physiological terms, but upon reflection, focusing on the essence of voluntary muscles and their distinction from involuntary muscles seems more appropriate. The technique is guiding my thought process systematically, yet I'm also allowing for intuitive leaps, such as connecting the query to the broader context of neurology and muscle control.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the terms \"voluntary muscle definition,\" \"skeletal system,\" \"striated,\" \"conscious control,\" \"distinguish from involuntary muscles,\" and \"examples\" in \"neurology\" would be most effective for enhancing the search query. These terms capture both the explicit and implicit aspects of what the user is seeking, providing a clear and concise definition of voluntary muscles while distinguishing them from other muscle types and highlighting their role in the skeletal system and under conscious control.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

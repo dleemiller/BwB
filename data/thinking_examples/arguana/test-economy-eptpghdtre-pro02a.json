@@ -1,0 +1,69 @@
+{
+  "reasoning": "The original query focuses on comparing economic performance under Democratic and Republican presidencies, relying heavily on unemployment rates and budget deficits.  It exhibits a clear bias towards favoring Democratic policies. To create a more comprehensive and balanced analysis, we need to: \n\n1. **Clarify the specific economic indicators** beyond unemployment and deficits that are relevant to the comparison (e.g., GDP growth, income inequality).\n2. **Explore different time periods and contexts**  to account for the impact of global events or policy shifts.\n3. **Consider a wider range of sources** to mitigate potential bias and gain diverse perspectives on economic performance under both parties.",
+  "query_goals": [
+    "Compare economic performance under Democratic and Republican presidencies",
+    "Analyze specific economic indicators beyond unemployment and deficits",
+    "Investigate the impact of global events and policy shifts on economic performance",
+    "Explore diverse perspectives on economic performance under both parties"
+  ],
+  "ineffective_terms": [
+    "boom and Bust",
+    "more likely"
+  ],
+  "breadth_expansion": [
+    "GDP growth",
+    "inflation",
+    "income inequality",
+    "tax policies",
+    "regulation",
+    "international trade",
+    "monetary policy",
+    "fiscal policy",
+    "social welfare programs"
+  ],
+  "depth_chain": [
+    "Income Inequality",
+    "Wealth Gap",
+    "Minimum Wage",
+    "Social Safety Net",
+    "Labor Market Flexibility",
+    "Globalization Impact"
+  ],
+  "augmented_query": "GDP growth, inflation, income inequality, wealth gap, minimum wage, social safety net, labor market flexibility, globalization impact",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Historically Democrats have presided over more economic stability whereas the GOP is the party of boom and Bust  During the past 60 years Democrats have been considerably more likely to preside over a balanced budget than their Republican rivals. Since the OPEC shocks of the mid-70s the average unemployment rate under Republican Presidents has been 6.7 % as opposed to 5.5% under democrats. Even expanding that period out to the whole of the post-war period, unemployment has averaged 4.8% under democrats and 6.3% under democrats [i] .  Republican presidencies have been marked by higher unemployment, bigger deficits and lower wages.  [i] Larry Bartels. \u201cWhy the economy fares much better under Democrats.\u201d Christian Science Monitor. October 21st, 2010 .",
+  "query_id": "test-economy-eptpghdtre-pro02a",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "arguana",
+  "cleaned_augmented_query": "gdp growth inflation income inequality wealth gap minimum wage social safety net labor market flexibility globalization impact",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: The reason for the apparent superiority of Democrat administrations is that they use government as a job creation service; using taxpayers\u2019 money to create jobs in a bloated federal administration [i] .  Ultimately, these are not real jobs as they are not actually producing wealth, merely circulating what already exists. Real growth and real economic health comes from unleashing the innovativeness and industry of the American people to create new businesses and expand existing ones. The Democrat approach leads to taxes rising The Republicans can reduce taxes because they leave the creation of jobs where it belongs \u2013 in the private sector.  [i] \u201cHistorical U.S. Job Creation \u2013 Under Democratic and Republican Presidents and President Obama\u201d Democraticunderground.com. 2 September 2011.\n\n### Text snippet from document at k=2\n: \u201cAfter three years, it is clear that President Obama\u2019s budget-busting policies have not created jobs and have only added to our debt,\u201d  The Obama administration has been profligate with taxpayers\u2019 money, has failed to deal with the economic crisis and has increased the debt. His policies on health care show that he is more interested in controlling people\u2019s lives than he is in encouraging enterprise and industry. It\u2019s the same story that is always heard from Democrats; they say that they\u2019re interested in encouraging business but instead all they really want to focus on is getting the government involved in as many areas of life as possible \u2013 especially in the running of the market. After three years in office Obama has done nothing to improve the life chances of the American people, growth and employment have stagnated, GDP growth has been under 1% per year while unemployment is up to 9.1% from 7.8%, [i] while regulation and taxation have blossomed.  [i] Kristol, William, \u2018Weekly Standard: Obama No FDR ON Unemployment\u2019, npr, 2 September 2011,\n\n### Text snippet from document at k=10\n: High electoral turnout is in large part a result of turkey having compulsory voting so it is difficult to see how this statistic is an indicator of the democratic health of the country. There is also a big difference between having a liberal democracy and a \u2018tyranny of the majority\u2019 Turkey under AKP has been much more the latter. Erdo\u011fan has threatened the opposition \u201cif you gather 100,000 people, I can gather a million\u201d showing that the majority and numbers are simply being used to browbeat anyone who opposes his plans. [1] A democracy means more than holding regular elections; even regimes everyone recognizes as authoritarian, such as Kazakhstan or Iran, hold them.  [1] Cook, Steven A., and Koplow, Michael, \u2018How Democratic Is Turkey?\u2019, Foreign Policy, 3 June 2013,\n",
+  "thought_process": "Looking at the original query, it's clear that the user is interested in comparing the economic performance of Democratic and Republican presidencies, with a focus on unemployment rates and budget deficits. However, the query exhibits a clear bias towards favoring Democratic policies, which might limit the scope of the analysis. To create a more comprehensive and balanced analysis, I need to consider a wider range of economic indicators, explore different time periods and contexts, and examine a diverse range of sources to mitigate potential bias.\n\nThe existing reasoning provided is a good starting point, as it identifies the need to clarify specific economic indicators, explore different time periods, and consider a wider range of sources. The task outcomes, including the query goals, ineffective terms, breadth expansion, and depth chain, provide a solid foundation for expanding the query.\n\nTo apply the expansion technique, I will start by examining the original query and identifying areas where it can be improved. The ineffective terms, such as \"boom and Bust\" and \"more likely,\" should be avoided in the augmented query. The breadth expansion terms, including GDP growth, inflation, income inequality, and tax policies, provide a good starting point for introducing new dimensions to the query.\n\nAs I delve deeper into the expansion technique, I notice that the depth chain terms, such as income inequality, wealth gap, minimum wage, and social safety net, offer a rich area for exploration. These terms are closely related to the original query and can help to provide a more nuanced understanding of the economic performance under Democratic and Republican presidencies.\n\nOne of the challenges in expanding this query is balancing the need for specificity with the need for diversity. The augmented query should be novel and free from overlapping the original terms, while still capturing the essence of the user's request. To achieve this, I will apply a combination of synonym replacement, conceptual expansion, and contextual expansion techniques.\n\nFor example, instead of using the term \"unemployment,\" I can use more specific terms like \"job creation\" or \"labor market flexibility.\" I can also explore related concepts, such as the impact of globalization on employment rates or the role of tax policies in shaping economic growth.\n\nAs I continue to apply the expansion technique, I start to see new patterns and connections emerging. The relationship between income inequality and economic growth, for instance, is a complex one, and exploring this topic in more depth can provide valuable insights into the economic performance of different presidential administrations.\n\nThe text snippets from the initial results provide additional context and perspectives on the topic. The first snippet, for example, suggests that Democratic administrations have used government as a job creation service, while the second snippet argues that the Obama administration's policies have failed to create jobs and have added to the debt. These perspectives highlight the need for a more nuanced understanding of the economic performance under different presidential administrations.\n\nThe final augmented query should capture the essence of the user's request while introducing new dimensions and perspectives. By applying the expansion technique and considering a diverse range of sources and economic indicators, I can create a more comprehensive and balanced analysis of the economic performance under Democratic and Republican presidencies.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the following terms would be most effective for a BM25 index: GDP growth, inflation, income inequality, wealth gap, minimum wage, social safety net, labor market flexibility, and globalization impact. These terms capture both the explicit and implicit aspects of what the user is seeking and provide a solid foundation for a more nuanced understanding of the economic performance under different presidential administrations.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

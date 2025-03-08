@@ -1,0 +1,91 @@
+{
+  "reasoning": "The core of \"medical ethics\" lies in the principles that guide right conduct in healthcare and biomedical research. Considering the identified weaknesses, this map will expand to include broader areas of medical ethics beyond placebos and human experimentation. The cartographic legend will emphasize terms that can help a researcher broaden and contextualize their understanding of the field.",
+  "augmented_query": "medical ethics principles standards guidelines end-of-life care resource allocation research ethics informed consent confidentiality",
+  "ndcg": {
+    "NDCG@10": 0.22009,
+    "NDCG@100": 0.22038,
+    "NDCG@1000": 0.35785,
+    "NDCG@10000": 0.46897
+  },
+  "map": {
+    "MAP@10": 0.05556,
+    "MAP@100": 0.06863,
+    "MAP@1000": 0.08077,
+    "MAP@10000": 0.08402
+  },
+  "recall": {
+    "Recall@10": 0.05556,
+    "Recall@100": 0.16667,
+    "Recall@1000": 0.55556,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.03,
+    "P@1000": 0.01,
+    "P@10000": 0.0018
+  },
+  "delta": 0.0862,
+  "instruction": "cartography",
+  "query": "medical ethics",
+  "query_id": "PLAIN-1590",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "nfcorpus",
+  "central_coordinates": [
+    "Core Principles (Autonomy, Beneficence, Non-Maleficence, Justice)",
+    "Practical Applications vs. Theoretical Frameworks",
+    "Clinical Ethics vs. Research Ethics",
+    "Individual Patient Rights vs. Societal Well-being",
+    "Micro vs. Macro"
+  ],
+  "boundary_areas": [
+    "Law and Medical Jurisprudence",
+    "Philosophy (Moral Philosophy, Ethics Theories)",
+    "Religion and Spirituality",
+    "Public Health Ethics",
+    "Health Policy",
+    "Sociology of Medicine"
+  ],
+  "key_landmarks": [
+    "Hippocratic Oath",
+    "Nuremberg Code",
+    "Belmont Report",
+    "Declaration of Helsinki",
+    "Patients Rights Charter",
+    "Institutional Review Boards (IRBs)",
+    "Professional Codes of Conduct (AMA, etc.)",
+    "Landmark Legal Cases (e.g., Quinlan, Cruzan)"
+  ],
+  "detail_features": [
+    "End-of-Life Care (Euthanasia, Assisted Suicide, Palliative Care)",
+    "Reproductive Ethics (Abortion, ART, Genetic Screening)",
+    "Resource Allocation (Rationing, Healthcare Access)",
+    "Informed Consent (Capacity, Disclosure)",
+    "Confidentiality and Privacy",
+    "Organ Transplantation",
+    "Research Ethics (Clinical Trials, Animal Research)",
+    "Conflicts of Interest",
+    "Cultural Competence"
+  ],
+  "navigation_terms": [
+    "Autonomy",
+    "Beneficence",
+    "Non-maleficence",
+    "Justice",
+    "Informed Consent",
+    "Confidentiality",
+    "End-of-life care",
+    "Resource allocation",
+    "Research ethics",
+    "Clinical ethics",
+    "Reproductive ethics",
+    "Professionalism",
+    "Moral distress"
+  ],
+  "cleaned_augmented_query": "medical ethics principles standards guidelines end life care resource allocation research informed consent confidentiality",
+  "final_delta": 0.09721,
+  "initial_results": "### Text snippet from document at k=1\n... While severely depressed individuals are unduly pessimistic about themselves and the world around them, treatment of depressed individuals can be deemed successful when patients have successfully attained those positive illusions that are indicative of psychological health. This is exactly what successful psychological treatments of depression seem to achieve. It is therefore possible that there may be a limited unavoidable role for deception in medicine.\n\n### Text snippet from document at k=2\n: The Advisory Committee on Human Radiation Experiments (ACHRE), established to review allegations of abuses of human subjects in federally sponsored radiation research, was charged with identifying appropriate standards to evaluate the ethics of cold war radiation experiments. One central question for ACHRE was to determine what role, if any, the Nuremberg Code played in the norms and practices of US medical researchers. Based on the evidence from ACHRE's Ethics Oral History Project and extensive archival research, we conclude that the Code, at the time it was promulgated, had little effect on mainstream medical researchers engaged in human subjects research. Although some clinical investigators raised questions about the conduct of research involving human beings, the medical profession did not pursue this issue until the 1960s.\n\n### Text snippet from document at k=10\n: Background There are conflicting reports and a lack of evidence-based data regarding effects of medications on cognition in cognitively normal older adults. We explored whether use of 100 common medications taken by older adults is associated with longitudinal cognitive performance. Methods A longitudinal observational cohort was used with analysis of data collected September 2005 through May 2011 and maintained in the National Alzheimer\u2019s Coordinating Center (NACC) Uniform Data Set. Participants were aged 50 years or older and cognitively normal (N=4414). Composite scores were constructed from 10 psychometric tests. Scores for each participant reflecting change in the psychometric composite score from the baseline clinical assessment to the next assessment were calculated. General linear models were used to test whether the mean composite change score differed for participants who reported starting, stopping, continuing, or not taking each of the 100 most frequently-used medications in the NACC sample. Results The average time between assessments was 1.2 years (SD=0.42). ...\n",
+  "thought_process": "Looking at the original query \"medical ethics,\" this makes me think of the principles that guide right conduct in healthcare and biomedical research. Though the user might actually be trying to understand the broader implications of medical ethics, including its application in various contexts, I'm not sure yet. The initial results provide a glimpse into specific aspects of medical ethics, such as the role of deception in medicine, the Nuremberg Code's impact on US medical researchers, and the effects of medications on cognition in older adults.\n\nAnalyzing these results, I notice that they touch on different facets of medical ethics, including the ethical considerations in treatment, research, and patient care. However, they seem to lack a cohesive framework that ties these aspects together. This is where the Query Expansion via Conceptual Territory Mapping technique comes into play. By applying this approach, I aim to create a comprehensive map of the conceptual territory surrounding medical ethics, identifying key concepts, neighboring domains, and areas of overlap.\n\nLet me start by establishing the central coordinates of the query. The core principles of autonomy, beneficence, non-maleficence, and justice serve as the foundation of medical ethics. From here, I can explore the practical applications of these principles in various contexts, such as end-of-life care, resource allocation, and research ethics. The scale of exploration will need to be broad enough to encompass the diverse aspects of medical ethics while maintaining a granular level of detail to capture the nuances of each concept.\n\nAs I chart the boundaries of the query's immediate territory, I identify neighboring domains such as law, philosophy, religion, and public health. These areas intersect with medical ethics in complex ways, influencing the development of guidelines, standards, and best practices. Notable landmarks in this territory include the Hippocratic Oath, the Nuremberg Code, and the Belmont Report, which have shaped the ethical landscape of healthcare and research.\n\nUpon further exploration, I notice specialized features within each region, such as the importance of informed consent, confidentiality, and cultural competence in patient care. Historical sites, like the Quinlan and Cruzan cases, have contributed to the evolution of medical ethics, while emerging developments in fields like genetics and artificial intelligence pose new challenges and opportunities for ethical consideration.\n\nUsing the Cartographic Legend, I can now extract the most valuable navigation terms that will help a researcher navigate this knowledge landscape. These terms include autonomy, beneficence, non-maleficence, justice, informed consent, confidentiality, end-of-life care, resource allocation, research ethics, clinical ethics, reproductive ethics, and professionalism. By incorporating these terms into the expanded query, I can create a more comprehensive and nuanced search strategy that captures the complexity of medical ethics.\n\nThrough this process of applying the Conceptual Territory Mapping technique and exploring related threads, I believe the expanded query \"medical ethics principles standards guidelines end-of-life care resource allocation research informed consent confidentiality\" effectively captures the explicit and implicit aspects of the user's search. This expanded query balances the structured approach of the technique with natural cognitive patterns, allowing for a more intuitive and comprehensive understanding of the topic.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

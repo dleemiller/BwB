@@ -1,0 +1,66 @@
+{
+  "reasoning": "The query seeks to expand understanding of affordances beyond foundational robotics papers to newer implementations and interdisciplinary connections. Identified gaps include recent trends (2019+), broader applications, and accessible explanations. August terms like 'universal' and 'framework' are replaced with precise concepts like 'embodied cognition' and 'sensorimotor integration'. Depth expansion focuses on ecological psychology root theories while breadth connects to cognitive systems and AI applications.",
+  "query_goals": [
+    "Clarify core affordance principles in robotics",
+    "Identify new implementations post-2019",
+    "Link Gibson's psychology to technical applications",
+    "Explore interdisciplinary relevance beyond robotics"
+  ],
+  "ineffective_terms": [
+    "framework",
+    "robot",
+    "universal",
+    "*"
+  ],
+  "breadth_expansion": [
+    "ecological psychology foundations",
+    "sensorimotor system architectures",
+    "cognitive robotics",
+    "human-robotshared control models",
+    "embodied cognition principles",
+    "multimodal affordance recognition"
+  ],
+  "depth_chain": [
+    "colorActionCode Gibson\u2019s affordance theory",
+    "action-oriented perception systems",
+    "robotic sensorimotor integration",
+    "embodied computation in AI"
+  ],
+  "augmented_query": "embodied cognition in robotics, Gibsonian affordance perception, sensorimotor learning, action-oriented HRI, ecological psychology robotics, cognitive control architectures, multimodal affordance detection, embodied AI applications, affordance-based reactive systems",
+  "ndcg": {
+    "NDCG@10": 0.50323,
+    "NDCG@100": 0.50323,
+    "NDCG@1000": 0.54647,
+    "NDCG@10000": 0.58453
+  },
+  "map": {
+    "MAP@10": 0.3,
+    "MAP@100": 0.3,
+    "MAP@1000": 0.30144,
+    "MAP@10000": 0.30226
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 0.5,
+    "Recall@1000": 0.75,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.003,
+    "P@10000": 0.0004
+  },
+  "delta": 0.03556,
+  "instruction": "expand",
+  "query": "Affordances as a Framework for Robot Control",
+  "query_id": "d406239de17bbb4f66d4c835f2a5f1be977b4131",
+  "generator_model": "openrouter/perplexity/sonar-reasoning",
+  "temperature": 1.0,
+  "dataset": "scidocs",
+  "cleaned_augmented_query": "embodied cognition robotics gibsonian affordance perception sensorimotor learning action oriented hri ecological psychology robotics cognitive control architectures multimodal affordance detection embodied ai applications affordance based reactive systems",
+  "final_delta": 0.03556,
+  "initial_results": "### Text snippet from document at k=1\n: We are interested in how the concept of affordances can affect our view to autonomous robot control, and how the results obtained from autonomous robotics can be reflected back upon the discussion and studies on the concept of affordances. In this paper, we studied how a mobile robot, equipped with a 3D laser scanner, can learn to perceive the traversability affordance and use it to wander in a room tilled with spheres, cylinders and boxes. The results showed that after learning, the robot can wander around avoiding contact with non-traversable objects (i.e. boxes, upright cylinders, or lying cylinders in certain orientation), but moving over traversable objects (such as spheres, and lying cylinders in a rollable orientation with respect to the robot) rolling them out of its way. We have shown that for each action approximately 1% of the perceptual features were relevant to determine whether it is afforded or not and that these relevant features are positioned in certain regions of the range image. The experiments are conducted both using a physics-based simulator and on a real robot.\n\n### Text snippet from document at k=2\n: Localizing functional regions of objects or affordances is an important aspect of scene understanding and relevant for many robotics applications. In this work, we introduce a pixel-wise annotated affordance dataset of 3090 images containing 9916 object instances. Since parts of an object can have multiple affordances, we address this by a convolutional neural network for multilabel affordance segmentation. We also propose an approach to train the network from very few keypoint annotations. Our approach achieves a higher affordance detection accuracy than other weakly supervised methods that also rely on keypoint annotations or image annotations as weak supervision.\n\n### Text snippet from document at k=10\n: Computer-based sensors and actuators such as global positioning systems, machine vision, and laser-based sensors have progressively been incorporated into mobile robots with the aim of configuring autonomous systems capable of shifting operator activities in agricultural tasks. However, the incorporation of many electronic systems into a robot impairs its reliability and increases its cost. Hardware minimization, as well as software minimization and ease of integration, is essential to obtain feasible robotic systems. A step forward in the application of automatic equipment in agriculture is the use of fleets of robots, in which a number of specialized robots collaborate to accomplish one or several agricultural tasks. This paper strives to develop a system architecture for both individual robots and robots working in fleets to improve reliability, decrease complexity and costs, and permit the integration of software from different developers. Several solutions are studied, from a fully distributed to a whole integrated architecture in which a central computer runs all processes. This work also studies diverse topologies for controlling fleets of robots and advances other prospective topologies. The architecture presented in this paper is being successfully applied in the RHEA fleet, which comprises three ground mobile units based on a commercial tractor chassis.\n",
+  "thought_process": "As I delve into the query \"Affordances as a Framework for Robot Control,\" my initial impressions are that this query seeks to explore how the concept of affordances, which is rooted in ecological psychology, can be applied to enhance robot control systems. The user is likely looking for a deeper understanding of how robots can perceive and interact with their environment in a more human-like manner. The term \"framework\" suggests a desire for a structured approach or methodology for integrating affordances into robot control.\n\nAnalyzing the results of the original query, I notice that the top documents provide valuable insights into the application of affordances in robotics, such as learning to perceive traversability affordance and localizing functional regions of objects. However, I also identify some gaps in the results, including a lack of recent trends and broader applications beyond robotics.\n\nTo expand this query, I will apply the expansion technique, which involves being specific and diverse, and applying varied augmentation techniques such as synonym replacement, conceptual expansion, and domain-specific terminology. I start by identifying ineffective terms, such as \"framework\" and \"universal,\" which are too broad and do not provide much insight.\n\nFor breadth expansion, I consider concepts that are increasingly distant from the original query, such as ecological psychology foundations, sensorimotor system architectures, and cognitive robotics. I notice that these concepts are interconnected and can provide a richer understanding of affordances in robotics.\n\nAs I transition to depth expansion, I choose one distant but important topic, embodied cognition, and delve deeper into related terms such as sensorimotor integration, action-oriented perception systems, and robotic sensorimotor integration. I apply the expansion technique systematically, considering synonyms, related concepts, and domain-specific terminology.\n\nThroughout this process, I allow myself to make connections between ideas, reconsider my approach, and explore tangents that may yield unexpected insights. For instance, I realize that embodied cognition is closely related to Gibson's affordance theory, which highlights the importance of perception and action in understanding the environment. I also consider the application of affordances in human-robot interaction and cognitive control architectures.\n\nAs I synthesize my thoughts, I emerge with a clearer understanding of the query and its expansion. The augmented query, \"embodied cognition robotics gibsonian affordance perception sensorimotor learning action oriented hri ecological psychology robotics cognitive control architectures multimodal affordance detection embodied ai applications affordance based reactive systems,\" reflects the insights gained from applying the expansion technique and exploring related concepts.\n\nThrough this process, I demonstrate how structure and intuition complement each other, leading to a more comprehensive and nuanced understanding of the query. The final terms emerge logically from both the technique and natural insights, ensuring a precise and targeted expansion of the original query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

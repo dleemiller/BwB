@@ -1,0 +1,64 @@
+{
+  "reasoning": "The query aims to identify the main artist of the song 'Somebody's Watching Me' while recognizing Michael Jackson's contribution. The current search results mix relevant details with unrelated information about other Michael Jackson projects, diluting the focus needed for this specific query. To improve relevance, it is necessary to hone in on terms and contexts that connect more directly to music collaboration without general or unrelated elements pertaining to Michael Jackson alone. By refining ineffective terms, expanding the breadth of related concepts, and delving deeper into one selected path (depth chain), a new set of focused search terms can be established to better target results within the domains of music discographies and collaborations.",
+  "query_goals": [
+    "Identify the primary artist responsible for 'Somebody's Watching Me'.",
+    "Highlight Michael Jackson's specific contributions without overshadowing Rockwell.",
+    "Filter out unrelated information about Michael Jackson\u2019s other works.",
+    "Target documents focusing on musical collaboration."
+  ],
+  "ineffective_terms": [
+    "Michael Jackson"
+  ],
+  "breadth_expansion": [
+    "duet",
+    "vocal feature",
+    "guest appearance",
+    "1980s pop music collaborations",
+    "production credits",
+    "music video contributions"
+  ],
+  "depth_chain": [
+    "production credits",
+    "songwriting collaborations",
+    "recording session details",
+    "studio musicians in pop songs",
+    "vocal production techniques"
+  ],
+  "augmented_query": "Rockwell Somebody's Watching Me guest vocals production 1980s duets music video collaboration studio sessions vocal producers",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "who sings somebody's watching me with michael jackson",
+  "query_id": "test2079",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "cleaned_augmented_query": "rockwell somebody watching guest vocals production 1980s duets music video collaboration studio sessions vocal producers",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: \"Somebody's Watching Me\" is a song by American singer Rockwell from his debut studio album Somebody's Watching Me (1984). It was released as Rockwell's debut single and lead single from the album on January 14, 1984, by Motown. It features former Jackson 5 members Michael Jackson (vocals in the chorus) and Jermaine Jackson (additional backing vocals).[2]\n\n### Text snippet from document at k=2\n: Martin-Green:\n\"I Wanna Dance with Somebody (Who Loves Me)\" by Whitney Houston\"Watch Me (Whip/Nae Nae)\" by Silent\u00f3\n\n### Text snippet from document at k=10\n: Jackson had the highest royalty rate in the music industry at that point, approximately $2 for every album sold, and was making record-breaking profits from sales of his recordings. The videocassette of the documentary The Making of Michael Jackson's Thriller sold over 350,000 copies in a few months. The era saw the arrival of novelties such as dolls modeled after Jackson, which appeared in stores in May 1984 at a price of $12.[90] Biographer J. Randy Taraborrelli writes that \"Thriller stopped selling like a leisure item\u2014like a magazine, a toy, tickets to a hit movie\u2014and started selling like a household staple.\"[91] In 1985, The Making of Michael Jackson's Thriller won a Grammy for Best Music Video, Longform.[77] Time described Jackson's influence at that point as \"star of records, radio, rock video. A one-man rescue team for the music business. A songwriter who sets the beat for a decade. A dancer with the fanciest feet on the street. A singer who cuts across all boundaries of taste and style and color too\".[90] The New York Times wrote that \"in the world of pop music, there is Michael Jackson and there is everybody else\".[92]\n",
+  "thought_process": "As I begin to tackle this query expansion task, my initial impression is that the user is looking for the primary artist behind the song \"Somebody's Watching Me,\" which features Michael Jackson. The query itself seems straightforward, but upon closer inspection, I realize that the results might be skewed due to Michael Jackson's overwhelming presence in the music industry. My association with this query is that it's not just about finding the song, but also about understanding the collaboration between Rockwell and Michael Jackson.\n\nAnalyzing the initial results, I notice that the top result provides valuable information about the song, including its release date and the involvement of Michael Jackson and Jermaine Jackson. However, as I scroll through the results, I see that they become increasingly irrelevant, with mentions of other songs and artists that don't relate to the query. This tells me that the current search terms are not effective in capturing the specific information the user is looking for.\n\nTo improve the query, I decide to employ the expansion technique, which involves identifying ineffective terms, expanding the breadth of related concepts, and delving deeper into one selected path. I start by recognizing that \"Michael Jackson\" is an ineffective term, as it dominates the search results and overshadows the primary artist, Rockwell. I also identify the need to focus on terms related to music collaborations, production credits, and guest appearances.\n\nAs I apply the expansion technique, I begin to systematically explore related concepts. I consider terms like \"duet,\" \"vocal feature,\" and \"guest appearance,\" which lead me to think about the context of 1980s pop music collaborations. I also delve into the production credits, songwriting collaborations, and recording session details, which provide a richer understanding of the song's creation.\n\nAt this point, my thought process becomes more organic, and I start to make connections between the different concepts. I realize that the song's production credits and studio sessions might hold valuable information about the collaboration between Rockwell and Michael Jackson. I also consider the music video contributions and the vocal production techniques used in the song, which could provide additional insights.\n\nAs I continue to expand the query, I encounter some false starts and reconsiderations. For instance, I initially think about including terms related to Michael Jackson's solo work, but I quickly realize that this would detract from the focus on Rockwell and the specific song. I also have a brief tangent where I explore the history of music collaborations in the 1980s, but I refocus on the task at hand.\n\nThrough this process, I start to see insights emerging from both the structured technique and my natural thought patterns. I realize that the augmented query should include terms that capture the essence of the collaboration, such as \"guest vocals,\" \"production,\" and \"music video collaboration.\" I also recognize the importance of including terms related to the song's creation, such as \"studio sessions\" and \"vocal producers.\"\n\nAs I synthesize the information, I become clearer about the final augmented query. I believe that the terms \"Rockwell,\" \"Somebody's Watching Me,\" \"guest vocals,\" \"production,\" \"1980s duets,\" \"music video collaboration,\" \"studio sessions,\" and \"vocal producers\" would be most effective in capturing the user's intent. These terms balance the need for specificity and diversity, avoiding generic or overlapping terms.\n\nIn conclusion, my thought process has been a combination of structured technique and natural cognitive patterns. I've systematically applied the expansion technique while allowing myself to explore related concepts and make connections between them. The final augmented query is a result of this process, and I'm confident that it will yield more relevant and targeted results for the user.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

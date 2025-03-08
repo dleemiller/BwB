@@ -1,0 +1,66 @@
+{
+  "reasoning": "The query aims to understand the difference in protein ubiquitination rates between growth cones and cell bodies. While existing results touch upon ubiquitination's role in growth cone function, they lack a direct comparison as stated. The focus should shift from general ubiquitination mechanisms to specific aspects related to local protein turnover and regulation at these cellular compartments.",
+  "query_goals": [
+    "Identify proteins with differential ubiquitination rates between growth cones and cell bodies",
+    "Explore regulatory mechanisms governing protein ubiquitination in growth cones",
+    "Understand the functional consequences of altered ubiquitination levels at the growth cone"
+  ],
+  "ineffective_terms": [
+    "proteins",
+    "ubiquitinated",
+    "metabolic"
+  ],
+  "breadth_expansion": [
+    "degradation",
+    "proteasome",
+    "lysosome",
+    "signaling pathways",
+    "actin cytoskeleton",
+    "axon guidance",
+    "neurodevelopment"
+  ],
+  "depth_chain": [
+    "proteasome",
+    "26S proteasome",
+    "ubiquitin ligases",
+    "deubiquitinases",
+    "protein degradation pathways"
+  ],
+  "augmented_query": "\"growth cone cell body 26S proteasome ubiquitin ligases deubiquitinases axon guidance\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body.",
+  "query_id": "982",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "scifact",
+  "cleaned_augmented_query": "growth cone cell body 26s proteasome ubiquitin ligases deubiquitinases axon guidance",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Local translation mediates axonal responses to Semaphorin3A (Sema3A) and other guidance cues. However, only a subset of the axonal proteome is locally synthesized, whereas most proteins are trafficked from the soma. The reason why only specific proteins are locally synthesized is unknown. Here we show that local protein synthesis and degradation are linked events in growth cones. We find that growth cones exhibit high levels of ubiquitination and that local signalling pathways trigger the ubiquitination and degradation of RhoA, a mediator of Sema3A-induced growth cone collapse. Inhibition of RhoA degradation is sufficient to remove the protein-synthesis requirement for Sema3A-induced growth cone collapse. In addition to RhoA, we find that locally translated proteins are the main targets of the ubiquitin-proteasome system in growth cones. Thus, local protein degradation is a major feature of growth cones and creates a requirement for local translation to replenish proteins needed to maintain growth cone responses.\n\n### Text snippet from document at k=2\n... The macrophages possess higher activities of citrate synthase and oxoglutarate dehydrogenase than do lymphocytes, suggesting that the tricarboxylic acid cycle may be important in energy generation in these cells. The activity of 3-oxoacid CoA-transferase is higher in the macrophage, but that of 3-hydroxybutyrate dehydrogenase is very much lower than those in the lymphocytes. The activity of carnitine palmitoyltransferase is higher in macrophages, suggesting that fatty acids as well as acetoacetate could provide acetyl-CoA as substrate for the tricarboxylic acid cycle. No detectable rate of acetoacetate or 3-hydroxybutyrate utilization was observed during incubation of resting macrophages, but that of oleate was 1.0 nmol/h per mg of protein or about 2.2% of the activity of palmitoyltransferase. The activity of glutaminase is about 4-fold higher in macrophages than in lymphocytes, which suggests that the rate of glutamine utilization could be very high. The rate of utilization of glutamine by resting incubated macrophages was similar to that reported for rat lymphocytes, but was considerably lower than the activity of glutaminase.\n\n### Text snippet from document at k=10\n: BACKGROUND Obesity is associated with diverse health risks, but the role of body weight as a risk factor for death remains controversial. METHODS We examined the association between body weight and the risk of death in a 12-year prospective cohort study of 1,213,829 Koreans between the ages of 30 and 95 years. We examined 82,372 deaths from any cause and 48,731 deaths from specific diseases (including 29,123 from cancer, 16,426 from atherosclerotic cardiovascular disease, and 3362 from respiratory disease) in relation to the body-mass index (BMI) (the weight in kilograms divided by the square of the height in meters). RESULTS In both sexes, the average baseline BMI was 23.2, and the rate of death from any cause had a J-shaped association with the BMI, regardless of cigarette-smoking history. The risk of death from any cause was lowest among patients with a BMI of 23.0 to 24.9. In all groups, the risk of death from respiratory causes was higher among subjects with a lower BMI, and the risk of death from atherosclerotic cardiovascular disease or cancer was higher among subjects with a higher BMI. The relative risk of death associated with BMI declined with increasing age. CONCLUSIONS Underweight, overweight, and obese men and women had higher rates of death than men and women of normal weight. The association of BMI with death varied according to the cause of death and was modified by age, sex, and smoking history.\n",
+  "thought_process": "Looking at the original query, \"Proteins synthesized at the growth cone are ubiquitinated at a higher rate than proteins from the cell body,\" this makes me think of the complex processes involved in protein synthesis and degradation within cells, particularly at growth cones. The user might actually be trying to understand how these processes affect cellular function and behavior, but the query lacks specificity regarding the mechanisms or pathways involved. \n\nUpon analyzing the results of the original query, I notice that while they touch upon ubiquitination's role in growth cone function, they lack a direct comparison between growth cones and cell bodies as stated in the query. The existing reasoning points out the need to shift focus from general ubiquitination mechanisms to specific aspects related to local protein turnover and regulation at these cellular compartments. \n\nGiven the task of enhancing the query, I'll approach this using the expansion technique provided, which involves being specific and diverse, applying varied augmentation techniques, and focusing on targeted expansions that introduce new dimensions to the query. This should help because it allows for a deeper exploration of the topic, uncovering more relevant documents across various domains without overlapping the original terms.\n\nStarting with goal elucidation and gaps, the primary objective seems to be understanding the differential ubiquitination rates and their implications for growth cone function. A significant gap is the lack of direct comparison and specific regulatory mechanisms governing protein ubiquitination in growth cones.\n\nFor ineffective term identification, broad terms like \"proteins,\" \"ubiquitinated,\" and \"metabolic\" should be avoided as they are too general and might not yield specific enough results related to the query's objectives.\n\nMoving to breadth expansion, considering terms like \"degradation,\" \"proteasome,\" \"lysosome,\" \"signaling pathways,\" \"actin cytoskeleton,\" \"axon guidance,\" and \"neurodevelopment\" could provide a wider scope of relevant information. These terms introduce new dimensions related to cellular processes and structures that could be involved in the differential ubiquitination observed at growth cones.\n\nFocusing on depth expansion, let's choose \"proteasome\" as a key topic. Delving deeper, terms like \"26S proteasome,\" \"ubiquitin ligases,\" \"deubiquitinases,\" and \"protein degradation pathways\" become relevant. These terms are specific and targeted, allowing for a detailed understanding of the ubiquitination process and its regulation at growth cones.\n\nAs I apply the expansion technique systematically, I also consider natural thought patterns and connections. For instance, the role of the proteasome in protein degradation leads me to think about the involvement of ubiquitin ligases and deubiquitinases in this process. This reminds me of the importance of signaling pathways and the actin cytoskeleton in axon guidance and neurodevelopment, which could be indirectly related to the regulation of ubiquitination at growth cones.\n\nOccasionally, I have to step back and reassess the direction of my thought process, ensuring that I'm staying focused on the query's objectives while exploring these related concepts. It's a balance between following the structured approach of the expansion technique and allowing for intuitive connections and insights to emerge.\n\nThrough this process, insights begin to emerge from both the structured technique and my natural thought patterns. Applying the specific aspects of the technique leads to the discovery of terms like \"26S proteasome\" and \"ubiquitin ligases,\" which are directly relevant to understanding the ubiquitination process at growth cones. Meanwhile, my instinct to consider the broader context of axon guidance and neurodevelopment adds a layer of depth to the query, potentially uncovering more nuanced relationships between these processes and ubiquitination.\n\nSynthesizing these insights with clarity, I believe the terms that would be most effective for an expanded query, considering a BM25 index, are those that capture both the explicit and implicit aspects of what the user is seeking. The final augmented query, \"growth cone cell body 26S proteasome ubiquitin ligases deubiquitinases axon guidance,\" reflects this synthesis, incorporating specific terms related to the proteasome and ubiquitination process, while also acknowledging the broader context of axon guidance.\n\nThis thought process has allowed me to move from an initial query that was somewhat vague to a more targeted and specific exploration of the differential ubiquitination rates at growth cones, incorporating a range of relevant concepts and terms that should yield more precise and useful results.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

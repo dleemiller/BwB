@@ -1,0 +1,64 @@
+{
+  "reasoning": "The query seeks a clear definition of \"concurrent disorders.\" While existing results touch upon related concepts and complexities, they lack a direct, concise definition upfront.  To improve retrieval, we need to: 1) identify core concepts like \"disorders\" and \"concurrent,\" 2) explore synonyms and related terms, 3) consider the domain context (psychology, psychiatry), and 4) structure the augmented query for clarity.",
+  "query_goals": [
+    "define concurrent disorders",
+    "identify types of concurrent disorders",
+    "understand challenges in diagnosing concurrent disorders"
+  ],
+  "augmented_query": "\"definition concurrent disorders comorbidity dual diagnosis multiple mental illnesses psychiatry psychology\"",
+  "ndcg": {
+    "NDCG@10": 0.38685,
+    "NDCG@100": 0.38685,
+    "NDCG@1000": 0.38685,
+    "NDCG@10000": 0.38685
+  },
+  "map": {
+    "MAP@10": 0.2,
+    "MAP@100": 0.2,
+    "MAP@1000": 0.2,
+    "MAP@10000": 0.2
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.16875,
+  "instruction": "graph",
+  "query": "concurrent disorders definition",
+  "query_id": "96749",
+  "generator_model": "gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "source": "zeta-alpha-ai/NanoMSMARCO",
+  "dataset": "msmarco",
+  "node_classes": [
+    "Mental Health Disorder",
+    "Diagnostic Criteria",
+    "Co-occurrence",
+    "Psychiatry",
+    "Psychology"
+  ],
+  "query_nodes": [
+    "concurrent disorders",
+    "disorders",
+    "definition"
+  ],
+  "nearest_neighbors": [
+    "comorbidity",
+    "dual diagnosis",
+    "overlapping diagnoses",
+    "multiple mental illnesses"
+  ],
+  "cleaned_augmented_query": "definition concurrent disorders comorbidity dual diagnosis multiple mental illnesses psychiatry psychology",
+  "final_delta": 0.16875,
+  "initial_results": "### Text snippet from document at k=1\n: Concurrent disorders are also sometimes called: 1  dual disorders. 2  dual diagnosis. 3  co-occurring substance use and mental health problems.\n\n### Text snippet from document at k=2\n: Concurrent disorders can include combinations such as: an anxiety disorder and a drinking problem. schizophrenia and cannabis dependence. borderline personality disorder and heroin dependence. depression and dependence on sleeping pills.\n\n### Text snippet from document at k=10\n: Concurrent sentences are two or more prison terms to be served simultaneously, one of which might be longer than the others.\n",
+  "thought_process": "Looking at the original query \"concurrent disorders definition,\" this makes me think of the complexities involved in diagnosing and treating mental health issues that occur simultaneously. Though the user might actually be trying to find a straightforward definition, I suspect there's an underlying need to understand the nuances of concurrent disorders. The query seems to be informational, aiming to provide a clear understanding of what concurrent disorders are, rather than navigational or transactional.\n\nAnalyzing the results of the original query, I notice that while they touch upon related concepts and provide some examples of concurrent disorders, they lack a direct, concise definition upfront. The strengths of the search terms lie in their broad coverage of mental health topics, but the weakness is the lack of specificity and clarity regarding concurrent disorders. The results at k=1 and k=2 are particularly relevant, as they provide insight into the terminology and examples of concurrent disorders, such as dual disorders, dual diagnosis, and co-occurring substance use and mental health problems. However, the result at k=10 seems off-topic, referring to concurrent sentences in a legal context, which indicates a need to refine our search terms for better precision.\n\nTo approach this systematically, I'll use the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph and traversing it to find high-value expansion terms. This technique is particularly well-suited for this query because it allows us to explore the intricate relationships between mental health disorders, their diagnoses, and the complexities of concurrent conditions. By applying this technique, I hope to uncover terms that not only provide a clear definition but also encompass the broader context of concurrent disorders, including their challenges and nuances.\n\nStarting with query analysis, I identify \"concurrent disorders\" and \"definition\" as core concepts. The search intent is informational, with an implicit assumption that the user is looking for a comprehensive understanding of the term. \n\nFor graph construction, I'll build a conceptual graph with core nodes like \"concurrent disorders,\" \"mental health,\" and \"definition.\" First-order connections will include properties like \"types of disorders\" and \"diagnostic criteria.\" Second-order connections might involve related concepts such as \"comorbidity\" and \"dual diagnosis.\" The domain context is clearly within psychology and psychiatry.\n\nSelecting expansion paths, I'm interested in synonymous terms (like \"comorbidity\" and \"dual diagnosis\"), hierarchical terms (such as specific mental health disorders that can occur concurrently), and contextual terms (like \"psychiatry\" and \"psychology\"). I'll also consider domain-specific terminology that professionals in these fields might use.\n\nAs I extract and filter terms, I'm looking for relevance, distinctiveness, specificity, and searchability. Terms like \"comorbidity,\" \"dual diagnosis,\" \"co-occurring disorders,\" \"mental illnesses,\" and \"psychiatry\" seem promising. They maintain the original search intent while offering alternative pathways for retrieval.\n\nThrough this process, applying the Query Expansion via Conceptual Graph Traversal technique leads me to terms like \"comorbidity\" and \"dual diagnosis,\" which directly relate to the concept of concurrent disorders. This technique also reminds me of the importance of considering the domain context, which in this case is crucial for understanding the nuances of mental health disorders. I had a realization that connects to what we were exploring earlier - the need for specificity in defining concurrent disorders, which can include a wide range of mental health issues and substance use disorders. This realization complements the technique by highlighting the importance of considering both the explicit and implicit aspects of the user's query.\n\nBy stepping back to reassess, I notice that while the technique provides a systematic approach, my intuition also plays a role in selecting terms that seem particularly relevant based on the initial results and the domain knowledge. For instance, the term \"multiple mental illnesses\" stands out as a significant aspect of concurrent disorders, which aligns with both the technique's findings and my natural thought process.\n\nSynthesizing all insights, I believe the terms from the expanded query - \"definition concurrent disorders comorbidity dual diagnosis multiple mental illnesses psychiatry psychology\" - capture both the explicit and implicit aspects of what the user is seeking. These terms not only provide a clear definition of concurrent disorders but also encompass the complexities, challenges, and nuances associated with diagnosing and treating these conditions. Through this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I've arrived at a set of terms that should improve document retrieval for those seeking information on concurrent disorders.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

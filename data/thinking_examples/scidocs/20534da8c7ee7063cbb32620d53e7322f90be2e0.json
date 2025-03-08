@@ -1,0 +1,76 @@
+{
+  "reasoning": "The objective is to expand the original query by considering various user personas, their unique vocabulary needs at different stages of information discovery, and contextual scenarios in which they might search for this information. The primary goal is to incorporate more terms relevant to \"glass substrates,\" alongside other key elements pertinent to 5G technologies like phased arrays, beamforming, and millimeter-wave frequencies.\n\nGiven the strengths and weaknesses identified in the document types returned by the current search results\u2014mainly academic papers or technical reports on engineering aspects of wireless communication\u2014it's clear that while relevant technological details are covered, there is a specific gap concerning \"glass substrates.\" This suggests the need to focus more precisely on this aspect for potential users who require detailed information about material considerations in 5G antenna design.\n\nThe reasoning process involves constructing personas with varying levels of expertise, mapping their vocabulary evolution as they move through different stages of understanding (awareness, learning, and application), and identifying practical scenarios where such knowledge might be sought. By doing so, the expanded query can better reflect user intent across a spectrum from novice to expert, increasing the likelihood of retrieving more pertinent documents.",
+  "augmented_query": "First Demonstration of 28 GHz and 39 GHz Transmission Lines and Antennas on Glass Substrates for 5G Modules focusing on phased arrays, beamforming technologies, millimeter-wave frequencies, efficiency impacts of glass substrates, and advanced research in RF engineering.",
+  "ndcg": {
+    "NDCG@10": 0.0,
+    "NDCG@100": 0.19235,
+    "NDCG@1000": 0.28375,
+    "NDCG@10000": 0.28375
+  },
+  "map": {
+    "MAP@10": 0.0,
+    "MAP@100": 0.03042,
+    "MAP@1000": 0.04097,
+    "MAP@10000": 0.04097
+  },
+  "recall": {
+    "Recall@10": 0.0,
+    "Recall@100": 0.6,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.0,
+    "P@100": 0.03,
+    "P@1000": 0.005,
+    "P@10000": 0.0005
+  },
+  "delta": 0.01569,
+  "instruction": "journey",
+  "query": "First Demonstration of 28 GHz and 39 GHz Transmission Lines and Antennas on Glass Substrates for 5G Modules",
+  "query_id": "20534da8c7ee7063cbb32620d53e7322f90be2e0",
+  "dataset": "scidocs",
+  "user_personas": [
+    "Novice Electronics Enthusiast: Curious about emerging technologies in 5G and interested in basic concepts.",
+    "Intermediate Engineering Student: Focused on learning material properties for communication systems design projects.",
+    "Advanced RF Engineer: Seeks to understand the latest advancements in antenna technology using new materials like glass substrates.",
+    "Expert Wireless Communication Researcher: Specializes in millimeter-wave technology applications, particularly in innovative substrate materials and their impact on 5G module performance."
+  ],
+  "search_vocabulary": [
+    "5G antennas basics",
+    "millimeter-wave communication for beginners",
+    "glass material for antenna substrates",
+    "antenna design project materials",
+    "phased arrays with glass substrates",
+    "beamforming technology in 5G",
+    "advanced millimeter-wave antennas on glass",
+    "latest research on glass substrates in RF engineering",
+    "impact of glass substrates on 5G antenna efficiency"
+  ],
+  "journey_stages": [
+    "Basic understanding of 5G frequency bands",
+    "Exploration of material science in communication technologies",
+    "Investigating specific designs and configurations for antennas using glass substrates",
+    "Researching cutting-edge applications and performance impacts of innovative materials on millimeter-wave technologies"
+  ],
+  "usage_scenarios": [
+    "Curiosity about new 5G antenna technology developments",
+    "Academic project requirements involving antenna material selection",
+    "Professional need to optimize 5G module designs using glass substrates",
+    "Conducting in-depth research into the latest scientific findings on substrate materials for enhanced wireless communication"
+  ],
+  "intent_terms": [
+    "5G millimeter-wave frequencies",
+    "antenna design and efficiency",
+    "phased array applications",
+    "beamforming technologies",
+    "glass substrates for RF engineering",
+    "millimeter-wave glass antennas research",
+    "innovative antenna materials"
+  ],
+  "cleaned_augmented_query": "first demonstration 28 ghz 39 transmission lines antennas glass substrates 5g modules focusing phased arrays beamforming technologies millimeter wave frequencies efficiency impacts advanced research rf engineering",
+  "final_delta": 0.0197,
+  "initial_results": "### Text snippet from document at k=1\n: This paper investigates a planar monopole antenna for fifth generation (5G) wireless communication networks. The proposed antenna has an ultra-wide band impedance response in millimeter wave (mmW) spectrum, 25\u201339 GHz covering Ka band. The antenna has unique structural layout resembling hexagonal honeycomb and has low profile (8\u00d77 mm2) on 0.254 mm thick Rogers substrate, enabling the design for incorporation into future mobile phones. This antenna provides peak gain of 4.15 dBi along with 90% efficiency in the working band. The design is also extended to an 8\u00d71 element array presenting maximum gain of 12.7 dBi at central frequency of the antenna.\n\n### Text snippet from document at k=2\n: Liquid crystal polymer (LCP) is a material that has gained attention as a potential high-performance microwave substrate and packaging material. This investigation uses several methods to determine the electrical properties of LCP for millimeter-wave frequencies. Microstrip ring resonators and cavity resonators are measured in order to characterize the dielectric constant (/spl epsi//sub r/) and loss tangent (tan/spl delta/) of LCP above 30 GHz. The measured dielectric constant is shown to be steady near 3.16, and the loss tangent stays below 0.0049. In addition, various transmission lines are fabricated on different LCP substrate thicknesses and the loss characteristics are given in decibels per centimeter from 2 to 110 GHz. Peak transmission-line losses at 110 GHz vary between 0.88-2.55 dB/cm, depending on the line type and geometry. These results show, for the first time, that LCP has excellent dielectric properties for applications extending through millimeter-wave frequencies.\n\n### Text snippet from document at k=10\n: A circularly polarized slot radiator in millimetre band is presented. Low reflection and good polarization performance is obtained in comparison with state of art slot elements. A high gain array prototype has been implemented in substrate integrated waveguides (SIW) technology, in order to check the new element performance. A cosecant amplitude coverage in the elevation plane, as well as a 6\u00b0 tilted monopulse pattern in the azimuth plane are obtained. A gain peak value of 28.6 dBi and 79% of efficiency at 36.7 GHz have been obtained in the specified operation band (36.7 \u2013 37 GHz) for a manufactured antenna prototype. Likewise, the top measured axial ratio is 1.95 dB at 36.85 GHz.\n",
+  "thought_process": "Looking at the original query, \"First Demonstration of 28 GHz and 39 GHz Transmission Lines and Antennas on Glass Substrates for 5G Modules,\" this makes me think of the cutting-edge technology involved in 5G communication systems. Though the user might actually be trying to understand the specifics of glass substrates in antenna design, it seems there's a broader interest in how these substrates impact the performance of 5G modules, particularly at millimeter-wave frequencies. Hmm, not sure yet how deep the user wants to dive into the technical aspects, but it's clear they're interested in the intersection of materials science and wireless communication.\n\nAnalyzing the results of the original query, I notice that while there are relevant documents discussing millimeter-wave frequencies, phased arrays, and beamforming technologies, there's a gap in information specifically about glass substrates. This suggests the search terms might need to be expanded to capture more of the materials science aspect, potentially including terms related to the efficiency impacts of using glass substrates in RF engineering.\n\nI'm seeing several possibilities here, but let me approach this using the Query Expansion via User Intent and Journey Mapping technique, which involves constructing user personas with varying levels of expertise and mapping their information needs as they progress from awareness to expertise. This should help because it allows us to consider how different users might search for the same information, thereby increasing the chances of retrieving pertinent documents.\n\nFollowing the Query Expansion technique, the first step is to create user personas. For instance, we could have a novice electronics enthusiast curious about emerging 5G technologies, an intermediate engineering student focused on learning about material properties for communication systems design, an advanced RF engineer seeking the latest in antenna technology using new materials like glass substrates, and an expert wireless communication researcher specializing in millimeter-wave technology applications.\n\nAs I delve into the search vocabulary analysis for each persona, I realize the importance of initial search terms they would naturally use, such as \"5G antennas basics\" for the novice, \"glass material for antenna substrates\" for the intermediate learner, \"phased arrays with glass substrates\" for the advanced engineer, and \"latest research on glass substrates in RF engineering\" for the expert. It's also crucial to consider how their vocabulary evolves as they learn more, potentially leading to follow-up searches that are more specific or technically nuanced.\n\nMapping the information journey for these personas, it becomes clear that their needs progress from basic understanding to more advanced concepts. For example, the novice starts with basic questions about 5G frequency bands, while the expert is concerned with the impact of glass substrates on antenna efficiency and the latest research in millimeter-wave antennas on glass.\n\nConsidering contextual scenarios where users need this information, such as problem-solving in design projects, learning contexts in academia, decision-making in professional settings, or practical application in research, further refines the search terms. This leads to the identification of high-value terms across the expertise spectrum, including \"millimeter-wave communication for beginners,\" \"antenna design project materials,\" \"beamforming technology in 5G,\" and \"advanced millimeter-wave antennas on glass.\"\n\nApplying the technique's steps systematically, I adjust my approach as needed. For instance, initially, I thought focusing solely on technical specifications would suffice, but recognizing the importance of user intent and journey mapping has broadened the scope to include more nuanced search terms that reflect real users' queries.\n\nThis process reveals insights that complement the technique. For example, the structured approach highlights the necessity of including terms related to \"glass substrates for RF engineering\" and \"innovative antenna materials,\" while my intuition suggests also considering \"5G millimeter-wave frequencies\" and \"antenna design and efficiency\" to capture the broader context of the user's interests.\n\nThrough this process of applying the Query Expansion technique and exploring related threads, I believe the terms that would be most effective for a BM25 index include those focusing on the intersection of glass substrates, millimeter-wave frequencies, phased arrays, beamforming technologies, and RF engineering advancements. These capture both the explicit and implicit aspects of what the user is seeking, from basic understanding to expert-level research.\n\nThus, the expanded query, \"first demonstration 28 ghz 39 transmission lines antennas glass substrates 5g modules focusing phased arrays beamforming technologies millimeter wave frequencies efficiency impacts advanced research rf engineering,\" reflects a comprehensive approach to query expansion, balancing structured technique with natural cognitive patterns to better meet the user's information needs.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

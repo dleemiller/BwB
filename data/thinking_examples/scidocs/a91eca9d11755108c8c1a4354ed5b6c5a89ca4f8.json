@@ -1,0 +1,69 @@
+{
+  "reasoning": "The goal is to find information specifically about the \"FingerCode\" algorithm since the initial search only yielded related but non-specific results. I will start by identifying the query's goals and ineffective terms. Then, I'll expand the search breadth with related concepts and narrow the focus with a depth expansion to discover specific aspects of the algorithm's implementation, performance, and applications.",
+  "query_goals": [
+    "Understand the FingerCode algorithm's methodology.",
+    "Identify FingerCode's strengths and weaknesses.",
+    "Find applications of the FingerCode algorithm.",
+    "Compare FingerCode with other fingerprint recognition algorithms.",
+    "Discover implementations or code libraries for FingerCode",
+    "Discover performance metrics of the FingerCode algorithm",
+    "Find variations or improvements based on the FingerCode algorithm"
+  ],
+  "ineffective_terms": [
+    "representation",
+    "matching",
+    "filterbank"
+  ],
+  "breadth_expansion": [
+    "fingerprint recognition techniques",
+    "biometric identification algorithms",
+    "image processing methods for fingerprints",
+    "security applications of fingerprint analysis",
+    "forensic science fingerprint technology"
+  ],
+  "depth_chain": [
+    "forensic science fingerprint technology",
+    "latent fingerprint enhancement",
+    "fingerprint alteration detection",
+    "crime scene investigation techniques",
+    "digital forensics analysis methods",
+    "image analysis in criminal justice"
+  ],
+  "augmented_query": "latent enhancement alteration detection crime digital forensics criminal justice",
+  "ndcg": {
+    "NDCG@10": 0.4372,
+    "NDCG@100": 0.4372,
+    "NDCG@1000": 0.52073,
+    "NDCG@10000": 0.5535
+  },
+  "map": {
+    "MAP@10": 0.24,
+    "MAP@100": 0.24,
+    "MAP@1000": 0.245,
+    "MAP@10000": 0.24576
+  },
+  "recall": {
+    "Recall@10": 0.4,
+    "Recall@100": 0.4,
+    "Recall@1000": 0.8,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.004,
+    "P@10000": 0.0005
+  },
+  "delta": 0.06845,
+  "instruction": "expand",
+  "query": "FingerCode: A Filterbank for Fingerprint Representation and Matching",
+  "query_id": "a91eca9d11755108c8c1a4354ed5b6c5a89ca4f8",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "scidocs",
+  "cleaned_augmented_query": "latent enhancement alteration detection crime digital forensics criminal justice",
+  "final_delta": 0.06845,
+  "initial_results": "### Text snippet from document at k=1\n: Fingerprint classification provides an important indexing mechanism in a fingerprint database. An accurate and consistent classification can greatly reduce fingerprint matching time for a large database. We present a fingerprint classification algorithm which is able to achieve an accuracy better than previously reported in the literature. We classify fingerprints into five categories: whorl, right loop, left loop, arch, and tented arch. The algorithm uses a novel representation (FingerCode) and is based on a two-stage classifier to make a classification. It has been tested on 4,000 images in the NIST-4 database. For the five-class problem, a classification accuracy of 90 percent is achieved (with a 1.8 percent rejection during the feature extraction phase). For the four-class problem (arch and tented arch combined into one class), we are able to achieve a classification accuracy of 94.8 percent (with 1.8 percent rejection). By incorporating a reject option at the classifier, the classification accuracy can be increased to 96 percent for the five-class classification task, and to 97.8 percent for the four-class classification task after a total of 32.5 percent of the images are rejected.\n\n### Text snippet from document at k=2\n: Identifying incomplete or partial fingerprints from a large fingerprint database remains a difficult challenge today. Existing studies on partial fingerprints focus on one-to-one matching using local ridge details. In this paper, we investigate the problem of retrieving candidate lists for matching partial fingerprints by exploiting global topological features. Specifically, we propose an analytical approach for reconstructing the global topology representation from a partial fingerprint. First, we present an inverse orientation model for describing the reconstruction problem. Then, we provide a general expression for all valid solutions to the inverse model. This allows us to preserve data fidelity in the existing segments while exploring missing structures in the unknown parts. We have further developed algorithms for estimating the missing orientation structures based on some a priori knowledge of ridge topology features. Our statistical experiments show that our proposed model-based approach can effectively reduce the number of candidates for pair-wised fingerprint matching, and thus significantly improve the system retrieval performance for partial fingerprint identification.\n\n### Text snippet from document at k=10\n: A fingerprint classification algorithm is presented in this paper. Fingerprints are classified into five categories: arch, tented arch, left loop, right loop and whorl. The algorithm extracts singular points (cores and deltas) in a fingerprint image and performs classification based on the number and locations of the detected singular points. The classifier is invariant to rotation, translation and small amounts of scale changes. The classifier is rule-based, where the rules are generated independent of a given data set. The classifier was tested on 4000 images in the NIST-4 database and on 5400 images in the NIST-9 database. For he NIST-4 database, classification accuracies of 85.4% for the five-class problem and 91.1% for the four-class problem (with arch and tented arch placed in the same category) were achieved. Using a reject option, the four-class classification error can be reduced to less than 6% with 10% fingerprint images rejected. Similar classification performance was obtained on the NIST-9 database.\n",
+  "thought_process": "As I delve into the task of expanding the search query \"FingerCode: A Filterbank for Fingerprint Representation and Matching,\" I'm immediately drawn to the core concept of fingerprint recognition and the specific algorithm mentioned, FingerCode. My initial impressions are that the query is quite specific, aiming to understand the methodology, strengths, weaknesses, applications, and comparisons of the FingerCode algorithm, as well as its implementations and performance metrics. The user seems to be interested in a comprehensive overview of FingerCode within the broader context of fingerprint recognition techniques and biometric identification algorithms.\n\nAnalyzing the results of the original query, it's clear that the terms \"representation,\" \"matching,\" and \"filterbank\" are too broad or non-precise, leading to results that aren't directly focused on the FingerCode algorithm. This indicates a need to refine the search terms to capture the essence of FingerCode and its applications more accurately.\n\nThe expansion technique to be applied involves being specific and diverse, focusing on targeted expansions that introduce new dimensions to the query. This includes synonym replacement, conceptual expansion, contextual expansion, and the use of domain-specific terminology. The goal is to avoid generic terms and instead opt for unique, diverse, and relevant terms that can yield non-overlapping results from the original query.\n\nStarting with the breadth expansion, terms like \"fingerprint recognition techniques,\" \"biometric identification algorithms,\" \"image processing methods for fingerprints,\" \"security applications of fingerprint analysis,\" and \"forensic science fingerprint technology\" come to mind. These terms broaden the scope of the search, aiming to capture the wider context in which FingerCode operates.\n\nFor the depth expansion, focusing on \"forensic science fingerprint technology\" seems promising. This area is crucial for understanding the practical applications and the challenges associated with fingerprint recognition, including aspects like latent fingerprint enhancement, fingerprint alteration detection, and crime scene investigation techniques. Delving deeper, terms related to digital forensics analysis methods and image analysis in criminal justice could provide valuable insights into how FingerCode or similar algorithms are used in real-world scenarios.\n\nAs I apply the expansion technique, I notice that terms like \"latent enhancement,\" \"alteration detection,\" \"crime,\" \"digital forensics,\" and \"criminal justice\" emerge as significant. These terms not only expand the search query in a meaningful way but also ensure that the results will be novel and relevant to the original query's objectives.\n\nAt times, my thought process veers into considering the potential applications of FingerCode in forensic science, only to return to the systematic approach of expanding the query through targeted terms. This balance between organic thinking and structured technique is crucial, as it allows for both the exploration of intuitive connections and the systematic application of expansion methods.\n\nUpon reflection, the process of query expansion is not just about adding terms but about understanding the nuances of the subject matter and the user's intent. It requires a deep dive into the specific goals of the query, the identification of ineffective terms, and the application of a structured approach to broaden and deepen the search scope.\n\nThrough this process, insights emerge from both the structured approach and natural intuition. Applying the expansion technique leads to the discovery of specific terms that capture the essence of the FingerCode algorithm and its applications in forensic science and biometric identification. The synthesis of these insights with clarity yields an augmented query that is both targeted and diverse, ensuring that the search results will be relevant and non-overlapping with the original query.\n\nThe final augmented query, \"latent enhancement alteration detection crime digital forensics criminal justice,\" reflects a thoughtful and systematic approach to query expansion. This query balances the need for specificity and diversity, targeting terms that introduce new dimensions to the search while avoiding generic or ineffective terms. The resulting search is poised to yield high-quality results that address the user's objectives comprehensively.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,79 @@
+{
+  "reasoning": "The query centers on glycolysis, a fundamental metabolic pathway. While existing results offer valuable insights into its roles in various biological contexts, they lack a comprehensive explanation of the biochemical mechanisms and regulation of glycolysis itself.  Therefore, this knowledge cartography will focus on mapping the conceptual territory surrounding glycolysis, encompassing its molecular underpinnings, regulatory controls, and diverse functional implications across different cellular processes.",
+  "augmented_query": "glycolysis, biochemical mechanisms, regulation, metabolic pathways, cellular energy production, enzyme kinetics, applications in disease",
+  "ndcg": {
+    "NDCG@10": 0.31546,
+    "NDCG@100": 0.31546,
+    "NDCG@1000": 0.31546,
+    "NDCG@10000": 0.31546
+  },
+  "map": {
+    "MAP@10": 0.125,
+    "MAP@100": 0.125,
+    "MAP@1000": 0.125,
+    "MAP@10000": 0.125
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.12203,
+  "instruction": "cartography",
+  "query": "Glycolysis is one of the primary glycometabolic pathways in cells.",
+  "query_id": "475",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "scifact",
+  "central_coordinates": [
+    "Glycolytic Pathway",
+    "Biochemical Reactions",
+    "Cellular Energy Production"
+  ],
+  "boundary_areas": [
+    "Gluconeogenesis",
+    "Pentose Phosphate Pathway",
+    "Aerobic Respiration",
+    "Anaerobic Metabolism",
+    "Cancer Metabolism"
+  ],
+  "key_landmarks": [
+    "Hexokinase",
+    "Phosphofructokinase",
+    "Pyruvate Kinase",
+    "Glycogen Synthesis",
+    "Lactate Fermentation",
+    "Warburg Effect"
+  ],
+  "detail_features": [
+    "ATP production",
+    "Substrate-level phosphorylation",
+    "Enzyme regulation",
+    "Metabolic flux",
+    "Insulin signaling",
+    "Cancer cell metabolism",
+    "Hypoxia response"
+  ],
+  "navigation_terms": [
+    "Glycolysis",
+    "Glucose Metabolism",
+    "Energy Production",
+    "Enzymes",
+    "Regulation",
+    "Cellular Respiration",
+    "Anaerobic Metabolism",
+    "Tumorigenesis"
+  ],
+  "cleaned_augmented_query": "glycolysis biochemical mechanisms regulation metabolic pathways cellular energy production enzyme kinetics applications disease",
+  "final_delta": 0.12203,
+  "initial_results": "### Text snippet from document at k=1\n: Aerobic glycolysis, i.e., the Warburg effect, may contribute to the aggressive phenotype of hepatocellular carcinoma. However, increasing evidence highlights the limitations of the Warburg effect, such as high mitochondrial respiration and low glycolysis rates in cancer cells. To explain such contradictory phenomena with regard to the Warburg effect, a metabolic interplay between glycolytic and oxidative cells was proposed, i.e., the \"reverse Warburg effect\". Aerobic glycolysis may also occur in the stromal compartment that surrounds the tumor; thus, the stromal cells feed the cancer cells with lactate and this interaction prevents the creation of an acidic condition in the tumor microenvironment. This concept provides great heterogeneity in tumors, which makes the disease difficult to cure using a single agent. Understanding metabolic flexibility by lactate shuttles offers new perspectives to develop treatments that target the hypoxic tumor microenvironment and overcome the limitations of glycolytic inhibitors.\n\n### Text snippet from document at k=2\n: Macrophages activated by the Gram-negative bacterial product lipopolysaccharide switch their core metabolism from oxidative phosphorylation to glycolysis. Here we show that inhibition of glycolysis with 2-deoxyglucose suppresses lipopolysaccharide-induced interleukin-1\u03b2 but not tumour-necrosis factor-\u03b1 in mouse macrophages. A comprehensive metabolic map of lipopolysaccharide-activated macrophages shows upregulation of glycolytic and downregulation of mitochondrial genes, which correlates directly with the expression profiles of altered metabolites. Lipopolysaccharide strongly increases the levels of the tricarboxylic-acid cycle intermediate succinate. Glutamine-dependent anerplerosis is the principal source of succinate, although the \u2018GABA (\u03b3-aminobutyric acid) shunt\u2019 pathway also has a role. Lipopolysaccharide-induced succinate stabilizes hypoxia-inducible factor-1\u03b1, an effect that is inhibited by 2-deoxyglucose, with interleukin-1\u03b2 as an important target. Lipopolysaccharide also increases succinylation of several proteins. We therefore identify succinate as a metabolite in innate immune signalling, which enhances interleukin-1\u03b2 production during inflammation.\n\n### Text snippet from document at k=10\n... The mechanisms underlying the effects of miR-22 included a reduction in caspase activation, consistent with miR-22's targeting the pro-apoptotic activities of mitogen-activated protein kinase 14/p38 (MAPK14/p38) and tumor protein p53-inducible nuclear protein 1 (Tp53inp1). Moreover, HD-specific effects comprised not only targeting HDAC4, Rcor1 and Rgs2 mRNAs, but also decreasing focal accumulation of mutant Htt-positive foci, which occurred via an unknown mechanism. CONCLUSIONS These data show that miR-22 has multipartite anti-neurodegenerative activities including the inhibition of apoptosis and the targeting of mRNAs implicated in the etiology of HD. These results motivate additional studies to evaluate the feasibility and therapeutic efficacy of manipulating miR-22 in vivo.\n",
+  "thought_process": "Looking at the original query, \"Glycolysis is one of the primary glycometabolic pathways in cells,\" this makes me think of the intricate biochemical mechanisms that govern cellular energy production. Though the user might actually be trying to understand the broader implications of glycolysis, such as its role in disease or its regulation, the query itself is quite straightforward. It seems like we're dealing with a foundational concept in biochemistry, but one that has far-reaching consequences in various biological contexts.\n\nAnalyzing the results of the original query, I notice that while we get valuable insights into the roles of glycolysis in different diseases and cellular processes, there's a lack of comprehensive explanation of the biochemical mechanisms and regulation of glycolysis itself. This tells me that the initial query, although clear, might not capture the full complexity of what the user is looking for. The user might be seeking a deeper understanding of how glycolysis is regulated, its molecular underpinnings, and how it intersects with other metabolic pathways.\n\nTo expand this query effectively, I'll transition to a more structured approach using Conceptual Territory Mapping. This technique involves treating the query as a geographical territory to be mapped, with key concepts, related domains, and methodologies serving as landmarks, boundaries, and pathways. By applying this method, I hope to uncover a more nuanced and detailed landscape of knowledge surrounding glycolysis.\n\nStarting with the central coordinates, I identify glycolysis as the core concept. Establishing the cardinal directions, I consider both the practical (biochemical mechanisms, regulation) and theoretical (implications in disease, cellular energy production) aspects. The scale for exploration seems to need to be both granular (focusing on specific enzymes and reactions) and broad (encompassing its role in various diseases and cellular processes).\n\nExploring the boundaries, I note that glycolysis intersects with gluconeogenesis, the pentose phosphate pathway, aerobic respiration, and anaerobic metabolism, among others. These neighboring domains are crucial for understanding the full scope of glycolytic processes. Landmarks in this territory include key enzymes like hexokinase, phosphofructokinase, and pyruvate kinase, as well as processes like glycogen synthesis and lactate fermentation.\n\nAs I delve into the detail mapping phase, I fill in specialized features such as ATP production, substrate-level phosphorylation, enzyme regulation, and metabolic flux. Terms like insulin signaling, cancer cell metabolism, and hypoxia response become important for navigating this knowledge landscape.\n\nThe cartographic legend, or the lexicon of important terms, starts to take shape with terms directly related to glycolysis and its regulation, as well as those related to its implications in disease and cellular energy production. This legend will serve as a guide for anyone navigating the complex territory of glycolysis.\n\nThrough this process of applying Conceptual Territory Mapping and exploring related threads, I believe the expanded query should capture both the explicit and implicit aspects of what the user is seeking. The inclusion of terms like \"biochemical mechanisms,\" \"regulation,\" \"metabolic pathways,\" \"cellular energy production,\" and \"applications in disease\" in the augmented query seems to reflect a comprehensive approach to understanding glycolysis.\n\nApplying the specific aspects of the Conceptual Territory Mapping technique leads me to discover terms like \"enzyme kinetics\" and \"Warburg effect,\" which are crucial for grasping the intricacies of glycolytic processes and their implications in cancer metabolism. This process also highlights the importance of considering the interplay between glycolysis and other metabolic pathways, as well as its regulation under different cellular conditions.\n\nIn synthesizing this information, I see that the expanded query effectively balances the need for a structured approach with the natural, intuitive connections that emerge from exploring the conceptual territory of glycolysis. The final terms in the augmented query emerge logically from both the technique and natural insights, providing a robust foundation for further exploration of glycolysis and its manifold implications.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

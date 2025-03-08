@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query aims to pinpoint Zoe Saldana's exact birthdate.  While the existing results accurately identify her as an actress, they fail to provide the specific date requested. This suggests a need to refine the search beyond general biographical information and focus on sources that explicitly list birthdates.",
+  "query_goals": [
+    "find Zoe Saldana's birthdate",
+    "locate precise birthdate information"
+  ],
+  "ineffective_terms": [
+    "actress",
+    "career",
+    "films",
+    "roles"
+  ],
+  "breadth_expansion": [
+    "celebrity birthdays",
+    "actors born in June",
+    "birth records database",
+    "online biographical archives"
+  ],
+  "depth_chain": [
+    "birth records",
+    "June births",
+    "1974 births",
+    "Puerto Rican birth records"
+  ],
+  "augmented_query": "\"Zoe Saldana birth records June 19  Puerto Rico\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Zoe Saldana was born on June 19.",
+  "query_id": "127981",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "fever",
+  "cleaned_augmented_query": "zoe saldana birth records june 19 puerto rico",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Zoe Saldana-Perego ( born Zoe Yadira Salda\u00f1a Nazario , June 19 , 1978 ) , known professionally as Zoe Saldana or Zo\u00eb Saldana , is an American actress and dancer . Following her performances with the theater group Faces , Saldana made her screen debut in an episode of Law & Order ( 1999 ) . Her film career began a year later with Center Stage ( 2000 ) , where she played a struggling ballet dancer , followed by a role in Crossroads ( 2002 ) . Saldana 's breakthrough came in 2009 with the roles of Nyota Uhura in Star Trek and Neytiri in James Cameron 's Avatar ( 2009 ) . The latter film received widespread acclaim , and is the highest-grossing film of all time . Saldana continued her career with films such as Colombiana ( 2011 ) , Guardians of the Galaxy ( 2014 ) and Star Trek Beyond ( 2016 ) .\n\n### Text snippet from document at k=2\n... The film began principal photography in February 2016 at Pinewood Atlanta Studios in Fayette County , Georgia , with many crew changes from the first film due to other commitments . Filming concluded in June 2016 . Gunn chose to set the sequel shortly after the first film to explore the characters ' new roles as the Guardians , and to follow the storyline of Quill 's father established throughout the first film -- Russell was confirmed in that role in July 2016 , portraying Ego , a departure from Quill 's comic father .   Guardians of the Galaxy Vol . 2 premiered in Tokyo on April 10 , 2017 and was released in the United States on May 5 , 2017 , in 3D and IMAX 3D . It has grossed $ 797 million worldwide , making it the third highest-grossing film of 2017 and also outgrossing its predecessor . The film was praised by critics for its humor , soundtrack and cast , but was deemed not as `` fresh '' as the original . A sequel , Guardians of the Galaxy Vol . 3 , is being developed with Gunn returning to write and direct .\n\n### Text snippet from document at k=10\n: G\u00f6tz George ( -LSB- \u0261\u0153ts ge\u02c8\u0254\u0250\u032f g\u0259 -RSB- ; 23 July 1938 -- 19 June 2016 ) was a German actor , son of actor couple Berta Drews and Heinrich George . His arguably best-known role is that of Duisburg detective Horst Schimanski in the TV crime series Tatort .\n",
+  "thought_process": "Looking at the original query \"Zoe Saldana was born on June 19,\" my first impression is that this query is quite specific, aiming to pinpoint Zoe Saldana's exact birthdate. However, the existing results, while accurately identifying her as an actress, fail to provide the specific date requested. This suggests a need to refine the search beyond general biographical information and focus on sources that explicitly list birthdates.\n\nUpon analyzing the results, I notice that terms like \"actress,\" \"career,\" \"films,\" and \"roles\" are not effective in yielding the desired information. They are too broad and do not directly relate to the query's objective of finding Zoe Saldana's birthdate. Therefore, I identify these as ineffective terms that should be avoided in the expanded query.\n\nTo approach this query expansion, I will use a structured technique that involves breadth expansion and depth chaining. First, I consider broader concepts related to the query, such as \"celebrity birthdays,\" \"actors born in June,\" \"birth records database,\" and \"online biographical archives.\" These terms will help in finding more relevant documents that might contain Zoe Saldana's birthdate.\n\nNext, I apply depth chaining by selecting a distant but important topic from the breadth expansion and then going deeper into related terms. For instance, starting with \"birth records,\" I can move to \"June births,\" then to \"1978 births\" (since Zoe Saldana was born in 1978), and finally to \"Puerto Rican birth records,\" given that Zoe Saldana has Puerto Rican ancestry.\n\nAs I systematically apply these steps, I also allow for natural cognitive patterns to emerge. I notice that focusing on \"birth records\" and specifically \"June 19\" along with \"Puerto Rico\" could yield very targeted results. My intuition also suggests that including the year of birth, \"1978,\" might be beneficial, even though the original query does not specify the year. However, since the goal is to find the exact birthdate and considering the final expanded query should be novel and without overlapping the original terms, I decide to focus on the location and the date.\n\nThrough this process of applying the expansion technique and exploring related threads, I realize that terms like \"Zoe Saldana birth records June 19 Puerto Rico\" would be highly effective for finding her exact birthdate. These terms capture both the explicit and implicit aspects of what the user is seeking, combining the specificity of the date and location with the relevance of birth records.\n\nThus, by balancing structured technique with natural thought patterns, I arrive at an expanded query that is both novel and targeted towards finding Zoe Saldana's birthdate. This approach not only enhances the search query but also demonstrates how experts use a combination of systematic methods and intuitive insights to refine search queries effectively.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,70 @@
+{
+  "reasoning": "The query focuses on understanding cyberattacks perpetrated by non-state actors. Existing results touch upon the complexities of cyberwarfare but lack specific details about non-state actors' motivations, tactics, and capabilities. \n\nTo improve results, we need to delve deeper into the motivations and actions of these actors.  We'll analyze the query to identify key concepts related to non-state actors and cyberattacks, construct a conceptual graph representing these relationships, and explore expansion paths that lead to more specific and relevant information about this topic.",
+  "query_goals": [
+    "Identify motivations of non-state actors in cyberattacks",
+    "Describe tactics employed by non-state actors",
+    "Analyze the impact of non-state actor cyberattacks",
+    "Explore legal and ethical implications of non-state actor cyberattacks"
+  ],
+  "augmented_query": "Cyber attacks by non-state actors, motivations of hacktivists, tactics used by cyberterrorists",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.13093,
+  "instruction": "graph",
+  "query": "Cyber attacks are often carried out by non-state actors  Cyber attacks are often carried out by non-state actors, such as cyberterrorists or hacktivists (social activists who hack), without any involvement of the actual state. For instance, in 2007 a massive cyber attack launched on Estonia was blamed on Russia due to the then on-going tensions between these two states [17]. However, the attacks on Estonia were generated from all over the world; and even those from Russia could not have been linked to the Russian authorities, who denied involvement. Similarly, a huge wave of cyber attacks dubbed GhostNet that compromised computers in 103 countries in 2009 was blamed on China, not the least for hacking computers of Tibetan authorities. However, it could not be conclusively proven that this was an attack perpetrated by the Chinese authorities [18]. Any retaliation against a state for a cyber attack can never be certain to be against the right target \u2013 the state should not be blamed for the actions of its individual citizens.",
+  "query_id": "test-science-wsihwclscaaw-con01a",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "arguana",
+  "node_classes": [
+    "Cyberattack",
+    "Non-State Actor",
+    "Motivation",
+    "Tactic",
+    "Impact",
+    "Cybersecurity Policy",
+    "International Law"
+  ],
+  "query_nodes": [
+    "Cyberattacks",
+    "Non-state actors"
+  ],
+  "nearest_neighbors": [
+    "Hacktivists",
+    "Cyberterrorists",
+    "Anonymous",
+    "APT Groups",
+    "Espionage",
+    "Sabotage",
+    "Data Breaches",
+    "Ransomware",
+    "Nation-State Proxies"
+  ],
+  "cleaned_augmented_query": "cyber attacks non state actors motivations hacktivists tactics used cyberterrorists",
+  "final_delta": 0.13093,
+  "initial_results": "### Text snippet from document at k=1\n... If attacking a difficult target that may seek to strike back the attack will be through numerous proxies which will be in numerous countries to make tracking back difficult. [3] This means there can be misattribution of attacks creating confusion about which state needs to act domestically to prevent the cyber-attacks \u2013 or in the worst case resulting in a response aimed at the wrong country. For example South Korea has blamed its Northern neighbour for an attack on the website of the South Korean Presidency but the hacking is more likely to have been the work of someone in South Korea itself as a South Korean detailed his plans on Twitter before the attack. [4] If it is difficult to attribute who launched the attack then it would clearly be easy to get around any ban.  [1] Nebehay, Stephanie, \u2018China, Russia seek greater control of Internet\u2019, Reuters, 7 March 2013,   [2] Black, Ian, \u2018UN may struggle to respond to reports of Syrian chemical attacks\u2019, The Guardian, 21 August 2013,   [3] Greenemeier, Larry, \u2018Seeking Address: Why Cyber Attacks Are So Difficult to Trace back to Hackers\u2019, Scientific American, 11 June 2011,   [4] Koo, Soo-Kyung, \u2018Cyber Security in South Korea: The Threat Within\u2019, The Diplomat, 19 August 2013,\n\n### Text snippet from document at k=2\n: Cyber attacks can do serious damage to the state  Large scale cyber attacks can result in substantial harms to the state equivalent to those of an armed attack. Many states are dependent on flawless functioning of government and financial services online, and attacking them would cause mass disruption. For example, massive cyber attacks can cause serious disruption to economy by targeting financial, banking and commercial services; they can target government websites and steal confidential information that would compromise country's security, as was the case with USA in 2007 [10]; they could target power grids and shut down infrastructure on a massive scale across the country. All these instances cause disruption and leave the targeted country vulnerable with the government unable to operate successfully. This way, for instance, a large scale cyber attack from Russia on Georgia 2008 caused massive disruption to government, banking services, and communication within and outside of the country [11]. For these reasons USA's Pentagon decided to consider a cyber attack that 'produces the death, damage, destruction or high-level disruption that a traditional military attack would cause' an act of war [12]. Given the damage of possible attacks to the state, large-scale cyber attacks should be considered an act of war.\n\n### Text snippet from document at k=10\n: Sanctions won't harm the hackers  Sanctions are typically used as a response to the actions of another state, not the actions of a private actor. Much cyber espionage is not carried out by government entities such as the army or intelligence services. It is also not encouraged by government regulation. Rather it is carried out by private actors whether this is criminal organisations or businesses seeking to undermine their rivals and learn their secrets this is usually with a financial motive (75% of data breaches) [1] , or else by individuals motivated by nationalism and patriotism to attack those they see as their nation\u2019s enemies. It is difficult to see how sanctions against the nation as a whole affect these groups and individuals. This is certainly the case in China where many such as the \u2018China Eagle Union\u2019 admit to hacking for nationalist reasons rather than being told by the government. [2]  A response such as sanctions are simply likely to breed more resentment that the other power is attempting to bully their nation. The hackers only possible response is then more hacking. For those sponsored by companies if their company is hit by sanctions it simply becomes all the more necessary to find methods of getting ahead to offset any harm by sanctions.  [1] Verizon RISK Team, \u20182013 Data Breach Investigations Report\u2019, Verizon, 23 April 2013,  p.6  [2] Beech, Hannah, \u2018China\u2019s Red Hackers: The Tale of One Patriotic Cyberwarrior\u2019, Time, 21 February 2013,\n",
+  "thought_process": "Looking at the original query, \"Cyber attacks are often carried out by non-state actors,\" this makes me think of the complexities of attributing cyberattacks to specific entities, especially when they could be launched from anywhere in the world. Though the user might actually be trying to understand the motivations and tactics of these non-state actors, such as cyberterrorists or hacktivists, the query itself is quite broad. My initial impression is that we need to delve deeper into the specifics of non-state actors in cyberattacks, exploring their motivations, tactics, and the impact of their actions.\n\nAnalyzing the results of the original query, I notice that while they touch upon the challenges of cyberwarfare and the involvement of non-state actors, they lack concrete details about these actors' motivations and tactics. The text snippets from the documents at various positions, such as k=1, k=2, and k=10, provide insights into the difficulties of attributing cyberattacks, the potential harm they can cause to a state, and why sanctions might not be an effective response against private actors. However, they don't directly address the core questions about non-state actors that our query aims to answer.\n\nTo approach this systematically, I'll use the Query Expansion via Conceptual Graph Traversal technique. This involves first identifying the core concepts and entities in the query, which are cyberattacks and non-state actors. The search intent seems to be informational, aiming to understand the nature and implications of cyberattacks by non-state actors. There's an implicit assumption that understanding these aspects could help in devising strategies to counter or mitigate such attacks.\n\nNext, I construct a conceptual graph with core nodes representing cyberattacks and non-state actors. The first-order connections include properties like motivations (why they launch cyberattacks), tactics (how they carry out these attacks), and impact (the effects of these attacks on states and societies). Second-order connections might involve related concepts like cybersecurity policies, international laws, and the role of nation-state proxies in cyberattacks.\n\nFor expansion path selection, I identify several promising directions: synonymous terms (e.g., \"cyberterrorism\" for attacks with political or ideological motivations), hierarchical terms (broader concepts like \"cybercrime\" or narrower ones like \"ransomware attacks\"), compositional terms (components of cyberattacks, such as \"malware\" or \"phishing\"), contextual terms (settings where cyberattacks occur, like \"financial institutions\" or \"government websites\"), and domain-specific terminology (terms specific to cybersecurity and international relations).\n\nExtracting and filtering terms, I look for those that are highly relevant, distinctive, specific, and searchable. This process involves balancing the structured approach of the technique with natural thought patterns, including considering occasional false starts or reconsiderations based on the insights gained from the documents analyzed.\n\nA key insight from applying this technique is the realization that the motivations of non-state actors can vary widely, from financial gain to political activism or nationalism. This understanding points towards the importance of including terms related to these motivations in the expanded query. Similarly, tactics used by these actors, such as the use of malware or social engineering, should also be represented in the expanded query to capture the how of cyberattacks.\n\nAs I step back to reassess, it becomes clear that the expanded query needs to balance breadth and specificity. It should encompass the variety of non-state actors, their motivations, tactics, and the impact of their actions, all while ensuring that the terms used are likely to appear in relevant documents and provide a clear pathway for retrieval.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the terms that would be most effective for a BM25 index include those directly related to non-state actors, their motivations (like \"hacktivists,\" \"cyberterrorists\"), tactics (\"malware,\" \"phishing\"), and the impact of their actions (\"data breaches,\" \"ransomware\"). These terms capture both the explicit and implicit aspects of what the user is seeking to understand about cyberattacks by non-state actors.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

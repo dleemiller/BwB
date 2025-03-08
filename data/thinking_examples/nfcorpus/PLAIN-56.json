@@ -1,0 +1,86 @@
+{
+  "reasoning": "The query \"Foods for Glaucoma\" requires a multi-faceted approach to address the conflicting findings and limitations of existing research. By engaging experts from ophthalmology, nutrition science, epidemiology, pharmacology, and traditional medicine, we can gain a more comprehensive understanding of the potential dietary influences on glaucoma development and progression. These experts can help navigate the nuances of study design, nutrient interactions, and alternative health perspectives, ultimately leading to a more refined search strategy.",
+  "augmented_query": "Foods for Glaucoma: Intraocular Pressure, Optic Nerve Health, Antioxidants, Oxidative Stress, Lutein, Zeaxanthin, Drug-Nutrient Interactions, Clinical Trials, Ayurveda, TCM",
+  "ndcg": {
+    "NDCG@10": 0.71519,
+    "NDCG@100": 0.44699,
+    "NDCG@1000": 0.51982,
+    "NDCG@10000": 0.69108
+  },
+  "map": {
+    "MAP@10": 0.11333,
+    "MAP@100": 0.21929,
+    "MAP@1000": 0.23004,
+    "MAP@10000": 0.23975
+  },
+  "recall": {
+    "Recall@10": 0.12,
+    "Recall@100": 0.36,
+    "Recall@1000": 0.52,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.6,
+    "P@100": 0.18,
+    "P@1000": 0.026,
+    "P@10000": 0.005
+  },
+  "delta": 0.11268,
+  "instruction": "expert",
+  "query": "Foods for Glaucoma",
+  "query_id": "PLAIN-56",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "nfcorpus",
+  "extracted_terms": [
+    "Intraocular Pressure (IOP)",
+    "Optic Nerve Health",
+    "Retinal Ganglion Cells",
+    "Oxidative Stress",
+    "Antioxidants",
+    "Bioavailability",
+    "Dietary Patterns",
+    "Randomized Controlled Trials (RCTs)",
+    "Confounding Factors",
+    "Drug-Nutrient Interactions",
+    "Pharmacokinetics",
+    "Qi",
+    "Doshas",
+    "Lutein",
+    "Zeaxanthin",
+    "Ayurveda",
+    "Traditional Chinese Medicine (TCM)"
+  ],
+  "selected_experts": [
+    "Ophthalmologist specializing in glaucoma",
+    "Nutrition Scientist with expertise in ocular health",
+    "Epidemiologist focusing on nutritional epidemiology",
+    "Pharmacologist specializing in drug-nutrient interactions",
+    "Traditional Medicine Practitioner (Ayurveda/TCM)"
+  ],
+  "expert_insights": [
+    "Ophthalmologist: Emphasizes the importance of intraocular pressure (IOP) management and optic nerve health in glaucoma. Highlights the limitations of current research in translating dietary associations to clinical recommendations. Cites the need for well-designed clinical trials to determine definitive dietary impacts on glaucoma progression. Warns about the potential dangers of self-treating glaucoma with dietary supplements without consulting with a healthcare professional.",
+    "Nutrition Scientist: Focuses on the role of antioxidants, vitamins, and minerals in protecting against oxidative stress and inflammation, potentially contributing to glaucoma prevention. Analyzes the bioavailability of nutrients from food sources versus supplements and the influence of dietary patterns on eye health. Suggests exploring the impact of specific bioactive compounds (e.g., lutein, zeaxanthin) on retinal ganglion cell health.",
+    "Epidemiologist: Critiques the limitations of observational studies in establishing causality and addresses potential confounding factors in dietary studies (e.g., lifestyle, genetics). Recommends more rigorous study designs, such as randomized controlled trials (RCTs), to confirm dietary hypotheses. Considers the impact of dietary patterns over a lifespan on glaucoma risk and progression. Focuses on study population selection and the generalizability of findings.",
+    "Pharmacologist: Examines potential interactions between glaucoma medications and dietary supplements, highlighting the possibility of synergistic or antagonistic effects that may affect drug efficacy or increase the risk of adverse events. Explores the impact of specific nutrients on drug metabolism and transport. Identifies potential drug-nutrient interactions that may influence IOP or optic nerve health.",
+    "Traditional Medicine Practitioner: Introduces alternative perspectives on glaucoma management based on traditional medicine systems, such as Ayurveda or Traditional Chinese Medicine (TCM). Highlights the use of specific herbs, dietary modifications, and lifestyle practices to promote eye health and overall well-being. Considers the individual's constitution and imbalances when recommending dietary interventions. Integrates concepts of 'Qi' (vital energy) and 'Doshas' (body types) into dietary recommendations."
+  ],
+  "cross_connections": [
+    "The importance of antioxidant intake is highlighted by both the Nutrition Scientist and the Ophthalmologist, bridging the gap between nutritional recommendations and clinical relevance.",
+    "The Pharmacologist and Nutrition Scientist can collaborate to assess the safety and efficacy of combining dietary supplements with conventional glaucoma medications.",
+    "The Epidemiologist's focus on rigorous study design complements the Ophthalmologist's need for clinical evidence to support dietary recommendations.",
+    "Traditional Medicine Practitioner's holistic approach can be integrated with the Nutrition Scientist's understanding of nutrient bioavailability to create personalized dietary plans."
+  ],
+  "recommended_resources": [
+    "American Academy of Ophthalmology Glaucoma Overview: Provides comprehensive information on glaucoma diagnosis, treatment, and management.",
+    "National Eye Institute (NEI) Glaucoma Fact Sheet: Offers concise information on glaucoma risk factors, symptoms, and research advancements.",
+    "Linus Pauling Institute Micronutrient Information Center: Presents evidence-based information on the role of vitamins, minerals, and other dietary factors in health and disease.",
+    "Cochrane Library Systematic Reviews on Glaucoma: Provides synthesized evidence on the effectiveness of various interventions for glaucoma management.",
+    "PubMed Clinical Trials on Glaucoma and Nutrition: Enables searching for ongoing and completed clinical trials investigating the relationship between diet and glaucoma."
+  ],
+  "cleaned_augmented_query": "foods glaucoma intraocular pressure optic nerve health antioxidants oxidative stress lutein zeaxanthin drug nutrient interactions clinical trials ayurveda tcm",
+  "final_delta": 0.11268,
+  "initial_results": "### Text snippet from document at k=1\n... Women who ate 3 or more servings/day of fruits/fruit juices were 79% (odds ratio [OR]=0.21; 95% confidence interval [CI]: 0.08\u20130.60) less likely to have glaucoma than women who ate less than one serving/day. Women who consumed more than 2 servings/week of fresh oranges (OR=0.18; 95%CI: 0.06\u20130.51) and peaches (OR=0.30; 95%CI: 0.13\u20130.67) had a decreased odds of glaucoma compared to those consuming less than one serving/week. For vegetables, >1 serving/week compared to \u22641 serving/month of collard-greens/kale decreased the odds of glaucoma by 57% (OR=0.43; 95%CI: 0.21\u20130.85). There was a protective trend against glaucoma in those consuming more fruit/fruit juices (p=0.023), fresh oranges (p=0.002), fresh peaches (p=0.002), and collard greens/kale (p=0.014). Higher consumption of carrots (p=0.061) and spinach (p=0.094) also showed some associations. Individual nutrient intake from food sources found protective trends with higher intakes of vitamin A (p=0.011), vitamin C (p=0.018), and \u03b1-carotene (p=0.021), and close to statistically significant trends with \u03b2-carotene (p=0.052), folate (p=0.056), and lutein/zeaxanthin (p=0.077). Conclusion Higher intake of certain fruits and vegetables high in Vitamins A and C and carotenoids may be associated with a decreased likelihood of glaucoma in older African American women. Randomized controlled trials are needed to determine whether the intake of specific nutrients changes the risk of glaucoma.\n\n### Text snippet from document at k=2\n: PURPOSE: To explore the association between the consumption of fruits and vegetables and the presence of glaucoma. DESIGN: Cross-sectional cohort study. METHODS: In a sample of 1,155 women located in multiple centers in the United States, glaucoma specialists diagnosed glaucoma in at least one eye by assessing optic nerve head photographs and 76-point suprathreshold screening visual fields. Consumption of fruits and vegetables was assessed using the Block Food Frequency Questionnaire. The relationship between selected fruit and vegetable consumption and glaucoma was investigated using adjusted logistic regression models. RESULTS: Among 1,155 women, 95 (8.2%) were diagnosed with glaucoma. In adjusted analysis, the odds of glaucoma risk were decreased by 69% (odds ratio [OR], 0.31; 95% confidence interval [CI], 0.11 to 0.91) in women who consumed at least one serving per month of green collards and kale compared with those who consumed fewer than one serving per month, by 64% (OR, 0.36; 95% CI, 0.17 to 0.77) in women who consumed more than two servings per week of carrots compared with those who consumed fewer than one serving per week, and by 47% (OR, 0.53; 95% CI, 0.29 to 0.97) in women who consumed at least one serving per week of canned or dried peaches compared with those who consumed fewer than one serving per month. CONCLUSIONS: A higher intake of certain fruits and vegetables may be associated with a decreased risk of glaucoma. More studies are needed to investigate this relationship.\n\n### Text snippet from document at k=10\n: OBJECTIVE: This study examined changes in desires to eat high-fat and low-fat foods across an obesity treatment program. The hypotheses under examination were (1) preferences for low-fat foods would increase across time and (2) preferences for high-fat foods would decrease across time. DESIGN: Single-group, prospective examination of desires to eat 48 foods, categorized according to fat content, before and after the 16-week treatment program. SETTING: University clinic, Memphis, Tennessee. PARTICIPANTS: 118 obese (mean weight = 194.4 lbs) women (mean age = 45.24 years) participating in an obesity treatment program. INTERVENTION: A 16-week cognitive-behavioral program for obesity. VARIABLES MEASURED: Desires to eat 48 foods varying in fat content and whether or not participants actually ate these foods. ANALYSIS: Analysis of variance, multiple regression, and paired t tests. RESULTS: The results indicate that during the program, preferences for low-fat foods increased, whereas preferences for high-fat foods decreased. These changes mirrored the changes in consumption of both low-fat and high-fat foods. CONCLUSIONS AND IMPLICATIONS: Within a behavioral economic perspective, the reinforcement value of low-fat foods may increase following a low-fat dietary intervention, whereas the reinforcing properties of high-fat foods may decline. This is desirable as low-fat foods hold many advantages over high-fat foods in terms of weight maintenance.\n",
+  "thought_process": "Looking at the query \"Foods for Glaucoma\", this makes me think of the importance of diet in managing and preventing glaucoma. Though the user might actually be trying to understand how specific foods or nutrients can impact glaucoma development and progression, I'm not sure yet what the underlying motivation or context is. \n\nAs I analyze the results of the original query, I notice that the top documents highlight the potential benefits of consuming certain fruits and vegetables, such as oranges, peaches, and leafy greens, in reducing the risk of glaucoma. This suggests that the query is on the right track, but it might be beneficial to expand it to include more specific nutrients or dietary patterns that have been associated with glaucoma prevention.\n\nNow, let me approach this using the Multi-Disciplinary Expert Panel technique, which involves convening a panel of experts from different disciplines to analyze the query. This should help because it allows us to consider multiple perspectives and specialized knowledge in nutrition, ophthalmology, epidemiology, pharmacology, and traditional medicine.\n\nFollowing the Multi-Disciplinary Expert Panel approach, I should first identify key concepts and methodologies from each discipline. For instance, the Nutrition Scientist might emphasize the role of antioxidants and vitamins in protecting against oxidative stress, while the Ophthalmologist would focus on the importance of intraocular pressure management and optic nerve health. The Epidemiologist would highlight the need for rigorous study designs to establish causality, and the Pharmacologist would explore potential interactions between glaucoma medications and dietary supplements. Meanwhile, the Traditional Medicine Practitioner could introduce alternative perspectives on glaucoma management based on traditional medicine systems like Ayurveda or Traditional Chinese Medicine.\n\nAs I systematically apply the steps of the Multi-Disciplinary Expert Panel technique, I start to see connections between the different disciplines. For example, the importance of antioxidant intake is highlighted by both the Nutrition Scientist and the Ophthalmologist, which bridges the gap between nutritional recommendations and clinical relevance. The Pharmacologist and Nutrition Scientist can collaborate to assess the safety and efficacy of combining dietary supplements with conventional glaucoma medications. This step of the technique is revealing the complexity of glaucoma management and the need for a holistic approach that considers diet, lifestyle, and conventional treatment.\n\nWait, that's not quite right for this query. Let me adjust my approach to focus more on the specific nutrients and dietary patterns that have been associated with glaucoma prevention. This step of the technique is making me realize that I need to consider the bioavailability of nutrients from food sources versus supplements and the influence of dietary patterns on eye health.\n\nApplying the Multi-Disciplinary Expert Panel technique leads me to discover new terms and concepts, such as the role of lutein and zeaxanthin in protecting retinal ganglion cells, and the potential benefits of Ayurvedic and Traditional Chinese Medicine approaches in glaucoma management. I just had a realization that connects to what we were exploring earlier - the importance of considering individual nutritional needs and health status when recommending dietary interventions for glaucoma prevention.\n\nThrough this process of applying the Multi-Disciplinary Expert Panel technique and exploring related threads, I believe the expanded query should include terms such as \"intraocular pressure\", \"optic nerve health\", \"antioxidants\", \"oxidative stress\", \"lutein\", \"zeaxanthin\", \"drug-nutrient interactions\", \"clinical trials\", \"Ayurveda\", and \"Traditional Chinese Medicine\". These terms capture both the explicit and implicit aspects of what the user is seeking and provide a comprehensive foundation for further research on the relationship between diet and glaucoma.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

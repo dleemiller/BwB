@@ -1,0 +1,64 @@
+{
+  "reasoning": "The query seeks to identify individuals who championed the use of inductive reasoning in scientific methodology. While it correctly identifies Karl Popper as a significant figure, it primarily focuses on his criticism of inductivism. To broaden the scope, we need to explore examples and explanations of inductive reasoning itself, alongside other historical proponents of this method.",
+  "query_goals": [
+    "Identify early advocates of inductive reasoning",
+    "Explain how inductive reasoning functions in scientific inquiry",
+    "Explore historical figures who championed inductive methods"
+  ],
+  "ineffective_terms": [
+    "scientific methods"
+  ],
+  "breadth_expansion": [
+    "empirical evidence",
+    "observations",
+    "generalizations",
+    "patterns",
+    "inductive logic",
+    "Francis Bacon",
+    "John Stuart Mill"
+  ],
+  "depth_chain": [
+    "deductive reasoning",
+    "hypothetico-deductive method",
+    "scientific inference",
+    "confirmation bias",
+    "probabilistic reasoning"
+  ],
+  "augmented_query": "empirical evidence, observations, generalizations, patterns, inductive logic, Francis Bacon, John Stuart Mill, deductive reasoning, scientific inference",
+  "ndcg": {
+    "NDCG@10": 0.38685,
+    "NDCG@100": 0.55789,
+    "NDCG@1000": 0.55789,
+    "NDCG@10000": 0.55789
+  },
+  "map": {
+    "MAP@10": 0.25,
+    "MAP@100": 0.34091,
+    "MAP@1000": 0.34091,
+    "MAP@10000": 0.34091
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.155,
+  "instruction": "expand",
+  "query": "who was an early advocate for using scientific methods based on inductive reasoning",
+  "query_id": "test2320",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "cleaned_augmented_query": "empirical evidence observations generalizations patterns inductive logic francis bacon john stuart mill deductive reasoning scientific inference",
+  "final_delta": 0.155,
+  "initial_results": "### Text snippet from document at k=1\n: Karl Popper (1902\u00e2\u20ac\u201c1994) is generally credited with providing major improvements in the understanding of the scientific method in the mid-to-late 20th century. In 1934 Popper published The Logic of Scientific Discovery, which repudiated the by then traditional observationalist-inductivist account of the scientific method. He advocated empirical falsifiability as the criterion for distinguishing scientific work from non-science. According to Popper, scientific theory should make predictions (preferably predictions not made by a competing theory) which can be tested and the theory rejected if these predictions are shown not to be correct. Following Peirce and others, he argued that science would best progress using deductive reasoning as its primary emphasis, known as critical rationalism. His astute formulations of logical procedure helped to rein in the excessive use of inductive speculation upon inductive speculation, and also helped to strengthen the conceptual foundations for today's peer review procedures.[citation needed]\n\n### Text snippet from document at k=2\n: A central concept in science and the scientific method is that it must be empirically based on the evidence of the senses. Both natural and social sciences use working hypotheses that are testable by observation and experiment. The term semi-empirical is sometimes used to describe theoretical methods that make use of basic axioms, established scientific laws, and previous experimental results in order to engage in reasoned model building and theoretical inquiry.\n\n### Text snippet from document at k=10\n: Many contemporary philosophers of science and analytic philosophers are strongly critical of Popper's philosophy of science.[13] Popper's mistrust of inductive reasoning has led to claims that he misrepresents scientific practice.\n",
+  "thought_process": "As I delve into the original query, \"who was an early advocate for using scientific methods based on inductive reasoning,\" my initial impression is that this query seeks to uncover historical figures who championed the use of inductive reasoning in scientific methodology. However, the query's focus on inductive reasoning and its application in science makes me wonder if the user is also interested in understanding the process of inductive reasoning itself. I notice that the existing reasoning provided mentions Karl Popper as a significant figure, but primarily in the context of his criticism of inductivism. This leads me to believe that the query might be trying to identify proponents of inductive reasoning, possibly contrasting with Popper's views.\n\nAnalyzing the results of the original query, I observe that the text snippets provided touch on the scientific method, empirical evidence, and the distinction between inductive and deductive reasoning. The mention of Karl Popper and his critique of inductivism in the first snippet is particularly noteworthy, as it highlights a significant perspective on the role of inductive reasoning in science. The second snippet emphasizes the empirical basis of science and the use of working hypotheses, which relates to the application of inductive reasoning in scientific inquiry. The third snippet, while critical of Popper's views, further underscores the debate surrounding inductive reasoning in the philosophy of science.\n\nTo expand this query effectively, I will apply the expansion technique provided, which involves being specific and diverse, and applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. The goal is to discover new, relevant documents across various domains without overlapping the original terms.\n\nFirst, I examine the original query to understand its primary objectives and gaps (Task 1: Goal Elucidation & Gaps). The primary objective is to identify early advocates of inductive reasoning and understand how inductive reasoning functions in scientific inquiry. A gap in the query is its narrow focus on historical figures without fully exploring the methodological aspects of inductive reasoning.\n\nNext, I identify broad or non-precise terms that should be avoided (Task 2: Ineffective Term Identification). The term \"scientific methods\" is too broad and does not specifically contribute to understanding inductive reasoning or its advocates.\n\nThen, I proceed with breadth expansion (Task 3: Breadth Expansion) by listing candidate terms that introduce increasingly distant but relevant concepts to the original query. Terms like \"empirical evidence,\" \"observations,\" \"generalizations,\" \"patterns,\" \"inductive logic,\" \"Francis Bacon,\" and \"John Stuart Mill\" are identified as they relate to the process and historical context of inductive reasoning.\n\nAfter breadth expansion, I focus on depth expansion (Task 4: Depth Expansion) by choosing a distant but important topic from the breadth expansion and going deeper into related terms. The concept of \"deductive reasoning\" and its contrast with inductive reasoning offers a fertile ground for depth expansion, leading to terms like \"hypothetico-deductive method,\" \"scientific inference,\" \"confirmation bias,\" and \"probabilistic reasoning.\"\n\nThrough this systematic application of the expansion technique, combined with organic thinking and analysis of the initial results, I identify key terms that are both relevant and novel. The augmented query should include terms that reflect the breadth and depth of inductive reasoning, its historical proponents, and its methodological aspects.\n\nApplying the guidelines for the final output, I ensure that the augmented query contains only high-quality search terms, without logical operators, duplicates, and ineffective words. The terms \"empirical evidence,\" \"observations,\" \"generalizations,\" \"patterns,\" \"inductive logic,\" \"Francis Bacon,\" \"John Stuart Mill,\" \"deductive reasoning,\" and \"scientific inference\" are selected for their relevance, diversity, and precision in capturing the essence of inductive reasoning and its place in scientific methodology.\n\nIn synthesizing the insights from both the structured technique and natural thought patterns, I conclude that the augmented query effectively balances the need for specificity, diversity, and relevance. The inclusion of historical figures like Francis Bacon and John Stuart Mill, alongside methodological terms such as inductive logic and deductive reasoning, provides a comprehensive framework for exploring the role of inductive reasoning in science. This approach not only identifies early advocates of inductive reasoning but also elucidates the process and significance of inductive reasoning in scientific inquiry, thereby addressing the primary objectives and gaps in the original query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

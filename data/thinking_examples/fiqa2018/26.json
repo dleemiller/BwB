@@ -1,0 +1,106 @@
+{
+  "reasoning": "The query \"Applying for and receiving business credit\" needs to be analyzed through a temporal lens to better understand its evolution. The historical foundation involves traditional lending practices. Development milestones include the rise of credit scoring and online lending platforms. The current landscape encompasses diverse funding options, including fintech lenders and crowdfunding. Emerging trends involve AI-driven credit assessments and blockchain-based lending. By extracting relevant terms from each of these phases, we can augment the original query to retrieve more relevant results focused on the application process.",
+  "augmented_query": "\"Applying for business credit\" \"SBA loans\" \"online lending\" fintech credit \"creditworthiness criteria\" \"business loan application process\" \"credit scoring models\" \"small business financing options\" \"revenue based financing\" \"invoice factoring\" \"collateral requirements\" \"personal guarantee\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.72998,
+    "NDCG@1000": 0.72998,
+    "NDCG@10000": 0.72998
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.52703,
+    "MAP@1000": 0.52703,
+    "MAP@10000": 0.52703
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.32642,
+  "instruction": "timetravel",
+  "query": "Applying for and receiving business credit",
+  "query_id": "26",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "historical_foundation": [
+    "Relationship banking",
+    "Collateral-based lending",
+    "Merchant banking",
+    "Character loans",
+    "Small Business Administration (SBA) loans",
+    "Traditional bank loans",
+    "Personal guarantees",
+    "Line of credit",
+    "Term Loans",
+    "Creditworthiness",
+    "Dun & Bradstreet (D&B)"
+  ],
+  "development_milestones": [
+    "Credit scoring models (e.g., FICO Small Business Scoring Service)",
+    "Online lending platforms",
+    "Alternative lenders",
+    "Microloans",
+    "Peer-to-peer lending",
+    "Business credit cards",
+    "Expansion of SBA loan programs",
+    "Specialized industry lending",
+    "Equipment financing",
+    "Invoice factoring"
+  ],
+  "current_landscape": [
+    "Fintech lenders",
+    "Crowdfunding",
+    "Venture debt",
+    "Revenue-based financing",
+    "Angel investors",
+    "Business lines of credit",
+    "SBA 7(a) loans",
+    "SBA 504 loans",
+    "Startup loans",
+    "Small business grants",
+    "Online application portals",
+    "Automated underwriting",
+    "Financial statement analysis"
+  ],
+  "emerging_trends": [
+    "AI in credit assessment",
+    "Blockchain-based lending",
+    "Decentralized finance (DeFi) for business",
+    "Embedded finance",
+    "Open banking",
+    "Sustainable financing options",
+    "ESG lending",
+    "Biometric identification for loan applications",
+    "Personalized financing products",
+    "Data-driven risk assessment"
+  ],
+  "temporal_terms": [
+    "Relationship banking",
+    "Credit scoring models",
+    "Online lending",
+    "Fintech lenders",
+    "AI credit assessment",
+    "Collateral",
+    "Personal Guarantee",
+    "SBA Loans",
+    "Microloans",
+    "Revenue based financing",
+    "Invoice Factoring",
+    "Creditworthiness"
+  ],
+  "cleaned_augmented_query": "Do standardized tests improve education outcomes across different socio-economic and cultural contexts, and what are the implications of high-stakes testing on teaching practices and student learning experiences?",
+  "final_delta": 0.06426,
+  "initial_results": "### Text snippet from document at k=1\n: In view of business, we have to book the entries. Business view, owner and business are different. When capital is invested in business by owner, in future business has to repay it.  That's why, capital always credit. When we come about  bank (business prospective) - cash, bank, fd are like assets which can help in the business. Bank is current asset (Real account) - Debit (what comes into the business)                                        Credit (what goes out of the business) Hence credit and debit differs from what type of account is it.... credit - when business liables debit - what business has and receivables\n\n### Text snippet from document at k=2\n: If your business is a Sole Proprietorship and meets the criteria, then you would file form Schedule C. In this case you can deduct all eligible business expenses, regardless of how you pay for them (credit/debit/check/cash). The fact that it was paid for using a business credit card isn't relevant as long as it is a true business expense. The general rules apply: Yes - if you sustain a net loss, that will carry over to your personal tax return. Note: even though it isn't necessary to use a business credit card for business expenses, it's still an extremely good idea to do so, for a variety of reasons.\n\n### Text snippet from document at k=10\n... You're not entitled to a   positive mark, \"\"but if you get a   negative mark, it will go on your   personal report,\"\" Frank says. And some further information related to evaluating a business for a credit card: If an issuer is evaluating you for a   business card, the company should be   asking about your business, says   Frank. In addition, there \"\"should be   something on the application that   indicates it's for business use,\"\" he   says. Bottom line: If it's a business   card, expect that the issuer will want   at least some information pertaining   to your business. There is additional underwriting for   small business cards, says Alfonso. In   addition to personal salary and credit   scores, business owners \"\"can share   financials with us, and we evaluate   the entire business financial   background in order to give them   larger lines,\"\" she says. Anticipate that the issuer will check   your personal credit, too. \"\"The vast   majority of business cards are based   on a personal credit score,\"\" says   Frank. In addition, many issuers ask   entrepreneurs to personally guarantee   the accounts. That means even if the   businesses go bust, the owners promise   to repay the debts. Source\"\n",
+  "thought_process": "Looking at the query \"Applying for and receiving business credit,\" this makes me think of the various stages a business goes through to obtain credit. Though the user might actually be trying to understand the process, requirements, and options available for business credit, I'm not sure yet what specific aspects they're interested in. The query seems to encompass a broad range of topics related to business finance, from traditional lending practices to modern fintech solutions.\n\nAnalyzing the results of the original query, I notice that the text snippets provided touch on different aspects of business and credit, such as the distinction between personal and business finances, the use of business credit cards, and the evaluation process for business creditworthiness. However, these snippets seem to lack a comprehensive overview of the business credit application process, including the various types of credit available, the criteria for eligibility, and the implications of different credit options on businesses.\n\nTo expand this query effectively, I'll use the Temporal Evolution Analysis technique. This involves analyzing how the topic of business credit has evolved over time, from its historical foundations to its current landscape and emerging trends. By doing so, I hope to identify a wide range of relevant terms and concepts that can be used to augment the original query.\n\nStarting with the historical foundation, I consider traditional lending practices, the role of collateral, and the early forms of business credit such as merchant banking and character loans. The development milestones include the introduction of credit scoring models, the expansion of SBA loan programs, and the emergence of online lending platforms. The current landscape is characterized by fintech lenders, crowdfunding, and revenue-based financing options. Emerging trends point towards AI-driven credit assessments, blockchain-based lending, and personalized financing products.\n\nAs I apply the Temporal Evolution Analysis, I notice that certain terms and concepts have remained relevant across different eras, such as the importance of creditworthiness, the use of collateral, and the role of personal guarantees. However, new terms and approaches have also emerged, reflecting changes in technology, market demand, and regulatory environments.\n\nOne of the challenges in expanding this query is balancing the breadth of historical context with the specificity of current and emerging trends. I find myself reconsidering the weight given to traditional lending practices versus the emphasis on fintech and digital solutions. Intuitively, it seems that a blend of both, acknowledging the evolution of business credit over time, would provide the most comprehensive insights.\n\nThrough this process, insights begin to emerge that connect historical foundations with current practices and future trends. For instance, the concept of creditworthiness, which has its roots in traditional character loans, now involves complex credit scoring models and AI-driven assessments. Similarly, the shift from collateral-based lending to revenue-based financing reflects broader changes in how businesses are valued and how risk is assessed.\n\nAs I synthesize these thoughts, I realize that the augmented query should reflect this temporal and thematic diversity. Terms such as \"SBA loans,\" \"fintech credit,\" \"creditworthiness criteria,\" \"business loan application process,\" and \"revenue-based financing\" capture both the explicit and implicit aspects of what the user is seeking. These terms, derived from applying the Temporal Evolution Analysis technique and infused with natural cognitive patterns of reconsideration and intuitive leaps, should enhance the retrieval of relevant information on applying for and receiving business credit.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

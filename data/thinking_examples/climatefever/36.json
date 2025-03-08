@@ -1,0 +1,69 @@
+{
+  "reasoning": "The user expresses skepticism towards shifting expert opinions on global warming, highlighting the perceived inconsistency of experts who once claimed global cooling. To address this, we'll leverage metaphors to explore the complexities of scientific consensus, evolving knowledge, and public perception. We'll draw from domains like navigation, evolution, and social dynamics to provide diverse perspectives.",
+  "augmented_query": "Expert opinions on climate change shifts, scientific consensus evolution, public perception of global warming, misinformation and its impact, historical context of climate change denial",
+  "ndcg": {
+    "NDCG@10": 0.46928,
+    "NDCG@100": 0.56152,
+    "NDCG@1000": 0.61982,
+    "NDCG@10000": 0.61982
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.35354,
+    "MAP@1000": 0.35732,
+    "MAP@10000": 0.35732
+  },
+  "recall": {
+    "Recall@10": 0.33333,
+    "Recall@100": 0.66667,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.003,
+    "P@10000": 0.0003
+  },
+  "delta": 0.3121,
+  "instruction": "metaphor",
+  "query": "When the exact same group of 'experts' who claimed it was global cooling in 1977 now claim it's global warming you can easily see why I am skeptical",
+  "query_id": "36",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "climatefever",
+  "generated_metaphors": [
+    "The climate change debate is like navigating a fog bank: Experts once believed they saw land (global cooling), but as the fog clears, a new landscape emerges (global warming).",
+    "Scientific understanding is an evolutionary process: Early theories about global cooling were like ancestral species, eventually giving way to more accurate representations of global warming.",
+    "Public opinion on climate change is a shifting kaleidoscope: Different pieces (beliefs) constantly rearrange themselves based on new information and social influences.",
+    "Global warming denial is a stubborn weed: It resists eradication despite overwhelming evidence, taking root in misinformation and entrenched beliefs.",
+    "The climate crisis is a house of cards: Each scientific finding adds another card, but deniers try to pull them out, creating instability and undermining the structure."
+  ],
+  "domain_mappings": [
+    "Navigation metaphor: Fog bank = uncertainty; Land = established understanding; Visibility = access to information.",
+    "Evolution metaphor: Ancestral species = outdated theories; New species = updated knowledge; Adaptation = scientific progress.",
+    "Kaleidoscope metaphor: Pieces = individual beliefs; Arrangement = public opinion; Influences = media, social networks, personal experiences.",
+    "Weed metaphor: Roots = misinformation and biases; Fertilizer = emotional appeals; Eradication = promoting accurate information.",
+    "House of cards metaphor: Cards = scientific evidence; Pull = denial efforts; Stability = consensus among experts."
+  ],
+  "metaphorical_language": [
+    "Navigational terms: Fog, land, visibility",
+    "Biological terms: Evolution, species, adaptation",
+    "Visual terms: Kaleidoscope, arrangement, influences",
+    "Botanical terms: Weed, roots, fertilizer",
+    "Structural terms: House, cards, stability"
+  ],
+  "extended_metaphors": [
+    "The navigation metaphor can be extended to consider the role of different 'maps' (information sources) in shaping our understanding of climate change. Some maps may be more reliable than others.",
+    "The evolutionary metaphor can highlight the ongoing process of scientific refinement, where new discoveries constantly reshape our knowledge base about climate change.",
+    "The kaleidoscope metaphor can emphasize the importance of fostering open and diverse perspectives on climate change, recognizing that individual beliefs are influenced by a complex interplay of factors."
+  ],
+  "cross_domain_terms": [
+    "Uncertainty (navigation), Evolution (biology), Shifting perspectives (social dynamics), Misinformation (botany), Fragility (structure)"
+  ],
+  "cleaned_augmented_query": "expert opinions climate change shifts scientific consensus evolution public perception global warming misinformation impact historical context climate change denial",
+  "final_delta": 0.07353,
+  "initial_results": "### Text snippet from document at k=1\n: Australian Skeptics is a loose confederation of like-minded organisations across Australia that began in 1980 . Australian Skeptics investigate paranormal and pseudoscientific claims using scientific methodologies . This page covers all Australian skeptical groups who are of this mindset . The title `` Australian Skeptics '' can be easily confused with one of the more prominent groups , `` Australian Skeptics Inc. '' which is based in Sydney and is one of the central organising groups within the Australian Skeptics .\n\n### Text snippet from document at k=2\n: Environmental skepticism is the belief that claims by environmentalists , and the environmental scientists who support them , are false or exaggerated . The term is also applied to those who are critical of environmentalism in general . Environmental skepticism is closely linked with anti-environmentalism and climate change denial .   Environmental skeptics have argued that the extent of harm coming from human activities is less certain than some scientists and scientific bodies claim , or that it is too soon to be introducing curbs in these activities on the basis of existing evidence , or that further discussion is needed regarding who should pay for such environmental initiatives . One of the focus themes in the environmental skeptics movement is the idea that environmentalism is a growing threat to social and economic progress and the civil liberties .   The popularity of the term was enhanced by Bj\u00f8rn Lomborg 's book The Skeptical Environmentalist . ...\n\n### Text snippet from document at k=10\n: Cartesian doubt is a form of methodological skepticism or scepticism associated with the writings and methodology of Ren\u00e9 Descartes ( 1596-1650 ) . Cartesian doubt is also known as Cartesian skepticism , methodic doubt , methodological skepticism , Universal Doubt , or hyperbolic doubt .   Cartesian doubt is a systematic process of being skeptical about ( or doubting ) the truth of one 's beliefs , which has become a characteristic method in philosophy . This method of doubt was largely popularized in Western philosophy by Ren\u00e9 Descartes , who sought to doubt the truth of all his beliefs in order to determine which beliefs he could be certain were true .   Methodological skepticism is distinguished from philosophical skepticism in that methodological skepticism is an approach that subjects all knowledge claims to scrutiny with the goal of sorting out true from false claims , whereas philosophical skepticism is an approach that questions the possibility of certain knowledge .\n",
+  "thought_process": "As I delve into the query about expert opinions on climate change shifts, I'm immediately drawn to the complexity of the issue. The user's skepticism towards experts who once claimed global cooling and now claim global warming resonates with me. It's a natural reaction, given the flux in scientific understanding over the years. My initial impression is that we need to unpack the evolution of scientific consensus, the dynamics of public perception, and the impact of misinformation on the climate change debate.\n\nReflecting on the initial results, I notice that they touch on skepticism, environmental skepticism, and even methodological skepticism. These snippets from various documents hint at the multifaceted nature of skepticism and its application to environmental and scientific discussions. The text from the Australian Skeptics, for instance, highlights the importance of investigating claims using scientific methodologies, which aligns with the need for evidence-based reasoning in the climate change discourse.\n\nTo structure my approach, I'll utilize the query expansion technique via metaphorical thinking. This method involves generating metaphors for the query topic and mining them for conceptually related terminology from diverse domains. I find this technique particularly apt for this query, as it allows me to explore the intricacies of climate change and skepticism through creative and interdisciplinary lenses.\n\nThe first metaphor that comes to mind is the navigation metaphor, where the climate change debate is akin to navigating through a fog bank. Initially, experts might have seen \"land\" (global cooling), but as the fog clears (new evidence emerges), a new landscape (global warming) becomes visible. This metaphor highlights the evolution of scientific understanding and the challenges of navigating through uncertainty.\n\nAnother metaphor that seems fitting is the evolutionary process, where scientific understanding is akin to species evolution. Early theories about global cooling can be seen as ancestral species that eventually give way to more accurate representations of global warming. This metaphor underscores the adaptive nature of scientific knowledge and how it evolves over time.\n\nAs I continue to apply the metaphorical thinking technique, I start to see connections between these metaphors and the initial results. For instance, the concept of environmental skepticism can be linked to the navigation metaphor, where skeptics might argue that the \"fog\" of uncertainty is too dense to warrant drastic action. Similarly, the evolutionary metaphor can be used to explain how environmental skepticism itself evolves, with new species of arguments emerging over time.\n\nThrough this process of metaphorical exploration, I begin to extract terms and concepts that provide valuable insights into the query topic. Terms like \"evolution,\" \"skepticism,\" \"navigation,\" and \"uncertainty\" start to emerge as crucial components of the expanded query. These terms not only capture the essence of the climate change debate but also highlight the importance of considering multiple perspectives and the dynamic nature of scientific understanding.\n\nAs I synthesize my thoughts, I realize that the expanded query should encompass not just the literal aspects of climate change but also the metaphorical and conceptual frameworks that underpin our understanding of it. The final expanded query should reflect the complexity of the issue, incorporating terms that evoke the evolution of scientific consensus, the role of skepticism, and the impact of misinformation.\n\nThrough this structured yet intuitive process, I've navigated the complexities of the query, leveraging metaphors to uncover deeper connections and insights. The resulting thought process is a testament to how expert thinking can balance structured techniques with natural cognitive patterns, leading to a more comprehensive and nuanced understanding of complex issues like climate change.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

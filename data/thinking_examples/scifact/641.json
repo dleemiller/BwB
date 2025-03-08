@@ -1,0 +1,63 @@
+{
+  "reasoning": "The query focuses on insomnia treatment using cognitive behavioral therapy (CBT). It implies a desire to understand CBT's effectiveness and potential applications.  The document types suggest research on medical treatments, including therapeutic interventions. Strengths point to concise summaries of findings, while weaknesses highlight a lack of detailed methodological information.",
+  "query_goals": [
+    "Understand the effectiveness of CBT for insomnia",
+    "Explore applications of CBT beyond weight loss"
+  ],
+  "ineffective_terms": [
+    "insomnia can be effectively treated"
+  ],
+  "breadth_expansion": [
+    "sleep disorders",
+    "psychological therapies",
+    "behavioral interventions",
+    "stress management",
+    "anxiety reduction",
+    "depression treatment"
+  ],
+  "depth_chain": [
+    "stress management techniques",
+    "mindfulness exercises",
+    "relaxation strategies",
+    "sleep hygiene practices",
+    "cognitive restructuring",
+    "exposure therapy"
+  ],
+  "augmented_query": "stress management techniques mindfulness exercises relaxation strategies sleep hygiene practices cognitive restructuring exposure therapy",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.16845,
+  "instruction": "expand",
+  "query": "Insomnia can be effectively treated with cognitive behavioral therapy.",
+  "query_id": "641",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "scifact",
+  "cleaned_augmented_query": "stress management techniques mindfulness exercises relaxation strategies sleep hygiene practices cognitive restructuring exposure therapy",
+  "final_delta": 0.16845,
+  "initial_results": "### Text snippet from document at k=1\n... For most outcomes, zopiclone did not differ from placebo. Participants receiving CBT improved their sleep efficiency from 81.4% at pretreatment to 90.1% at 6-month follow-up compared with a decrease from 82.3% to 81.9% in the zopiclone group. Participants in the CBT group spent much more time in slow-wave sleep (stages 3 and 4) compared with those in other groups, and spent less time awake during the night. Total sleep time was similar in all 3 groups; at 6 months, patients receiving CBT had better sleep efficiency using polysomnography than those taking zopiclone. CONCLUSION These results suggest that interventions based on CBT are superior to zopiclone treatment both in short- and long-term management of insomnia in older adults. TRIAL REGISTRATION clinicaltrials.gov Identifier: NCT00295386.\n\n### Text snippet from document at k=2\n: INTRODUCTION The hostile environment after spinal cord injury (SCI) can compromise effects of regenerative therapies. We hypothesized that optimizing the post-traumatic environment with QL6 self-assembling peptides (SAPs) before neural precursor cell (NPC) transplantation would improve cell survival, differentiation and functional recovery. METHODS A total of 90 Wistar rats received a clip-compression SCI at C7. Within each of two study arms, animals were randomized into 5 groups (NPC, SAP, NPC+SAP, vehicle, and sham). SAPs and NPCs were injected into the spinal cord 1day and 14days post-injury, respectively. Animals received growth factors over 7days and were immunosuppressed. Rats were sacrificed at 4weeks and sections of the cervical spinal cord prepared for immunohistochemistry (first study arm). Neurological function was assessed weekly for 8weeks using a battery of behavioral tests. ...\n\n### Text snippet from document at k=10\n: Insulin-regulated aminopeptidase (IRAP or oxytocinase) is a membrane-bound zinc-metallopeptidase that cleaves neuroactive peptides in the brain and produces memory enhancing effects when inhibited. We have determined the crystal structure of human IRAP revealing a closed, four domain arrangement with a large, mostly buried cavity abutting the active site. The structure reveals that the GAMEN exopeptidase loop adopts a very different conformation from other aminopeptidases, thus explaining IRAP's unique specificity for cyclic peptides such as oxytocin and vasopressin. Computational docking of a series of IRAP-specific cognitive enhancers into the crystal structure provides a molecular basis for their structure-activity relationships and demonstrates that the structure will be a powerful tool in the development of new classes of cognitive enhancers for treating a variety of memory disorders such as Alzheimer's disease.\n",
+  "thought_process": "Looking at the original query, \"Insomnia can be effectively treated with cognitive behavioral therapy,\" my initial impression is that this query is quite specific and targeted towards understanding the effectiveness of cognitive behavioral therapy (CBT) for treating insomnia. However, I also sense that the user might be interested in exploring broader aspects of sleep disorders and their treatments, possibly including other therapeutic interventions beyond CBT.\n\nAnalyzing the results of the original query, I notice that the text snippets provided offer valuable insights into the effectiveness of CBT for insomnia, especially in comparison to other treatments like zopiclone. The results highlight improvements in sleep efficiency, slow-wave sleep, and reductions in time spent awake during the night for participants receiving CBT. This information strengthens the query's focus on CBT as an effective treatment for insomnia.\n\nHowever, upon closer examination, I realize that the query could benefit from expansion to capture a wider range of relevant information, including other psychological therapies, behavioral interventions, and perhaps even stress management techniques that could complement CBT or offer alternative approaches to treating insomnia and related sleep disorders.\n\nTo approach this query expansion systematically, I will use a structured technique that involves identifying ineffective terms, performing breadth expansion, and then conducting depth expansion on a selected topic. The technique, which we can refer to as \"Query Augmentation through Structured Expansion\" (QASE), is designed to enhance the original query by discovering new, relevant documents across various domains without overlapping with the original terms.\n\nFirst, I identify \"insomnia can be effectively treated\" as an ineffective term because it's broad and doesn't specify the treatment approach, which in this case is CBT. For breadth expansion, I consider terms like \"sleep disorders,\" \"psychological therapies,\" \"behavioral interventions,\" \"stress management,\" \"anxiety reduction,\" and \"depression treatment.\" These terms introduce new dimensions to the query, moving beyond the specific focus on CBT for insomnia to encompass a broader range of therapies and interventions related to sleep and mental health.\n\nNext, for depth expansion, I select \"stress management techniques\" as a distant but important topic related to insomnia treatment. I then delve deeper into this area, exploring terms such as \"mindfulness exercises,\" \"relaxation strategies,\" \"sleep hygiene practices,\" \"cognitive restructuring,\" and \"exposure therapy.\" These terms not only enrich the query with more specific and targeted language but also ensure that the expanded query captures both the explicit and implicit aspects of what the user is seeking, which is information on effective treatments for insomnia and related conditions.\n\nThroughout this process, I balance the systematic application of the QASE technique with natural thought patterns, including occasional reconsiderations and intuitive leaps. For instance, recognizing the importance of mindfulness and relaxation strategies in managing stress and improving sleep quality leads me to consider how these techniques might complement CBT or offer standalone benefits for individuals with insomnia. This blending of structured technique with organic thinking allows for a more comprehensive and nuanced expansion of the original query.\n\nThe insights emerging from both the structured approach and my intuition about the topic suggest that the expanded query should include terms that reflect a range of therapeutic interventions and stress management techniques. By synthesizing these elements, I conclude that the augmented query should be \"stress management techniques mindfulness exercises relaxation strategies sleep hygiene practices cognitive restructuring exposure therapy.\" This expanded query is novel, diverse, and free from overlapping with the original terms, ensuring that it will yield non-generic and relevant search results that cater to the user's interests in insomnia treatment and beyond.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

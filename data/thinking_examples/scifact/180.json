@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query investigates the link between TDP-43 protein dysfunction, respiratory complex I impairment, and neuronal death. It seeks to understand the mechanistic basis of this relationship, potentially focusing on ALS and FTD contexts.",
+  "query_goals": [
+    "understand mechanism",
+    "TDP-43 impact on mitochondrial function",
+    "neuronal death consequences",
+    "ALS/FTD context"
+  ],
+  "ineffective_terms": [
+    "interaction",
+    "leads to"
+  ],
+  "breadth_expansion": [
+    "mitochondrial biogenesis",
+    "oxidative stress",
+    "calcium homeostasis",
+    "apoptosis pathways",
+    "synaptic plasticity",
+    "neuroinflammation"
+  ],
+  "depth_chain": [
+    "apoptosis",
+    "caspase activation",
+    "Bcl-2 family proteins",
+    "cytochrome c release",
+    "mitochondrial membrane potential"
+  ],
+  "augmented_query": "TDP-43, respiratory complex I, mitochondrial biogenesis, oxidative stress, apoptosis, caspase activation, Bcl-2",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.",
+  "query_id": "180",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "scifact",
+  "cleaned_augmented_query": "tdp 43 respiratory complex mitochondrial biogenesis oxidative stress apoptosis caspase activation bcl 2",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Genetic mutations in TAR DNA-binding protein 43 (TARDBP, also known as TDP-43) cause amyotrophic lateral sclerosis (ALS), and an increase in the presence of TDP-43 (encoded by TARDBP) in the cytoplasm is a prominent histopathological feature of degenerating neurons in various neurodegenerative diseases. However, the molecular mechanisms by which TDP-43 contributes to ALS pathophysiology remain elusive. Here we have found that TDP-43 accumulates in the mitochondria of neurons in subjects with ALS or frontotemporal dementia (FTD). Disease-associated mutations increase TDP-43 mitochondrial localization. In mitochondria, wild-type (WT) and mutant TDP-43 preferentially bind mitochondria-transcribed messenger RNAs (mRNAs) encoding respiratory complex I subunits ND3 and ND6, impair their expression and specifically cause complex I disassembly. The suppression of TDP-43 mitochondrial localization abolishes WT and mutant TDP-43-induced mitochondrial dysfunction and neuronal loss, and improves phenotypes of transgenic mutant TDP-43 mice. Thus, our studies link TDP-43 toxicity directly to mitochondrial bioenergetics and propose the targeting of TDP-43 mitochondrial localization as a promising therapeutic approach for neurodegeneration.\n\n### Text snippet from document at k=2\n: The fatal adult motor neuron disease amyotrophic lateral sclerosis (ALS) shares some clinical and pathological overlap with frontotemporal dementia (FTD), an early-onset neurodegenerative disorder. The RNA/DNA-binding proteins fused in sarcoma (FUS; also known as TLS) and TAR DNA binding protein-43 (TDP-43) have recently been shown to be genetically and pathologically associated with familial forms of ALS and FTD. It is currently unknown whether perturbation of these proteins results in disease through mechanisms that are independent of normal protein function or via the pathophysiological disruption of molecular processes in which they are both critical. Here, we report that Drosophila mutants in which the homolog of FUS is disrupted exhibit decreased adult viability, diminished locomotor speed, and reduced life span compared with controls. These phenotypes were fully rescued by wild-type human FUS, but not ALS-associated mutant FUS proteins. A mutant of the Drosophila homolog of TDP-43 had similar, but more severe, deficits. Through cross-rescue analysis, we demonstrated that FUS acted together with and downstream of TDP-43 in a common genetic pathway in neurons. Furthermore, we found that these proteins associated with each other in an RNA-dependent complex. Our results establish that FUS and TDP-43 function together in vivo and suggest that molecular pathways requiring the combined activities of both of these proteins may be disrupted in ALS and FTD.\n\n### Text snippet from document at k=10\n: Steroid hormones, thyroid hormones, retinoic acids, and vitamin D bind to their receptors, which are now called steroid/nuclear receptors, and liganded receptors translocate either intracellularly or intranuclearly and form large protein complexes with cofactors to induce or repress gene transcription. Therefore, steroid/nuclear receptors are ligand-dependent transcription factors. With the advent of green fluorescent protein (GFP) and its color variants, the subcellular distribution of many steroid/nuclear receptors has been found to be much more dynamic than previously thought, with some of the receptors shuttling between the cytoplasm and nucleus. Steroid/nuclear receptors can be divided into three categories based on their unliganded distribution: those that are primarily in the nucleus, those in the cytoplasm, and those with mixed cytoplasmic and nuclear distributions. However, in all cases, the addition of a ligand leads to almost complete nuclear translocation of the receptors. Hormonal stimulation induces intranuclear receptor distribution from a homogeneous pattern to a heterogeneous dot-like image. Ligand binding to steroid/nuclear receptors leads to the recruitment of many proteins including cofactors to provoke the redistribution of receptor complexes in the nucleus. This focal organization could involve more complex events than simple DNA binding sites for transcription. Protein activities and interactions of steroid/nuclear receptors can be imaged and localized in a single cell.\n",
+  "thought_process": "Looking at the original query, \"Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss,\" this makes me think of the complex interplay between TDP-43 protein dysfunction, mitochondrial impairment, and neuronal death. Though the user might actually be trying to understand the mechanistic basis of this relationship, particularly in the contexts of ALS and FTD, it seems like there's an underlying question about how TDP-43's interaction with mitochondrial components affects neurodegeneration.\n\nAnalyzing the results of the original query, I notice that the terms \"interaction\" and \"leads to\" are quite broad and might not be effective in capturing the specific mechanisms or relationships we're interested in. The initial results provide insights into TDP-43's role in ALS and FTD, its accumulation in mitochondria, and its impact on mitochondrial function and neuronal loss. However, to expand this query effectively, we need to delve deeper into the specifics of TDP-43's impact on mitochondrial biogenesis, oxidative stress, apoptosis pathways, and other related concepts that could provide a clearer understanding of the disease's mechanisms.\n\nTransitioning to a more structured approach, I'll apply the expansion technique, which involves being specific and diverse, focusing on targeted expansions that introduce new dimensions to the query. This should help because it allows us to move beyond the original query's limitations and explore new, potentially relevant areas of research. The technique also suggests applying varied augmentation methods such as synonym replacement, conceptual expansion, contextual expansion, and using domain-specific terminology.\n\nStarting with the breadth expansion, terms like mitochondrial biogenesis, oxidative stress, calcium homeostasis, apoptosis pathways, synaptic plasticity, and neuroinflammation come to mind. These terms offer a broader perspective on the potential impacts of TDP-43 dysfunction on neuronal health and disease progression. For depth expansion, focusing on apoptosis seems promising, as it's a critical aspect of neurodegenerative diseases. Drilling down into apoptosis, we consider caspase activation, Bcl-2 family proteins, cytochrome c release, and mitochondrial membrane potential, each of which plays a role in the apoptotic process and could be influenced by TDP-43's interaction with mitochondrial components.\n\nAs I apply the technique, I notice that my initial thoughts about TDP-43 and its role in neurodegeneration are becoming more nuanced. The relationship between TDP-43, mitochondrial dysfunction, and apoptosis is complex, involving multiple pathways and mechanisms. Insights begin to emerge from both the structured approach and my natural thought patterns. For instance, applying the technique leads me to consider how TDP-43's impact on mitochondrial biogenesis could exacerbate oxidative stress, contributing to neuronal loss. My intuition also suggests that understanding the specific interactions between TDP-43 and components of the apoptosis pathway could reveal potential therapeutic targets.\n\nThrough this process, I realize that the terms which would be most effective for a BM25 index, capturing both the explicit and implicit aspects of what the user is seeking, include TDP-43, respiratory complex I, mitochondrial biogenesis, oxidative stress, apoptosis, caspase activation, and Bcl-2. These terms reflect a balance between the original query's focus and the expanded understanding gained through the application of the expansion technique and natural cognitive patterns.\n\nIn synthesizing this information with clarity, it becomes apparent that the augmented query should reflect the depth and breadth of our analysis. The final terms emerge logically from both the technique and natural insights, providing a comprehensive and targeted approach to understanding the relationship between TDP-43, mitochondrial function, and neurodegenerative diseases like ALS and FTD.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,85 @@
+{
+  "reasoning": "To understand where blood goes after leaving the pulmonary artery, I will use different metaphors to illustrate the circulatory system. The pulmonary artery's role is to carry deoxygenated blood to the lungs for oxygenation. I will use metaphors related to transportation, filtering, and energy transfer to reveal more information about the pulmonary artery.",
+  "augmented_query": "pulmonary artery lungs oxygenation capillaries alveolar gas exchange",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.78418,
+    "NDCG@1000": 0.78418,
+    "NDCG@10000": 0.78418
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.59091,
+    "MAP@1000": 0.59091,
+    "MAP@10000": 0.59091
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.2039,
+  "instruction": "metaphor",
+  "query": "where does blood go when it leaves the pulmonary artery",
+  "query_id": "test1829",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "generated_metaphors": [
+    "The pulmonary artery is a delivery truck taking cargo to a factory for processing.",
+    "The pulmonary artery is a river flowing towards a purification plant.",
+    "The pulmonary artery acts as a cable transmitting power towards a charging station.",
+    "The pulmonary artery is a bridge over a canyon transporting resources to the other side.",
+    "The pulmonary artery is a conveyor belt delivering materials to an assembly line."
+  ],
+  "domain_mappings": [
+    "Pulmonary Artery (Truck) -> Lungs (Factory), Blood (Cargo), Oxygen (Product)",
+    "Pulmonary Artery (River) -> Lungs (Purification Plant), Blood (Water), Oxygen (Purity)",
+    "Pulmonary Artery (Cable) -> Lungs (Charging Station), Blood (Electricity), Oxygen (Energy)",
+    "Pulmonary Artery (Bridge) -> Lungs (Other Side), Blood (Resources), Oxygen (Benefit)",
+    "Pulmonary Artery (Conveyor Belt) -> Lungs (Assembly Line), Blood (Materials), Oxygen (Finished Goods)"
+  ],
+  "metaphorical_language": [
+    "Delivery, transport, route, shipment, destination, logistics, supply chain, packaging, unloading",
+    "Flow, channel, current, purification, filtration, cleansing, refining, source, drainage, pollutant",
+    "Transmission, conduction, charge, energy, voltage, power source, circuit, current, resistance, capacity",
+    "Span, crossing, support, structure, access, transfer, exchange, connection, link, passage",
+    "Conveyance, transport, feed, progression, system, mechanism, production, input, output, staging"
+  ],
+  "extended_metaphors": [
+    "The delivery truck (pulmonary artery) uses a specific route guided by traffic controllers (nervous system) to ensure efficient arrival at the factory (lungs).",
+    "The river (pulmonary artery) experiences varying currents based on the surrounding environment (body's metabolic rate), influencing the speed of purification at the plant (lungs).",
+    "The cable (pulmonary artery) has a certain capacity, and if overloaded (pulmonary hypertension), it can cause power loss (oxygen deficiency).",
+    "The bridge (pulmonary artery) is regularly inspected and maintained (body's regulatory mechanisms) to ensure the safe passage of resources (blood) across the canyon (body).",
+    "The conveyor belt (pulmonary artery) is timed precisely to sync with the assembly line (lungs), ensuring no bottlenecks in the production process (oxygenation)."
+  ],
+  "cross_domain_terms": [
+    "Delivery Route",
+    "Purification Channel",
+    "Energy Conduit",
+    "Resource Bridge",
+    "Conveyance System",
+    "Flow Rate",
+    "Transmission Capacity",
+    "Structural Integrity",
+    "Assembly Sync",
+    "Pulmonary Circulation",
+    "Oxygen Uptake",
+    "Gas Exchange",
+    "Capillary Network",
+    "Alveolar Interaction",
+    "Blood Oxygenation"
+  ],
+  "cleaned_augmented_query": "pulmonary artery lungs oxygenation capillaries alveolar gas exchange",
+  "final_delta": 0.2039,
+  "initial_results": "### Text snippet from document at k=1\n: Deoxygenated blood leaves the heart, goes to the lungs, and then re-enters the heart; Deoxygenated blood leaves through the right ventricle through the pulmonary artery. From the right atrium, the blood is pumped through the tricuspid valve (or right atrioventricular valve), into the right ventricle. Blood is then pumped from the right ventricle through the pulmonary valve and into the main pulmonary artery.\n\n### Text snippet from document at k=2\n: The pulmonary arteries carry deoxygenated blood to the lungs, where carbon dioxide is released and oxygen is picked up during respiration. Arteries are further divided into very fine capillaries which are extremely thin-walled. The pulmonary vein returns oxygenated blood to the left atrium of the heart.\n\n### Text snippet from document at k=10\n: Cerebral hypoperfusion is the reduction of blood flow to all parts of the brain. The reduction could be to a particular part of the brain depending on the cause. It is most commonly due to heart failure from cardiac arrest or arrhythmias, or from reduced cardiac output as a result of myocardial infarction, pulmonary embolism, pericardial effusion, or bleeding.[citation needed] Hypoxemia (low blood oxygen content) may precipitate the hypoperfusion. Because the reduction in blood flow is global, all parts of the brain may be affected, especially vulnerable \"watershed\" areas - border zone regions supplied by the major cerebral arteries. A watershed stroke refers to the condition when the blood supply to these areas is compromised. Blood flow to these areas does not necessarily stop, but instead it may lessen to the point where brain damage can occur.\n",
+  "thought_process": "As I begin to expand the query \"where does blood go when it leaves the pulmonary artery,\" my initial impression is that this is a straightforward question about the circulatory system. However, upon closer inspection, I realize that understanding the path of blood after it leaves the pulmonary artery requires a deeper dive into the intricacies of the human body. The user might be trying to grasp the fundamental concepts of blood circulation, oxygenation, and the role of the pulmonary artery in this process.\n\nAnalyzing the results of the original query, I notice that the top snippets provide a clear overview of the blood's journey from the heart to the lungs and back. The first snippet explains how deoxygenated blood leaves the heart through the pulmonary artery, while the second snippet highlights the exchange of carbon dioxide for oxygen in the lungs. These results are informative, but they only scratch the surface of the query's intent.\n\nTo further expand the query, I decide to employ the technique of metaphorical thinking. This approach involves generating diverse metaphors for the query topic and extracting conceptually related terminology from various domains. By using metaphors, I can uncover fresh perspectives on the pulmonary artery's role in the circulatory system and identify key concepts that might not be immediately apparent.\n\nAs I apply the metaphorical thinking technique, I start by generating five metaphors for the pulmonary artery: a delivery truck, a river, a cable, a bridge, and a conveyor belt. Each metaphor is developed with specific correspondences, allowing me to map elements from the source domain to the target domain. For instance, the delivery truck metaphor maps the pulmonary artery to a truck, blood to cargo, and oxygen to the product being delivered.\n\nThrough domain mapping and language exploration, I extract terminology from each metaphorical domain, noting terms that illuminate aspects of the original topic. The metaphors provide complementary perspectives, and by extending each metaphor, I discover additional connections and hidden aspects of the topic. Combining metaphors creates hybrid perspectives, offering a more comprehensive understanding of the pulmonary artery's role.\n\nAs I balance the structured approach of metaphorical thinking with natural thought patterns, I experience occasional false starts and reconsiderations. However, these moments of uncertainty often lead to intuitive connections and brief tangents that yield unexpected insights. Stepping back to reassess my thought process, I realize that the metaphors have helped me identify key concepts, such as oxygenation, capillaries, and alveolar gas exchange, which are crucial to understanding the pulmonary artery's function.\n\nThrough this process, insights emerge from both the structured technique and my intuition. Applying the metaphorical thinking approach leads me to discover new terms and connections, such as the idea of the pulmonary artery as a delivery route or a purification channel. My instinct also suggests considering the pulmonary artery's capacity and the potential consequences of overload, such as pulmonary hypertension.\n\nSynthesizing my thoughts, I conclude that the expanded query should include terms that capture both the explicit and implicit aspects of the user's question. The final expanded query, \"pulmonary artery lungs oxygenation capillaries alveolar gas exchange,\" reflects the comprehensive understanding gained through the metaphorical thinking technique and my natural thought patterns.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query seeks to understand the specific location of cones in the eye, particularly within its anatomical structure. Existing search results provide accurate information on cone locations but are sometimes clouded by broader or unrelated topics. Metaphorical thinking can enhance understanding and discovery of conceptually related terms by drawing parallels from diverse domains, making complex anatomy more accessible.\n\nThe metaphor generation process aims to create vivid imagery from different fields that help elucidate the topic of cones in the eye. By mapping elements between the source (metaphor) and target (eye anatomy) domains, we can highlight key features and complementary perspectives on cone location. Exploring domain-specific language further enhances this understanding.\n\nExtended metaphors uncover additional connections and reveal hidden aspects of the topic, potentially leading to hybrid perspectives that synthesize insights from multiple fields. Lastly, extracting cross-domain terms provides new angles for viewing the original query's subject matter, making complex anatomical information more understandable and engaging.",
+  "augmented_query": "\"Where are the cones located in the eye with respect to their concentrated position similar to a densely packed meadow, camera sensor pixels at focal point, orchestra's front row acoustics, spotlight stage beam, or galactic core stars?\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.56932,
+  "instruction": "metaphor",
+  "query": "where are the cones in the eye located",
+  "query_id": "test2430",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "generated_metaphors": [
+    "The retina is like a densely packed forest where cones are trees concentrated in an open meadow (fovea centralis).",
+    "Cone cells in the eye function as individual spotlights on a grand stage, with a focused beam at center stage and scattered lights filling the rest of the theater.",
+    "Imagine the retina as a high-resolution camera sensor, where cones are densely packed pixels in the central focal point.",
+    "The distribution of cones resembles an orchestra hall, with concentrated sound (cones) in the front rows (fovea) and diminishing to the back seats (peripheral retina).",
+    "Cones in the eye can be likened to stars in a galaxy, densely clustered in the galactic core (fovea centralis) but spread throughout space."
+  ],
+  "domain_mappings": [
+    "Forest -> Retina: Trees -> Cones; Open meadow -> Fovea centralis",
+    "Theater -> Eye: Spotlights -> Cone cells; Stage -> Retina",
+    "Camera Sensor -> Retina: Pixels -> Cones; Central focal point -> Fovea centralis",
+    "Orchestra Hall -> Retina: Sound intensity -> Concentration of cones; Front rows -> Fovea",
+    "Galaxy -> Retina: Stars -> Cones; Galactic core -> Fovea centralis"
+  ],
+  "metaphorical_language": [
+    "Forest, meadow, trees, dense foliage",
+    "Spotlights, stage lights, theater, focused beam",
+    "Camera sensor, high-resolution, pixels, focal point",
+    "Orchestra, sound intensity, concert hall, acoustics",
+    "Stars, galaxy, galactic core, celestial bodies"
+  ],
+  "extended_metaphors": [
+    "In the forest of the retina, as you move away from the open meadow of cones in the fovea centralis into denser woodland, the types and functions of photoreceptors shift subtly.",
+    "Spotlights on a theater stage not only illuminate actors but also enhance mood; similarly, the density of cone cells shapes how we perceive colors and details.",
+    "A high-resolution camera sensor might capture a panoramic view with varying clarity; in the eye, this is akin to seeing sharply at the center (fovea) while perceiving less detail toward the edges.",
+    "In an orchestra, the acoustics change as you move from the front row to the back, analogous to the gradation of cone cell density influencing visual clarity across the retina.",
+    "Within a galaxy, certain star clusters emit varying light intensities; this mirrors how cones distribute and vary in function within different regions of the retina."
+  ],
+  "cross_domain_terms": [
+    "Focal point",
+    "Density distribution",
+    "Acoustic acuity",
+    "Pixelated vision",
+    "Celestial arrangement"
+  ],
+  "cleaned_augmented_query": "cones located eye respect concentrated position similar densely packed meadow camera sensor pixels focal point orchestra front row acoustics spotlight stage beam galactic core stars",
+  "final_delta": 0.56932,
+  "initial_results": "### Text snippet from document at k=1\n: The primary circadian clock in mammals is located in the suprachiasmatic nucleus (or nuclei) (SCN), a pair of distinct groups of cells located in the hypothalamus. Destruction of the SCN results in the complete absence of a regular sleep\u00e2\u20ac\u201cwake rhythm. The SCN receives information about illumination through the eyes. The retina of the eye contains \"classical\" photoreceptors (\"rods\" and \"cones\"), which are used for conventional vision. But the retina also contains specialized ganglion cells that are directly photosensitive, and project directly to the SCN, where they help in the entrainment (synchronization) of this master circadian clock.[45]\n\n### Text snippet from document at k=2\n: where \n\n\n\nd\n\n\n{\\displaystyle d}\n\n is the distance to the screen, \n\n\n\nr\n\n{\\displaystyle r}\n\n is the resolution of the screen in pixels per unit length, and \n\n\n\n\n1\n\u2218\n\n\n\n\n{\\displaystyle 1^{\\circ }}\n is the aperture of a cone having the apex on focus, height \n\n\n\nd\n\n\n{\\displaystyle d}\n, and the base in the eye lens \u2014the optical correspondent to a cone inside the eye having the same base and the apex in the other focus, the fovea. That aperture, which can be measured by visual field tests, varies widely among different human subjects.\n\n### Text snippet from document at k=10\n: In the human eye, light enters the pupil and is focused on the retina by the lens. Light-sensitive nerve cells called rods (for brightness), cones (for color) and non-imaging ipRGC (intrinsincally photosensitive retinal ganglion cells) react to the light. They interact with each other and send messages to the brain. The rods and cones enable vision. The ipRGCs enable entrainment to the Earth's 24-hour cycle, resizing of the pupil and acute suppression of the pineal hormone melatonin.\n",
+  "thought_process": "As I begin to expand the query \"where are the cones in the eye located,\" my initial impression is that this is a straightforward anatomical question. However, upon further consideration, I realize that understanding the location and distribution of cones in the eye requires a deeper exploration of the eye's structure and function. The user might be trying to visualize how cones are arranged within the eye, and how this arrangement affects our perception of color and detail.\n\nAnalyzing the results of the original query, I notice that the top results provide accurate information on the location of cones in the eye, but they also touch on broader topics such as the circadian rhythm and the anatomy of the retina. This suggests that there are many related concepts that could be explored to gain a richer understanding of the topic.\n\nTo approach this query expansion, I will use the technique of metaphorical thinking. This involves generating powerful metaphors for the query topic and mining them for conceptually related terminology from diverse domains. By creating metaphors from varied domains such as nature, mechanics, and art, I can develop a more nuanced understanding of the topic and identify key features and complementary perspectives.\n\nThe first step in this process is metaphor generation. I will create five diverse metaphors for understanding the location and distribution of cones in the eye. These metaphors will be selected from varied domains, such as the forest, theater, camera sensor, orchestra, and galaxy. For each metaphor, I will develop specific correspondences between the source domain and the target domain, highlighting key features of the topic and identifying where the metaphors provide complementary perspectives.\n\nFor example, the metaphor of the retina as a densely packed forest where cones are trees concentrated in an open meadow (fovea centralis) provides a vivid image of the distribution of cones in the eye. Similarly, the metaphor of cone cells in the eye functioning as individual spotlights on a grand stage, with a focused beam at center stage and scattered lights filling the rest of the theater, helps to illustrate the role of cones in perception.\n\nAs I generate and explore these metaphors, I will also extract terminology from each metaphorical domain, identifying terms that illuminate aspects of the original topic and noting explanatory language used to connect the domains. This will help me to compile a list of cross-domain terms that offer fresh perspectives on the topic and make complex aspects more accessible.\n\nThrough this process of metaphorical thinking, I aim to develop a deeper understanding of the location and distribution of cones in the eye, and to identify key terms and concepts that can be used to expand the original query. By balancing structured technique with natural cognitive patterns, I hope to create a nuanced and insightful thought process that captures the complexities of the topic.\n\nAs I reflect on the initial results, I notice that the text snippets from documents at k=1, k=2, and k=10 provide valuable information on the anatomy of the eye and the role of cones in perception. The snippet from k=1 discusses the SCN and its role in the circadian rhythm, while the snippet from k=2 provides information on the resolution of the screen and the aperture of a cone. The snippet from k=10 offers a more general overview of the human eye and the function of rods, cones, and ipRGCs.\n\nBy combining these insights with the metaphors and cross-domain terms generated through metaphorical thinking, I can develop a comprehensive understanding of the topic and create an expanded query that captures the complexities of the user's question. The final expanded query is: \"Where are the cones located in the eye with respect to their concentrated position similar to a densely packed meadow, camera sensor pixels at focal point, orchestra's front row acoustics, spotlight stage beam, or galactic core stars?\"\n\nThrough this process, I have demonstrated how metaphorical thinking can be used to expand a query and develop a deeper understanding of a complex topic. By generating powerful metaphors and mining them for conceptually related terminology, I have identified key features and complementary perspectives on the location and distribution of cones in the eye. The resulting expanded query captures the nuances of the topic and provides a foundation for further exploration and discovery.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

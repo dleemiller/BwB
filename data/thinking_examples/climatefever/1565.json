@@ -1,0 +1,76 @@
+{
+  "reasoning": "The query focuses on a specific linguistic shift related to climate change.  While the provided documents touch upon the topic broadly, they lack direct information about the historical reasons behind changing terminology from \"global warming\" to \"climate change.\"",
+  "augmented_query": "\"history of climate change terminology\" OR \"reasons for global warming to climate change shift\" OR \"evolution of language around climate science\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.75274,
+    "NDCG@1000": 0.75274,
+    "NDCG@10000": 0.75274
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.55,
+    "MAP@1000": 0.55,
+    "MAP@10000": 0.55
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.41122,
+  "instruction": "community",
+  "query": "They changed the name from 'global warming' to 'climate change'.",
+  "query_id": "1565",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "climatefever",
+  "question_variations": [
+    "Why did people start using 'climate change' instead of 'global warming'?",
+    "What was the reasoning behind the shift in terminology from 'global warming' to 'climate change'?",
+    "When and why did the term 'climate change' become more common?",
+    "Is there a historical context for the change from 'global warming' to 'climate change'?",
+    "What are the implications of using 'climate change' instead of 'global warming'?"
+  ],
+  "underlying_motivations": [
+    "Understanding the evolution of language around climate change",
+    "Seeking clarity on the reasons behind changes in scientific and public discourse",
+    "Interested in the potential impact of terminology on perceptions of climate change",
+    "Looking for historical context to better understand current debates about climate change"
+  ],
+  "valuable_responses": [
+    "Historical analysis of how terms evolved in scientific and popular media",
+    "Expert opinions from linguists, historians, or scientists on the reasons for the shift",
+    "Examples of how different groups used the terms 'global warming' and 'climate change'",
+    "Discussion of the potential influence of political or social factors on the change in terminology",
+    "Analysis of public perception and reactions to both terms"
+  ],
+  "interaction_patterns": [
+    "People might debate the accuracy or effectiveness of each term.",
+    "There could be discussion about whether one term is more politically charged than the other.",
+    "Users might ask for examples of how the terms are used differently in various contexts.",
+    "The question might lead to a broader conversation about the challenges of communicating complex scientific issues to the public."
+  ],
+  "qa_terminology": [
+    "global warming",
+    "climate change",
+    "scientific consensus",
+    "political debate",
+    "public perception",
+    "framing",
+    "language evolution",
+    "Terminology shift"
+  ],
+  "cleaned_augmented_query": "history climate change terminology reasons global warming climate change shift evolution language around climate science",
+  "final_delta": 0.41122,
+  "initial_results": "### Text snippet from document at k=1\n: The Climate Change Science Program ( CCSP ) was the program responsible for coordinating and integrating research on global warming by U.S. government agencies from February 2002 to June 2009 . Toward the end of that period , CCSP issued 21 separate climate assessment reports that addressed climate observations , changes in the atmosphere , expected climate change , impacts and adaptation , and risk management issues . Shortly after President Obama took office , the program 's name was changed to U.S. Global Change Research Program ( USGCRP ) which was also the program 's name before 2002 . Nevertheless , the Obama Administration generally embraced the CCSP products as sound science providing a basis for climate policy . Because those reports were mostly issued after the Fourth Assessment Report of the Intergovernmental Panel on Climate Change ( IPCC ) , and in some cases focused specifically on the United States , they were generally viewed within the United States as having an importance and scientific credibility comparable to the IPCC assessments for the first few years of the Obama Administration .\n\n### Text snippet from document at k=2\n... The main negative feedback comes from the Stefan -- Boltzmann law , the amount of heat radiated from the Earth into space changes with the fourth power of the temperature of Earth 's surface and atmosphere .   Some observed and potential effects of global warming are positive feedbacks , which contribute directly to further global warming . The Intergovernmental Panel on Climate Change 's ( IPCC ) Fourth Assessment Report states that `` Anthropogenic warming could lead to some effects that are abrupt or irreversible , depending upon the rate and magnitude of the climate change . ''\n\n### Text snippet from document at k=10\n: Cloud feedback is the coupling between cloudiness and surface air temperature where a surface air temperature change leads to a change in clouds , which could then amplify or diminish the initial temperature perturbation . Cloud feedbacks can affect the magnitude of internally generated climate variability or they can affect the magnitude of climate change resulting from external radiative forcings .   Global warming is expected to change the distribution and type of clouds . Seen from below , clouds emit infrared radiation back to the surface , and so exert a warming effect ; seen from above , clouds reflect sunlight and emit infrared radiation to space , and so exert a cooling effect . Cloud representations vary among global climate models , and small changes in cloud cover have a large impact on the climate . Differences in planetary boundary layer cloud modeling schemes can lead to large differences in derived values of climate sensitivity . A model that decreases boundary layer clouds in response to global warming has a climate sensitivity twice that of a model that does not include this feedback . However , satellite data show that cloud optical thickness actually increases with increasing temperature . Whether the net effect is warming or cooling depends on details such as the type and altitude of the cloud ; details that are difficult to represent in climate models .\n",
+  "thought_process": "As I delve into the query \"They changed the name from 'global warming' to 'climate change',\" my initial impression is that the user is curious about the reasoning behind this shift in terminology. This query makes me think of the broader context of how language evolves, especially in scientific and public discourse. Though the user might be looking for a straightforward answer, I sense that there's a deeper interest in understanding the implications of this change on our perceptions of environmental issues.\n\nAnalyzing the results of the original query, I notice that the provided documents touch upon climate change and global warming but lack direct information about the historical reasons for the change in terminology. This gap suggests that we need to expand the query to capture the nuances of language evolution and the motivations behind such changes.\n\nTo approach this systematically, I'll apply the \"Query Expansion via Community Q&A Patterns\" technique. This involves reframing the query into various question types that might arise in a community Q&A platform, identifying hidden motivations behind the query, and recognizing valuable response patterns.\n\nFirst, let's reframe the original query into different types of questions: \"What is the history behind the shift from 'global warming' to 'climate change'?\" (personal experience), \"How should I understand the difference between 'global warming' and 'climate change'?\" (advice-seeking), \"What do experts think about the change in terminology?\" (opinion-based), \"Which term is more accurate, 'global warming' or 'climate change'?\" (comparison), and \"Has anyone noticed a difference in how these terms are used in public discourse?\" (story-soliciting).\n\nNext, I identify the hidden motivations: The user might be seeking validation for their current understanding, looking for decision-support in how to communicate about climate change, or interested in insider knowledge on why the terminology changed. They might also be seeking diverse perspectives or emotional support in understanding this shift.\n\nValuable responses would include first-person narratives from scientists or policymakers involved in the decision, expert opinions with credibility markers, step-by-step explanations of the reasoning behind the change, contrarian views on the implications of the change, and nuanced answers that consider the complexity of the issue.\n\nIn terms of community interactions, common follow-up questions might include requests for clarification on the difference between the two terms, debates about the political implications of the change, and discussions about how the change affects public perception of climate issues.\n\nFinally, extracting vocabulary from emotional and subjective language, personal context descriptions, and community-specific jargon will help in creating an augmented query that reflects how people naturally discuss this topic. Terms like \"historical context,\" \"terminology shift,\" \"public perception,\" and \"scientific consensus\" are crucial.\n\nThrough this process, applying the \"Query Expansion via Community Q&A Patterns\" technique and balancing it with natural thought patterns, I arrive at an expanded query: \"history climate change terminology reasons global warming climate change shift evolution language around climate science.\" This reflects both the structured approach of analyzing community Q&A patterns and the organic thinking that considers the nuances of language evolution, public perception, and scientific discourse.\n\nThe final terms for the expanded query emerge logically from both the technique and natural insights, capturing the essence of how people discuss and understand the shift from \"global warming\" to \"climate change.\" This approach enhances the retrieval of relevant information by incorporating the complexities of human communication and the evolution of scientific terminology.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

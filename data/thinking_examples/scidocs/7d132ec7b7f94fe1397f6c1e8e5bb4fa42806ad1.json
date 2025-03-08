@@ -1,0 +1,89 @@
+{
+  "reasoning": "The analysis traces the evolution of Bayesian methods from their origins in 18th-century probability theory to modern computational implementations, highlighting key developments in methodology and terminology across eras.",
+  "augmented_query": "Temporal evolution of Bayesian analysis methodologies: historical roots in Bayes' theorem, developmental milestones in MCMC, current landscape of credible intervals, emerging trends in probabilistic programming",
+  "ndcg": {
+    "NDCG@10": 0.33916,
+    "NDCG@100": 0.40333,
+    "NDCG@1000": 0.47756,
+    "NDCG@10000": 0.50941
+  },
+  "map": {
+    "MAP@10": 0.2,
+    "MAP@100": 0.21053,
+    "MAP@1000": 0.21306,
+    "MAP@10000": 0.21368
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.4,
+    "Recall@1000": 0.8,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.004,
+    "P@10000": 0.0005
+  },
+  "delta": 0.007,
+  "instruction": "timetravel",
+  "query": "What to believe: Bayesian methods for data analysis",
+  "query_id": "7d132ec7b7f94fe1397f6c1e8e5bb4fa42806ad1",
+  "generator_model": "openrouter/perplexity/sonar-reasoning",
+  "temperature": 1.0,
+  "dataset": "scidocs",
+  "historical_foundation": [
+    "Thomas Bayes' 1763 theorem",
+    "Laplace's early 19th-century work",
+    "Prior distributions",
+    "Likelihood functions",
+    "Posterior probability",
+    "Bernoulli distribution modeling"
+  ],
+  "development_milestones": [
+    "1950s term adoption of \"Bayesian\"",
+    "1990s Markov chain Monte Carlo (MCMC) methods",
+    "2000s hierarchical/hierarchical Bayesian models",
+    "2010s computational\u7b2c\u4e00\u6b21duplicationVectorizationBayesian software",
+    "1980sDonate.G toReturnbutton",
+    "2000s Bayesian networks",
+    "2010sConjugate prior\u0456\u0439arra\u9915xwan&format-down&simulate"
+  ],
+  "current_landscape": [
+    "Credible intervals",
+    "JAGS (software)",
+    "Credible interval estimation",
+    "Posterior predictive checks",
+    "MCMC diagnostics",
+    "Variational inference",
+    "Stan/HMC sampling",
+    "Bambi/PyMC3 implementations"
+  ],
+  "emerging_trends": [
+    "Probabilistic programming languages",
+    "Deep learning integration",
+    "Big data scalability",
+    "Automated model selection",
+    "Gradient-based MCMC",
+    "Natural language processing applications",
+    "Bayesian neural networks",
+    "Adaptive MCMC algorithms"
+  ],
+  "temporal_terms": [
+    "Prior distributions",
+    "Likelihood function",
+    "Posterior probability",
+    "Bayes factor",
+    "Markov chain Monte Carlo",
+    "Credible intervals",
+    "Probabilistic programming",
+    "Hierarchical models",
+    "Variational inference",
+    "Deep learning integration"
+  ],
+  "cleaned_augmented_query": "temporal evolution bayesian analysis methodologies historical roots bayes theorem developmental milestones mcmc current landscape credible intervals emerging trends probabilistic programming",
+  "final_delta": 0.007,
+  "initial_results": "### Text snippet from document at k=1\n: A rational model of human categorization behavior is presented that assumes that categorization reflects the derivation of optimal estimates of the probability of unseen features of objects. A Bayesian analysis is performed of what optimal estimations would be if categories formed a disjoint partitioning of the object space and if features were independently displayed within a category. This Bayesian analysis is placed within an incremental categorization algorithm. The resulting rational model accounts for effects of central tendency of categories, effects of specific instances, learning of linearly nonseparable categories, effects of category labels, extraction of basic level categories, base-rate effects, probability matching in categorization, and trial-by-trial learning functions. Although the rational model considers just I level of categorization, it is shown how predictions can be enhanced by considering higher and lower levels. Considering prediction at the lower, individual level allows integration of this rational analysis of categorization with the earlier rational analysis of memory (Anderson & Milson, 1989).\n\n### Text snippet from document at k=2\n... These methods tackle the scalability challenge via a deterministic optimization approach to approximate the posterior distribution and yield accurate estimates at a fraction of the computational cost associated with simulation-based MCMC methods. We exploit and extend recent developments in variational Bayesian inference and highlight how two VB estimation approaches \u2013 Mean-field VB (that is analogous to Gibbs sampling) for conjugate models and Fixed-form VB (which is analogous to Metropolis-Hasting) for nonconjugate models \u2013 can be effectively combined for estimating complex marketing models. We also show how recent advances in parallel computing and in stochastic optimization can be used to further enhance the speed of these VB methods. Using simulated as well as real data sets, we apply the VB approaches to several commonly used marketing models (e.g. mixed linear, logit, selection, and hierarchical ordinal logit models), and demonstrate how the VB inference is widely applicable for marketing problems.\n\n### Text snippet from document at k=10\n: Synthetic likelihood is an attractive approach to likelihood-free inference when an approximately Gaussian summary statistic for the data, informative for inference about the parameters, is available. The synthetic likelihood method derives an approximate likelihood function from a plug-in normal density estimate for the summary statistic, with plug-in mean and covariance matrix obtained by Monte Carlo simulation from the model. In this article, we develop alternatives to Markov chain Monte Carlo implementations of Bayesian synthetic likelihoods with reduced computational overheads. Our approach uses stochastic gradient variational inference methods for posterior approximation in the synthetic likelihood context, employing unbiased estimates of the log likelihood. We compare the new method with a related likelihood free variational inference technique in the literature, while at the same time improving the implementation of that approach in a number of ways. These new algorithms are feasible to implement in situations which are challenging for conventional approximate Bayesian computation (ABC) methods, in terms of the dimensionality of the parameter and summary statistic.\n",
+  "thought_process": "As I begin to analyze the query \"What to believe: Bayesian methods for data analysis,\" my initial impression is that the user is seeking a comprehensive understanding of Bayesian methods, possibly to apply them in data analysis tasks. This makes me think of the historical roots of Bayesian theory, which dates back to the 18th century with Thomas Bayes' theorem. However, the user might actually be trying to understand how Bayesian methods have evolved over time and their current applications in data analysis.\n\nLooking at the initial results from the original query, I notice that the top documents discuss Bayesian analysis in the context of categorization behavior, marketing models, and likelihood-free inference. These results suggest that Bayesian methods are being applied in various fields, but they might not fully capture the temporal evolution of Bayesian analysis methodologies.\n\nTo expand the query, I decide to use the Temporal Evolution Analysis technique, which involves analyzing how the query topic has evolved through time and will likely develop in the future. This technique seems appropriate because it can help identify temporally diverse terminology and provide a more comprehensive understanding of Bayesian methods.\n\nStarting with the historical foundation, I trace the origins of Bayesian methods back to Thomas Bayes' 1763 theorem and Laplace's early 19th-century work. I note the key concepts and terminology from this era, such as prior distributions, likelihood functions, and posterior probability. As I move through the developmental milestones, I identify significant breakthroughs like the adoption of the term \"Bayesian\" in the 1950s, the introduction of Markov chain Monte Carlo (MCMC) methods in the 1990s, and the development of hierarchical Bayesian models in the 2000s.\n\nIn the current landscape, I observe that Bayesian methods are being applied in various fields, including marketing, likelihood-free inference, and categorization behavior. I notice the use of terms like credible intervals, JAGS (software), and variational inference. As I look toward emerging trends, I identify areas like probabilistic programming languages, deep learning integration, and automated model selection.\n\nThroughout this process, I find myself applying the Temporal Evolution Analysis technique systematically, but I also allow for natural cognitive elements to emerge. For instance, I initially consider focusing solely on the historical development of Bayesian methods, but then I realize the importance of including current and emerging trends to provide a more comprehensive understanding. I also make connections between different concepts, such as the use of MCMC methods in likelihood-free inference and the application of variational inference in marketing models.\n\nAs I synthesize my thoughts, I believe that the expanded query should include terms that capture the full temporal spectrum of Bayesian analysis methodologies. I consider terms like \"temporal evolution,\" \"Bayesian analysis,\" \"historical roots,\" \"developmental milestones,\" \"current landscape,\" and \"emerging trends.\" I also include specific terms like \"MCMC,\" \"variational inference,\" \"credible intervals,\" and \"probabilistic programming\" to provide a more detailed understanding of the topic.\n\nThrough this process of applying the Temporal Evolution Analysis technique and exploring related threads, I believe that the expanded query \"temporal evolution Bayesian analysis methodologies historical roots Bayes theorem developmental milestones MCMC current landscape credible intervals emerging trends probabilistic programming\" effectively captures the user's information need. This query balances the historical and current aspects of Bayesian methods, providing a comprehensive understanding of the topic.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

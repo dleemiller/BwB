@@ -1,0 +1,73 @@
+{
+  "reasoning": "The task is to expand upon the query \"Semi-Supervised Image-to-Video Adaptation for Video Action Recognition\" using metaphorical thinking. The goal is to enhance the understanding of this complex topic by generating metaphors from diverse domains and exploring their linguistic contributions. By creating these metaphors, we aim to uncover related terminology that can enrich and broaden the search query with novel insights, especially since existing results do not fully address semi-supervised techniques or the adaptation of image-based methods to video contexts.",
+  "augmented_query": "Semi-Supervised Image-to-Video Adaptation for Video Action Recognition with an emphasis on mixed supervision strategies, transformation pathways from static to dynamic data representations, blueprint-to-3D design processes, fusion of labeled and unlabeled data sources, and innovative navigation through established and exploratory methodologies.",
+  "ndcg": {
+    "NDCG@10": 0.16958,
+    "NDCG@100": 0.37196,
+    "NDCG@1000": 0.40632,
+    "NDCG@10000": 0.40632
+  },
+  "map": {
+    "MAP@10": 0.06667,
+    "MAP@100": 0.11945,
+    "MAP@1000": 0.12052,
+    "MAP@10000": 0.12052
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.8,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.04,
+    "P@1000": 0.005,
+    "P@10000": 0.0005
+  },
+  "delta": 0.09432,
+  "instruction": "metaphor",
+  "query": "Semi-Supervised Image-to-Video Adaptation for Video Action Recognition",
+  "query_id": "c1173b8d8efb8c2d989ce0e51fe21f6b0b8d1478",
+  "dataset": "scidocs",
+  "generated_metaphors": [
+    "A gardener cultivating a mixed garden from seeds (images) into full-grown plants (videos), using both labeled and unlabeled information.",
+    "An alchemist transforming base metals (static images) into precious gold (dynamic videos) through careful supervision of partial knowledge.",
+    "An architect designing a building by expanding blueprints (images) into 3D structures (videos) with both guided instructions and intuition.",
+    "A chef creating a gourmet dish by blending fresh ingredients (image data) into complex recipes (video actions) using both measured recipes and improvisation.",
+    "A navigator plotting a course on a map (image datasets) to traverse the open sea (video action recognition), using stars (labeled examples) and intuition (unlabeled data)."
+  ],
+  "domain_mappings": [
+    "Gardening: Images as seeds, videos as plants; labeled information as known plant species, unlabeled as wild flora.",
+    "Alchemy: Base metals as static images, gold as dynamic videos; partial knowledge as guided transformation processes.",
+    "Architecture: Blueprints as image data, 3D structures as video recognition tasks; guidance from instructions akin to labels, intuition as unsupervised learning.",
+    "Culinary Arts: Fresh ingredients as image datasets, gourmet dish as recognized actions; recipes are labeled examples, improvisation represents semi-supervision.",
+    "Navigation: Map plotting as dataset transformation, open sea navigation as complex video understanding; stars provide guidance similar to supervision, instinct represents the use of unlabeled data."
+  ],
+  "metaphorical_language": [
+    "Cultivation, mixed garden, seeds, full-grown plants, labeled and unlabeled information.",
+    "Transformation, base metals, precious gold, partial knowledge, alchemical process.",
+    "Designing, blueprints, 3D structures, guided instructions, intuitive expansion.",
+    "Blending ingredients, fresh components, complex recipes, measured recipes, culinary improvisation.",
+    "Plotting course, map data, open sea exploration, stellar guidance, navigational intuition."
+  ],
+  "extended_metaphors": [
+    "Consider the gardener using a combination of manual labor and automated systems to tend a diverse garden where wild plants are nurtured into useful crops alongside those that were deliberately planted.",
+    "The alchemist might use a combination of historical texts (pretrained models) and experimental intuition to discover new pathways for transformation, revealing hidden potential in what was once considered mundane material.",
+    "An architect could use mixed reality tools to project initial designs into a simulated environment, iteratively adjusting plans based on both real-time feedback (labeled data) and speculative modeling (unlabeled insights).",
+    "The chef might create fusion dishes by integrating ingredients from diverse cuisines, applying both rigorous culinary techniques and creative experimentation to achieve new flavor profiles.",
+    "A navigator could employ both traditional compasses and modern GPS technology, using established routes for safe passage while exploring uncharted waters guided by instinctive understanding of the sea's patterns."
+  ],
+  "cross_domain_terms": [
+    "Cultivation, automated systems, diverse garden, useful crops",
+    "Transformation pathways, historical texts, experimental intuition",
+    "Mixed reality tools, simulated environments, speculative modeling",
+    "Fusion dishes, culinary techniques, creative experimentation",
+    "Traditional navigation, modern technology, uncharted waters"
+  ],
+  "cleaned_augmented_query": "semi supervised image video adaptation action recognition emphasis mixed supervision strategies transformation pathways static dynamic data representations blueprint 3d design processes fusion labeled unlabeled sources innovative navigation established exploratory methodologies",
+  "final_delta": 0.14726,
+  "initial_results": "### Text snippet from document at k=1\n: With nearly one billion online videos viewed everyday, an emerging new frontier in computer vision research is recognition and search in video. While much effort has been devoted to the collection and annotation of large scalable static image datasets containing thousands of image categories, human action datasets lag far behind. Current action recognition databases contain on the order of ten different action categories collected under fairly controlled conditions. State-of-the-art performance on these datasets is now near ceiling and thus there is a need for the design and creation of new benchmarks. To address this issue we collected the largest action video database to-date with 51 action categories, which in total contain around 7,000 manually annotated clips extracted from a variety of sources ranging from digitized movies to YouTube. We use this database to evaluate the performance of two representative computer vision systems for action recognition and explore the robustness of these methods under various conditions such as camera motion, viewpoint, video quality and occlusion.\n\n### Text snippet from document at k=2\n: We use multilayer Long Short Term Memory (LSTM) networks to learn representations of video sequences. Our model uses an encoder LSTM to map an input sequence into a fixed length representation. This representation is decoded using single or multiple decoder LSTMs to perform different tasks, such as reconstructing the input sequence, or predicting the future sequence. We experiment with two kinds of input sequences \u2013 patches of image pixels and high-level representations (\u201cpercepts\u201d) of video frames extracted using a pretrained convolutional net. We explore different design choices such as whether the decoder LSTMs should condition on the generated output. We analyze the outputs of the model qualitatively to see how well the model can extrapolate the learned video representation into the future and into the past. We try to visualize and interpret the learned features. We stress test the model by running it on longer time scales and on out-of-domain data. We further evaluate the representations by finetuning them for a supervised learning problem \u2013 human action recognition on the UCF-101 and HMDB-51 datasets. We show that the representations help improve classification accuracy, especially when there are only a few training examples. Even models pretrained on unrelated datasets (300 hours of YouTube videos) can help action recognition performance.\n\n### Text snippet from document at k=10\n: Interpretation of images and videos containing humans interacting with different objects is a daunting task. It involves understanding scene or event, analyzing human movements, recognizing manipulable objects, and observing the effect of the human movement on those objects. While each of these perceptual tasks can be conducted independently, recognition rate improves when interactions between them are considered. Motivated by psychological studies of human perception, we present a Bayesian approach which integrates various perceptual tasks involved in understanding human-object interactions. Previous approaches to object and action recognition rely on static shape or appearance feature matching and motion analysis, respectively. Our approach goes beyond these traditional approaches and applies spatial and functional constraints on each of the perceptual elements for coherent semantic interpretation. Such constraints allow us to recognize objects and actions when the appearances are not discriminative enough. We also demonstrate the use of such constraints in recognition of actions from static images without using any motion information.\n",
+  "thought_process": "As I begin to expand the query \"Semi-Supervised Image-to-Video Adaptation for Video Action Recognition,\" my initial thoughts are centered around understanding the core concepts involved. The term \"semi-supervised\" makes me think of a combination of labeled and unlabeled data being used in a learning process, which is crucial for adapting image-based methods to video contexts where data is often more complex and less annotated. The phrase \"image-to-video adaptation\" suggests a transformation or a pathway from static images to dynamic videos, which inherently involves a change in the dimensionality and complexity of the data.\n\nAnalyzing the results of the original query, I notice that while there are discussions on action recognition and the use of deep learning models like LSTMs for video sequence analysis, there's a lack of focus on the semi-supervised aspect and the adaptation process from images to videos. This indicates a need to delve deeper into techniques that can bridge this gap, possibly by leveraging mixed supervision strategies and exploring transformation pathways that can effectively utilize both labeled and unlabeled data.\n\nTransitioning to a more structured approach, I decide to apply metaphorical thinking as my technique for query expansion. This involves generating powerful metaphors for the query topic and then mining these metaphors for conceptually related terminology from diverse domains. The rationale behind this approach is that metaphors can provide unique insights into complex topics by highlighting analogies and relationships that might not be immediately apparent.\n\nStarting with metaphor generation, I create several diverse metaphors for understanding semi-supervised image-to-video adaptation. For instance, I consider the metaphor of a gardener cultivating a mixed garden from seeds (images) into full-grown plants (videos), using both labeled and unlabeled information. Another metaphor could be an architect designing a building by expanding blueprints (images) into 3D structures (videos) with both guided instructions and intuition. These metaphors are selected from varied domains to ensure a broad perspective on the topic.\n\nAs I map these metaphors to the target domain of video action recognition, I identify key correspondences. For example, in the gardening metaphor, the process of nurturing seeds into plants could represent the transformation of static image data into dynamic video data, with labeled information serving as fertilizers and unlabeled data as the natural environment that still influences growth. Similarly, in the architecture metaphor, the blueprint represents the initial image data, and the 3D structure represents the final video recognition task, with guided instructions analogous to labeled examples and intuition representing the role of unlabeled data in informing the design.\n\nThrough this metaphorical lens, I extract terminology that illuminates aspects of the original topic. Terms such as \"cultivation,\" \"transformation pathways,\" \"mixed supervision,\" and \"blueprint to 3D design\" emerge as relevant. These terms not only provide a fresh perspective on the semi-supervised learning aspect but also highlight the importance of considering the transformation from images to videos as a dimensional and complexity increase that requires innovative navigation of both established and exploratory methodologies.\n\nExtending these metaphors further reveals additional insights. For instance, considering the gardener using a combination of manual labor and automated systems to tend a diverse garden suggests the potential for hybrid approaches that combine the strengths of supervised and unsupervised learning methods. Similarly, the architect's use of mixed reality tools to project initial designs into a simulated environment highlights the potential of leveraging both real-time feedback (labeled data) and speculative modeling (unlabeled insights) in the adaptation process.\n\nCombining these metaphorical insights, I synthesize a comprehensive understanding of the query topic. The expanded query, incorporating terms like \"mixed supervision strategies,\" \"transformation pathways,\" \"blueprint to 3D design processes,\" \"fusion of labeled and unlabeled sources,\" and \"innovative navigation,\" aims to capture both the explicit and implicit aspects of adapting image-based methods to video action recognition in a semi-supervised context.\n\nThrough this process of applying metaphorical thinking and exploring related threads, I believe the terms extracted provide a valuable addition to the original query, enhancing its ability to retrieve relevant information on semi-supervised image-to-video adaptation for video action recognition. The final expanded query is designed to navigate the complexities of video data, leveraging both the structured approach of metaphorical thinking and the intuitive insights that emerge from natural cognitive patterns.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

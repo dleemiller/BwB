@@ -1,0 +1,88 @@
+{
+  "reasoning": "To comprehensively address the query, I've assembled a panel of experts from diverse fields including educational policy, labor economics, legal studies, educational psychology, and sociology. Each expert will offer unique perspectives informed by evidence and research. By looking at the question through these varied lenses, we can develop a richer, more nuanced understanding to guide query augmentation and resource recommendations.",
+  "augmented_query": "teacher tenure impact student achievement teacher effectiveness academic freedom due process value-added models teacher motivation job satisfaction teacher turnover merit pay collective bargaining",
+  "ndcg": {
+    "NDCG@10": 0.86302,
+    "NDCG@100": 0.89788,
+    "NDCG@1000": 0.89788,
+    "NDCG@10000": 0.91455
+  },
+  "map": {
+    "MAP@10": 0.70581,
+    "MAP@100": 0.77413,
+    "MAP@1000": 0.77413,
+    "MAP@10000": 0.77431
+  },
+  "recall": {
+    "Recall@10": 0.72727,
+    "Recall@100": 0.90909,
+    "Recall@1000": 0.90909,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.8,
+    "P@100": 0.1,
+    "P@1000": 0.01,
+    "P@10000": 0.0011
+  },
+  "delta": 0.02735,
+  "instruction": "expert",
+  "query": "Should teachers get tenure?",
+  "query_id": "1",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "touche2020",
+  "extracted_terms": [
+    "Tenure",
+    "Academic Freedom",
+    "Due Process",
+    "Value-Added Models (VAM)",
+    "Teacher Effectiveness",
+    "Teacher Motivation",
+    "Job Satisfaction",
+    "Collective Bargaining",
+    "Teacher Turnover",
+    "Merit Pay",
+    "Teacher Evaluation Systems",
+    "Labor Markets",
+    "Property Rights",
+    "Student Achievement"
+  ],
+  "selected_experts": [
+    "Dr. Anya Sharma, Professor of Educational Policy",
+    "Dr. Ben Carter, Labor Economist specializing in Public Sector Employment",
+    "Professor Elena Ramirez, Constitutional Law Expert focusing on Employment Rights",
+    "Dr. Kenji Tanaka, Educational Psychologist specializing in Teacher Effectiveness",
+    "Dr. Ingrid Olsen, Sociologist studying Social Stratification and Education"
+  ],
+  "expert_insights": [
+    "Dr. Sharma: Tenure, from a policy standpoint, aims to protect academic freedom and attract qualified individuals to teaching. However, it can also protect ineffective teachers and create barriers to innovation. The impact of tenure policy changes depends heavily on the specific state and local contexts.",
+    "Dr. Carter: Labor economics suggests that tenure can reduce teacher turnover and increase experience levels, leading to better student outcomes. However, it can also reduce competition among teachers, potentially lowering overall quality in some cases. Quantifying the actual impact of tenure on student achievement is difficult.",
+    "Professor Ramirez: Legally, tenure is viewed as a property right in some jurisdictions. Challenges to tenure often involve due process arguments. Understanding relevant state statutes and court decisions is essential in evaluating tenure policies.",
+    "Dr. Tanaka: From an educational psychology perspective, job security can affect teacher motivation and creativity. Some teachers may become complacent while others may feel more secure to innovate. Research on the psychological impacts is mixed and may depend on individual teacher characteristics and school environment.",
+    "Dr. Olsen: Sociologically, tenure can be seen as a mechanism to create stability and security, particularly for teachers in under-resourced communities. However, it can also perpetuate inequalities if it disproportionately protects teachers in affluent areas and makes it harder to remove ineffective teachers in disadvantaged schools."
+  ],
+  "cross_connections": [
+    "The legal aspects of tenure (Ramirez) intersect with policy considerations (Sharma) when states attempt to reform tenure laws, leading to potential legal challenges.",
+    "Labor economics (Carter) and educational psychology (Tanaka) both attempt to measure the impact of tenure on teacher motivation and student achievement, albeit through different methodologies.",
+    "Sociological perspectives (Olsen) highlight how tenure can contribute to or alleviate inequalities, connecting with policy debates (Sharma) about resource allocation and teacher quality in different communities.",
+    "The concept of 'teacher quality' is viewed differently across disciplines. Economists (Carter) might focus on measurable outputs like test scores, while psychologists (Tanaka) might emphasize intrinsic motivation and pedagogical skills.",
+    "The impact of tenure on academic freedom and innovation \u2013 policy perspective (Sharma) \u2013 is viewed through the lens of motivation by psychologists (Tanaka), and potentially has stratification consequences investigated by sociologists (Olsen)."
+  ],
+  "recommended_resources": [
+    "National Council on Teacher Quality (NCTQ) reports on state-level tenure policies.",
+    "Economic Policy Institute (EPI) research on the impact of teacher tenure on student outcomes and teacher labor markets.",
+    "Education Law Center (ELC) legal analyses of tenure-related court cases and legislation.",
+    "American Psychological Association (APA) articles on teacher motivation and job satisfaction.",
+    "Sociology of Education journal articles on the impact of teacher tenure on social inequality.",
+    "Specific state statutes related to teacher employment and tenure (e.g., California Education Code).",
+    "Research on alternative teacher evaluation systems like value-added models (VAM).",
+    "Studies on the impact of collective bargaining on teacher quality and student achievement.",
+    "Data on teacher turnover rates in states with and without strong tenure protections."
+  ],
+  "cleaned_augmented_query": "teacher tenure impact student achievement teacher effectiveness academic freedom due process value added models teacher motivation job satisfaction teacher turnover merit pay collective bargaining",
+  "final_delta": 0.02735,
+  "initial_results": "### Text snippet from document at k=1\n... This is the most important fact out of all these because it shows how the WHOLE REASON teacher tenure is here in the first place is NOT NEEDED not have the protections that teachers have without tenure. The teacher tenure is not benefitial for anyone except teachers - they get unfair advantages in MANY ways, some I have just listed. Why should we let this continue if unnessisary? Citations: . http://teachertenure.procon.org...http://teachertenure.procon.org...http://teachertenure.procon.org...Wanda Marie Thibodeaux, \"Pro & Cons of Teacher Tenure,\" www. ehow. comPatrick McGuinn, \"Ringing the Bell for K-12 Teacher Tenure Reform,\" www. americanprogress. org. http://teachertenure.procon.org... \"Rhee-Forming D. C. Schools,\" www. wsj. comMarcus A. Winters, \"Challenging Tenure in D. C. ,\" www. manhattan-institute. orgM. J. Stephey, \"A Brief History of Tenure,\" www. time. comRose Garrett, \"What Is Teacher Tenure? ,\" www. education. com. http://teachertenure.procon.org... \"Rhee-Forming D. C. Schools,\" www. wsj. comSteven Brill, \"The Rubber Room,\" New YorkerTenure Reforms and NJSBA Policy: Report of the NJSBA Tenure Task Force,\" New Jersey School Boards Association website, www. njsba. orgScott McLeod, JD, PhD, \"Does Teacher Tenure Have a Future? ,\" www. dangerouslyirrelevant. orgNanette Asimov, \"Teacher Job Security Fuels Prop. 74 Battle,\" San Francisco Chronicle\n\n### Text snippet from document at k=2\n... The teacher tenure is not benefitial for anyone except teachers - they get unfair advantages in MANY ways, some I have just listed. Why should we let this continue if unnessisary? Citations: . http://teachertenure.procon.org......http://teachertenure.procon.org......http://teachertenure.procon.org......Wanda Marie Thibodeaux, \"Pro & Cons of Teacher Tenure,\" www. ehow. comPatrick McGuinn, \"Ringing the Bell for K-12 Teacher Tenure Reform,\" www. americanprogress. org. http://teachertenure.procon.org...... \"Rhee-Forming D. C. Schools,\" www. wsj. comMarcus A. Winters, \"Challenging Tenure in D. C. ,\" www. manhattan-institute. orgM. ...\n\n### Text snippet from document at k=10\n: As i'm looking forward to a productive debate. To begin, i'd like to state why teachers unions should be abolished. Teacher's unions are detrimental to this nation's public education system because, teacher's have the to strike which interrupts learning of the student, tenure, protection for proven noneffective teachers, and union's donate to politicians to advance their own agenda. These unions put their own agenda in front of what be a number #1 priority for them, teaching this nation's children.\n",
+  "thought_process": "As I begin to tackle the query \"Should teachers get tenure?\", my initial impressions lean towards considering the multifaceted nature of the issue. This makes me think of the various stakeholders involved - teachers, students, administrators, and policymakers - each with their own set of concerns and interests. The user might actually be trying to understand the implications of tenure on education quality, teacher job security, or perhaps the legal and economic aspects surrounding it. However, I'm not sure yet how to balance these different perspectives.\n\nAnalyzing the results of the original query, I notice that the initial texts retrieved focus heavily on the debates around teacher tenure, its pros and cons, and the legal battles surrounding its implementation or reform. The strengths of these search terms lie in their ability to tap into the current discourse on teacher tenure, highlighting key arguments from both sides of the debate. However, the weaknesses include a potential bias towards Sources that are either for or against tenure, with less emphasis on-neutral, fact-based information or empirical research.\n\nTo transition into a more structured approach, I decide to utilize the \"Query Expansion via Multi-Disciplinary Expert Panel\" technique. This involves imagining a panel of experts from different disciplines - educational policy, labor economics, legal studies, educational psychology, and sociology - each contributing their specialized knowledge and perspectives to the query.\n\nStarting with organic thinking, I consider how each expert might view the query. The educational policy expert might focus on the historical development of tenure, its current state, and proposed reforms. The labor economist could analyze the impact of tenure on teacher turnover, job satisfaction, and overall education quality. The legal expert would likely delve into the constitutional aspects, due process, and property rights associated with tenure. The educational psychologist might explore how tenure affects teacher motivation, creativity, and effectiveness, while the sociologist could examine how tenure influences social stratification and inequality within the education system.\n\nAs I apply the steps of the \"Query Expansion via Multi-Disciplinary Expert Panel\" technique, I systematically consider each discipline's contribution. However, I also allow for natural cognitive elements to influence my thought process. For instance, I might initially think that tenure is primarily a legal issue, but then I reconsider and realize its profound impact on educational psychology and sociology. This reminds me of a related concept - the importance of interdisciplinary approaches in understanding complex social issues.\n\nIntuitive connections begin to emerge as I see how the legal aspects of tenure (due process, property rights) intersect with educational policy considerations (reform efforts, historical context). The labor economics perspective on teacher motivation and job satisfaction complements the educational psychology insights on teacher effectiveness and creativity. Sociological perspectives on inequality and social stratification add another layer of depth, highlighting how tenure can perpetuate or alleviate these issues in different educational settings.\n\nThrough this process, insights begin to emerge from both the structured technique and natural intuition. Applying the legal aspects of the technique leads me to discover key terms like \"due process\" and \"property rights,\" which are crucial in understanding tenure's legal framework. My instinct suggests that we should also consider \"collective bargaining\" and \"teacher evaluation systems,\" as these play significant roles in the broader context of teacher employment and education policy.\n\nAs I synthesize the information, I realize that the final terms for the expanded query should capture the essence of these multidisciplinary insights. Terms like \"teacher tenure impact,\" \"student achievement,\" \"academic freedom,\" and \"value-added models\" emerge as central to understanding the complex interactions between tenure, education quality, and societal factors.\n\nThrough this process of applying the \"Query Expansion via Multi-Disciplinary Expert Panel\" technique and allowing for natural cognitive patterns, I believe the most effective terms for a BM25 index would include: \"teacher tenure,\" \"academic freedom,\" \"due process,\" \"value-added models,\" \"teacher effectiveness,\" \"teacher motivation,\" \"job satisfaction,\" \"collective bargaining,\" \"teacher turnover,\" \"merit pay,\" and \"teacher evaluation systems.\" These terms balance the explicit and implicit aspects of the query, capturing the legal, economic, psychological, and sociological dimensions of the debate around teacher tenure.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

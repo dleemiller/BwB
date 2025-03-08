@@ -1,0 +1,72 @@
+{
+  "reasoning": "The query delves into the \"double burden\" faced by women, exploring the intersection of paid work and unpaid domestic/care labor. It highlights the persistent inequality despite a feminizing labor market, emphasizing the increased time, physical, and mental demands placed on women. The goal is to understand the extent to which increased labor force participation empowers women when their essential contributions in caregiving remain undervalued and unrecognized.",
+  "query_goals": [
+    "understand the concept of the 'double burden' faced by women",
+    "analyze the impact of feminization of labor on unpaid care work",
+    "evaluate the empowerment potential of increased female labor force participation",
+    "identify the societal factors contributing to the persistence of this burden",
+    "explore potential solutions or interventions to address this issue"
+  ],
+  "augmented_query": "\"The double burden: labor force participation and unpaid care work for women - intersectionality, gender roles, feminist economics\"",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.24408,
+  "instruction": "graph",
+  "query": "The double burden  Despite a feminising labour market there has been no convergence, or equalisation, in unpaid domestic and care work. Women still play key roles in working the reproductive sphere and family care; therefore labour-force participation increases the overall burden placed on women. The burden is placed on time, physical, and mental demands.  We need to recognise the anxieties and burdens women face of being the bread-winner, as survival is becoming \u2018feminised\u2019 (Sassen, 2002). Additionally, women have always accounted for a significant proportion of the labour market - although their work has not been recognised. Therefore to what extent can we claim increased labour force participation is empowering when it is only just being recognised?",
+  "query_id": "test-economy-epiasghbf-con01a",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "arguana",
+  "node_classes": [
+    "Labor Market",
+    "Gender Roles",
+    "Care Work",
+    "Economic Inequality",
+    "Social Expectations",
+    "Feminism",
+    "Work-Life Balance"
+  ],
+  "query_nodes": [
+    "Women",
+    "Labor Force Participation",
+    "Unpaid Care Work",
+    "Double Burden",
+    "Breadwinner",
+    "Survival"
+  ],
+  "nearest_neighbors": [
+    "Gendered Division of Labor",
+    "Care Economy",
+    "Feminist Economics",
+    "Reproductive Rights",
+    "Time Poverty",
+    "Occupational Segregation"
+  ],
+  "cleaned_augmented_query": "double burden labor force participation unpaid care work women intersectionality gender roles feminist economics",
+  "final_delta": 0.24408,
+  "initial_results": "### Text snippet from document at k=1\n: The double burden  Despite a feminising labour market there has been no convergence, or equalisation, in unpaid domestic and care work. Women still play key roles in working the reproductive sphere and family care; therefore labour-force participation increases the overall burden placed on women. The burden is placed on time, physical, and mental demands.  We need to recognise the anxieties and burdens women face of being the bread-winner, as survival is becoming \u2018feminised\u2019 (Sassen, 2002). Additionally, women have always accounted for a significant proportion of the labour market - although their work has not been recognised. Therefore to what extent can we claim increased labour force participation is empowering when it is only just being recognised?\n\n### Text snippet from document at k=2\n: Who are the women?  Women are a diverse group, and the feminisation of labour has incorporated a range of women of different ages, race, socioeconomic backgrounds and education. Such intersectionalities are important to recognise, as not all women are empowered and the empowerment is not equal.  For example, a study by Atieno (2006) revealed female participation in the labour market was influenced by education. Human capital influenced the transition into work: who was able to access labour opportunities, and which ones. Therefore inequalities among women determine the degrees, and capability, of empowerment it is therefore not labour force participation that empowers but education.\n\n### Text snippet from document at k=10\n: Yes education may help to determine the extent to which labour participation empowers women but it is the participation itself that is the actual tool that empowers. A well-educated woman who is kept at home doing nothing is not empowered no matter how good her education might have been. In Saudi Arabia there are more women in university than men yet there is 36% unemployment for women against only 6% for men (Aluwaisheg, 2013). The women are educated, not empowered.\n",
+  "thought_process": "Looking at the original query, \"The double burden  Despite a feminising labour market there has been no convergence, or equalisation, in unpaid domestic and care work,\" this makes me think of the challenges women face in balancing their professional and personal lives. Though the user might actually be trying to understand the impact of increased labor force participation on women's empowerment, it seems there's an underlying question about the fairness and recognition of women's contributions to both the labor market and domestic care work. Hmm, not sure yet how to approach this, but it's clear that the query touches on issues of gender roles, economic inequality, and social expectations.\n\nAnalyzing the results of the original query, I notice that the top documents discuss the concept of the \"double burden\" and its relation to labor force participation, unpaid care work, and the feminization of labor. The strengths of these search terms lie in their ability to retrieve documents that directly address the query's core concepts. However, the weaknesses become apparent when considering the lack of diversity in perspectives and the limited exploration of potential solutions to address the double burden. The initial results seem to focus heavily on the descriptive aspects of the issue rather than prescriptive measures or analyses of empowerment through labor participation.\n\nTo approach this query expansion systematically, I'll use the technique of Conceptual Graph Traversal. This involves constructing a conceptual graph with core nodes representing the main entities and concepts from the query, first-order connections for direct properties and relationships, second-order connections for related concepts, and domain contexts to specify the fields where this query is relevant. The core concepts here include \"double burden,\" \"labor force participation,\" \"unpaid care work,\" \"gender roles,\" and \"empowerment.\"\n\nFollowing the steps of Conceptual Graph Traversal, I identify promising directions for query expansion. These include synonymous terms (e.g., \"caregiving\" for \"unpaid care work\"), hierarchical terms (broader concepts like \"gender inequality\" or narrower ones like \"domestic chores\"), compositional terms (components of care work like \"childcare\" or \"elderly care\"), contextual terms (settings where care work is significant, such as \"family\" or \"community\"), and domain-specific terminology from fields like feminist economics or sociology.\n\nAs I traverse the conceptual graph, I start to see connections that weren't immediately apparent. For instance, the concept of \"intersectionality\" emerges as crucial, highlighting how different aspects of a woman's identity (race, socioeconomic status, education) intersect to affect her experience of the double burden. This reminds me of the importance of considering diverse perspectives and how education, as mentioned in one of the text snippets, can be a determining factor in empowerment but does not guarantee it.\n\nApplying the steps of Conceptual Graph Traversal systematically, I also consider the hierarchical relationships between concepts. For example, \"gender roles\" can be broadened to \"social norms\" or narrowed down to \"domestic responsibilities.\" This step leads to the identification of high-value expansion terms that are both relevant and distinctive, such as \"time poverty,\" \"occupational segregation,\" and \"reproductive rights.\"\n\nThrough this process, insights begin to emerge from both the structured approach and natural intuition. I realize that while labor force participation is often seen as a pathway to empowerment, the presence of the double burden complicates this narrative. The structured approach helps in identifying key terms and relationships, but it's the intuitive leaps\u2014connecting concepts like education, empowerment, and thepecific contexts of women's lives\u2014that add depth to the understanding of the query.\n\nSynthesizing these findings, I believe the expanded terms should capture the essence of the double burden, its societal and economic implications, and the pathways to empowerment. Terms like \"intersectionality,\" \"gendered division of labor,\" \"care economy,\" and \"feminist economics\" emerge as crucial. They not only reflect the core concepts and their relationships but also introduce a nuance that acknowledges the complexity of women's experiences in the labor market and beyond.\n\nTherefore, through the application of Conceptual Graph Traversal and the integration of natural thought patterns, I conclude that the most effective expansion terms for exploring the double burden and its implications on women's empowerment are those that balance the descriptive, analytical, and prescriptive aspects of the issue. These terms should facilitate a deeper understanding of the societal factors contributing to the persistence of the double burden and point towards potential solutions or interventions that could mitigate its effects.\n\nThe final expanded query, taking into account the original search intent and the insights gained from both the structured technique and intuitive connections, would be: \"double burden labor force participation unpaid care work women intersectionality gender roles feminist economics care economy.\"",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

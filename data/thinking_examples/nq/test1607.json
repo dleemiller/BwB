@@ -1,0 +1,68 @@
+{
+  "reasoning": "The original query aims to determine the total number of Members of the National Assembly (MNAs) in Pakistan. The main goal is informational, as it seeks a specific numeric answer regarding the composition of the legislative body. Strengths identified include documents that provide accurate numbers and insight into the assembly's structure. However, there are inconsistencies and irrelevant details in some results, leading to potential confusion. To improve query effectiveness, constructing a conceptual graph involving key concepts such as \"Pakistan National Assembly,\" \"Members of Parliament,\" and related entities like political parties or legislative frameworks will be beneficial. This approach aims to refine search terms for specificity and accuracy, mitigating discrepancies among current document outputs.",
+  "query_goals": [
+    "Identify the specific number of Members of the National Assembly in Pakistan",
+    "Clarify any contextual details relevant to changes in assembly size over time",
+    "Exclude irrelevant procedural or historical information not related to the total count"
+  ],
+  "augmented_query": "'current total number of MNAs in Pakistan National Assembly including changes over time'",
+  "ndcg": {
+    "NDCG@10": 0.5,
+    "NDCG@100": 0.5,
+    "NDCG@1000": 0.5,
+    "NDCG@10000": 0.5
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.33333,
+    "MAP@1000": 0.33333,
+    "MAP@10000": 0.33333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.06932,
+  "instruction": "graph",
+  "query": "total number of mna in pakistan national assembly",
+  "query_id": "test1607",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "node_classes": [
+    "Political Entity",
+    "Legislative Body",
+    "Constitutional Framework",
+    "Governmental Role",
+    "Election Process"
+  ],
+  "query_nodes": [
+    "Pakistan National Assembly",
+    "Members of the National Assembly (MNAs)",
+    "Parliamentary Composition"
+  ],
+  "nearest_neighbors": [
+    "Constituent Assembly of Pakistan",
+    "House of Commons of Pakistan",
+    "Senate of Pakistan",
+    "Electoral System in Pakistan",
+    "Political Parties in Pakistan",
+    "Election Commission of Pakistan",
+    "Representation Quotas for Provinces",
+    "Reserved Seats for Women and Minorities",
+    "Legislative Procedures in Pakistan"
+  ],
+  "cleaned_augmented_query": "current total number mnas pakistan national assembly including changes time",
+  "final_delta": 0.06932,
+  "initial_results": "### Text snippet from document at k=1\n: The Constitution of Pakistan lists a number of requirements for members of the National Assembly in Article 62.\n\n### Text snippet from document at k=2\n: The composition of the National Assembly is specified in Article 51 of the Constitution of Pakistan. There are a total of 332 seats in the National Assembly. Of these, 272 are filled by direct elections. In addition, the Pakistani Constitution reserves 10 seats for religious minorities and 60 seats for women, to be filled by proportional representation among parties with more than 5% of the vote. As of 2006, there are 72 women members in the Assembly.\n\n### Text snippet from document at k=10\n: Pakistan is a multi-party democracy. The country has many political parties and it is common for the country to be ruled by a coalition government. The Parliament of Pakistan is bicameral, consisting of the National Assembly of Pakistan and the Senate. The main political parties in Pakistan are listed below in alphabetical order.\n",
+  "thought_process": "Looking at the original query, \"total number of mna in pakistan national assembly,\" this makes me think of the legislative structure of Pakistan and how the National Assembly is composed. Though the user might actually be trying to understand the current composition or any recent changes to the assembly, it seems the primary goal is to find a specific number. \n\nAnalyzing the results of the original query, I notice that while some documents provide accurate information about the total number of MNAs and the composition of the National Assembly, others introduce irrelevant details or procedural information that isn't directly relevant to the query. For instance, the text snippet from the document at k=1 mentions requirements for members of the National Assembly, which, while informative, does not directly answer the query about the total number of MNAs. On the other hand, the snippet from k=2 directly addresses the query by stating there are 332 seats in the National Assembly, providing a clear answer.\n\nGiven the mixed nature of these results, I see several possibilities for refining the query. Let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph and then traversing it to find high-value expansion terms. This should help because it systematically identifies relevant concepts and terms that can enhance the query's specificity and accuracy.\n\nFollowing the Query Expansion via Conceptual Graph Traversal approach, I should first identify core concepts and entities in the original query. Here, the core concepts are \"Pakistan National Assembly\" and \"Members of the National Assembly (MNAs).\" The search intent is clearly informational, aiming to find a specific numeric answer.\n\nNext, I construct a conceptual graph. The core nodes are \"Pakistan National Assembly\" and \"MNAs.\" First-order connections include terms like \"Constitution of Pakistan,\" \"elections,\" and \"parliamentary composition.\" Second-order connections might involve \"political parties in Pakistan,\" \"electoral system,\" and \"representation quotas.\" Domain contexts include \"Pakistan's legislative system\" and \"South Asian political structures.\"\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"National Assembly of Pakistan\" for \"Pakistan National Assembly\"), hierarchical terms (e.g., \"Parliament of Pakistan\" as a broader concept), compositional terms (e.g., \"seats in the National Assembly\" as parts of the whole), contextual terms (e.g., \"current composition\" or \"changes over time\"), and domain-specific terminology (e.g., \"proportional representation\" or \"reserved seats\").\n\nUpon traversing the graph and applying the expansion paths, I extract high-value terms such as \"current total number,\" \"including changes over time,\" \"parliamentary composition,\" \"elections in Pakistan,\" and \"constitutional framework.\" These terms are relevant, distinctive, specific, and searchable, making them ideal for query expansion.\n\nAs I apply the technique's steps systematically, I also consider natural thought patterns. For instance, recognizing that the assembly's composition can change due to elections or constitutional amendments leads me to include terms related to these concepts. Additionally, understanding that the user might be interested in both the current number and any historical changes prompts me to include terms like \"including changes over time.\"\n\nThis process of applying the Query Expansion via Conceptual Graph Traversal technique, combined with organic thinking and natural cognitive elements, leads me to insights such as the importance of considering the dynamic nature of the National Assembly's composition and the value of incorporating domain-specific terms related to Pakistan's legislative and electoral systems.\n\nThrough this process, I realize that the final expanded query should not only include the original terms but also these high-value expansion terms to capture both the explicit and implicit aspects of the user's query. Thus, the augmented query becomes \"current total number of MNAs in Pakistan National Assembly including changes over time,\" which maintains the original search intent while providing a more refined and specific query for document retrieval.\n\nThe final terms for the BM25 index, derived from both the structured technique and natural insights, include \"Pakistan National Assembly,\" \"Members of the National Assembly,\" \"current total number,\" \"changes over time,\" \"parliamentary composition,\" and related domain-specific terms. These terms are expected to improve the retrieval of relevant documents by addressing the query's informational goal more accurately.\n\nIn conclusion, by balancing structured technique with natural cognitive patterns, I've generated an expanded query that should yield more precise and relevant results, addressing the user's need for the current total number of MNAs in Pakistan's National Assembly, including any changes over time.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

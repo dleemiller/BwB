@@ -1,0 +1,70 @@
+{
+  "reasoning": "To expand the query 'SMOTE-GPU: Big Data preprocessing on commodity hardware for imbalanced classification,' we analyze how different users with varying expertise and goals might approach this topic. By understanding their information journey, we can identify diverse search terms reflecting real-world needs across contexts like academic research, practical implementation, and problem-solving scenarios.",
+  "augmented_query": "SMOTE-GPU integration, big data preprocessing techniques, class imbalance solutions on commodity hardware, GPU acceleration strategies, MapReduce applications in machine learning, BinaryNet frameworks, ELM models for large-scale imbalanced datasets",
+  "ndcg": {
+    "NDCG@10": 0.33916,
+    "NDCG@100": 0.55989,
+    "NDCG@1000": 0.55989,
+    "NDCG@10000": 0.55989
+  },
+  "map": {
+    "MAP@10": 0.2,
+    "MAP@100": 0.27162,
+    "MAP@1000": 0.27162,
+    "MAP@10000": 0.27162
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.8,
+    "Recall@1000": 0.8,
+    "Recall@10000": 0.8
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.04,
+    "P@1000": 0.004,
+    "P@10000": 0.0004
+  },
+  "delta": 0.05457,
+  "instruction": "journey",
+  "query": "SMOTE-GPU: Big Data preprocessing on commodity hardware for imbalanced classification",
+  "query_id": "5cd7b83eb30797aa8bf49b4b7a3f6a433aca4a75",
+  "dataset": "scidocs",
+  "user_personas": [
+    "A novice data scientist recently introduced to big data challenges in imbalanced datasets. They are looking for foundational understanding and broad overviews of relevant techniques.",
+    "An intermediate-level ML engineer working on optimizing model training with available hardware resources. They need practical solutions and methods, specifically involving GPU acceleration.",
+    "An advanced researcher focused on methodological developments and comparative analyses of existing algorithms related to class imbalance. They seek in-depth studies and new proposals for improving processing efficiency.",
+    "A domain expert in machine learning optimization aiming to push the boundaries by integrating SMOTE with GPU processing on commodity hardware. Their goal is innovation through detailed technical specifications and advanced algorithmic adjustments."
+  ],
+  "search_vocabulary": [
+    "novice: 'Introduction to big data, class imbalance, SMOTE technique'",
+    "intermediate: 'GPU acceleration for machine learning, optimizing model training, commodity hardware solutions'",
+    "advanced: 'Comparative analysis of imbalanced classification methods, enhancing preprocessing techniques with MapReduce'",
+    "expert: 'Advanced GPU utilization in ML models, integrating SMOTE with BinaryNet on large datasets'"
+  ],
+  "journey_stages": [
+    "awareness: 'What is big data? Basic concepts of class imbalance and oversampling techniques like SMOTE'",
+    "understanding: 'How does GPU acceleration improve model performance for imbalanced classification tasks?'",
+    "application: 'Implementing SMOTE with MapReduce frameworks on commodity hardware, specific examples and case studies'",
+    "innovation: 'Exploring cutting-edge research combining GPU computing with SMOTE in novel ways for highly efficient processing of large datasets'"
+  ],
+  "usage_scenarios": [
+    "A novice student preparing a report on the basics of handling imbalanced data in big data contexts.",
+    "An ML engineer tasked with reducing training time and improving model accuracy using existing commodity hardware resources.",
+    "A researcher conducting a comparative study between different techniques for preprocessing imbalanced datasets, looking for new methods to propose.",
+    "A senior developer exploring innovative approaches to integrate SMOTE with GPU acceleration for optimized real-time data processing."
+  ],
+  "intent_terms": [
+    "foundational concepts of big data and class imbalance",
+    "GPU optimization in ML workflows",
+    "commodity hardware applications",
+    "SMOTE enhancements using advanced computing frameworks like MapReduce",
+    "practical implementation guides and case studies",
+    "technical specifications for integrating SMOTE with GPU acceleration"
+  ],
+  "cleaned_augmented_query": "smote gpu integration big data preprocessing techniques class imbalance solutions commodity hardware acceleration strategies mapreduce applications machine learning binarynet frameworks elm models large scale imbalanced datasets",
+  "final_delta": 0.06966,
+  "initial_results": "### Text snippet from document at k=1\n... Sara del R\u00edo srio@decsai.ugr.es Nitesh V. Chawla nchawla@nd.edu Francisco Herrera herrera@decsai.ugr.es 1 Department of Computer Science and Artificial Intelligence, University of Granada, Granada, Spain 2 Department of Computer Science and Engineering, 384 Fitzpatrick Hall, University of Notre Dame, Notre Dame, IN 46556, USA 3 Interdisciplinary Center for Network Science and Applications, 384 Nieuwland Hall of Science, University of Notre Dame, Notre Dame, IN 46556, USA research state of this area. Second, to analyze the behavior of standard pre-processing techniques in this particular framework. Finally, taking into account the experimental results obtained throughout this work, we will carry out a discussion on the challenges and future directions for the topic.\n\n### Text snippet from document at k=2\n: E-commerce customer churn rate is high and the customer churn dataset is seriously imbalanced. In order to improve the prediction accuracy of churn customers as well as strengthen to identify non-churn customers, this paper presents e-commerce customer churn prediction model based on improved SMOTE and AdaBoost. First, processing the churn data with improved SMOTE, which combines oversampling and undersampling methods to address the imbalance problem and subsequently integrates AdaBoost algorithm to predict. Finally, the empirical study on B2C E-commerce platform proves that this model has better efficiency and accuracy compared with the mature customer churn prediction algorithms.\n\n### Text snippet from document at k=10\n: Algorithms for feature selection fall into two broad categories: wrappers that use the learning algorithm itself to evaluate the usefulness of features and filters that evaluate features according to heuristics based on general characteristics of the data. For application to large databases, filters have proven to be more practical than wrappers because they are much faster. However, most existing filter algorithms only work with discrete classification problems. This paper describes a fast, correlation-based filter algorithm that can be applied to continuous and discrete problems. The algorithm often outperforms the well-known ReliefF attribute estimator when used as a preprocessing step for naive Bayes, instance-based learning, decision trees, locally weighted regression, and model trees. It performs more feature selection than ReliefF does\u2014reducing the data dimensionality by fifty percent in most cases. Also, decision and model trees built from the preprocessed data are often significantly smaller.\n",
+  "thought_process": "Looking at the original query 'SMOTE-GPU: Big Data preprocessing on commodity hardware for imbalanced classification,' this makes me think of the challenges in handling large datasets with class imbalance issues. Though the user might actually be trying to find efficient preprocessing techniques for imbalanced data, utilizing SMOTE and leveraging GPU acceleration on commodity hardware, I'm not sure yet how deep their understanding of these concepts is. \n\nAnalyzing the results of the original query, I notice that the top documents discuss SMOTE, AdaBoost, and other techniques for addressing class imbalance, but they don't directly mention GPU acceleration or commodity hardware. This tells me that the search terms might need to be broadened or specified to capture the intersection of these topics more effectively.\n\nTo expand this query, I'll approach it using the technique of User Intent and Journey Mapping. This involves understanding how users with different levels of expertise and goals might search for information on this topic. By considering their information journey from awareness to expertise, we can identify a diverse set of search terms that reflect real-world needs across various contexts.\n\nFirst, let's create user personas: \n- A novice data scientist looking for foundational knowledge on big data and class imbalance.\n- An intermediate ML engineer seeking practical solutions for optimizing model training with GPU acceleration.\n- An advanced researcher focused on comparative analyses of imbalanced classification methods.\n- An expert in ML optimization aiming to innovate by integrating SMOTE with GPU processing.\n\nFor each persona, the initial search terms would differ. The novice might start with 'introduction to big data' and 'class imbalance,' while the intermediate engineer would search for 'GPU acceleration for machine learning' and 'commodity hardware solutions.' The advanced researcher would look for 'comparative analysis of imbalanced classification methods,' and the expert might search for 'advanced GPU utilization in ML models' and 'integrating SMOTE with BinaryNet.'\n\nAs users progress in their journey, their search vocabulary evolves. The novice moves from basic concepts to specific techniques like SMOTE, the intermediate engineer explores optimizing model training with GPU acceleration, and the advanced researcher delves into methodological developments and comparative studies. The expert pushes boundaries by exploring novel combinations of SMOTE, GPU processing, and advanced frameworks like MapReduce.\n\nNow, let's apply the structured approach of User Intent and Journey Mapping more systematically:\n1. Identify the key stages of the user's journey - awareness, understanding, application, and innovation.\n2. At each stage, determine the types of information and search terms that would be relevant.\n3. Consider the specific scenarios where users need this information, such as problem-solving, learning, decision-making, and practical application.\n\nBy balancing this structured approach with natural thought patterns, I notice that occasionally, what seems like a straightforward query expansion can lead to false starts or the realization that certain terms might not be as relevant as initially thought. For instance, while considering GPU acceleration, it's also important to think about the broader context of machine learning optimization and how SMOTE fits into that landscape.\n\nAs I apply the technique, I see insights emerging from both the structure and intuition. The use of MapReduce for preprocessing large datasets, for instance, is an important consideration for commodity hardware applications. Similarly, understanding the nuances of class imbalance and how SMOTE addresses these issues is crucial for effective query expansion.\n\nIn synthesizing this information, it becomes clear that the expanded query needs to capture a range of concepts from foundational knowledge of big data and class imbalance to advanced techniques for GPU acceleration and integration with frameworks like BinaryNet. The terms 'SMOTE-GPU integration,' 'big data preprocessing techniques,' 'class imbalance solutions on commodity hardware,' 'GPU acceleration strategies,' and 'MapReduce applications in machine learning' all emerge as relevant.\n\nThrough this process of applying User Intent and Journey Mapping, and exploring related threads, I believe the most effective terms for query expansion would include those reflecting the diverse information needs across user personas and journey stages. These terms not only capture the explicit aspects of the user's query but also the implicit needs and contexts that underlie their search.\n\nThe final expanded query, 'SMOTE-GPU integration, big data preprocessing techniques, class imbalance solutions on commodity hardware, GPU acceleration strategies, MapReduce applications in machine learning, BinaryNet frameworks, ELM models for large-scale imbalanced datasets,' emerges from this thoughtful and systematic approach. It balances the structured technique with natural cognitive patterns, ensuring that the query captures both the breadth and depth of what the user is seeking.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

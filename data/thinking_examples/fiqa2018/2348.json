@@ -1,0 +1,81 @@
+{
+  "reasoning": "The query asks about a simple profit-sharing investment agreement. To gain more insight, I will use metaphors from different domains to explore the underlying concepts of risk, reward, effort, and incentives. I'll look at investing as a garden, a collaborative art project, a sports team, a business partnership, and a game of chance. These metaphors should illuminate the potential challenges with the original proposed arrangement from various angles.",
+  "augmented_query": "\"investment partnership agreement\", \"incentive structures for investment managers\", \"risk sharing investment strategies\", \"investment management contracts\", \"alternative investment incentives\", \"profit sharing investment risks\", \"investment performance metrics\", \"capital allocation strategies\"",
+  "ndcg": {
+    "NDCG@10": 0.64893,
+    "NDCG@100": 0.68556,
+    "NDCG@1000": 0.76979,
+    "NDCG@10000": 0.7867
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.43974,
+    "MAP@1000": 0.45287,
+    "MAP@10000": 0.45379
+  },
+  "recall": {
+    "Recall@10": 0.33333,
+    "Recall@100": 0.66667,
+    "Recall@1000": 0.93333,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.5,
+    "P@100": 0.1,
+    "P@1000": 0.014,
+    "P@10000": 0.0015
+  },
+  "delta": 0.07705,
+  "instruction": "metaphor",
+  "query": "Why can't you just have someone invest for you and split the profits (and losses) with him?",
+  "query_id": "2348",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "generated_metaphors": [
+    "Investing is like cultivating a garden.",
+    "Investing is like a collaborative art project.",
+    "Investing is like being on a sports team.",
+    "Investing is like running a business partnership.",
+    "Investing is like gambling at a casino."
+  ],
+  "domain_mappings": [
+    "Gardening: Seeds (Capital), Gardener (Investor), Soil (Market), Harvest (Profit), Weeds/Pests (Risks) -> Investing: Initial investment, Fund manager/Individual investor, Market conditions, Investment returns, Market volatility/Economic downturn",
+    "Collaborative Art: Canvas (Investment opportunity), Artists (Investor & Capital Provider), Paint/Brushes (Skills/Resources), Masterpiece (Successful investment), Creative differences (Disagreements on strategy) -> Investing: Underlying asset/business, Investor's Expertise, Trading tools/Market data, Profitable Investment, Conflicting investment styles",
+    "Sports Team: Players (investor/capital provider), Coach (financial advisor), Training (due diligence), Game (market), Score (profit) -> Investing: Skills/Capital, Investment strategy, Research, Market conditions, Returns/Losses",
+    "Business Partnership: Partners (Investor & Capital Provider), Business Plan (Investment Strategy), Resources (Capital/Expertise), Revenue (Profit), Expenses (Losses) -> Investing: Shared responsibilities, Documented strategy, Shared Costs/Rewards, Investment gains, Investment losses",
+    "Gambling: Chips (Capital), Gambler (Investor), Table (Market), Winnings (Profit), Losses (Losses) -> Investing: Initial Investment, Individual, Market conditions, Investment returns, Investment losses"
+  ],
+  "metaphorical_language": [
+    "Gardening: Seeds, cultivate, harvest, weeds, fertilizer, pruning, soil, irrigation",
+    "Art: Canvas, palette, brush, strokes, masterpiece, gallery, composition, perspective",
+    "Sports: Team, players, coach, training, game, score, strategy, playoffs",
+    "Business: Partnership, revenue, expenses, profit, loss, strategy, market share, competition",
+    "Gambling: Chips, bet, odds, winnings, losses, risk, jackpot, probability"
+  ],
+  "extended_metaphors": [
+    "Gardening: Some seeds are more likely to sprout. A lazy gardener won't get a good harvest even with good seeds. Requires constant tending based on market temperature.",
+    "Art: A collaborative art project can fail if artists have dramatically different visions even with good resources. Different styles of art will result in different art pieces, therefore different values.",
+    "Sports Team: A team needs both skilled players and a good coach/strategy to win. Even with funding, a team with no strategy will fail. Also, some players can be bad influences to others.",
+    "Business Partnership: A partnership needs trust and a clear agreement to succeed. The failure can be attributed to the lack of clarity on contributions, how the profit/loss gets split, and who gets the final say.",
+    "Gambling: In gambling, even with good strategy, the house always has an edge. If the investor isn't good, the house will also win. Investing without knowledge is gambling."
+  ],
+  "cross_domain_terms": [
+    "Cultivate capital",
+    "Investment composition",
+    "Market strategy",
+    "Risk partnership",
+    "Profit probability",
+    "Investment strokes",
+    "Seed capital",
+    "Market score",
+    "Capital game.",
+    "Due diligence strokes",
+    "Investment landscape weeding"
+  ],
+  "cleaned_augmented_query": "investment partnership agreement incentive structures managers risk sharing strategies management contracts alternative incentives profit risks performance metrics capital allocation",
+  "final_delta": 0.08651,
+  "initial_results": "### Text snippet from document at k=1\n: Such an offer has negative value, so it's hard to see how it would make sense to accept it. The offer has two components, one part that you gain and one part that you lose. The gain is that half your losses are covered. The cost is that half your profits are lost. For that to be a net benefit to you, you would have to expect that you will gain more from this than you will lose from it. That is, you must expect that the investment has negative value. But if you expect that the investment has negative value, why are you investing? This also doesn't really align incentives between the two parties. The person choosing the investment is not incurring opportunity cost (because they have no funds locked up) while you are. So they have an incentive to be conservative that you do not. For example, say I could make 1% in an ultra low risk CD. The person choosing the investments has an incentive to put me in something that he only expects to make around 0.5% (because he gets to keep half the profits and it costs him nothing). Whereas I'd rather just put the money in a CD (because I get to keep 1% instead just half of 0.5%).\n\n### Text snippet from document at k=2\n... Because they can already make lots of money by just charging people an unconditional fee and not having to cover their losses.  Why take on the risk of having to cover your losses when they can just take a percentage of your assets and stick you with any losses? In addition, as Charles E. Grant mentioned in a comment on another answer, if a person has both sufficient capital to cover your losses and sufficient confidence in their investing acumen that they don't think they will have to do so, they have little need for your money.  Rather than take half the gains on your money, they will invest their own money (they must have some, or else they can't guarantee your losses) and take all the gains. Your scheme would only be plausible as a partnership between a person with investing skills but little capital, and another person with ample capital and less skill.  In that case, the investment whiz could genuinely benefit from access to the bankroller's capital.  As quid noted in chat, this does exist in the form of ad-hoc private equity arrangements between individuals.  However, such a setup is unlikely to exist as an \"\"off-the-shelf product\"\" marketed at retail investors, because financial institutions have more capital than any individual retail investor -- and, more generally, anyone with sufficient skill to pull this off will (at least in theory) quickly accumulate enough capital that they can negotiate a less risky payment plan.\"\n\n### Text snippet from document at k=10\n... With enough money you can buy yourself in to a hedge fund, for the rest of us there are ETFs and other extremely fee-reasonable investment options.  And if you don't think the performance and preservation of assets under management is not an incentive to treat the money with care you're kidding yourself (your first bullet point). I'll add that aside from skewing the manager's risk tolerance toward guaranteed returns I doubt you would fair favorably over the long term compared to simply paying even an egregious 1% expense ratio on an ETF.  If you look at the S&P performance for 10 or 20 or however many years, I'd venture that a couple good years of giving up half of your gains would have you screaming for your money back.  The bad years would put the money manager out of business and the good years would squander your gains.\n",
+  "thought_process": "Looking at the original query, \"Why can't you just have someone invest for you and split the profits (and losses) with him?\" this makes me think of a straightforward partnership where risk and reward are shared equally. However, as I delve deeper, I realize the user might actually be trying to understand the intricacies of investment agreements and the potential pitfalls of such arrangements. The initial results from the query retrieval provide valuable insights into the challenges of aligning incentives between investors and investment managers, highlighting the importance of clear agreements and the potential for conflicts of interest.\n\nUpon analyzing the results, I notice that the discussion revolves around the concept of risk-sharing and the difficulties in creating a mutually beneficial agreement. The text snippets from the documents at various positions (k=1, k=2, k=10) offer perspectives on why such an arrangement might not be practical, citing issues with aligned incentives, the potential for conservative investment choices, and the availability of alternative investment options.\n\nTo further explore this topic, I decide to employ the query expansion technique via metaphorical thinking. This approach involves generating metaphors for the query topic and mining them for conceptually related terminology from diverse domains. By doing so, I aim to uncover fresh perspectives and identify key concepts that can enhance our understanding of investment partnerships and agreements.\n\nI start by creating metaphors from various domains: investing is like cultivating a garden, a collaborative art project, a sports team, a business partnership, and a game of chance. Each metaphor provides a unique lens through which to examine the complexities of investment agreements. For instance, the gardening metaphor highlights the importance of nurturing and care in investments, just as a gardener tends to their plants. The art project metaphor emphasizes the creative aspect of investing, where different \"artists\" (investors) bring their unique styles and visions to the table.\n\nAs I map elements from each metaphorical domain to the target domain of investment agreements, I identify complementary perspectives that shed light on the challenges and opportunities inherent in such arrangements. The sports team metaphor, for example, underscores the need for a clear strategy and effective teamwork to achieve success in investments. The business partnership metaphor emphasizes the importance of trust, clear agreements, and aligned incentives in investment relationships.\n\nThrough this process, I extract terminology from each metaphorical domain, noting the language used to connect the domains and the insights that emerge from these connections. I also extend each metaphor to reveal hidden aspects of the topic, combining metaphors to create hybrid perspectives that offer a more comprehensive understanding of investment agreements.\n\nThe cross-domain terms that I compile provide valuable insights into the complexities of investment partnerships. Terms like \"investment composition,\" \"risk partnership,\" and \"profit probability\" highlight the importance of careful planning, risk management, and performance evaluation in investment agreements. The metaphorical language used in these domains, such as \"cultivate capital\" and \"investment strokes,\" adds a creative dimension to our understanding of investment strategies and decision-making processes.\n\nAs I synthesize the insights from the metaphors and the initial results, I begin to see the contours of a more nuanced understanding of investment agreements. The technique of query expansion via metaphorical thinking has allowed me to uncover fresh perspectives and identify key concepts that can inform our approach to investment partnerships. By balancing structured thinking with natural cognitive patterns, I have been able to navigate the complexities of the topic and emerge with a deeper understanding of the challenges and opportunities inherent in investment agreements.\n\nThrough this process, I believe that the terms from the expanded query, such as \"investment partnership agreement,\" \"incentive structures for investment managers,\" and \"risk sharing investment strategies,\" capture both the explicit and implicit aspects of what the user is seeking. These terms, informed by the metaphorical thinking and analysis of the initial results, provide a foundation for further exploration and refinement of the query, ultimately leading to a more comprehensive understanding of investment agreements and partnerships.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

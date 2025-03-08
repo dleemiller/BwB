@@ -1,0 +1,75 @@
+{
+  "reasoning": "To expand the search query 'Variance Reduction for Faster Non-Convex Optimization,' it's essential to consider diverse user perspectives, each with unique backgrounds and objectives. The primary document types are academic papers or technical articles in fields like computer science, machine learning, operations research, and applied mathematics. These documents focus on advanced optimization techniques and their theoretical underpinnings. Strengths of the current search results include comprehensive coverage of variance reduction methods such as SVRG, with a balance between theory and practice. However, weaknesses lie in potentially insufficient beginner-friendly material and practical applications for practitioners outside academia. By creating user personas representing different levels of expertise and motivations, we can identify varied vocabulary usage and stages of learning that guide the expansion of search terms to address these gaps.",
+  "augmented_query": "Variance Reduction Non-Convex Optimization: Introduction, Practical Applications, Advanced Methods, Theoretical Analysis, Optimizing Machine Learning with SVRG",
+  "ndcg": {
+    "NDCG@10": 0.6662,
+    "NDCG@100": 0.74918,
+    "NDCG@1000": 0.7846,
+    "NDCG@10000": 0.7846
+  },
+  "map": {
+    "MAP@10": 0.48571,
+    "MAP@100": 0.53571,
+    "MAP@1000": 0.53703,
+    "MAP@10000": 0.53703
+  },
+  "recall": {
+    "Recall@10": 0.6,
+    "Recall@100": 0.8,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.3,
+    "P@100": 0.04,
+    "P@1000": 0.005,
+    "P@10000": 0.0005
+  },
+  "delta": 0.05111,
+  "instruction": "journey",
+  "query": "Variance Reduction for Faster Non-Convex Optimization",
+  "query_id": "9af1f7b6d79e6ce314d1842a8d32402328fcaca7",
+  "dataset": "scidocs",
+  "user_personas": [
+    "Novice Researcher: An individual with a basic understanding of machine learning who is exploring optimization techniques for an undergraduate project. They seek introductory material and simple explanations.",
+    "Intermediate Practitioner: A data scientist or engineer familiar with general optimization methods looking to apply variance reduction techniques in practical scenarios, such as improving model training efficiency.",
+    "Advanced Theorist: An academic researcher specializing in non-convex optimization seeking in-depth analysis of recent advancements and theoretical improvements in variance reduction algorithms.",
+    "Expert Consultant: A domain expert hired by a tech company to optimize complex machine learning systems for enhanced performance using cutting-edge variance reduction strategies."
+  ],
+  "search_vocabulary": [
+    "Basics of Variance Reduction",
+    "Introduction to Non-Convex Optimization",
+    "Variance Reduction Techniques Overview",
+    "Simple SVRG Example",
+    "Practical Applications of Variance Reduction",
+    "Efficient Model Training with SVRG",
+    "Recent Advances in Variance Reduction",
+    "Theoretical Analysis of Variance Reduction Algorithms",
+    "Optimizing Machine Learning Systems: Expert Strategies"
+  ],
+  "journey_stages": [
+    "Entry-point Questions and Terminology",
+    "Understanding Basic Concepts and Techniques",
+    "Intermediate Learning Milestones",
+    "Exploring Advanced Optimization Methods",
+    "Expert-Level Specialized Functions and Applications"
+  ],
+  "usage_scenarios": [
+    "Solving optimization problems in a personal research project.",
+    "Improving efficiency of machine learning model training at work.",
+    "Publishing an academic paper on novel variance reduction techniques.",
+    "Consulting for tech companies to enhance system performance through optimization."
+  ],
+  "intent_terms": [
+    "Introductory Guide",
+    "Practical Use Cases",
+    "Advanced Techniques",
+    "Theoretical Insights",
+    "Application in Real-World Systems"
+  ],
+  "cleaned_augmented_query": "variance reduction non convex optimization introduction practical applications advanced methods theoretical analysis optimizing machine learning svrg",
+  "final_delta": 0.05111,
+  "initial_results": "### Text snippet from document at k=1\n: Stochastic gradient descent is popular for large scale optimization but has slow convergence asymptotically due to the inherent variance. To remedy this problem, we introduce an explicit variance reduction method for stochastic gradient descent which we call stochastic variance reduced gradient (SVRG). For smooth and strongly convex functions, we prove that this method enjoys the same fast convergence rate as those of stochastic dual coordinate ascent (SDCA) and Stochastic Average Gradient (SAG). However, our analysis is significantly simpler and more intuitive. Moreover, unlike SDCA or SAG, our method does not require the storage of gradients, and thus is more easily applicable to complex problems such as some structured prediction problems and neural network learning.\n\n### Text snippet from document at k=2\n: Many classical algorithms are found until several years later to outlive the confines in which they were conceived, and continue to be relevant in unforeseen settings. In this paper, we show that SVRG is one such method: originally designed for strongly convex objectives, is also very robust under non-strongly convex or sum-of-non-convex settings. If f(x) is a sum of smooth, convex functions but f is not strongly convex (such as Lasso or logistic regression), we propose a variant SVRG that makes a novel choice of growing epoch length on top of SVRG. SVRG is a direct, faster variant of SVRG in this setting. If f(x) is a sum of non-convex functions but f is strongly convex, we show that the convergence of SVRG linearly depends on the non-convexity parameter of the summands. This improves the best known result in this setting, and gives better running time for stochastic PCA.\n\n### Text snippet from document at k=10\n... It is shown that the global optimal solution of the original problem can be constructed by exploiting both the primal and the dual optimal solutions of the SDP relaxed problem. Besides, two suboptimal resource allocation schemes for the case when the solution of the dual problem is unavailable for constructing the optimal solution are proposed. Numerical results not only demonstrate the close-to-optimal performance of the proposed suboptimal schemes, but also unveil an interesting trade-off between the considered conflicting system design objectives.\n",
+  "thought_process": "Looking at the query 'Variance Reduction for Faster Non-Convex Optimization,' this makes me think of the challenges in optimizing complex machine learning models. Though the user might actually be trying to understand how to apply variance reduction techniques to improve the efficiency of their model training, I'm not sure yet what specific aspect of variance reduction they are interested in. Are they looking for theoretical foundations, practical applications, or perhaps a mix of both?\n\nAnalyzing the results of the original query, I notice that the top documents provide a comprehensive overview of variance reduction methods, particularly SVRG, with a good balance between theoretical analysis and practical applications. However, I also observe that there might be a lack of beginner-friendly material and real-world examples that practitioners outside academia could easily apply. This suggests that the search terms could be expanded to include more introductory and applied aspects of variance reduction.\n\nI'm seeing several possibilities here, so let me approach this using the Query Expansion via User Intent and Journey Mapping technique, which involves understanding the diverse needs and vocabularies of different user personas across their learning journey. This should help because it allows me to systematically consider various perspectives and identify gaps in the current search results.\n\nFollowing the User Intent and Journey Mapping approach, I first create distinct user personas: a novice researcher looking for introductory material, an intermediate practitioner seeking practical applications, an advanced theorist interested in recent theoretical advancements, and an expert consultant needing cutting-edge strategies for complex systems. For each persona, I analyze their initial search terms, follow-up searches, and how their vocabulary changes as they progress in their understanding.\n\nI then map the information journey of these users, identifying entry-point questions, intermediate learning milestones, advanced concept explorations, and expert-level terminology. This journey mapping reveals a progression from basic questions about variance reduction and non-convex optimization to more advanced inquiries about theoretical analysis, practical applications, and expert strategies.\n\nAs I consider the usage scenarios and intent terms, I notice that users are not just looking for theoretical explanations but also for practical guidance on how to apply variance reduction techniques in real-world settings. This insight is crucial because it highlights the need for the search query to include terms that reflect both the theoretical foundations and the practical applications of variance reduction.\n\nApplying the technique systematically, I start by identifying high-value terms across the expertise spectrum, including contextual vocabulary from different scenarios and intent-revealing terminology. This process leads me to discover terms like \"Introduction to Non-Convex Optimization,\" \"Practical Applications of Variance Reduction,\" and \"Optimizing Machine Learning Systems,\" which capture the essence of what users are seeking at different stages of their journey.\n\nThrough this process of applying User Intent and Journey Mapping and exploring related threads, I believe the terms that would be most effective for expanding the query are those that balance theoretical and practical aspects, catering to the diverse needs of users. The final expanded query should include terms like \"Variance Reduction Non-Convex Optimization: Introduction, Practical Applications, Advanced Methods, Theoretical Analysis, Optimizing Machine Learning with SVRG,\" as these terms reflect both the explicit and implicit aspects of what the user is seeking.\n\nBy synthesizing the insights gained from both the structured technique and natural thought patterns, I conclude that the expanded query should aim to capture the full spectrum of user intents and information needs, from introductory guides to advanced techniques and theoretical insights, ensuring that the search results provide a comprehensive and useful response to the user's query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

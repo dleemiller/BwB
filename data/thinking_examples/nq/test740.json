@@ -1,0 +1,66 @@
+{
+  "reasoning": "The original query, \"who is next in line to inherit the British throne,\" seeks current information about the line of succession. The existing results are strong in providing historical context and legal frameworks, but they lack up-to-date specifics, such as current individuals in line for the throne. To address this weakness, we need to expand the search by focusing on current monarchy details, recent changes to succession laws, and identifying key figures today.\n\nThe strategy involves using a conceptual graph that captures core concepts from the query, like the British monarchy, succession rules, and specific historical events or legal acts mentioned in documents. We will then extend these ideas with nodes for contemporary elements and terms directly related to current line of succession details. The expansion paths we focus on include synonymous and domain-specific terminology such as recent royal family members and changes due to laws enacted after 2011 (e.g., Succession to the Crown Act).\n\nTo improve retrieval, our aim is to incorporate these expansions into an augmented query that still aligns with the original search intent \u2014 identifying who currently stands next in line for the British throne. By integrating high-value terms related to recent historical developments and contemporary monarchy dynamics, we can better address gaps left by existing documents.",
+  "query_goals": [
+    "Identify current individuals next in line to inherit the British throne.",
+    "Highlight any recent legislative changes affecting succession.",
+    "Provide context for how succession laws have evolved with emphasis on contemporary updates."
+  ],
+  "augmented_query": "\"Who is next in line to inherit the British throne considering current succession laws and recent updates? Include key figures like Charles, Prince of Wales, and William, Duke of Cambridge, along with impacts from Succession to the Crown Act 2013.\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.76459,
+  "instruction": "graph",
+  "query": "who is next in line to inherit the british throne",
+  "query_id": "test740",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "nq",
+  "node_classes": [
+    "Monarchy",
+    "Line of Succession",
+    "Succession Laws",
+    "Historical Context",
+    "Current Royal Figures"
+  ],
+  "query_nodes": [
+    "British throne",
+    "inheritance",
+    "line of succession",
+    "monarchy",
+    "succession laws"
+  ],
+  "nearest_neighbors": [
+    "William, Duke of Cambridge",
+    "Charles, Prince of Wales",
+    "Prince William's children",
+    "Succession to the Crown Act 2013",
+    "Current British royal family members"
+  ],
+  "cleaned_augmented_query": "next line inherit british throne considering current succession laws recent updates include key figures like charles prince wales william duke cambridge along impacts crown act 2013",
+  "final_delta": 0.76459,
+  "initial_results": "### Text snippet from document at k=1\n: The English Bill of Rights passed in 1689 determined succession to the English, Scottish and Irish Thrones. First in the line were the descendants of Mary II. Next came Mary's sister Princess Anne and her descendants. Finally, the descendants of William by any future marriage were added to the line of succession. Only Protestants were allowed to succeed to the Thrones, and those who married Roman Catholics were excluded.\n\n### Text snippet from document at k=2\n: The title Prince of Wales is given only to the heir apparent\u00e2\u20ac\u201dsomebody who cannot be displaced in the succession to the throne by any future birth. The succession had followed male-preference primogeniture, which meant that the heir apparent was the eldest son of the reigning monarch or, if he was deceased, his eldest son and so on, or if the monarch's eldest son had died without issue, the monarch's second eldest son, etc. As such, a daughter of the sovereign who was next in line to the throne was never the heir apparent because she would be displaced in the succession by any future legitimate son of the sovereign.\n\n### Text snippet from document at k=10\n: If this system of primogeniture had been applied on the death of Victoria (whose actual successor was her second child and first son Edward VII), then Princess Victoria, Princess Royal would have become queen and the throne would have been inherited by her eldest child, and so on.[22][23][24]\n",
+  "thought_process": "As I begin to tackle the task of expanding the search query \"who is next in line to inherit the British throne,\" my initial thoughts are centered around understanding the context and the intent behind the query. The user is seeking current information about the line of succession to the British throne, which implies a need for both historical context and up-to-date specifics. My first association is with the British monarchy's structure and the rules governing succession, which have evolved over time due to legislative changes.\n\nAnalyzing the results of the original query, I notice that while they provide a strong foundation in the historical and legal aspects of succession, there's a gap in current, specific details about who is next in line for the throne. This weakness suggests that our expansion strategy should focus on integrating contemporary elements into the query, such as recent changes in succession laws and identifying key figures in the current line of succession.\n\nTo structure my approach, I decide to utilize the conceptual graph traversal technique for query expansion. This method involves constructing a conceptual graph that captures core concepts from the query, like the British monarchy and succession rules, and then extending these ideas with nodes for contemporary elements and terms directly related to current line of succession details.\n\nThe first step in this process is query analysis, where I identify the core concepts and entities in the original query. Here, the core concepts include the British throne, inheritance, line of succession, monarchy, and succession laws. The search intent is clearly informational, with the user seeking specific, up-to-date information about the current line of succession.\n\nNext, I construct the conceptual graph with core nodes representing direct entities and concepts from the query, first-order connections representing direct properties and relationships, second-order connections for related concepts one step removed, and domain contexts for specialized fields where this query has meaning. The core nodes will include terms like \"British throne,\" \"inheritance,\" \"line of succession,\" and \"monarchy,\" while first-order connections might involve relationships between these concepts, such as how the line of succession is determined.\n\nFor expansion path selection, I identify several promising directions, including synonymous terms (e.g., \"succession order\" instead of \"line of succession\"), hierarchical terms (broader concepts like \"royal family\" or narrower concepts like \"Prince of Wales\"), compositional terms (parts or components of the monarchy, such as \"Duke of Cambridge\"), contextual terms (settings or scenarios, such as \"British royal family members\"), and domain-specific terminology (field-specific variants, such as \"Succession to the Crown Act 2013\").\n\nAs I proceed with term extraction and filtering, I focus on relevance, distinctiveness, specificity, and searchability. Terms like \"Charles, Prince of Wales,\" \"William, Duke of Cambridge,\" and \"Succession to the Crown Act 2013\" emerge as high-value expansion terms due to their direct connection to the current line of succession and their specificity in capturing contemporary aspects of the British monarchy.\n\nApplying the conceptual graph traversal technique systematically, I also allow for natural cognitive elements to influence my thought process. This includes reconsidering initial assumptions about the query's intent and allowing for intuitive connections between concepts that might not be immediately apparent through structured analysis alone. For instance, recognizing the significance of the Succession to the Crown Act 2013 in removing the disqualification of individuals who marry a Roman Catholic leads to a deeper understanding of how the line of succession might be affected by such legislative changes.\n\nThrough this balanced approach of structured technique and natural thought patterns, insights begin to emerge that highlight the complexity and nuances of the British monarchy's succession rules. The application of the conceptual graph traversal technique systematically points towards key figures and legislative changes, while my intuition and experience with query expansion suggest that incorporating terms related to recent historical developments and contemporary monarchy dynamics will be crucial in capturing the user's information need accurately.\n\nUltimately, synthesizing the structured approach with natural cognitive insights leads to the formulation of an augmented query that is both informative and targeted. By including terms like \"current succession laws,\" \"recent updates,\" \"Charles, Prince of Wales,\" and \"William, Duke of Cambridge,\" along with references to impactful legislation such as the \"Succession to the Crown Act 2013,\" the expanded query aims to retrieve documents that not only provide historical context but also offer the most current information about who is next in line to inherit the British throne.\n\nThe final expanded query, \"next line inherit british throne considering current succession laws recent updates include key figures like charles prince wales william duke cambridge along impacts crown act 2013,\" reflects a thoughtful integration of structured query expansion techniques with the natural, intuitive aspects of human cognition, ensuring that the search intent is preserved while enhancing the retrieval of relevant, up-to-date information.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,63 @@
+{
+  "reasoning": "The original query seeks a definitive list of diverse ethnic cuisines. Existing results focus more on the social implications of the term \"ethnic food\" rather than providing a direct answer.  To improve this, we need to identify specific cuisine categories and potentially reframe the query to avoid loaded terms.",
+  "query_goals": [
+    "Generate a comprehensive list",
+    "Identify distinct culinary traditions",
+    "Explore global food cultures"
+  ],
+  "ineffective_terms": [
+    "ethnic food"
+  ],
+  "breadth_expansion": [
+    "world cuisines",
+    "regional gastronomy",
+    "cultural culinary practices",
+    "traditional dishes",
+    "historical foodways"
+  ],
+  "depth_chain": [
+    "Southeast Asian Cuisine",
+    "Thai Street Food",
+    "Vietnamese Pho",
+    "Laostian Laap",
+    "Cambodian Amok"
+  ],
+  "augmented_query": "world cuisines, regional gastronomy, Southeast Asian Cuisine, Thai Street Food, Vietnamese Pho,  Laotians Laap, Cambodian Amok",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "types of ethnic foods list",
+  "query_id": "527568",
+  "generator_model": "gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "source": "zeta-alpha-ai/NanoMSMARCO",
+  "dataset": "msmarco",
+  "cleaned_augmented_query": "world cuisines regional gastronomy southeast asian cuisine thai street food vietnamese pho laotians laap cambodian amok",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Types, Popularity, and Characteristics of Major Ethnic Cuisines in the United States. Various types of ethnic foods, including Mexican, Italian, Chinese, Japanese, Korean, Vietnamese, Thai, Greek, Indian, French, have been introduced in the United States. The ethnic foods market is still growing amid an economic recession.\n\n### Text snippet from document at k=2\n: In fact, it may be time to do away with the term \u201cethnic food.\u201d. The truth is, food is mostly referred to as \u201cethnic\u201d when it is made by people with the darkest complexions. For instance, Thai and Indian food is often seen as ethnic, as are Salvadoran and Vietnamese dishes.\n\n### Text snippet from document at k=10\n: Type O Food List 2/4 Based on OK To Eat Eat Right 4 Your Type by Peter D'Adamo, N.D. This list may not be reproduced for commercial purposes or used as part of a fee based consultation Vegetable/Veg Juice Agar Artichoke (Domestic/Globe/Jerusalem) * Arugula Asparagus Bamboo Shoot Beet Beet Greens * Beet/Beet Greens Juice Bok Choy Broccoli * Carrot\n",
+  "thought_process": "Looking at the original query, \"types of ethnic foods list,\" this makes me think of a vast array of cuisines from around the world, though the user might actually be trying to find a comprehensive list of distinct culinary traditions. The term \"ethnic food\" itself seems too broad and potentially loaded, as the initial results suggest. The existing reasoning provided highlights the need to identify specific cuisine categories and possibly reframe the query to avoid terms that might not yield the desired results.\n\nAnalyzing the results of the original query, I notice that the top results are more focused on the social implications of the term \"ethnic food\" rather than providing a direct list of types of ethnic foods. This indicates a weakness in the search terms used, pointing towards the need for more specific and diverse expansions. The term \"ethnic food\" appears to be too general and is not leading to the desired outcomes.\n\nTransitioning to a structured approach, I'll utilize the provided expansion technique, which involves being specific and diverse, applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. This technique should help in discovering new, relevant documents across various domains without overlapping the original terms.\n\nStarting with goal elucidation and gaps, the primary objective is to generate a comprehensive list of distinct culinary traditions. The gap lies in the original query's inability to provide specific types of ethnic foods due to its broad and potentially sensitive nature. Ineffective terms that should be avoided include \"ethnic food,\" as it's too broad and doesn't lead to specific cuisine categories.\n\nFor breadth expansion, candidate terms with increasingly distant concepts to the original query include \"world cuisines,\" \"regional gastronomy,\" \"cultural culinary practices,\" \"traditional dishes,\" and \"historical foodways.\" These terms aim to introduce new dimensions to the query, focusing on the diversity of culinary traditions worldwide.\n\nDelving deeper into one of these topics for depth expansion, let's consider \"Southeast Asian Cuisine\" as a starting point. This region offers a rich variety of cuisines, including \"Thai Street Food,\" \"Vietnamese Pho,\" \"Laotian Laap,\" and \"Cambodian Amok.\" These specific dishes and culinary practices not only highlight the diversity within Southeast Asia but also provide a clearer path to understanding the global culinary landscape.\n\nAs I apply the expansion technique systematically, I also consider natural thought patterns and intuitive connections. For instance, recognizing that \"Southeast Asian Cuisine\" is a broad category, I then focus on specific examples like \"Thai Street Food\" and \"Vietnamese Pho,\" which are not only popular but also representative of the region's culinary diversity. This approach allows for a balanced exploration between structured steps and natural cognitive elements, ensuring the discovery of relevant and diverse terms.\n\nThrough this process, insights emerge from both the structured technique and intuitive connections. Applying the technique leads to the identification of specific culinary traditions like \"Laotian Laap\" and \"Cambodian Amok,\" which might not have been immediately considered without the systematic approach. At the same time, my instinct suggests that including terms like \"world cuisines\" and \"regional gastronomy\" could provide a broader context, making the search query more comprehensive.\n\nSynthesizing the findings with clarity, I believe the terms that would be most effective for expanding the query are those that capture both the explicit and implicit aspects of what the user is seeking. The augmented query, \"world cuisines regional gastronomy southeast asian cuisine thai street food vietnamese pho laotians laap cambodian amok,\" reflects a balance between the structured approach and natural thought patterns, aiming to provide a comprehensive list of distinct culinary traditions without the limitations and sensitivities associated with the original term \"ethnic food.\"\n\nThis thought process demonstrates how structured techniques and natural cognitive patterns complement each other in query expansion, leading to a more effective and targeted search query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

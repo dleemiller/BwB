@@ -1,0 +1,61 @@
+{
+  "reasoning": "The original query seeks specific familial information about the wife of Juan Carlos I. The search is hampered by the lack of specificity regarding \"Juan Carlos\" and the need to identify his wife.",
+  "query_goals": [
+    "Identify the full name of Juan Carlos I's wife",
+    "Determine the parents of Juan Carlos I's wife",
+    "Locate biographical information about Juan Carlos I's wife's family"
+  ],
+  "ineffective_terms": [
+    "Juan Carlos"
+  ],
+  "breadth_expansion": [
+    "Spanish Royalty",
+    "European Monarchies",
+    "20th Century Queens",
+    "Sofia of Greece"
+  ],
+  "depth_chain": [
+    "Sofia of Greece",
+    "Greek Royal Family",
+    "King Paul I of the Hellenes",
+    "Queen Frederica of Greece",
+    "Mountbatten family"
+  ],
+  "augmented_query": "Sofia of Greece, King Paul I, Queen Frederica, Mountbatten",
+  "ndcg": {
+    "NDCG@10": 0.39038,
+    "NDCG@100": 0.65677,
+    "NDCG@1000": 0.65677,
+    "NDCG@10000": 0.65677
+  },
+  "map": {
+    "MAP@10": 0.25,
+    "MAP@100": 0.35302,
+    "MAP@1000": 0.35302,
+    "MAP@10000": 0.35302
+  },
+  "recall": {
+    "Recall@10": 0.25,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.04,
+    "P@1000": 0.004,
+    "P@10000": 0.0004
+  },
+  "delta": 0.36141,
+  "instruction": "expand",
+  "query": "Who are the parents of the wife of Juan Carlos I?",
+  "query_id": "QALD2_te-67",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "dbpedia",
+  "cleaned_augmented_query": "sofia greece king paul queen frederica mountbatten",
+  "final_delta": 0.36141,
+  "initial_results": "### Text snippet from document at k=1\n: Juan Carlos is a Spanish-language male given name, a combination of Juan and Carlos, meaning John and Charles respectively.Juan Carlos may represent: Juan Carlos I (born 1938), King of Spain Spanish ship Juan Carlos I (L61), named after the King of Spain Juan Carlos I Antarctic Base, named after the King of Spain Juan Carlos I Park, Madrid park named after the King of Spain\n\n### Text snippet from document at k=2\n: Maria Enriquez de Luna (1474 \u2013 1539) was the wife of Juan (Giovanni) Borgia, second Duke of Gandia. She was a niece of King Ferdinand II of Aragon and Queen Isabella of Castile, and therefore of the House of Trastamara. She married Juan somewhere between 1493-1494, and together, they had three children: twins Juan de Borja y Enriquez (known as Juan Borgia), who became the 3rd Duke of Gand\u00eda, and Francisca de Jesus Borja, who became a nun at a convent in Valladolid.\n\n### Text snippet from document at k=10\n: Don Carlos Gereda y de Borb\u00f3n, Marqu\u00e9s de Almaz\u00e1n, born on 24 January 1947 in Montevideo, Uruguay, is a Spanish aristocrat, engineer and entrepreneur.He is the son of Don Nicol\u00e1s Gereda y Bustamante and his wife Dona Mar\u00eda Luisa de Borb\u00f3n y P\u00ednto, and is the 5th great grandson of King Carlos IV of Spain.Carlos Gereda y de Borb\u00f3n is the 49th Grand Master of the Malta-Paris obedience of the Order of Saint Lazarus since 2008.\n",
+  "thought_process": "Looking at the original query, \"Who are the parents of the wife of Juan Carlos I?\" - this makes me think of the complexities of royal lineage and the need for specificity in such queries. The user might actually be trying to understand more about the Spanish royal family, particularly the family of Juan Carlos I's wife, but without more context, it's a bit challenging to pinpoint exactly what they're looking for. \n\nAnalyzing the results of the original query, it's clear that the term \"Juan Carlos\" is too broad, leading to information about various individuals with that name, including the King of Spain, but not specifically about his wife or her parents. The initial results highlight the importance of identifying the full name of Juan Carlos I's wife and then finding her parents.\n\nTo approach this query expansion systematically, I'll use the Expansion Technique, which involves identifying ineffective terms, performing breadth expansion, and then depth expansion. This technique should help because it allows for a structured way to explore related concepts and identify relevant terms that are not immediately obvious from the original query.\n\nFirst, let's identify the ineffective terms: \"Juan Carlos\" is clearly too broad and doesn't lead directly to information about his wife or her parents. For breadth expansion, we consider concepts like \"Spanish Royalty,\" \"European Monarchies,\" \"20th Century Queens,\" and notably, \"Sofia of Greece,\" who is known to be the wife of Juan Carlos I. This gives us a starting point to dive deeper.\n\nApplying the depth expansion technique, focusing on \"Sofia of Greece,\" we explore related terms such as \"Greek Royal Family,\" \"King Paul I of the Hellenes,\" \"Queen Frederica of Greece,\" and the \"Mountbatten family.\" These terms are directly related to Sofia's lineage and provide the specific information the original query seeks.\n\nNow, let's balance this structured approach with some natural thought patterns. If we're looking for the parents of Sofia of Greece, we should definitely consider her father, King Paul I, and her mother, Queen Frederica. The mention of the Mountbatten family is also relevant due to Queen Frederica's lineage. This connection to the Mountbatten family adds a layer of depth to our understanding of Sofia's ancestry.\n\nAs I apply the technique's steps systematically, I notice that the term \"Sofia of Greece\" acts as a pivotal point. It's not just about replacing synonyms or expanding contextually but understanding the specific relationships within royal families. This reminds me of how interconnected European royal families are, which often leads to complex lineage trails.\n\nStepping back to reassess, I realize that the key to this query lies in specificity and understanding the direct relationships between the individuals mentioned. By focusing on \"Sofia of Greece\" and then exploring her immediate family, we can accurately identify her parents as King Paul I and Queen Frederica of Greece.\n\nThe insights emerging from both the structured technique and my intuition highlight the importance of targeted expansions. Applying the specific aspect of the technique focusing on Sofia of Greece leads to the discovery of her parents. My instinct also suggests considering the broader context of European monarchies, but the primary goal is to identify the parents of Juan Carlos I's wife accurately.\n\nThrough this process of applying the Expansion Technique and exploring related threads, I believe the terms that would be most effective for a query are those that directly relate to Sofia of Greece and her family, such as \"Sofia of Greece,\" \"King Paul I,\" \"Queen Frederica,\" and \"Mountbatten.\" These terms capture both the explicit and implicit aspects of what the user is seeking regarding the parents of Juan Carlos I's wife.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,66 @@
+{
+  "reasoning": "The goal is to enhance the retrieval effectiveness of documents related to 'Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization' by identifying and integrating semantically relevant terms into an augmented query. The original query indicates a focus on computational methods (specifically Cholesky factorization) for learning Gaussian Markov Random Fields in a sparse setting, often discussed within academic literature on machine learning or signal processing. This suggests the search intent is informational with constraints emphasizing computational efficiency and sparsity. Current results show relevance but lack depth in areas specific to sparse learning and Cholesky factorization, highlighting the need to broaden coverage using conceptually related terms.",
+  "query_goals": [
+    "Identify core concepts within the original query relevant to Gaussian Markov Random Fields (GMRFs), sparsity, and Cholesky factorization",
+    "Determine additional computational techniques that complement or extend Cholesky factorization for sparse data structures",
+    "Explore mathematical foundations and algorithmic strategies related to GMRF learning in sparse environments",
+    "Capture domain-specific terminology that may provide alternative pathways into the existing literature on this topic"
+  ],
+  "augmented_query": "Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization, Graphical Lasso, Conjugate Gradient Methods, Precision Matrices, Efficient Sampling Algorithms",
+  "ndcg": {
+    "NDCG@10": 0.14607,
+    "NDCG@100": 0.20003,
+    "NDCG@1000": 0.24351,
+    "NDCG@10000": 0.27503
+  },
+  "map": {
+    "MAP@10": 0.05,
+    "MAP@100": 0.05519,
+    "MAP@1000": 0.0579,
+    "MAP@10000": 0.05836
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.4,
+    "Recall@1000": 0.6,
+    "Recall@10000": 0.8
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.003,
+    "P@10000": 0.0004
+  },
+  "delta": 0.09692,
+  "instruction": "graph",
+  "query": "Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization",
+  "query_id": "2a8bcf35e6b5b3910eea160b3a1fb3e6bcb3966e",
+  "dataset": "scidocs",
+  "node_classes": [
+    "Computational Methods",
+    "Mathematical Concepts",
+    "Statistical Models",
+    "Algorithmic Strategies",
+    "Domain-Specific Terminology"
+  ],
+  "query_nodes": [
+    "Gaussian Markov Random Fields (GMRFs)",
+    "Sparse Learning",
+    "Cholesky Factorization"
+  ],
+  "nearest_neighbors": [
+    "Graphical Lasso",
+    "Conjugate Gradient Methods",
+    "Banded Matrices",
+    "Precision Matrices",
+    "Block Diagonal Matrices",
+    "Sparse Inverse Covariance Estimation",
+    "Efficient Sampling Algorithms",
+    "Matrix Decomposition Techniques"
+  ],
+  "cleaned_augmented_query": "fast sparse gaussian markov random fields learning based cholesky factorization graphical lasso conjugate gradient methods precision matrices efficient sampling algorithms",
+  "final_delta": 0.09692,
+  "initial_results": "### Text snippet from document at k=1\n... In addition to the parameters (p, s, d), our analysis identifies other key quantities that control rates: (a) the l\u221e-operator norm of the true covariance matrix \u03a3; and (b) the l\u221e operator norm of the sub-matrix \u0393\u2217SS , where S indexes the graph edges, and \u0393\u2217 = (\u0398) \u2297 (\u0398); and (c) a mutual incoherence or irrepresentability measure on the matrix \u0393\u2217 and (d) the rate of decay 1/f(n, \u03b4) on the probabilities {|\u03a3\u0302ij \u2212 \u03a3\u2217ij | > \u03b4}, where \u03a3\u0302 is the sample covariance based on n samples. Our first result establishes consistency of our estimate \u0398\u0302 in the elementwise maximum-norm. This in turn allows us to derive convergence rates in Frobenius and spectral norms, with improvements upon existing results for graphs with maximum node degrees d = o( \u221a s). In our second result, we show that with probability converging to one, the estimate \u0398\u0302 correctly specifies the zero pattern of the concentration matrix \u0398\u2217. We illustrate our theoretical results via simulations for various graphs and problem parameters, showing good correspondences between the theoretical predictions and behavior in simulations. AMS 2000 subject classifications: Primary 62F12; secondary 62F30.\n\n### Text snippet from document at k=2\n... Unfortunately, many graphical models of practical interest are not \" suitably sparse, \" so that the junction tree algorithm no longer provides a viable computational solution to the problem of computing marginal probabilities and other expectations. One popular source of methods for attempting to cope with such cases is the Markov chain Monte Carlo (MCMC) framework, and indeed there is a significant literature on\n\n### Text snippet from document at k=10\n: Latent variable models can be enriched with a multi-dimensional structure to consider the many latent factors in a text corpus, such as topic, author perspective and sentiment. We introduce factorial LDA, a multi-dimensional model in which a document is influenced by K different factors, and each word token depends on a K-dimensional vector of latent variables. Our model incorporates structured word priors and learns a sparse product of factors. Experiments on research abstracts show that our model can learn latent factors such as research topic, scientific discipline, and focus (methods vs. applications). Our modeling improvements reduce test perplexity and improve human interpretability of the discovered factors.\n",
+  "thought_process": "As I begin to analyze the original query, \"Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization,\" I'm immediately struck by the specificity and technical depth of the terms involved. This suggests that the user is likely seeking highly specialized information, possibly within the realms of machine learning, statistical modeling, or signal processing. The emphasis on \"fast\" and \"sparse\" indicates a particular interest in efficient computational methods for handling large datasets or complex systems, which is a common challenge in these fields.\n\nUpon examining the initial results, I notice that while the retrieved documents are relevant, they lack a deep exploration of sparse learning and Cholesky factorization, which are critical components of the original query. This tells me that the query, although specific, might not be capturing the full spectrum of relevant concepts and techniques that could enhance the search results.\n\nTo systematically approach this query expansion, I decide to employ the \"Query Expansion via Conceptual Graph Traversal\" technique. This involves first identifying the core concepts within the query, such as Gaussian Markov Random Fields (GMRFs), sparsity, and Cholesky factorization. The search intent here is informational, with constraints emphasizing computational efficiency and the handling of sparse data structures.\n\nAs I construct the conceptual graph, I consider not just the direct entities and concepts from the query but also their properties, attributes, and relationships. For GMRFs, this includes their application in machine learning for modeling complex dependencies and their requirement for efficient computational methods due to their inherent sparsity. Cholesky factorization, being a method for efficient matrix decomposition, is crucial for fast computation but might have related or alternative methods that could be of interest, such as graphical lasso or conjugate gradient methods.\n\nThe next step involves selecting promising directions for query expansion. Given the core concepts, I consider synonymous terms, hierarchical terms, compositional terms, contextual terms, and domain-specific terminology. For instance, synonymous terms might include other types of sparse matrix factorizations, while hierarchical terms could involve broader concepts like statistical modeling or narrower concepts like specific applications of GMRFs in image processing.\n\nAs I traverse the conceptual graph, I start to identify high-value expansion terms. These include not just the direct synonyms or related concepts but also terms that capture the essence of efficient computation in sparse contexts, such as \"precision matrices,\" \"efficient sampling algorithms,\" and \"graphical lasso.\" The inclusion of these terms should help capture a broader range of relevant documents, especially those that might discuss alternative or complementary approaches to Cholesky factorization in the context of sparse GMRF learning.\n\nOne of the natural cognitive patterns that emerge during this process is the tendency to make connections between the technical aspects of the query and broader applications or related techniques. For example, recognizing that GMRFs can be applied in various domains, from signal processing to network analysis, helps in identifying terms that might not be directly mentioned in the original query but are highly relevant. Similarly, understanding the computational challenges posed by sparse data leads to the consideration of efficient algorithms and data structures that might not have been initially apparent.\n\nUpon applying the technique and allowing for natural cognitive elements to influence the expansion process, I arrive at an expanded query that incorporates these additional terms: \"Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization, Graphical Lasso, Conjugate Gradient Methods, Precision Matrices, Efficient Sampling Algorithms.\" This augmented query aims to maintain the original search intent while providing a more comprehensive coverage of relevant concepts, potentially leading to more effective document retrieval.\n\nThrough this process, it becomes clear that the interplay between structured techniques like conceptual graph traversal and natural thought patterns is crucial. The technique provides a systematic approach to identifying relevant terms, while the natural cognitive elements allow for intuitive leaps and connections that might not emerge from a purely mechanical application of the technique. This balance is key to generating an expanded query that is both logically sound and creatively insightful, ultimately enhancing the retrieval effectiveness for the user's specific information needs.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

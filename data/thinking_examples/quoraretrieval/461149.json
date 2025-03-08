@@ -1,0 +1,68 @@
+{
+  "reasoning": "The query explores societal norms surrounding laughter at one's own jokes.  It seeks to understand why this behavior is sometimes perceived as inappropriate and delves into individual experiences with it.",
+  "query_goals": [
+    "understand social etiquette",
+    "identify reasons for disapproval",
+    "explore personal experiences"
+  ],
+  "augmented_query": "Is laughing at one's own jokes considered inappropriate by society?  What are the reasons behind these perceptions? How do people feel about self-deprecating humor?",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "graph",
+  "query": "Is it okay to laugh at your own jokes?",
+  "query_id": "461149",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "quoraretrieval",
+  "node_classes": [
+    "social norms",
+    "humor",
+    "etiquette",
+    "perception",
+    "self-deprecating humor",
+    "laughter"
+  ],
+  "query_nodes": [
+    "laughing",
+    "jokes",
+    "own",
+    "societal",
+    "perceptions"
+  ],
+  "nearest_neighbors": [
+    "self-esteem",
+    "confidence",
+    "audience",
+    "appropriateness",
+    "social cues",
+    "humor styles"
+  ],
+  "cleaned_augmented_query": "Is laughing at one's own jokes considered inappropriate by society?  What are the reasons behind these perceptions? How do people feel about self-deprecating humor?",
+  "final_delta": 0.36907,
+  "initial_results": "### Text snippet from document at k=1\n: Why is it frowned upon to laugh at your own jokes?\n\n### Text snippet from document at k=2\n: Is it weird to laugh at my own jokes?\n\n### Text snippet from document at k=10\n: Is it ok to drink your own cum after masturbation?\n",
+  "thought_process": "As I delve into the query \"Is it okay to laugh at your own jokes?\", my initial impressions are that this question revolves around social norms and expectations regarding humor and self-expression. The user seems to be seeking an understanding of why laughing at one's own jokes is sometimes viewed as inappropriate and is looking for insight into personal experiences with this behavior.\n\nAnalyzing the initial results, I notice that the top snippets directly address the question's core concern about societal perceptions of laughing at one's own jokes. However, the snippet from the document at k=10 seems unrelated to the topic at hand, suggesting that our search terms might not be specific enough to capture the intended context accurately.\n\nTransitioning to a structured approach, I will apply the Query Expansion via Conceptual Graph Traversal technique. This involves constructing a conceptual graph based on the original query, identifying core concepts and entities, and then traversing the graph to discover semantically relevant expansion terms.\n\nThe core concepts in the query are \"laughing,\" \"own jokes,\" and \"societal perceptions.\" The search intent is informational, aiming to understand social norms and individual feelings about self-deprecating humor. Implicit assumptions include the idea that there are societal norms around laughing at one's own jokes and that these norms can vary.\n\nConstructing the conceptual graph, I identify direct entities and concepts (core nodes), their properties and relationships (first-order connections), related concepts (second-order connections), and the domain context (social etiquette and humor).\n\nFor expansion path selection, I consider synonymous terms (e.g., \"amused by own humor\"), hierarchical terms (broader concepts like \"social norms\" or narrower concepts like \"self-deprecation\"), compositional terms (attributes of humor or laughter), contextual terms (settings where laughing at one's jokes might be viewed differently), and domain-specific terminology (terms used in psychology or sociology related to humor and social interaction).\n\nAs I extract and filter terms, I look for relevance, distinctiveness, specificity, and searchability. Terms like \"self-deprecating humor,\" \"social norms,\" \"laughter etiquette,\" \"amused by own humor,\" and \"humor perception\" emerge as high-value expansion terms. They offer alternative pathways for retrieval while maintaining the original search intent.\n\nThrough this process, insights emerge from both the structured technique and natural intuition. For instance, applying the conceptual graph traversal leads to the discovery of terms like \"self-deprecation,\" which is closely related to laughing at one's own jokes. Intuitively, considering the context of social settings and psychological aspects of humor also suggests that terms like \"social cues\" and \"audience perception\" could be relevant.\n\nSynthesizing these findings, I believe the expanded terms effectively capture the nuances of the original query, enhancing the search for relevant documents. The final expanded query, incorporating these terms, should provide a more comprehensive understanding of societal norms and personal experiences with laughing at one's own jokes.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query \"How do I raise funds?\" is broad and requires understanding the user's intent. \n\nIt could be seeking general information about fundraising principles, specific strategies for startups or nonprofits, or legal aspects of raising capital in a particular context (like India).  \n\nTo improve results, we need to refine the search by identifying:\n\n* **Target audience:**  Individual entrepreneur? Nonprofit organization?\n* **Funding type:** Debt financing? Equity investment? Grants? Donations?\n* **Context:**  Stage of business development? Geographical location?",
+  "query_goals": [
+    "Identify fundraising methods",
+    "Understand legal considerations for raising funds",
+    "Discover resources for securing funding"
+  ],
+  "augmented_query": "\"Fundraising methods for [Target Audience] in India, legal considerations for raising capital\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "How do I raise funds?",
+  "query_id": "11002",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "quoraretrieval",
+  "node_classes": [
+    "Funding",
+    "Business",
+    "Nonprofit",
+    "Legal",
+    "Strategy",
+    "Resources"
+  ],
+  "query_nodes": [
+    "Funds",
+    "Raise"
+  ],
+  "nearest_neighbors": [
+    "Investment",
+    "Capital",
+    "Donations",
+    "Grants",
+    "Crowdfunding",
+    "Venture Capital"
+  ],
+  "cleaned_augmented_query": "fundraising methods target audience india legal considerations raising capital",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: How do I raise funds for a cause?\n\n### Text snippet from document at k=2\n: How do I raise funding for my startup?\n\n### Text snippet from document at k=10\n: How is Olympics funded?\n",
+  "thought_process": "Looking at the original query \"How do I raise funds?\", this makes me think of various contexts in which fundraising is essential, such as for a startup, a non-profit organization, or even for personal causes. The user might actually be trying to understand the general principles of fundraising, but without more context, it's hard to pinpoint the exact intent. Hmm, not sure yet... \n\nAnalyzing the results of the original query, I notice that the top results (at k=1 and k=2) are about raising funds for specific causes or startups, which suggests that the query's intent might lean towards informational or navigational purposes. However, the result at k=10 about the Olympics funding seems somewhat unrelated, indicating that the query might also capture broader or more general aspects of fundraising. The strengths of the current search terms lie in their broad applicability, but the weakness is the lack of specificity, which might lead to irrelevant results like the Olympics funding example.\n\nI'm seeing several possibilities here... Let me approach this using the Conceptual Graph Traversal technique for query expansion, which involves constructing a graph of concepts related to the original query and then traversing it to find high-value expansion terms. This should help because it allows for a systematic exploration of related concepts and terms that can refine the search query.\n\nFollowing the Conceptual Graph Traversal approach, I should first identify the core concepts in the query, which seem to be \"fundraising\" and \"funds.\" Next, I need to determine the search intent, which appears to be informational, aiming to understand methods and possibly legal considerations for raising funds. Then, I list implicit assumptions or constraints, such as the target audience (individuals, startups, nonprofits) and geographical location (potentially important for legal aspects).\n\nNow, constructing the conceptual graph... The core nodes will be \"fundraising\" and \"funds.\" First-order connections include \"methods,\" \"legal considerations,\" and \"target audience.\" Second-order connections might involve \"investment,\" \"capital,\" \"donations,\" and \"grants.\" Domain contexts could include \"business,\" \"nonprofit,\" and \"finance.\"\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"fundraising\" could also be \"crowdfunding\" or \"capital raising\"), hierarchical terms (broader concepts like \"finance\" or narrower ones like \"venture capital\"), compositional terms (parts of fundraising like \"pitching\" or \"networking\"), contextual terms (settings like \"startup ecosystem\" or \"nonprofit sector\"), and domain-specific terminology (field-specific terms like \"Series A funding\" or \"grant writing\").\n\nApplying this step of the technique leads me to consider terms like \"fundraising strategies,\" \"equity financing,\" and \"nonprofit funding models.\" This reveals insights into the specifics of fundraising that the original query doesn't capture. I also notice that my instinct is to consider geographical and legal aspects more closely, possibly because these can significantly affect fundraising methods and outcomes.\n\nHowever, I just had a realization that connects to what we were exploring earlier - the importance of understanding the target audience. If the user is an individual, the strategies and legal considerations would differ significantly from those for a startup or a non-profit. This means I should prioritize terms that capture these distinctions.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the expanded terms should capture both the explicit and implicit aspects of what the user is seeking. Terms such as \"fundraising methods for startups,\" \"legal considerations for raising capital in India,\" \"nonprofit funding strategies,\" and \"equity financing options\" emerge as high-value additions. They not only maintain the original search intent but also provide valuable alternative pathways for retrieval.\n\nSynthesizing these insights, I conclude that the most effective approach to expanding the query \"How do I raise funds?\" involves recognizing the importance of context (target audience, geographical location) and the variety of fundraising methods and legal considerations. By incorporating these aspects into the search query, users can expect more relevant and useful results that cater to their specific needs and circumstances.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

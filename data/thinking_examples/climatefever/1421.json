@@ -1,0 +1,80 @@
+{
+  "reasoning": "The query concerns the release of methane gas due to melting polar ice caps. To gain a deeper understanding, I will use metaphorical thinking to explore analogous scenarios in different domains. This process involves generating metaphors, mapping elements between the source and target domains, extracting relevant terminology, extending the metaphors, and finally compiling a list of cross-domain terms to augment the original query.",
+  "augmented_query": "methane release thawing volatile eruption fragile balance cascading melting permafrost critical mass pressure decomposition",
+  "ndcg": {
+    "NDCG@10": 0.52944,
+    "NDCG@100": 0.60279,
+    "NDCG@1000": 0.60279,
+    "NDCG@10000": 0.63758
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.35256,
+    "MAP@1000": 0.35256,
+    "MAP@10000": 0.35298
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 0.75,
+    "Recall@1000": 0.75,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.03,
+    "P@1000": 0.003,
+    "P@10000": 0.0004
+  },
+  "delta": 0.01231,
+  "instruction": "metaphor",
+  "query": "The melting in the polar ice caps and in high altitude plains can lead to the dangerous release of methane gas",
+  "query_id": "1421",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "climatefever",
+  "generated_metaphors": [
+    "Melting ice caps are like a thawing freezer releasing forgotten leftovers.",
+    "Methane release is like uncorking a champagne bottle that's been shaken.",
+    "Polar ice is a bandage on a wound of warming temperatures.",
+    "The earth is like a fragile eco-system where change in one location causes cascading effects.",
+    "The arctic is like a pressure cooker"
+  ],
+  "domain_mappings": [
+    "Freezer: Polar ice caps; Leftovers: Methane; Thawing: Melting",
+    "Champagne bottle: Frozen methane deposits; Shaking: Global warming; Uncorking: Release of methane",
+    "Bandage: Polar ice; Wound: Warming temperatures; Healing: Efforts to curb global warming",
+    "Fragile eco-system: The Earth; Change: Climate change; Cascading effects: Methane gas release; Global warming",
+    "Pressure cooker: Polar ice; Rising temperature: Global warming; Gas release valve: Methane pockets"
+  ],
+  "metaphorical_language": [
+    "Thawing, forgotten, preserved, decomposition (from Freezer metaphor)",
+    "Pressure, volatile, release, eruption (from Champagne bottle metaphor)",
+    "Fragile, eco-system, balance, cascading, delicate (from Fragile eco-system metaphor)",
+    "Bandage, wound, injury, healing, remedy, treatment (from Bandage metaphor)",
+    "Pressure Cooker; Pressure Release; Volatile; Critical Mass"
+  ],
+  "extended_metaphors": [
+    "As the thawing freezer releases more and more forgotten leftovers, the stench overwhelms the kitchen (atmosphere), indicating the scale of the problem.",
+    "The champagne bottle, once uncorked, continues to fizz and release gas, even after attempts to reseal it, demonstrating the difficulty in containing methane emissions.",
+    "The bandage on the wound is melting releasing harmful bacteria (methane) back into the wound, further damaging the Earth.",
+    "Melting ice not only releases methane, but reduces the Earth's temperature regulation causing further damage much like a domino effect.",
+    "The pressure cooker is reaching a critical mass, causing increased temperatures, instability and eventually, the release of harmul gases into the atmosphere."
+  ],
+  "cross_domain_terms": [
+    "Thawing",
+    "Volatile",
+    "Eruption",
+    "Fragile Balance",
+    "Cascading",
+    "Bandage",
+    "Wound",
+    "Critical Mass",
+    "Pressure Release",
+    "Decomposition"
+  ],
+  "cleaned_augmented_query": "methane release thawing volatile eruption fragile balance cascading melting permafrost critical mass pressure decomposition",
+  "final_delta": 0.01231,
+  "initial_results": "### Text snippet from document at k=1\n: The effects of global warming in the Arctic , or climate change in the Arctic include rising temperatures , loss of sea ice , and melting of the Greenland ice sheet with a related cold temperature anomaly , observed in recent years . Potential methane release from the region , especially through the thawing of permafrost and methane clathrates , is also a concern . The Arctic warms twice as fast compared to the rest of the world . The pronounced warming signal , the amplified response of the Arctic to global warming , it is often seen as a leading indicator of global warming . The melting of Greenland 's ice sheet is linked to polar amplification . According to a study published in 2016 , about 0.5 \u25e6 C of the warming in the Arctic has been attributed to reductions in sulfate aerosols in Europe since 1980 .\n\n### Text snippet from document at k=2\n: The Greenland ice sheet ( Gr\u00f8nlands indlandsis , Sermersuaq ) is a vast body of ice covering 1710000 km \u00b2 , roughly 80 % of the surface of Greenland .   It is the second largest ice body in the world , after the Antarctic ice sheet . The ice sheet is almost 2400 km long in a north-south direction , and its greatest width is 1100 km at a latitude of 77 \u00b0 N , near its northern margin . The mean altitude of the ice is 2135 m . The thickness is generally more than 2 km and over 3 km at its thickest point . It is not the only ice mass of Greenland -- isolated glaciers and small ice caps cover between 76000 and around the periphery . If the entire 2850000 km3 of ice were to melt , it would lead to a global sea level rise of 7.2 m . The Greenland Ice Sheet is sometimes referred to under the term inland ice , or its Danish equivalent , indlandsis . It is also sometimes referred to as an ice cap .\n\n### Text snippet from document at k=10\n: Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System , after Mercury . Named after the Roman god of war , it is often referred to as the `` Red Planet '' because the iron oxide prevalent on its surface gives it a reddish appearance . Mars is a terrestrial planet with a thin atmosphere , having surface features reminiscent both of the impact craters of the Moon and the valleys , deserts , and polar ice caps of Earth .   The rotational period and seasonal cycles of Mars are likewise similar to those of Earth , as is the tilt that produces the seasons . Mars is the site of Olympus Mons , the largest volcano and second-highest known mountain in the Solar System , and of Valles Marineris , one of the largest canyons in the Solar System . The smooth Borealis basin in the northern hemisphere covers 40 % of the planet and may be a giant impact feature . Mars has two moons , Phobos and Deimos , which are small and irregularly shaped . These may be captured asteroids , similar to 5261 Eureka , a Mars trojan .   There are ongoing investigations assessing the past habitability potential of Mars , as well as the possibility of extant life . Future astrobiology missions are planned , including the Mars 2020 and ExoMars rovers . ...\n",
+  "thought_process": "As I began to explore the original query, \"The melting in the polar ice caps and in high altitude plains can lead to the dangerous release of methane gas,\" I found myself pondering the potential consequences of such an event. This makes me think of a cascade of effects, where the melting of polar ice caps not only releases methane but also reduces the Earth's ability to regulate its temperature, leading to further damage. The user might actually be trying to understand the intricacies of climate change and its impact on our planet, but the specific focus on methane release suggests a concern for the potential catastrophic outcomes of this process.\n\nAnalyzing the results of the original query, I noticed that the texts provided at different positions (k=1, k=2, k=10) offer a range of perspectives. The first snippet discusses the effects of global warming in the Arctic, including the potential release of methane from thawing permafrost and methane clathrates. This strengthens the importance of considering the Arctic region in the context of global warming. The second snippet provides detailed information about the Greenland ice sheet, its size, and the potential consequences of its melting, such as a significant rise in global sea levels. The third snippet, although seemingly unrelated as it discusses Mars, reminds me of the broader context of planetary science and the unique features of Earth that make it habitable, including its polar ice caps.\n\nTo systematically approach this query expansion, I decided to use metaphorical thinking as my technique. This involves generating metaphors for the query topic and mining them for conceptually related terminology from diverse domains. The process starts with metaphor generation, where I create diverse metaphors for understanding the topic of methane release due to melting polar ice caps. I selected metaphors from varied domains, including nature (e.g., a thawing freezer), mechanics (e.g., a pressure cooker), and even art, to develop each metaphor with specific correspondences.\n\nFor instance, the metaphor \"Melting ice caps are like a thawing freezer releasing forgotten leftovers\" allows me to map elements from the source domain (freezer) to the target domain (polar ice caps). Here, the freezer corresponds to the polar ice caps, the leftovers to the methane, and the thawing to the melting process. This metaphor helps in understanding the release of methane as a consequence of melting ice, similar to how a thawing freezer releases its contents.\n\nAnother metaphor, \"Methane release is like uncorking a champagne bottle that's been shaken,\" provides a different perspective. The champagne bottle represents frozen methane deposits, the shaking represents global warming, and the uncorking represents the release of methane. This metaphor highlights the potential for a sudden and significant release of methane due to the disturbances caused by global warming.\n\nBy extending these metaphors and applying the technique of metaphorical thinking, I can extract terminology that illuminates aspects of the original topic. Terms like \"thawing,\" \"volatile,\" \"eruption,\" \"fragile balance,\" \"cascading,\" and \"decomposition\" emerge from the metaphors and provide a rich set of concepts to expand the query.\n\nAs I apply this technique, I also allow for natural thought patterns to influence my process. Occasional reconsiderations, such as questioning whether a particular metaphor is apt, or intuitive connections, like realizing that the Earth's systems are interconnected and that changes in one area can have cascading effects elsewhere, enrich my understanding. Brief tangents, such as pondering the similarities between Earth's climate system and other planetary systems, occasionally yield unexpected insights into the uniqueness of Earth's situation and the urgency of addressing climate change.\n\nThrough this structured yet intuitively guided process, insights emerge that complement both the technique and my natural thought patterns. For example, applying the metaphorical thinking approach leads me to discover terms like \"critical mass\" and \"pressure release,\" which are crucial for understanding the potential sudden and large-scale release of methane. Meanwhile, my instinct reminds me of the importance of considering the global context and the interconnectedness of Earth's systems.\n\nSynthesizing these insights with clarity, I believe that the terms \"methane release,\" \"thawing,\" \"volatile,\" \"eruption,\" \"fragile balance,\" \"cascading,\" \"melting,\" \"permafrost,\" \"critical mass,\" \"pressure,\" and \"decomposition\" would be most effective for expanding the original query. These terms capture both the explicit and implicit aspects of what the user is seeking to understand about the melting of polar ice caps and the release of methane gas.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

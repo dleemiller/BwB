@@ -1,0 +1,65 @@
+{
+  "reasoning": "The original query focuses on the specific mechanism of activator-inhibitor pairs provided dorsally, likely influencing morphogenesis. Existing results are too general about BMP signaling and lack detail on dorsal patterning. To improve results, we need to delve deeper into the roles of ADMP and Chordin in dorsal structures, exploring their interplay with other signaling molecules and developmental processes.",
+  "query_goals": [
+    "Identify the specific activator-inhibitor pairs involved in dorsal morphogenesis.",
+    "Understand the role of ADMP and Chordin in dorsal patterning beyond BMP inhibition.",
+    "Explore downstream targets and interactions of these pairs during development."
+  ],
+  "ineffective_terms": [
+    "provided",
+    "dorsally",
+    "generally"
+  ],
+  "breadth_expansion": [
+    "segmentation",
+    "neural tube",
+    "mesoderm",
+    "cell fate",
+    "axial patterning",
+    "gradient formation"
+  ],
+  "depth_chain": [
+    "segmentation",
+    "Hox genes",
+    "parasegmental organization",
+    "pair-rule genes",
+    "transcriptional regulation"
+  ],
+  "augmented_query": "ADMP Chordin BMP segmentation Hox genes transcription regulatory",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Activator-inhibitor pairs are provided dorsally by Admpchordin.",
+  "query_id": "72",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "dataset": "scifact",
+  "cleaned_augmented_query": "admp chordin bmp segmentation hox genes transcription regulatory",
+  "final_delta": 0.0,
+  "initial_results": "### Text snippet from document at k=1\n: Embryos have the ability to self-regulate and regenerate normal structures after being sectioned in half. How is such a morphogenetic field established? We discovered that quadruple knockdown of ADMP and BMP2/4/7 in Xenopus embryos eliminates self-regulation, causing ubiquitous neural induction throughout the ectoderm. ADMP transcription in the Spemann organizer is activated at low BMP levels. When ventral BMP2/4/7 signals are depleted, Admp expression increases, allowing for self-regulation. ADMP has BMP-like activity and signals via the ALK-2 receptor. It is unable to signal dorsally because of inhibition by Chordin. The ventral BMP antagonists Sizzled and Bambi further refine the pattern. By transplanting dorsal or ventral wild-type grafts into ADMP/BMP2/4/7-depleted hosts, we demonstrate that both poles serve as signaling centers that can induce histotypic differentiation over considerable distances. We conclude that dorsal and ventral BMP signals and their extracellular antagonists expressed under opposing transcriptional regulation provide a molecular mechanism for embryonic self-regulation.\n\n### Text snippet from document at k=2\n: We have demonstrated previously that a combination of signals from the neural tube and the floor plate/notochord complex synergistically induce the expression of myogenic bHLH genes and myogenic differentiation markers in unspecified somites. In this study we demonstrate that Sonic hedgehog (Shh), which is expressed in the floor plate/notochord, and a subset of Wnt family members (Wnt-1, Wnt-3, and Wnt-4), which are expressed in dorsal regions of the neural tube, mimic the muscle inducing activity of these tissues. In combination, Shh and either Wnt-1 or Wnt-3 are sufficient to induce myogenesis in somitic tissue in vitro. Therefore, we propose that myotome formation in vivo may be directed by the combinatorial activity of Shh secreted by ventral midline tissues (floor plate and notochord) and Wnt ligands secreted by the dorsal neural tube.\n\n### Text snippet from document at k=10\n: The 137 ribosomal protein genes (RPGs) of Saccharomyces provide a model for gene coregulation. We examined the positional and functional organization of their regulators (Rap1 [repressor activator protein 1], Fhl1, Ifh1, Sfp1, and Hmo1), the transcription machinery (TFIIB, TFIID, and RNA polymerase II), and chromatin at near-base-pair resolution using ChIP-exo, as RPGs are coordinately reprogrammed. Where Hmo1 is enriched, Fhl1, Ifh1, Sfp1, and Hmo1 cross-linked broadly to promoter DNA in an RPG-specific manner and demarcated by general minor groove widening. Importantly, Hmo1 extended 20-50 base pairs (bp) downstream from Fhl1. Upon RPG repression, Fhl1 remained in place. Hmo1 dissociated, which was coupled to an upstream shift of the +1 nucleosome, as reflected by the Hmo1 extension and core promoter region. Fhl1 and Hmo1 may create two regulatable and positionally distinct barriers, against which chromatin remodelers position the +1 nucleosome into either an activating or a repressive state. Consistent with in vitro studies, we found that specific TFIID subunits, in addition to cross-linking at the core promoter, made precise cross-links at Rap1 sites, which we interpret to reflect native Rap1-TFIID interactions. Our findings suggest how sequence-specific DNA binding regulates nucleosome positioning and transcription complex assembly >300 bp away and how coregulation coevolved with coding sequences.\n",
+  "thought_process": "Looking at the original query about activator-inhibitor pairs provided dorsally by Admp and Chordin, this makes me think of the complex interplay between various signaling molecules during embryonic development, particularly in the context of dorsal-ventral patterning. The user might actually be trying to understand how these molecules influence morphogenesis, but the initial results seem too general, focusing broadly on BMP signaling without delving deep into the specifics of dorsal patterning and the roles of ADMP and Chordin.\n\nAnalyzing the results of the original query, it's clear that the terms \"provided,\" \"dorsally,\" and \"generally\" are too broad and don't contribute much to understanding the specific mechanisms involved. The results highlight the importance of BMP signaling but lack depth on how ADMP and Chordin function in dorsal structures and their interactions with other signaling molecules.\n\nTo expand this query effectively, I'll use a structured approach, starting with the identification of the primary objectives and gaps in the original query. The main goal seems to be understanding the specific roles of ADMP and Chordin in dorsal morphogenesis, including their interactions with other signaling pathways. A significant gap is the lack of detail on how these molecules contribute to the establishment of dorsal-ventral patterns during embryonic development.\n\nApplying the expansion technique, I first identify ineffective terms that should be avoided due to their broad nature: \"provided,\" \"dorsally,\" and \"generally.\" For breadth expansion, I consider terms that introduce new dimensions to the query, such as \"segmentation,\" \"neural tube,\" \"mesoderm,\" \"cell fate,\" \"axial patterning,\" and \"gradient formation.\" These terms can help explore the wider context of dorsal-ventral patterning and the potential interactions of ADMP and Chordin with other developmental processes.\n\nFor depth expansion, focusing on \"segmentation\" as a key concept, I delve deeper into related terms such as \"Hox genes,\" \"parasegmental organization,\" \"pair-rule genes,\" and \"transcriptional regulation.\" This depth expansion allows for a more nuanced understanding of how ADMP and Chordin might influence specific aspects of embryonic development, such as the formation of segments and the regulation of gene expression.\n\nAs I apply this structured approach, I also allow for natural thought patterns to emerge. For instance, considering the role of ADMP and Chordin in dorsal patterning reminds me of the importance of gradient formation in embryonic development. The interaction between these molecules and others, like BMPs, and their regulation by inhibitors or activators, suggests a complex network of signals that guide morphogenesis.\n\nThrough this process, insights begin to emerge that connect the original query with the expanded terms. Applying the concept of segmentation and its related terms leads to a deeper understanding of how ADMP and Chordin might function in establishing dorsal-ventral patterns. The involvement of Hox genes and transcriptional regulation highlights the genetic and molecular mechanisms underlying these processes.\n\nSynthesizing these insights, I believe the most effective terms for expanding the query are those that capture the specific roles of ADMP and Chordin in dorsal morphogenesis, their interactions with other signaling molecules, and their influence on developmental processes like segmentation and transcriptional regulation. The final expanded query should reflect a balance between the structured approach and natural cognitive patterns, ensuring that it is both targeted and diverse, avoiding ineffective terms and focusing on high-quality, relevant search terms.\n\nThe process of applying the expansion technique, combined with natural thought patterns and insights, leads to the identification of key terms that can enhance the original query. By focusing on the specific mechanisms of activator-inhibitor pairs, particularly ADMP and Chordin, and exploring their roles in dorsal patterning and morphogenesis, we can develop a more nuanced understanding of embryonic development.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

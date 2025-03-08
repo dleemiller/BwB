@@ -1,0 +1,89 @@
+{
+  "reasoning": "The user is explicitly looking for Vietnamese recipes, but the current results are providing mostly general information or descriptions. To enhance the search, I will assemble experts who can provide diverse recipe resources, cooking techniques, cultural context, dietary considerations, ingredient information, and recipe variations. This multi-faceted approach should address the user's need for actual recipes, while also broadening the user's understanding of Vietnamese cuisine.",
+  "augmented_query": "vietnamese recipes authentic regional variations easy home cooking techniques ingredients substitutions gluten-free vegan pho banh mi bun cha goi cuon com tam nuoc cham vegetarian low sodium",
+  "ndcg": {
+    "NDCG@10": 0.4441,
+    "NDCG@100": 0.5641,
+    "NDCG@1000": 0.64408,
+    "NDCG@10000": 0.66205
+  },
+  "map": {
+    "MAP@10": 0.23636,
+    "MAP@100": 0.27434,
+    "MAP@1000": 0.28648,
+    "MAP@10000": 0.28682
+  },
+  "recall": {
+    "Recall@10": 0.27273,
+    "Recall@100": 0.63636,
+    "Recall@1000": 0.90909,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.3,
+    "P@100": 0.07,
+    "P@1000": 0.01,
+    "P@10000": 0.0011
+  },
+  "delta": 0.06066,
+  "instruction": "expert",
+  "query": "vietnam food recipes",
+  "query_id": "INEX_LD-20120121",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "dataset": "dbpedia",
+  "extracted_terms": [
+    "Nuoc Cham",
+    "Pho",
+    "Banh Mi",
+    "Goi Cuon",
+    "Bun Cha",
+    "Com Tam",
+    "Rau Ram",
+    "Do Chua",
+    "Ca Kho To",
+    "Lemongrass",
+    "Galangal",
+    "Fish Sauce",
+    "Rice Paper",
+    "Rice Noodles",
+    "Star Anise",
+    "Cilantro",
+    "Mint",
+    "Holy Basil",
+    "Betel Leaf",
+    "Vietnamese Coriander"
+  ],
+  "selected_experts": [
+    "Vietnamese Culinary Historian",
+    "Professional Vietnamese Chef",
+    "Registered Dietitian specializing in Southeast Asian Cuisine",
+    "Ethnobotanist specializing in Vietnamese Ingredients",
+    "Food Blogger specializing in Vietnamese Home Cooking"
+  ],
+  "expert_insights": [
+    "Vietnamese Culinary Historian: Focus on regional variations in recipes, historical influences (e.g., French colonial period), and the evolution of popular dishes. Recipes should be authentic and well-researched, with explanations of origin and ingredients. Discuss the importance of family recipes and oral traditions in Vietnamese cooking.",
+    "Professional Vietnamese Chef: Provide classic Vietnamese recipes, cooking techniques (e.g., stir-frying, steaming, grilling), and tips for achieving authentic flavors. Focus on foundational recipes like Pho, Bun Cha, and Spring Rolls, and elaborate on variations and modern interpretations. Emphasize the importance of high-quality ingredients and proper preparation techniques within a professional kitchen setting.",
+    "Registered Dietitian specializing in Southeast Asian Cuisine: Discuss the nutritional benefits of Vietnamese cuisine, focusing on fresh herbs, vegetables, and lean proteins. Offer recipe modifications for dietary restrictions (e.g., gluten-free, vegan, low-sodium). Advise on portion control and healthy cooking methods. Examine the role of traditional Vietnamese medicine in food choices.",
+    "Ethnobotanist specializing in Vietnamese Ingredients: Provide in-depth information on native Vietnamese herbs, spices, and produce. Discuss their traditional uses, flavor profiles, and availability. Offer tips for sourcing and substituting ingredients, especially for those outside of Vietnam. Investigate the specific growing conditions of certain Vietnamese crops.",
+    "Food Blogger specializing in Vietnamese Home Cooking: Share easy-to-follow Vietnamese recipes for home cooks of all skill levels. Incorporate personal anecdotes and cultural insights to make the cooking experience more engaging. Provide tips for adapting recipes based on available ingredients and preferences. Focus on popular and accessible dishes that can be easily replicated at home."
+  ],
+  "cross_connections": [
+    "The Culinary Historian and the Chef can collaborate on authentic recipes with historical context, highlighting regional variations and evolutions.",
+    "The Dietitian and the Ethnobotanist can work together to showcase the health benefits of specific Vietnamese ingredients and suggest substitutions for dietary needs.",
+    "The Food Blogger and the Chef can bridge the gap between professional techniques and home cooking, offering adaptations that make dishes accessible to home cooks.",
+    "All experts can contribute to a deeper understanding of the cultural significance embedded in Vietnamese cuisine, enriching recipe understanding beyond mere instructions."
+  ],
+  "recommended_resources": [
+    "*Authentic Vietnamese Recipes* by Andrea Nguyen",
+    "*The Food of Vietnam* by Luke Nguyen",
+    "Vietnamese Food Any Day: Simple Recipes for True, Fresh Flavors by Andrea Nguyen",
+    "*Pleasures of the Vietnamese Table* by Mai Pham",
+    "Websites: hungryhuy.com, vietnammm.com"
+  ],
+  "cleaned_augmented_query": "vietnamese recipes authentic regional variations easy home cooking techniques ingredients substitutions gluten free vegan pho banh mi bun cha goi cuon com tam nuoc cham vegetarian low sodium",
+  "final_delta": 0.06066,
+  "initial_results": "### Text snippet from document at k=1\n: Allrecipes.com is a global social networking service and forum headquartered in Seattle which encourages users to post recipes, comment on and make changes to existing recipes, and search for specific recipes. It also allows users to create recipe blogs, vote on pictures of finished dishes, and receive awards based on their submissions and results. Users become part of the community by reviewing and commenting on other people's food-related content.\n\n### Text snippet from document at k=2\n: Northern Vietnam and Southern Vietnam are two historic, geographic and cultural regions within Vietnam.\n\n### Text snippet from document at k=10\n: Rousong, also called meat wool, meat floss, pork floss, flossy pork, pork sung or yuk sung, is a dried meat product with a light and fluffy texture similar to coarse cotton, originating from China. Rousong is used as a topping for many foods, such as congee, tofu, and savoury soy milk. It is also used as filling for various buns and pastries, and as a snack food on its own. Rousong is a very popular food item in Chinese cuisine and Taiwanese cuisine.\n",
+  "thought_process": "As I begin to analyze the original query \"vietnam food recipes,\" my initial impression is that the user is looking for a broad range of recipes from Vietnamese cuisine. However, I also consider the possibility that they might be seeking something more specific, such as recipes from a particular region in Vietnam or dishes that cater to certain dietary restrictions.\n\nUpon examining the initial results, I notice that they provide a mix of general information about Vietnam, social networking platforms for recipes, and geographic divisions within the country. While these results offer some insights, they do not directly address the user's request for recipes. This discrepancy suggests that the original query might be too vague or that the search terms used do not accurately capture the user's intent.\n\nTo expand the query effectively, I decide to employ the \"Query Expansion via Multi-Disciplinary Expert Panel\" technique. This approach involves assembling a diverse group of experts from various disciplines related to Vietnamese cuisine, including history, culinary arts, dietetics, ethnobotany, and food blogging. Each expert will bring their unique perspective, specialized knowledge, and terminology to the analysis, ensuring a comprehensive understanding of the query.\n\nThe first step in this process is selecting the experts. I choose a Vietnamese culinary historian to provide insights into the evolution and regional variations of Vietnamese cuisine. A professional Vietnamese chef is selected to offer practical cooking techniques and classic recipes. A registered dietitian specializing in Southeast Asian cuisine will contribute knowledge on nutritional aspects and dietary adaptations. An ethnobotanist specializing in Vietnamese ingredients will shed light on the traditional uses and availability of native herbs and spices. Lastly, a food blogger specializing in Vietnamese home cooking will share accessible recipes and personal anecdotes to make the cooking experience more engaging for home cooks.\n\nThrough individual consultations, each expert analyzes the query from their disciplinary perspective, identifying key concepts, methodologies, and specialized vocabulary that the original query might be overlooking. The culinary historian emphasizes the importance of regional variations and historical influences on recipes. The chef highlights foundational recipes like Pho and Bun Cha, along with cooking techniques such as stir-frying and steaming. The dietitian discusses the nutritional benefits of Vietnamese cuisine, including fresh herbs and lean proteins, and offers modifications for dietary restrictions. The ethnobotanist provides in-depth information on native Vietnamese ingredients, their traditional uses, and suggestions for sourcing and substituting ingredients. The food blogger shares easy-to-follow recipes and adaptations for home cooking, incorporating personal anecdotes and cultural insights.\n\nThe panel discussion that follows allows the experts to debate different approaches, identify cross-disciplinary connections, and clarify terminology differences between fields. The historian and chef collaborate on authentic recipes with historical context, while the dietitian and ethnobotanist work together to showcase the health benefits of specific Vietnamese ingredients and suggest dietary substitutions. The food blogger and chef bridge the gap between professional techniques and home cooking, offering adaptations that make dishes accessible to all skill levels.\n\nThe recommendations from each expert include a list of valuable resources such as cookbooks (\"Authentic Vietnamese Recipes\" by Andrea Nguyen, \"The Food of Vietnam\" by Luke Nguyen), websites (hungryhuy.com, vietnammm.com), and specific search terms that add new dimensions to the query. The compilation of specialized terminology from all experts and the identification of terms with cross-disciplinary relevance are crucial steps in synthesizing their insights into an expanded query.\n\nThe resulting expanded query, \"vietnamese recipes authentic regional variations easy home cooking techniques ingredients substitutions gluten free vegan pho banh mi bun cha goi cuon com tam nuoc cham vegetarian low sodium,\" reflects the comprehensive analysis and diverse perspectives of the expert panel. It incorporates specific dish names, cooking methods, dietary considerations, and ingredients, ensuring that the search results will provide the user with a rich and relevant collection of Vietnamese recipes.\n\nThrough this process, I demonstrate how the structured approach of the multi-disciplinary expert panel technique complements natural cognitive patterns, such as reconsiderations, intuitive connections, and brief tangents, to yield a thoughtful and effective query expansion. The insights emerging from both the structure and intuition are evident in the final expanded query, which logically captures the explicit and implicit aspects of the user's search for Vietnamese food recipes.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

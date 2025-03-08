@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query 'Is it true that 90% of investors lose their money?' seeks to clarify a common myth about investment outcomes. The retrieved documents provide insights but lack hard statistical evidence, leading to potential misinformation. By generating metaphors from diverse domains, we can explore the concept more richly and identify related terminology that may offer new perspectives on investor behavior and market dynamics.",
+  "augmented_query": "Explore the validity of the claim that 90% of investors lose their money through analysis of market dynamics, investor behavior studies, and statistical evidence on investment outcomes.",
+  "ndcg": {
+    "NDCG@10": 0.90837,
+    "NDCG@100": 0.90837,
+    "NDCG@1000": 0.94322,
+    "NDCG@10000": 0.94322
+  },
+  "map": {
+    "MAP@10": 0.85714,
+    "MAP@100": 0.85714,
+    "MAP@1000": 0.86138,
+    "MAP@10000": 0.86138
+  },
+  "recall": {
+    "Recall@10": 0.85714,
+    "Recall@100": 0.85714,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.6,
+    "P@100": 0.06,
+    "P@1000": 0.007,
+    "P@10000": 0.0007
+  },
+  "delta": 0.04889,
+  "instruction": "metaphor",
+  "query": "Is it true that 90% of investors lose their money?",
+  "query_id": "4312",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "dataset": "fiqa2018",
+  "generated_metaphors": [
+    "Investment is like navigating a vast ocean.",
+    "The stock market operates similarly to an ecosystem in nature.",
+    "Investing resembles gardening, where patience yields growth over time.",
+    "Trading can be compared to conducting a complex symphony with multiple instruments.",
+    "Portfolio management mirrors assembling a mosaic of diverse pieces."
+  ],
+  "domain_mappings": [
+    "Navigating vast oceans - Investor strategies and market volatility are akin to navigating unpredictable seas.",
+    "Ecosystem dynamics - Market components and investor behavior mimic the interdependent relationships in nature.",
+    "Gardening - The investment timeline parallels nurturing plants with patience and care for growth.",
+    "Symphony conducting - Balancing diverse assets is like orchestrating different musical elements into harmony.",
+    "Mosaic assembly - Building a well-diversified portfolio resembles creating a cohesive picture from various fragments."
+  ],
+  "metaphorical_language": [
+    "Navigational charts, currents, and storms in ocean navigation",
+    "Biodiversity, symbiosis, and ecological balance in ecosystems",
+    "Seeds, soil nutrients, and seasonal cycles in gardening",
+    "Musical notes, rhythm, and harmony in symphony conducting",
+    "Tiles, patterns, and textures in mosaic art"
+  ],
+  "extended_metaphors": [
+    "Just as sailors use navigational charts to avoid hazards, investors can use historical data and risk assessment tools.",
+    "In ecosystems, balance is key; similarly, diversification ensures a resilient investment portfolio against market volatility.",
+    "Gardeners must adapt their care routines to seasonal changes; likewise, investors should adjust strategies according to economic cycles.",
+    "A conductor anticipates each musician's needs for a flawless performance; wise investors anticipate market movements for optimal returns.",
+    "Creating a mosaic involves meticulous planning and adjustment of pieces; constructing a portfolio requires continuous evaluation and rebalancing."
+  ],
+  "cross_domain_terms": [
+    "Navigational charts",
+    "Biodiversity",
+    "Nutrients",
+    "Harmony",
+    "Patterns"
+  ],
+  "cleaned_augmented_query": "explore validity claim 90 investors lose money analysis market dynamics investor behavior studies statistical evidence investment outcomes",
+  "final_delta": 0.04934,
+  "initial_results": "### Text snippet from document at k=1\n: \"For some studies on why investors make the decisions they do, check out  For a more readable, though less rigorous, look at it, also consider Kahneman's recent book, \"\"Thinking, Fast and Slow\"\", which includes the two companion papers written with Tversky on prospect theory. In certain segments (mostly trading) of the investing industry, it is true that something like 90% of investors lose money. But only in certain narrow segments (and most folks would rightly want traders to be counted as a separate beast than an 'investor').  In most segments, it's not true that most investors lose money, but it still is true that most investors exhibit consistent biases that allow for mispricing. I think that understanding the heuristics and biases approach to economics is critical, both because it helps you understand why there are inefficiencies, and also because it helps you understand that quantitative, principled investing is not voodoo black magic; it's simply applying mathematics for the normative part and experimental observations for the descriptive part to yield a business strategy, much like any other way of making money.\"\n\n### Text snippet from document at k=2\n: \"No, 90% of investors do not lose money. 90% or even larger percentage of \"\"traders\"\" lose money. Staying invested in stock market over the long term will almost always be profitable if you spread your investments across different companies or even the index but the key here is long term which is 10+ years in any emerging market and even longer in developed economies where yields will be a lot lower but their currencies will compensate over time if you are an international investor.\"\n\n### Text snippet from document at k=10\n... But if he sells as soon as his investments go down, he makes the temporary losses permanent. If Bob expects his investments to keep going down in the future, naturally he feels tempted to sell them. But a true investor doesn't try to anticipate what the market will do. Trying to anticipate market fluctuations is speculating, not investing. Quoting Benjamin Graham: The most realistic distinction between the investor and the speculator is found in their attitude toward stock-market movements. The speculator's primary interest lies in anticipating and profiting from market fluctuations. The investor's primary interest lies in acquiring and holding suitable securities at suitable prices. Market movements are important to him in a practical sense, because they alternately create low price levels at which he would be wise to buy and high price levels at which he certainly should refrain from buying and probably would be wise to sell. Assuming that the fund in question is well-managed, I would refrain from selling it until it goes up again.\n",
+  "thought_process": "As I begin to explore the query \"Is it true that 90% of investors lose their money?\", my initial thoughts lean towards skepticism. This sounds like a myth or an exaggeration, but it's crucial to understand the context and the specific segment of investors this claim might refer to. The query itself is quite straightforward, but I suspect the answer isn't as simple. The user might be looking for a clear yes or no, but the reality likely involves nuances based on market dynamics, investor behaviors, and perhaps the definition of \"losing money\" in this context.\n\nAnalyzing the results from the original query, I notice a trend where the retrieved documents provide insights into investor behaviors and market dynamics but lack concrete statistical evidence to support or refute the claim directly. This tells me that the query, as it stands, might not yield the desired clarity without further expansion. The documents hint at the importance of understanding heuristics and biases in economics, the distinction between traders and investors, and the impact of long-term investment strategies. These are valuable points but don't directly address the statistic in question.\n\nTo systematically approach this query expansion, I'll employ the \"Query Expansion via Metaphorical Thinking\" technique. This involves generating metaphors for the topic, mapping them to the target domain, exploring the language used in these metaphors, extending them to discover additional connections, and finally, extracting terms that offer cross-domain insights.\n\nThe metaphors generated for this topic are intriguing: investment as navigating a vast ocean, the stock market operating like an ecosystem, investing resembling gardening, trading compared to conducting a complex symphony, and portfolio management mirroring assembling a mosaic. These metaphors come from diverse domains, allowing for a rich exploration of concepts related to investment and market dynamics.\n\nAs I map these metaphors to the investment domain, I notice how each provides a unique perspective. The ocean navigation metaphor highlights the unpredictability of markets and the need for strategic \"navigational charts\" (or risk assessment tools). The ecosystem metaphor emphasizes the importance of balance and biodiversity in a portfolio. The gardening metaphor illustrates the role of patience and adaptation in investment strategies. The symphony conducting metaphor underscores the need for harmony among diverse assets in a portfolio. Lastly, the mosaic assembly metaphor shows how building a well-diversified portfolio requires meticulous planning and adjustment.\n\nExtending these metaphors and exploring their language, I begin to extract terms and concepts that can enhance our understanding of investor behavior and market dynamics. Terms like \"navigational charts,\" \"biodiversity,\" \"nutrients,\" \"harmony,\" and \"patterns\" emerge as potential additions to our query. They not only enrich our vocabulary but also provide fresh perspectives on how to analyze investment outcomes.\n\nThrough this process, I've come to realize that the original query, while straightforward, necessitates a more nuanced approach to uncover meaningful insights. By applying the \"Query Expansion via Metaphorical Thinking\" technique, we can transition from a simplistic yes/no inquiry to a more comprehensive exploration of market dynamics, investor behavior studies, and statistical evidence on investment outcomes.\n\nThe final expanded query, \"Explore the validity of the claim that 90% of investors lose their money through analysis of market dynamics, investor behavior studies, and statistical evidence on investment outcomes,\" better captures the complexity of the issue. The terms extracted from our metaphors\u2014such as \"navigational charts,\" \"biodiversity,\" \"nutrients,\" \"harmony,\" and \"patterns\"\u2014can be integrated into this expanded query to enhance its specificity and accuracy.\n\nIn conclusion, the process of expanding the query involved an initial organic thinking phase, where we explored the query's implications and the insights offered by the initial results. We then transitioned to a structured approach using \"Query Expansion via Metaphorical Thinking,\" which systematically guided us through metaphor generation, domain mapping, language exploration, metaphor extension, and cross-domain term extraction. This balanced approach allowed us to interleave structured steps with natural cognitive elements, such as reconsiderations, intuitive leaps, and connections, ultimately leading to a more refined and informative query.",
+  "thought_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}
