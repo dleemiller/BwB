@@ -1,0 +1,52 @@
+model_args:
+  model_name: "google/gemma-2-2b"
+  attn_implementation: "eager"  # Change to "flash_attention_2" if your model and hardware support it
+  padding_side: "right"
+  torch_dtype: "bfloat16"
+  trust_remote_code: true
+
+data_args:
+  dataset_name: ["dleemiller/lm25", "dleemiller/lm25"]
+  dataset_config_name: ["sft", "sft-concise"]
+    #max_seq_length: 2048
+  packing: false
+
+lora_args:
+  use_peft: true
+  load_in_4bit: false
+  load_in_8bit: false
+  lora_r: 128
+  lora_alpha: 32
+  lora_dropout: 0.05
+    #lora_target_modules: "all-linear"
+  lora_target_modules: ["down_proj", "o_proj", "k_proj", "q_proj", "gate_proj", "up_proj", "v_proj"]
+    #lora_modules_to_save: ["lm_head", "embed_tokens"]
+
+training_args:
+  output_dir: "./query_augmentation_model"
+  num_train_epochs: 2
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 2
+  gradient_checkpointing: true
+    #use_cache: false
+  optim: "adamw_torch"
+  logging_steps: 5
+  save_strategy: "steps"
+  save_steps: 25
+  save_total_limit: 3
+  learning_rate: 0.00008
+  weight_decay: 0.01
+  fp16: false
+  bf16: true
+  use_liger: false
+  max_grad_norm: 0.3
+  warmup_ratio: 0.05
+  group_by_length: true
+  lr_scheduler_type: "cosine"
+  tf32: true
+  max_seq_length: 2048
+
+hub_args:
+  push_to_hub: false
+  # hub_model_id: "your-username/model-name"  # Uncomment and set if you want to push to Hub
+
