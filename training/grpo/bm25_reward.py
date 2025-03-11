@@ -1,6 +1,6 @@
 import os
 import pathlib
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional, Tuple, Literal
 from dataclasses import dataclass
 
 import Stemmer
@@ -23,7 +23,7 @@ class RetrievalScores:
     precision: Dict[str, float]
 
 
-class SimpleBM25Evaluator:
+class BM25Reward:
     """
     A simplified BM25-based retrieval evaluator that independently assesses an original query
     and an augmented query. It computes the NDCG score for each and returns the delta.
@@ -31,7 +31,8 @@ class SimpleBM25Evaluator:
 
     def __init__(
         self,
-        dataset_name: str = "scidocs",
+        dataset_name: str = "msmarco",
+        split: Literal["train", "dev", "test"] = "dev",
         out_dir: Optional[str] = None,
         index_root_dir: str = "indexes",
         use_mmap: bool = False,
@@ -52,7 +53,7 @@ class SimpleBM25Evaluator:
         # Load dataset from disk
         self.corpus, self.queries, self.qrels = GenericDataLoader(
             data_folder=self.data_path
-        ).load(split="test")
+        ).load(split=split)
 
         # Initialize English stemmer and evaluator for BEIR metrics
         self.stemmer = Stemmer.Stemmer("english")
@@ -84,7 +85,11 @@ class SimpleBM25Evaluator:
         # Otherwise, build a new index from the corpus
         corpus_keys = list(self.corpus.keys())
         corpus_texts = [
-            f"{self.corpus[doc_id]['title']}: {self.corpus[doc_id]['text']}"
+            (
+                f"{self.corpus[doc_id]['title']}: {self.corpus[doc_id]['text']}"
+                if "title" in doc and doc["title"]
+                else doc["text"]
+            )
             for doc_id in corpus_keys
         ]
         corpus_tokens = bm25s.tokenize(
@@ -99,6 +104,14 @@ class SimpleBM25Evaluator:
     def get_query_text(self, query_id: str) -> str:
         """Returns the raw query text for a given query ID."""
         return self.queries[query_id]
+
+    def get_doc_text(self, doc_id: str) -> str:
+        """Gets the combined title and text for a given document ID."""
+        doc = self.corpus[doc_id]
+        if "title" in doc and doc["title"]:
+            return f"{doc['title']}: {doc['text']}"
+        else:
+            return doc["text"]
 
     def retrieve(
         self, query_text: str, k: Optional[int] = None
@@ -185,9 +198,9 @@ class SimpleBM25Evaluator:
         self,
         query_id: str,
         augmented_query: str,
-        k_value: int = 10,
+        k_value: int = 1000,
         binary_bonus: float = 1.0,
-        delta_weight: float = 1.0,
+        delta_weight: float = 2.0,
     ) -> float:
         """
         Computes a reward signal based on the improvement of an augmented query over the original query.

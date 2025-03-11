@@ -1,0 +1,53 @@
+model_args:
+  model_name: "google/gemma-2-2b"
+  adapter_dir: "./merged_sft_model"
+  attn_implementation: "eager"  # Change to "flash_attention_2" if supported by your hardware/model.
+    #padding_side: "right"
+  torch_dtype: "bfloat16"
+    #trust_remote_code: true
+
+data_args:
+  prompt_file: "grpo_prompts.parquet"
+  max_seq_length: 2048
+
+lora_args:
+  use_peft: true
+  load_in_4bit: false
+  load_in_8bit: false
+  lora_r: 128
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lora_target_modules: ["down_proj", "o_proj", "k_proj", "q_proj", "gate_proj", "up_proj", "v_proj"]
+
+training_args:
+  output_dir: "./query_augmentation_model"
+  num_train_epochs: 2
+  per_device_train_batch_size: 8
+  gradient_accumulation_steps: 2
+  gradient_checkpointing: true
+  optim: "adamw_torch"
+  logging_steps: 5
+  save_strategy: "steps"
+  save_steps: 25
+  save_total_limit: 3
+  learning_rate: 0.00008
+  weight_decay: 0.01
+  fp16: false
+  bf16: true
+  max_grad_norm: 0.3
+  warmup_ratio: 0.05
+  group_by_length: true
+  lr_scheduler_type: "cosine"
+  tf32: true
+  # GRPO-specific parameters:
+  max_prompt_length: 512         # Maximum prompt length (left-truncated if needed)
+  num_generations: 8             # Must evenly divide global batch size (4 in this case)
+  temperature: 0.9               # Sampling temperature for generation
+  max_completion_length: 1024     # Maximum length of generated completions
+  beta: 0.04                    # KL penalty coefficient
+  use_vllm: false                # Enable if you wish to accelerate generation with vLLM
+
+hub_args:
+  push_to_hub: false
+  # hub_model_id: "your-username/model-name"  # Uncomment and set if you want to push to the Hub
+
