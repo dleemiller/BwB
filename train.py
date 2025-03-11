@@ -98,27 +98,28 @@ class LoraArguments:
     )
 
 
-instruction_template = "### Instruction:"
-response_template = "### Response:"
-
-
-def formatting_func(example):
-    """Format examples into the chat template format."""
+def gemma_formatting_func(example):
     messages = []
     for i in range(len(example["query"])):
-        prompt = (
+        instruction = (
             f"Original Search Query: {example['query'][i]}\n\n"
             f"Initial Results Snippets:\n{example['initial_results'][i]}\n\n"
             "Please analyze these initial results and brainstorm an augmented query to improve retrieval."
         )
-        completion = (
+        response = (
             f"<thinking>{example['thinking'][i]}</thinking>\n\n"
             "Here is the augmented query, I hope it will provide better results:\n\n"
-            f"### {example['augmented_query'][i]}"
+            f"<augmented_query>{example['augmented_query'][i]}</augmented_query>"
         )
-        messages.append(
-            f"{instruction_template}\n{prompt}\n\n{response_template}\n{completion}"
+        message = (
+            f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n"
+            f"{gemma_formatting_func.tokenizer.bos_token}<start_of_turn>user\n"
+            f"{instruction}<end_of_turn>\n"
+            f"<start_of_turn>model\n"
+            f"{response}<end_of_turn>\n"
+            f"{gemma_formatting_func.tokenizer.eos_token}"
         )
+        messages.append(message)
     return messages
 
 
@@ -172,13 +173,14 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(
         model_args.model_name, trust_remote_code=model_args.trust_remote_code
     )
-    tokenizer.padding_side = model_args.padding_side
+    #tokenizer.padding_side = model_args.padding_side
     # if tokenizer.pad_token is None:
     #    if tokenizer.eos_token is not None:
     #        tokenizer.pad_token = tokenizer.eos_token
     #        logger.info("Setting pad_token to eos_token")
     #    else:
     #        logger.warning("Tokenizer has no pad_token or eos_token!")
+    gemma_formatting_func.tokenizer = tokenizer
 
     # Setup model loading configuration
     torch_dtype = getattr(torch, model_args.torch_dtype)
@@ -205,8 +207,8 @@ def main():
         model_kwargs["load_in_8bit"] = True
 
     # Load the model
-    model = AutoModelForCausalLM.from_pretrained(model_args.model_name, **model_kwargs)
-    model.config.eos_token_id = tokenizer.eos_token_id
+    model = AutoModelForCausalLM.from_pretrained(model_args.model_name, **model_kwargs, use_cache=False)
+    #model.config.eos_token_id = tokenizer.eos_token_id
 
     # Prepare model for PEFT if requested
     peft_config = None
@@ -229,19 +231,20 @@ def main():
         )
 
     # Initialize the SFTTrainer with the proper SFTConfig
-    response_template_ids = tokenizer.encode(
-        response_template, add_special_tokens=False
-    )[2:]
+    response_template = "<start_of_turn>model\n"
+    data_collator = DataCollatorForCompletionOnlyLM(
+        response_template=response_template,
+        tokenizer=tokenizer,
+        mlm=False
+    )
 
     trainer = SFTTrainer(
         model=model,
         train_dataset=train_dataset,
         peft_config=peft_config,
         args=training_args,
-        formatting_func=formatting_func if not training_args.packing else None,
-        data_collator=DataCollatorForCompletionOnlyLM(
-            response_template_ids, tokenizer=tokenizer
-        ),
+        formatting_func=gemma_formatting_func if not training_args.packing else None,
+        data_collator=data_collator
     )
     trainer.processing_class.tokenizer = tokenizer
 

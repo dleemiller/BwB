@@ -18,11 +18,10 @@ from datasets import Dataset
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from trl import GRPOTrainer, GRPOConfig
-from peft import LoraConfig, prepare_model_for_kbit_training
+from peft import LoraConfig, prepare_model_for_kbit_training, PeftModel, PeftConfig, get_peft_model
 
-# BM25S imports
-import bm25s
-from bm25s.tokenization import Tokenizer
+# Import our evaluator class which internally handles BM25 index creation/loading.
+from bm25_reward import BM25Reward
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -34,9 +33,10 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ModelArguments:
     model_name: str = field(
-        default="fine_tuned_model/",
+        default="./fine_tuned_model",
         metadata={"help": "Path to the fine-tuned SFT model (with PEFT adapter)"},
     )
+    adapter_dir: str = field(default="./fine_tuned_model")
     attn_implementation: str = field(
         default="eager",
         metadata={"help": "Attention implementation: 'eager' or 'flash_attention_2'"},
@@ -58,7 +58,6 @@ class DataArguments:
     )
     max_seq_length: int = field(default=2048, metadata={"help": "Maximum sequence length"})
 
-
 @dataclass
 class LoraArguments:
     use_peft: bool = field(default=True, metadata={"help": "Whether to use PEFT for training"})
@@ -73,73 +72,96 @@ class LoraArguments:
     )
 
 # -------------------------------------------------------------------
-# BM25S Retrieval Utility
+# Custom Reward Function for GRPO
 # -------------------------------------------------------------------
-def compute_retrieval_score_bm25s(query: str, bm25s_retriever, bm25s_tokenizer) -> float:
-    """
-    Compute the BM25S retrieval score for a given query.
-    Returns the top score from the retrieved results.
-    """
-    tokenized_query = bm25s_tokenizer.tokenize([query], update_vocab=False)
-    results, scores = bm25s_retriever.retrieve(tokenized_query, k=1, backend_selection="numba")
-    return float(scores[0, 0]) if scores.size > 0 else 0.0
-
 # -------------------------------------------------------------------
 # Custom Reward Function for GRPO
 # -------------------------------------------------------------------
-def custom_reward_fn(prompts: List[str], completions: List[str], **kwargs) -> List[float]:
+def custom_reward_fn(completions: list[str], **kwargs) -> list[float]:
     """
-    Compute rewards for generated completions based on:
+    Compute rewards for generated completions based on multiple criteria:
       1) Presence of a <thinking> block (max = 1.0)
       2) Conciseness of the <thinking> content (max = 1.0)
-      3) Presence of an augmented query (text after "###") (max = 1.0)
-      4) Retrieval improvement: 3.0 * normalized difference in BM25 scores.
-    
-    Expects kwargs to contain "original_query" (list of strings).
+      3) Presence of an augmented query (text enclosed in <augmented_query> tags) (max = 1.0)
+      4) Retrieval improvement as computed by our evaluator's compute_reward.
+
+    This function accepts completions as a positional argument and all other inputs (like prompts,
+    query_ids, etc.) via kwargs.
+
+    Expects kwargs to contain:
+      - "prompts": a list of original query strings.
+      - "query_ids": (optional) a list of query IDs corresponding to each prompt.
     """
-    token_threshold = 50
-    # This normalization factor adjusts the BM25 difference to a smaller scale.
-    bm25_norm_factor = 100.0  
+    # Extract original prompts from kwargs (default to empty list if not provided)
+    prompts = kwargs.get("prompts", [])
+    token_threshold = 256
     rewards = []
-    original_queries = kwargs.get("original_query", prompts)
-    print(prompts, completions, kwargs)
-    
-    for orig_query, completion in zip(original_queries, completions):
-        # 1. Check for <thinking> block.
+    #for p, c in zip(prompts, completions):
+    #    print(f"{p}\n\n------->\n\n{c}\nEND")
+
+    for i, completion in enumerate(completions):
+        # Get the corresponding original query, if available
+        orig_query = prompts[i] if i < len(prompts) else ""
+
+        # 1. Evaluate the presence of a <thinking> block.
         if "<thinking>" in completion and "</thinking>" in completion:
             reward_thinking = 1.0
             start = completion.find("<thinking>")
             end = completion.find("</thinking>")
             thinking_text = completion[start + len("<thinking>"):end].strip()
             token_count = len(thinking_text.split())
-            # 2. Reward for conciseness.
+            # 2. Reward conciseness: full reward if token_count <= threshold, otherwise scale down.
             reward_thinking_length = 1.0 if token_count <= token_threshold else (token_threshold / token_count)
         else:
             reward_thinking = 0.0
             reward_thinking_length = 0.0
-       
-        # 3. Check for augmented query.
-        if "###" in completion:
-            augmented_part = completion.split("###")[-1].strip()
+
+        # 3. Check for an augmented query using <augmented_query> tags.
+        if "<augmented_query>" in completion and "</augmented_query>" in completion:
+            start_idx = completion.find("<augmented_query>")
+            end_idx = completion.find("</augmented_query>")
+            augmented_part = completion[start_idx + len("<augmented_query>"):end_idx].strip()
             reward_augmented = 1.0 if augmented_part else 0.0
             augmented_query = augmented_part
         else:
             reward_augmented = 0.0
             augmented_query = orig_query
-        
-        # 4. Compute retrieval reward using normalized BM25S scores.
-        score_orig = compute_retrieval_score_bm25s(orig_query, custom_reward_fn.bm25s_retriever, custom_reward_fn.bm25s_tokenizer)
-        score_aug = compute_retrieval_score_bm25s(augmented_query, custom_reward_fn.bm25s_retriever, custom_reward_fn.bm25s_tokenizer)
-        retrieval_reward = 3.0 * ((score_aug - score_orig) / bm25_norm_factor)
-        print(f"Score original: {score_orig:.2f}, score augmented: {score_aug:.2f}, reward: {retrieval_reward:.2f}, {reward_augmented:.2f}, {reward_thinking_length}")
-        
+
+        # 4. Compute retrieval reward using the evaluator’s compute_reward (if available).
+        retrieval_reward = 0.0
+        if custom_reward_fn.evaluator is not None and "query_ids" in kwargs:
+            query_ids = kwargs["query_ids"]
+            qid = query_ids[i] if i < len(query_ids) else None
+            print(augmented_query, qid, query_ids)
+            if qid is not None:
+                retrieval_reward = custom_reward_fn.evaluator.compute_reward(
+                    query_id=qid,
+                    augmented_query=augmented_query,
+                    k_value=1000,
+                    binary_bonus=1.0,
+                    delta_weight=2.0,
+                )
+
         total_reward = reward_thinking + reward_thinking_length + reward_augmented + retrieval_reward
+
+        # Print each component for debugging
+        print(f"Example {i}:")
+        print(f"  reward_thinking         = {reward_thinking}")
+        print(f"  reward_thinking_length  = {reward_thinking_length}")
+        print(f"  reward_augmented        = {reward_augmented}")
+        print(f"  retrieval_reward        = {retrieval_reward}")
+        print(f"  total_reward            = {total_reward}\n")
+
         rewards.append(total_reward)
     return rewards
 
-# Attach BM25S retriever and tokenizer placeholders to the reward function.
-custom_reward_fn.bm25s_retriever = None  # to be set in main()
-custom_reward_fn.bm25s_tokenizer = None  # to be set in main()
+# Attach the evaluator instance externally once it's loaded.
+custom_reward_fn.evaluator = None  # e.g., set this later to your SimpleBM25Evaluator instance.
+
+def print_trainable_parameters_custom(model):
+    total_params = sum(p.numel() for p in model.parameters())
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Trainable parameters: {trainable_params} / {total_params} ({100 * trainable_params/total_params:.2f}%)")
 
 # -------------------------------------------------------------------
 # Main GRPO Training Function
@@ -167,23 +189,18 @@ def main():
     train_dataset = Dataset.from_pandas(df)
 
     # ---------------------------
-    # Load BM25S Retriever and Tokenizer
+    # Initialize BM25 Evaluator (loads BM25 index internally)
     # ---------------------------
-    bm25s_index_dir = config.get("bm25s_index_dir", "bm25s_index")
-    logger.info(f"Loading BM25S index from {bm25s_index_dir}")
-    bm25s_retriever = bm25s.BM25.load(bm25s_index_dir, load_corpus=True)
-    bm25s_tokenizer = Tokenizer(splitter=lambda x: x.split())
-    bm25s_tokenizer.load_vocab(bm25s_index_dir)
-    bm25s_retriever.activate_numba_scorer()
-    custom_reward_fn.bm25s_retriever = bm25s_retriever
-    custom_reward_fn.bm25s_tokenizer = bm25s_tokenizer
+    logger.info("Initializing BM25 evaluator")
+    bm25_evaluator = BM25Reward(dataset_name="msmarco", split="dev")
+    custom_reward_fn.evaluator = bm25_evaluator
 
     # ---------------------------
     # Load Model and Tokenizer
     # ---------------------------
     logger.info(f"Loading tokenizer for {model_args.model_name}")
-    tokenizer = AutoTokenizer.from_pretrained(model_args.model_name, trust_remote_code=model_args.trust_remote_code)
-    tokenizer.padding_side = model_args.padding_side
+    tokenizer = AutoTokenizer.from_pretrained(model_args.model_name)
+    #tokenizer.padding_side = model_args.padding_side
 
     torch_dtype = getattr(torch, model_args.torch_dtype)
     logger.info(f"Loading model with dtype {model_args.torch_dtype}")
@@ -206,31 +223,94 @@ def main():
         logger.info("Loading model in 8-bit quantization mode")
         model_kwargs["load_in_8bit"] = True
 
-    model = AutoModelForCausalLM.from_pretrained(model_args.model_name, **model_kwargs)
-    model.config.eos_token_id = tokenizer.eos_token_id
+    model = AutoModelForCausalLM.from_pretrained(model_args.adapter_dir, **model_kwargs)
+    #model.config.eos_token_id = tokenizer.eos_token_id
 
     # ---------------------------
     # PEFT Setup: Continue Training on Existing Adapter
     # ---------------------------
     if lora_args.use_peft:
-        if hasattr(model, "peft_config"):
-            logger.info("Model already has a PEFT adapter. Continuing training on the existing adapter.")
-            peft_config = None  # Do not re-wrap adapter.
-        else:
-            logger.info("Preparing model for PEFT with LoRA")
-            if lora_args.load_in_4bit or lora_args.load_in_8bit:
-                model = prepare_model_for_kbit_training(model)
-            peft_config = LoraConfig(
-                r=lora_args.lora_r,
-                lora_alpha=lora_args.lora_alpha,
-                lora_dropout=lora_args.lora_dropout,
-                bias="none",
-                task_type="CAUSAL_LM",
-                target_modules=lora_args.lora_target_modules,
-            )
-            logger.info(f"LoRA config: r={lora_args.lora_r}, alpha={lora_args.lora_alpha}, dropout={lora_args.lora_dropout}")
+        pass
+        ## Use the adapter directory (here we assume it's stored in model_args.model_name)
+        #adaptor_dir = model_args.adapter_dir
+        #logger.info(f"Loading trainable PEFT adapter from {adaptor_dir}")
+        #
+        ## Load the adapter configuration (optional; can be used for diagnostics)
+        #peft_config = LoraConfig.from_pretrained(adaptor_dir)
+        #
+        ## Wrap the base model with the adapter, ensuring it is trainable.
+        ## This will load the adapter weights and mark them for training.
+        ##model = PeftModel.from_pretrained(
+        ##    model, 
+        ##    adaptor_dir,
+        ##    is_trainable=True
+        ##)
+        #
+        ## Optionally, print out the trainable parameters to verify.
+        #def print_trainable_parameters_custom(model):
+        #    total_params = sum(p.numel() for p in model.parameters())
+        #    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+        #    print(f"Trainable parameters: {trainable_params} / {total_params} ({100 * trainable_params/total_params:.2f}%)")
+        #
+        #print_trainable_parameters_custom(model)
     else:
         peft_config = None
+
+    # Prepare model for PEFT if requested
+    peft_config = None
+    if lora_args.use_peft:
+        logger.info("Preparing model for PEFT with LoRA")
+        if lora_args.load_in_4bit or lora_args.load_in_8bit:
+            logger.info("Preparing quantized model for k-bit training")
+            model = prepare_model_for_kbit_training(model)
+        peft_config = LoraConfig(
+            r=lora_args.lora_r,
+            lora_alpha=lora_args.lora_alpha,
+            lora_dropout=lora_args.lora_dropout,
+            bias="none",
+            task_type="CAUSAL_LM",
+            target_modules=lora_args.lora_target_modules,
+            # modules_to_save=lora_args.lora_modules_to_save
+        )
+        logger.info(
+            f"LoRA config: r={lora_args.lora_r}, alpha={lora_args.lora_alpha}, dropout={lora_args.lora_dropout}"
+        )
+
+        model = get_peft_model(model, peft_config)
+
+    model.enable_input_require_grads()
+
+    ## Define a sample prompt that mimics your training format (but uses different content)
+    #query = "Ancient Roman architecture"
+    #initial_results = (
+    #    "### Text snippet from document at k=1\n"
+    #    ": The Roman Forum remains as a witness to the political and social life of ancient Rome.\n\n"
+    #    "### Text snippet from document at k=3\n"
+    #    ": The Colosseum is celebrated for its grand design and remarkable engineering techniques.\n\n"
+    #    "### Text snippet from document at k=5\n"
+    #    ": Innovations such as arches and concrete construction revolutionized Roman building practices."
+    #)
+    #
+    #instruction = (
+    #    f"Original Search Query: {query}\n\n"
+    #    f"Initial Results Snippets:\n{initial_results}\n\n"
+    #    "Please analyze these initial results and brainstorm an augmented query to improve retrieval."
+    #)
+    #prompt = (
+    #   f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n"
+    #   f"{tokenizer.bos_token}<start_of_turn>user\n"
+    #   f"{instruction}<end_of_turn>\n"
+    #   f"<start_of_turn>model\n"
+    #)
+
+
+    #inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048)
+    #inputs = {k: v.to(model.device) for k, v in inputs.items()}
+    #output_ids = model.generate(**inputs, max_new_tokens=1024, do_sample=True, temperature=0.7, top_p=0.9)
+    #generated_text = tokenizer.decode(output_ids[0], skip_special_tokens=False)
+    #print(generated_text)
+    #exit()
+
 
     # ---------------------------
     # Initialize GRPO Trainer
@@ -264,5 +344,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
