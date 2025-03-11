@@ -16,7 +16,7 @@ import tqdm
 from transformers import AutoTokenizer
 
 # Import the evaluator class (which handles BM25 index loading/creation)
-from bm25_reward import BM25Reward
+from grpo.bm25_reward import BM25Reward
 from wordllama import WordLlama
 
 # Setup logging
@@ -59,7 +59,9 @@ def get_result_snippets(evaluator, query, wl, k_select=[1, 2, 10]):
                 snippet = f"... {best_segment} ..."
             else:
                 snippet = best_segment
-            markdown_sections.append(f"### Text snippet from document at k={rank}\n{snippet}\n")
+            markdown_sections.append(
+                f"### Text snippet from document at k={rank}\n{snippet}\n"
+            )
     return "\n".join(markdown_sections)
 
 
@@ -98,11 +100,7 @@ def main():
         # Optionally, you can append the eos_token if desired:
         # prompt += eos_token
 
-        prompt_data.append({
-            "query_id": qid,
-            "original_query": query,
-            "prompt": prompt
-        })
+        prompt_data.append({"query_id": qid, "original_query": query, "prompt": prompt})
 
     # Save the prompts to a Parquet file.
     df = pd.DataFrame(prompt_data)
@@ -113,4 +111,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
