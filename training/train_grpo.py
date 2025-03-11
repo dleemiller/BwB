@@ -34,9 +34,10 @@ from grpo.reward_functions import (
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+logging.getLogger('beir.retrieval.evaluation').setLevel(logging.WARNING)
 
 
-def load_configuration(config_path: str = "config_grpo.yaml"):
+def load_configuration(config_path: str = "grpo/config.yaml"):
     """Load configuration from a YAML file and initialize the dataclasses."""
     logger.info(f"Loading configuration from {config_path}")
     with open(config_path, "r") as f:
@@ -114,15 +115,18 @@ def prepare_model_for_peft(model, lora_args: LoraArguments):
 
 
 def define_reward_functions(tokenizer, bm25_evaluator):
-    """Define the reward functions to be used during GRPO training."""
-    return [
+    """Define the reward functions to be used during GRPO training, ensuring each function has a __name__ attribute."""
+    functions = [
         reward_fn_thinking_presence,
-        partial(
-            reward_fn_thinking_conciseness, tokenizer=tokenizer, token_threshold=256
-        ),
+        partial(reward_fn_thinking_conciseness, tokenizer=tokenizer, token_threshold=256),
         reward_fn_augmented_query,
         partial(reward_fn_retrieval, evaluator=bm25_evaluator),
     ]
+    # Monkey-patch partials to have a __name__ attribute
+    for func in functions:
+        if isinstance(func, partial):
+            func.__name__ = func.func.__name__
+    return functions
 
 
 def initialize_trainer(

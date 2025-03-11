@@ -1,6 +1,6 @@
 model_args:
   model_name: "google/gemma-2-2b"
-  adapter_dir: "./merged_sft_model"
+  adapter_dir: "../merged_sft_model"
   attn_implementation: "eager"  # Change to "flash_attention_2" if supported by your hardware/model.
     #padding_side: "right"
   torch_dtype: "bfloat16"

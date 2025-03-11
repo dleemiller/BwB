@@ -204,54 +204,40 @@ class BM25Reward:
     ) -> float:
         """
         Computes a reward signal based on the improvement of an augmented query over the original query.
-        This reward consists of a binary bonus if there is an improvement and a continuous component,
-        where the delta is scaled by the original NDCG and clipped at 1 (i.e., at most 1 full delta weight is added).
+        The reward is the raw delta (augmented NDCG minus original NDCG) plus:
+          - A bonus if delta > 0.
+          - A continuous component: delta_weight times a normalized delta (delta divided by original NDCG,
+            capped between 0 and 1).
+        This design allows negative deltas to yield negative rewards (penalizing poorer augmentations).
 
         Args:
             query_id: The ID of the original query.
             augmented_query: The new augmented query text.
             k_value: The cutoff value for NDCG evaluation (e.g., 10 for NDCG@10).
             binary_bonus: Fixed bonus reward if the augmented query improves over the original.
-            delta_weight: Maximum weight added from the normalized improvement.
+            delta_weight: Weight for the normalized delta component.
 
         Returns:
             The computed reward as a float.
         """
-        # First, evaluate both queries to get NDCG values.
+        # Evaluate both the original and augmented queries.
         eval_results = self.evaluate_augmented_query(query_id, augmented_query, k_value)
         original_ndcg = eval_results["original_NDCG"]
         augmented_ndcg = eval_results["augmented_NDCG"]
         delta = augmented_ndcg - original_ndcg
 
-        # Compute the binary bonus: add bonus only if there's an improvement.
+        # Bonus is added only when there's improvement.
         bonus = binary_bonus if delta > 0 else 0.0
 
-        # Normalize the delta by the original NDCG, clipping at 1.
-        # Avoid division by zero by checking if original_ndcg is positive.
+        # Compute normalized delta.
         if original_ndcg > 0:
             norm_delta = delta / original_ndcg
         else:
-            # If original_ndcg is zero, and there's any improvement, use full bonus.
             norm_delta = 1.0 if delta > 0 else 0.0
 
-        # Clip the normalized delta between 0 and 1.
+        # Threshold normalized delta to lie between 0 and 1.
         norm_delta = max(0.0, min(norm_delta, 1.0))
 
-        reward = bonus + delta_weight * norm_delta
+        # Final reward: raw delta plus bonus plus weighted normalized delta.
+        reward = delta + bonus + delta_weight * norm_delta
         return reward
-
-
-# Example usage:
-if __name__ == "__main__":
-    evaluator = SimpleBM25Evaluator(dataset_name="scidocs")
-    query_id = "dc4ed2b22123596bb329221a18c8b92176fc7263"
-    augmented_query = "Your augmented query text here"
-
-    results = evaluator.evaluate_augmented_query(query_id, augmented_query, k_value=10)
-    print("Evaluation Results:")
-    print("Original NDCG@10:", results["original_NDCG"])
-    print("Augmented NDCG@10:", results["augmented_NDCG"])
-    print("Delta:", results["delta"])
-
-    reward = evaluator.compute_reward(query_id, augmented_query, k_value=10)
-    print("Reward:", reward)
