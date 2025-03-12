@@ -21,12 +21,19 @@ def reward_fn_thinking_presence(completions: List[str], **kwargs) -> List[float]
 def reward_fn_thinking_conciseness(
     completions: List[str],
     tokenizer: PreTrainedTokenizerBase,
-    token_threshold: int = 256,
+    token_threshold: int = 320,
+    min_token_threshold: int = 64,
     **kwargs
 ) -> List[float]:
     """
-    Reward: For each completion, if a <thinking> block exists, reward is 1.0 if the token count
-    (as computed by the tokenizer) is below token_threshold. Otherwise, scale down proportionally.
+    Computes a reward for the <thinking> block based on its length.
+
+    - If the token count is below `min_token_threshold` (e.g., 64 tokens), the reward scales linearly:
+          reward = token_count / min_token_threshold.
+    - If the token count is between `min_token_threshold` and `token_threshold`, a full reward (1.0) is given.
+    - If the token count exceeds `token_threshold`, the reward is scaled down proportionally:
+          reward = token_threshold / token_count.
+
     Returns 0.0 if no <thinking> block is found.
     """
     pattern = re.compile(r"<thinking>(.*?)</thinking>", re.DOTALL)
@@ -36,9 +43,12 @@ def reward_fn_thinking_conciseness(
         if match:
             thinking_text = match.group(1).strip()
             token_count = len(tokenizer.tokenize(thinking_text))
-            reward = (
-                1.0 if token_count <= token_threshold else token_threshold / token_count
-            )
+            if token_count < min_token_threshold:
+                reward = token_count / min_token_threshold
+            elif token_count <= token_threshold:
+                reward = 1.0
+            else:
+                reward = token_threshold / token_count
         else:
             reward = 0.0
         rewards.append(reward)
