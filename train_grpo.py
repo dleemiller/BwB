@@ -101,9 +101,10 @@ def custom_reward_fn(completions: list[str], **kwargs) -> list[float]:
 
     for i, completion in enumerate(completions):
         # Get the corresponding original query, if available
-        orig_query = prompts[i] if i < len(prompts) else ""
+        orig_query = kwargs["original_query"][i]
 
         # 1. Evaluate the presence of a <thinking> block.
+        print("<thinking>" in completion, "</thinking>" in completion, "<augmented_query>" in completion, "</augmented_query>" in completion)
         if "<thinking>" in completion and "</thinking>" in completion:
             reward_thinking = 1.0
             start = completion.find("<thinking>")
@@ -129,15 +130,15 @@ def custom_reward_fn(completions: list[str], **kwargs) -> list[float]:
 
         # 4. Compute retrieval reward using the evaluator’s compute_reward (if available).
         retrieval_reward = 0.0
-        if custom_reward_fn.evaluator is not None and "query_ids" in kwargs:
-            query_ids = kwargs["query_ids"]
-            qid = query_ids[i] if i < len(query_ids) else None
-            print(augmented_query, qid, query_ids)
+        if custom_reward_fn.evaluator is not None and "query_id" in kwargs:
+            query_ids = kwargs["query_id"]
+            qid = query_ids[i]
+            print(f"{kwargs['original_query'][i]} -> {augmented_query}")
             if qid is not None:
                 retrieval_reward = custom_reward_fn.evaluator.compute_reward(
                     query_id=qid,
                     augmented_query=augmented_query,
-                    k_value=1000,
+                    k_value=10000,
                     binary_bonus=1.0,
                     delta_weight=2.0,
                 )
