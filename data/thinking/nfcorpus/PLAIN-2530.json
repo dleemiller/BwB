@@ -1,0 +1,67 @@
+{
+  "reasoning": "The query \"Infectobesity: Adenovirus 36 and Childhood Obesity\" suggests a user interested in understanding the potential link between viral infection (Ad-36) and childhood obesity. The search aims to uncover scientific research exploring this correlation, its mechanisms, and potential implications.  However, existing results primarily focus on Ad-36, leaving room for broader exploration of other viruses and obesity factors.",
+  "query_goals": [
+    "Understand the relationship between adenovirus 36 and childhood obesity",
+    "Explore potential mechanisms linking viral infection to weight gain",
+    "Identify research on other viruses potentially contributing to obesity",
+    "Investigate limitations of current research on Ad-36 and obesity"
+  ],
+  "node_classes": [
+    "Viruses",
+    "Obesity",
+    "Childhood",
+    "Infection",
+    "Weight Gain",
+    "Research",
+    "Mechanisms",
+    "Correlation"
+  ],
+  "query_nodes": [
+    "Adenovirus 36",
+    "Infectobesity",
+    "Childhood Obesity"
+  ],
+  "nearest_neighbors": [
+    "Rotavirus",
+    "Norovirus",
+    "Gastrointestinal Infections",
+    "Metabolic Disorders",
+    "Hormonal Influences on Weight",
+    "Gene-Environment Interactions",
+    "Nutritional Factors in Obesity"
+  ],
+  "augmented_query": "\"Adenovirus 36 AND Childhood Obesity AND  Viruses AND obesity mechanisms AND gastrointestinal infections\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 0.4206,
+    "NDCG@1000": 0.63087,
+    "NDCG@10000": 0.74497
+  },
+  "map": {
+    "MAP@10": 0.13889,
+    "MAP@100": 0.24655,
+    "MAP@1000": 0.28469,
+    "MAP@10000": 0.29295
+  },
+  "recall": {
+    "Recall@10": 0.13889,
+    "Recall@100": 0.29167,
+    "Recall@1000": 0.70833,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 1.0,
+    "P@100": 0.21,
+    "P@1000": 0.051,
+    "P@10000": 0.0072
+  },
+  "delta": 0.016369999999999996,
+  "instruction": "graph",
+  "query": "Infectobesity: Adenovirus 36 and Childhood Obesity",
+  "query_id": "PLAIN-2530",
+  "dataset": "nfcorpus",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Infectobesity: Adenovirus 36 and Childhood Obesity,\" this makes me think of the complex interplay between viral infections and obesity, particularly in children. Though the user might actually be trying to understand the specific role of Adenovirus 36, I suspect they're also open to exploring other viruses and factors that could contribute to obesity. The term \"Infectobesity\" itself suggests a fascinating intersection of virology and endocrinology.\n\nTo approach this query expansion systematically, I'll use the Conceptual Graph Traversal technique. This involves constructing a conceptual graph with core nodes, first and second-order connections, and domain contexts, and then traversing it to find high-value expansion terms.\n\nFirst, let's analyze the query. The core concepts are \"Adenovirus 36,\" \"Childhood Obesity,\" and the implied relationship between viral infection and obesity. The search intent appears to be informational, aiming to understand the mechanisms and correlations involved. There's an implicit assumption that the relationship between Adenovirus 36 and childhood obesity is significant and worthy of exploration.\n\nNext, I'll construct the conceptual graph. Core nodes will include \"Adenovirus 36,\" \"Childhood Obesity,\" \"Infection,\" \"Obesity,\" and \"Virus.\" First-order connections will involve properties like \"mechanisms of infection,\" \"symptoms of obesity,\" and \"viral transmission.\" Second-order connections might include related concepts like \"diet,\" \"exercise,\" \"genetic predisposition,\" and \"other viruses\" such as rotavirus or norovirus, which could also play a role in obesity.\n\nFor expansion path selection, I identify several promising directions:\n- Synonymous terms for \"Adenovirus 36\" and \"Childhood Obesity\" to capture variant expressions.\n- Hierarchical terms to explore broader concepts like \"viruses\" and \"obesity\" in general, as well as narrower concepts specific to mechanisms or types of obesity.\n- Compositional terms to understand components of the virus, attributes of obesity, and parts of the human body affected by the condition.\n- Contextual terms to consider settings like \"school environments,\" \"family dynamics,\" and \"socioeconomic factors\" that could influence the relationship between viral infections and obesity.\n- Domain-specific terminology from fields like virology, endocrinology, and pediatrics to ensure the query captures specialized knowledge relevant to the topic.\n\nUpon traversing the graph and extracting terms, I consider synonyms like \"Human adenovirus 36\" and \"pediatric obesity.\" Hierarchical terms could include \"viral infections\" more broadly and \"childhood onset obesity\" more specifically. Compositional terms might involve \"viral load,\" \"body mass index (BMI),\" and \"leptin levels.\" Contextual terms could encompass \"epidemiology of Obesity,\" \"vaccine development for Adenovirus 36,\" and \"public health initiatives for childhood obesity prevention.\" Domain-specific terms might include \"adipogenesis,\" \"insulin resistance,\" and \"virotherapy.\"\n\nFiltering these terms for relevance, distinctiveness, specificity, and searchability, I prioritize terms that are directly related to the original query, offer new pathways for exploration, and are likely to appear in relevant scientific literature.\n\nThe final expanded terms should maintain the original search intent while providing valuable alternative pathways for document retrieval. These terms will include a mix of the aforementioned categories, ensuring a comprehensive and nuanced exploration of the relationship between Adenovirus 36, other viruses, and childhood obesity.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the following terms would be most effective for enhancing the query: \"Human adenovirus 36,\" \"pediatric obesity,\" \"viral infections,\" \"childhood onset obesity,\" \"adipogenesis,\" \"insulin resistance,\" \"virotherapy,\" \"epidemiology of Obesity,\" \"vaccine development for Adenovirus 36,\" and \"public health initiatives for childhood obesity prevention.\" These terms capture both the explicit and implicit aspects of what the user is seeking, offering a robust foundation for an augmented query.\n\nThe augmented query, therefore, becomes: \"Adenovirus 36 AND Childhood Obesity AND Viral Infections AND Obesity Mechanisms AND Human Adenovirus 36 AND Pediatric Obesity AND Adipogenesis AND Insulin Resistance AND Virotherapy.\"",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

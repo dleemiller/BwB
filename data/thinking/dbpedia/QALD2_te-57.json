@@ -1,0 +1,68 @@
+{
+  "reasoning": "The query seeks a specific list of individuals.  To map this conceptually, we'll focus on the Apollo 14 mission as the central point. Expanding outwards, we'll explore related concepts like space exploration, NASA missions, and the historical context of the Apollo program.",
+  "central_coordinates": [
+    "Apollo 14",
+    "Astronauts"
+  ],
+  "boundary_areas": [
+    "Space Exploration",
+    "NASA Missions",
+    "Cold War History",
+    "Aeronautical Engineering"
+  ],
+  "key_landmarks": [
+    "Alan Shepard",
+    "Edgar Mitchell",
+    "John Young",
+    "Moon Landing",
+    "Fra Mauro Highlands"
+  ],
+  "detail_features": [
+    "Lunar Rover",
+    "Scientific Experiments",
+    "Flags and Planting of Instruments",
+    "Mission Control",
+    "Recovery Operations"
+  ],
+  "navigation_terms": [
+    "Apollo Program",
+    "Cosmonauts",
+    "Spaceflight",
+    "Trajectory Calculations",
+    "Orbital Mechanics"
+  ],
+  "augmented_query": "\"List of Apollo 14 astronauts, Alan Shepard, Edgar Mitchell, John Young, NASA mission details, Apollo program history\"",
+  "ndcg": {
+    "NDCG@10": 0.59761,
+    "NDCG@100": 0.73686,
+    "NDCG@1000": 0.73686,
+    "NDCG@10000": 0.75964
+  },
+  "map": {
+    "MAP@10": 0.39931,
+    "MAP@100": 0.45127,
+    "MAP@1000": 0.45127,
+    "MAP@10000": 0.45173
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 0.875,
+    "Recall@1000": 0.875,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.4,
+    "P@100": 0.07,
+    "P@1000": 0.007,
+    "P@10000": 0.0008
+  },
+  "delta": 0.08484999999999998,
+  "instruction": "cartography",
+  "query": "Give me the Apollo 14 astronauts.",
+  "query_id": "QALD2_te-57",
+  "dataset": "dbpedia",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Give me the Apollo 14 astronauts,\" this makes me think of the Apollo program as a whole, though the user might actually be trying to understand the specific roles or achievements of the astronauts on this mission. Hmm, not sure yet, but it seems like there's a wealth of information that could be relevant, from the historical context of the Apollo 14 mission to the scientific experiments conducted during the flight.\n\nI'm seeing several possibilities here... Let me approach this using the Conceptual Territory Mapping technique, which involves creating a detailed map of the concepts surrounding the query. This should help because it allows us to systematically explore related ideas, key concepts, and the historical context, which can lead to a more comprehensive understanding of what the user is looking for.\n\nStarting with the central coordinates, Apollo 14 and astronauts are the clear focal points. The scale for exploration seems to be fairly granular, given the specificity of the query. However, we also need to consider the broader context, such as the Apollo program, NASA missions, and even the Cold War era in which these missions took place.\n\nAs I explore the boundaries of this query, I notice that it touches on space exploration, aeronautical engineering, and even Cold War history. These are all significant neighboring domains that could provide valuable insights. For instance, understanding the geopolitical context of the Apollo missions can offer a deeper appreciation of their significance.\n\nPlotting major landmarks, figures like Alan Shepard, Edgar Mitchell, and John Young are crucial. They were the astronauts on the Apollo 14 mission. Other landmarks could include the Moon landing sites, specifically the Fra Mauro Highlands for Apollo 14, and the technological achievements like the Lunar Rover.\n\nFilling in the detail features, we have the scientific experiments, the process of planting flags and instruments, the role of Mission Control, and the recovery operations. Each of these aspects adds depth to our understanding of the mission and its astronauts.\n\nNow, creating a cartographic legend, or a lexicon of important terms, we would include not just the names of the astronauts and the mission details but also terms related to spaceflight, orbital mechanics, and the historical context of the Apollo program. This legend helps in navigating the vast amount of information related to Apollo 14 and its place within the larger narrative of space exploration.\n\nApplying the Conceptual Territory Mapping technique leads me to realize the importance of including both the specific details of the Apollo 14 mission and the broader context of space exploration and the Apollo program. My instinct says we should also consider the educational and inspirational aspects of these missions, as they have influenced generations.\n\nThrough this process of mapping the conceptual territory and exploring related threads, I believe the most effective terms for understanding the query \"Give me the Apollo 14 astronauts\" would include the names of the astronauts, details about the mission, and key terms related to the Apollo program and space exploration. These terms capture both the explicit request for information about the astronauts and the implicit desire to understand their mission and its significance within the history of space exploration.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

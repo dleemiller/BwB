@@ -1,0 +1,71 @@
+{
+  "reasoning": "The query explores the negative consequences of excessive choice, particularly in the context of advertising. It delves into how choice overload can lead to decreased happiness, regret, and manipulation by marketers.  To enhance search results, we need to identify terms that capture these concepts more precisely and explore related areas like consumer behavior, decision-making biases, and societal impacts of consumerism.",
+  "query_goals": [
+    "understand the negative effects of choice overload",
+    "explore the role of advertising in exacerbating choice overload",
+    "identify psychological mechanisms behind choice-related dissatisfaction",
+    "analyze the societal impact of excessive consumer choice"
+  ],
+  "node_classes": [
+    "Choice",
+    "Advertising",
+    "Consumer Behavior",
+    "Psychology",
+    "Happiness",
+    "Decision Making",
+    "Regret",
+    "Manipulation",
+    "Consumerism",
+    "Social Impact"
+  ],
+  "query_nodes": [
+    "People",
+    "Choice",
+    "Advertising",
+    "Happiness",
+    "Regret",
+    "Disappointment"
+  ],
+  "nearest_neighbors": [
+    "Paradox of Choice",
+    "Overconsumption",
+    "Decision Fatigue",
+    "Marketing Tactics",
+    "Cognitive Overload",
+    "Consumer Psychology"
+  ],
+  "augmented_query": "\"negative effects of choice overload advertising consumer behavior psychology happiness regret decision making manipulation consumerism social impact\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "People are given too much choice, which makes them less happy.  Advertising leads to many people being overwhelmed by the endless need to decide between competing demands on their attention \u2013 this is known as the tyranny of choice or choice overload. Recent research suggests that people are on average less happy than they were 30 years ago - despite being better off and having much more choice of things to spend their money on1. The claims of adverts crowd in on people, raising expectations about a product and leading to inevitable disappointment after it is bought. A recent advertisement for make-up was banned in Britain due to the company presenting its product as being more effective than it actually was2. Shoppers feel that a poor purchase is their fault for not choosing more wisely, and regret not choosing something else instead. Some people are so overwhelmed that they cannot choose at all.  1Schwartz, The Tyranny of Choice, 2004.  2 Kekeh , Too Beautiful? British MP Draws Line in Sand for Cosmetic Ads , 2011.",
+  "query_id": "test-culture-mthbah-pro02a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"People are given too much choice, which makes them less happy.  Advertising leads to many people being overwhelmed by the endless need to decide between competing demands on their attention \u2013 this is known as the tyranny of choice or choice overload,\" this makes me think of the psychological impacts of consumerism and how advertising can manipulate individuals into making purchasing decisions that might not necessarily align with their true desires or needs. Though the user might actually be trying to understand the intricacies of decision-making under the influence of excessive choice, I'm also considering the societal implications of such phenomena.\n\nI'm seeing several possibilities here, but to approach this systematically, I'll apply the Conceptual Graph Traversal technique for query expansion. This involves first analyzing the query to identify core concepts and entities, determining the search intent, and listing any implicit assumptions or constraints. The search intent seems informational, aiming to understand the relationship between choice overload, advertising, and happiness. Implicit assumptions include the impact of advertising on consumer behavior and the psychological effects of excessive choice.\n\nTo construct the conceptual graph, I'll start with core nodes like \"Choice,\" \"Advertising,\" \"Happiness,\" and \"Consumer Behavior.\" First-order connections will include properties like \"overload,\" \"manipulation,\" and \"decision-making,\" while second-order connections might involve related concepts such as \"regret,\" \"disappointment,\" and \"cognitive overload.\" Domain contexts will include psychology, marketing, and consumer studies.\n\nFor expansion path selection, I'm identifying promising directions such as synonymous terms (e.g., \"choice overload\" vs. \"decision fatigue\"), hierarchical terms (broader concepts like \"consumerism\" or narrower ones like \"advertising tactics\"), compositional terms (attributes of advertising like \"misleading claims\"), contextual terms (settings where choice overload occurs, such as \"retail environments\"), and domain-specific terminology (terms like \"paradox of choice\" from psychology).\n\nAs I traverse the conceptual graph, I notice that terms like \"decision fatigue,\" \"cognitive overload,\" and \"consumer psychology\" are closely related to the original query. These terms not only expand the query but also provide a more nuanced understanding of the psychological and societal impacts of excessive choice. The concept of \"regret\" and \"disappointment\" also emerges as crucial, highlighting the emotional consequences of choice overload.\n\nHowever, I need to ensure that the selected terms are not only relevant but also distinctive, specific, and searchable. Applying these filters, I'm focusing on terms that offer a unique perspective or add depth to the query without duplicating existing concepts. For instance, \"overconsumption\" and \"marketing tactics\" offer insights into the broader context of consumer behavior and how advertising strategies contribute to choice overload.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the expanded terms should capture both the explicit and implicit aspects of what the user is seeking. The original query already hints at the negative effects of choice overload and the role of advertising, but the expanded terms will provide a richer, more detailed exploration of these concepts and their interrelations.\n\nThe expanded terms that emerge from this process include \"decision fatigue,\" \"cognitive overload,\" \"consumer psychology,\" \"regret,\" \"disappointment,\" \"overconsumption,\" \"marketing tactics,\" \"paradox of choice,\" \"tyranny of choice,\" and \"advertising manipulation.\" These terms maintain the original search intent while offering alternative pathways for retrieval that encompass psychological, social, and consumer behavior aspects.\n\nThe final step involves synthesizing these insights into an augmented query. By combining the original query with the weighted selection of the best expansion terms, we can create a more comprehensive search query that better captures the complexities of the user's information need.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

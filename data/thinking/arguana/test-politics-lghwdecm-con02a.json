@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query expresses concern about the potential for populist and extremist candidates to exploit directly elected mayoral systems.  \n\nTo effectively address this, the expansion should focus on:\n\n* **Identifying key terms related to populism, extremism, and local governance.**\n* **Exploring the risks associated with these candidate types.**\n* **Considering the impact on marginalized communities and democratic processes.** \n\nWe'll aim to uncover additional factors that influence voter behavior in mayoral elections and potential mitigation strategies.",
+  "query_goals": [
+    "identify populist and extremist candidates",
+    "analyze their appeal and tactics",
+    "assess risks to local governance and democracy",
+    "explore impact on marginalized communities",
+    "propose safeguards against populist/extremist mayors"
+  ],
+  "node_classes": [
+    "political ideology",
+    "electoral systems",
+    "local government",
+    "populism",
+    "extremism",
+    "voter behavior",
+    "social impact",
+    "democracy",
+    "marginalized groups"
+  ],
+  "query_nodes": [
+    "directly elected mayors",
+    "populists",
+    "extremist candidates",
+    "local politics",
+    "voters",
+    "immigration",
+    "asylum-seekers",
+    "racial tensions"
+  ],
+  "nearest_neighbors": [
+    "authoritarian tendencies",
+    "single-issue campaigns",
+    "social division",
+    "misinformation",
+    "identity politics",
+    "political polarization",
+    "civic engagement",
+    "accountability mechanisms"
+  ],
+  "augmented_query": "directly elected mayors AND populist candidates AND extremism AND local government AND voter behavior AND social impact",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "Directly elected mayors provide opportunities for populists.  The position of elected mayor is likely to attract populist and maverick candidates, who will seek to capitalise on the unpopularity of party politics with \u201csingle issue sloganising, glib promises and headline grabbing\u201d (Ken Walker, Labour leader of Middlesbrough council). [1] A good example is Paul Massey, who has had 25 convictions in the past and yet is running to be Mayor of Salford and could even have a chance of winning. [2] In office such candidates are likely to alienate elected councillors and other crucial local partners, to disappoint voters as their promises run up against the actual limitations of their power, and to neglect many aspects of local government in favour of their own pet issue. This danger is even greater if a far-right candidate were to exploit local concerns about immigration and asylum-seekers to inflame racial tensions. Again Lutfur Rahman of Tower Hamlets is a good example of how this could happen, he has links to a Muslim extremist group, and only needed a mere 23,000 votes, 13% of the electorate because there was such low turnout. [3]  [1] Hetherington, Peter, \u2018Vote for US-style mayors exposes deep Labour rifts\u2019, The Guardian, 20 October 2001.  [2] Gilligan, Andrew, ;The town hall dictator taking over near you\u2019, The Telegraph, 22 April 2012.  [3] ibid",
+  "query_id": "test-politics-lghwdecm-con02a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"Directly elected mayors provide opportunities for populists,\" this makes me think of how the structure of local governance can influence the rise of populist candidates. Though the user might actually be trying to understand the risks associated with these candidates, I'm not sure yet how deep they want to dive into the specifics of electoral systems or the potential impact on marginalized communities.\n\nAs I delve deeper, I start seeing several possibilities here. Let me approach this using the Conceptual Graph Traversal technique, which involves constructing a graph of concepts related to the query and then traversing it to find high-value expansion terms. This should help because it allows us to systematically explore the semantic space around directly elected mayors, populism, and local governance, uncovering relevant terms that might not be immediately apparent.\n\nStarting with the core concepts, I identify \"directly elected mayors,\" \"populism,\" \"local governance,\" and \"extremism\" as central to the query. The search intent seems informational, aiming to understand the relationship between these elected positions and the potential for populist or extremist candidates to exploit them. There's an implicit assumption that the current electoral system might have flaws that need addressing, particularly in how it handles or prevents the rise of such candidates.\n\nNow, constructing the conceptual graph, I add first-order connections like \"voter behavior,\" \"electoral systems,\" and \"democratic processes.\" Second-order connections bring in related concepts such as \"social division,\" \"misinformation,\" and \"identity politics,\" which are one step removed but crucial for understanding the broader context. Domain contexts include political science, sociology, and governance studies, where these queries have specific meanings and applications.\n\nFor expansion path selection, I identify several promising directions:\n- Synonymous terms for \"populism\" and \"extremism,\" which could include \"nationalism,\" \"radicalism,\" or \"authoritarianism.\"\n- Hierarchical terms that broaden or narrow down \"local governance,\" such as \"municipal governance\" or \"regional politics.\"\n- Compositional terms related to the components of electoral systems, like \"voting mechanisms\" or \"campaign finance.\"\n- Contextual terms that consider the settings or scenarios in which directly elected mayors operate, including \"urban politics\" or \"rural governance.\"\n- Domain-specific terminology from fields like political science or sociology, which might include terms like \"political polarization\" or \"social cohesion.\"\n\nExtracting and filtering terms, I look for high-value additions that are relevant, distinctive, specific, and searchable. Some terms that emerge include \"democratic backsliding,\" \"illiberal democracy,\" \"local political culture,\" and \"voter disenfranchisement.\" These terms maintain the original search intent while offering alternative pathways for document retrieval, especially in understanding the nuances of how populist or extremist candidates can affect local governance and democracy.\n\nAs I apply the Conceptual Graph Traversal technique, I notice how terms like \"authoritarian tendencies\" and \"single-issue campaigns\" can help uncover documents discussing the tactics and appeal of populist candidates. Similarly, terms related to \"social division\" and \"misinformation\" can shed light on the risks these candidates pose to democratic processes and marginalized communities.\n\nThrough this process, insights emerge from both the structured approach of the technique and my intuitive understanding of the topic. Applying specific aspects of the technique, like exploring synonymous terms for \"populism,\" leads to discoveries such as the relevance of \"radical right-wing movements\" in understanding the phenomenon. At the same time, my instinct suggests that considering the \"local political context\" and \"community engagement\" could provide valuable insights into how to mitigate the risks associated with populist or extremist candidates.\n\nSynthesizing these findings, I believe the expanded query should incorporate terms that capture the essence of the original query while delving deeper into the complexities of populism, extremism, and their impact on local governance. Terms like \"directly elected mayors,\" \"populist candidates,\" \"extremism,\" \"local government,\" \"voter behavior,\" \"social impact,\" and \"democratic processes\" form the foundation. Additional terms such as \"authoritarian tendencies,\" \"single-issue campaigns,\" \"social division,\" \"misinformation,\" and \"community engagement\" enhance the query by providing more specific and nuanced pathways for document retrieval.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I've identified key terms that should be effective for improving document retrieval on this topic. These terms not only reflect the explicit aspects of the query but also capture implicit concerns and related concepts, ensuring a comprehensive approach to understanding the complex relationship between directly elected mayors and the rise of populist or extremist candidates.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,62 @@
+{
+  "reasoning": "The 2017 Atlantic 10 Men's Basketball Tournament was hosted in **Pittsburgh** at **Consol Energy Center** (later renamed PPG Paints Arena). Multiple authoritative sources confirm this, including the conference\u2019s press release[1], ESPN coverage[2], and La Salle University\u2019s event page[3]. The move to Pittsburgh followed scheduling adjustments after the Barclays Center prioritized ACC tournaments[1][2], with Pittsburgh\u2019s arena chosen despite having host venues elsewhere.",
+  "query_goals": [
+    "identify host location for 2017 A-10 tournament",
+    "confirm venue in Pittsburgh",
+    "note name change from Consol Energy Center to PPG Paints Arena"
+  ],
+  "node_classes": [
+    "geographic location",
+    "event venue",
+    "basketball conference",
+    "tournament relocations",
+    "hockey arena conversions"
+  ],
+  "query_nodes": [
+    "Atlantic 10 Men's Basketball Tournament 2017",
+    "Pittsburgh",
+    "Consol Energy Center",
+    "PPG Paints Arena"
+  ],
+  "nearest_neighbors": [
+    "Barclays Center",
+    "ACC relocated tournaments",
+    "Duquesne University",
+    "George Washington University",
+    "Verizon Center Washington D.C."
+  ],
+  "augmented_query": "Where will the 2017 Atlantic 10 Men's Basketball Tournament be hosted in Pittsburgh at PPG Paints Arena",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.7076,
+    "NDCG@1000": 0.7076,
+    "NDCG@10000": 0.7076
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.51124,
+    "MAP@1000": 0.51124,
+    "MAP@10000": 0.51124
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.04466000000000003,
+  "instruction": "graph",
+  "query": "Where will the 2017 Atlantic 10 Men's Basketball Tournament be hosted?",
+  "query_id": "5abd552555429933744ab776",
+  "dataset": "hotpotqa",
+  "generator_model": "openrouter/perplexity/sonar-reasoning",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Where will the 2017 Atlantic 10 Men's Basketball Tournament be hosted?\"... this makes me think of basketball, tournaments, and venues. Though the user might actually be trying to find out more about the specific location or the reasons behind the choice of venue, hmm, not sure yet... The existing reasoning provided already gives us a clear answer: the tournament was hosted in Pittsburgh at Consol Energy Center, now known as PPG Paints Arena. However, our task is to expand this query using the Conceptual Graph Traversal technique to improve document retrieval.\n\nLet me approach this using Conceptual Graph Traversal, which involves constructing a conceptual graph and then traversing it to find high-value expansion terms. This should help because it allows us to systematically explore related concepts and terms that might not be immediately apparent from the original query.\n\nFirst, I'll identify the core concepts and entities in the original query. We have the \"Atlantic 10 Men's Basketball Tournament\" as the main event, \"2017\" as the specific year, and the question of where it will be hosted. The search intent seems informational, aiming to find the location of the tournament.\n\nNext, I'll build a conceptual graph. Core nodes include \"Atlantic 10 Men's Basketball Tournament,\" \"2017,\" \"host location,\" and \"Pittsburgh\" as the city. First-order connections could be the venue \"PPG Paints Arena\" (previously Consol Energy Center), the basketball conference \"Atlantic 10,\" and related events like other basketball tournaments. Second-order connections might include sports teams participating in the Atlantic 10, other venues that have hosted similar tournaments, and the context of collegiate basketball. Domain contexts include sports, specifically collegiate basketball and tournament management.\n\nFor expansion path selection, I identify several promising directions:\n- Synonymous terms: Other ways to refer to the tournament or its location.\n- Hierarchical terms: Broader concepts like collegiate athletics or narrower ones like specific teams participating.\n- Compositional terms: Parts of the tournament experience, such as venues, teams, or scheduling.\n- Contextual terms: Setting like the city of Pittsburgh, the time of year, or the significance of the tournament.\n- Domain-specific terminology: Terms used in basketball, sports management, or event hosting.\n\nNow, I'll extract and filter terms. For synonymous terms, \"college basketball tournament\" or \"A10 championship\" could work. Hierarchically, \"NCAA basketball\" is broader, while \"Duquesne University men's basketball\" is narrower. Compositional terms could include \"PPG Paints Arena events\" or \"Atlantic 10 conference teams.\" Contextually, \"Pittsburgh sports events\" or \"March Madness\" could be relevant. Domain-specific terms might include \"bracketology,\" \"seedings,\" or \"tournament brackets.\"\n\nAfter filtering for relevance, distinctiveness, specificity, and searchability, I select terms that maintain the original search intent while offering alternative pathways. These include \"A10 basketball,\" \"Pittsburgh sports,\" \"NCAA tournament,\" \"collegiate athletics,\" \"March Madness,\" \"PPG Paints Arena events,\" \"Atlantic 10 conference,\" \"basketball championships,\" and \"tournament scheduling.\"\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe these terms would be most effective for enhancing the query. They capture both the explicit and implicit aspects of what the user is seeking, including the location, the nature of the event, and its broader context within collegiate basketball.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

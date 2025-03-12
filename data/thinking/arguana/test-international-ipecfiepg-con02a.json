@@ -1,0 +1,76 @@
+{
+  "reasoning": "The query explores the consequences of Greece defaulting on its debt. It argues against default, highlighting the underlying structural issues in Greece's economy that would persist even if default temporarily boosted exports. The analysis emphasizes the need for austerity measures and reforms within the public sector to address these root causes.",
+  "query_goals": [
+    "understand consequences of Greece defaulting",
+    "identify underlying economic problems in Greece",
+    "evaluate arguments for and against default",
+    "explore alternative solutions beyond default"
+  ],
+  "node_classes": [
+    "economic crisis",
+    "default",
+    "public sector",
+    "corruption",
+    "tax evasion",
+    "exports",
+    "austerity",
+    "reforms",
+    "Eurozone",
+    "IMF",
+    "ECB",
+    "European Commission"
+  ],
+  "query_nodes": [
+    "Greece",
+    "default",
+    "debt",
+    "public sector",
+    "economy",
+    "exports",
+    "crisis",
+    "austerity",
+    "reforms"
+  ],
+  "nearest_neighbors": [
+    "fiscal crisis",
+    "sovereign debt",
+    "bailout",
+    "eurozone crisis",
+    "structural reforms",
+    "political instability"
+  ],
+  "augmented_query": "Greece economic crisis consequences default  public sector corruption tax evasion exports austerity reforms Eurozone IMF ECB European Commission",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36069,
+  "instruction": "graph",
+  "query": "Defaulting would not solve Greece\u2019s problems  The proposition argue that the hardship endured by the default would only be temporary, but an analysis at the particular situation facing Greece indicates the opposite. Greece\u2019s problems arose from a horrifically inefficient public sector embedded within a mentality of corruption and tax evasion. Even if we assume that defaulting would eventually boost Greek exports and help the economy recover, this would not solve the underlying problems that caused the crisis in the first place. By leaving the Eurozone and defaulting, Greece would lose easy access to borrowing, meaning that taxpayers would soon have to face the reality that they would have to pay for the inefficiencies within the public sector and support all the other structures that need reform. [1] Greece must, therefore, address these underlying issues or face the exact same problems in the future. Given that solving these problems necessarily involve austerity measures and job cuts, it makes most sense for Greece to undergo these changes now (as it is with the current austerity measures), under the framework of IMF, ECB and European Commission funding and supervision.  [1] Barrell, Ray: \u201cEurozone crisis: what if\u2026 Greece leaves the single currency\u201d, 14 May 2012, The Guardian,",
+  "query_id": "test-international-ipecfiepg-con02a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Defaulting would not solve Greece\u2019s problems,\" this makes me think of the potential consequences of Greece defaulting on its debt, though the user might actually be trying to understand the underlying issues with Greece's economy and whether defaulting is a viable solution. Hmm, not sure yet, but it seems like the query is touching on several complex economic and political factors.\n\nI'm seeing several possibilities here... Let me approach this using the Conceptual Graph Traversal technique for query expansion, which involves analyzing the query, constructing a conceptual graph, and traversing it to find relevant expansion terms. This should help because it will allow me to systematically identify and explore the key concepts and relationships within the query, potentially uncovering new terms and pathways that can enhance document retrieval.\n\nStarting with query analysis, the core concepts seem to be Greece's economic crisis, defaulting, public sector issues, corruption, tax evasion, and the role of the Eurozone, IMF, ECB, and European Commission. The search intent appears to be informational, aiming to understand the consequences of default and the underlying problems in Greece's economy. There are implicit assumptions about the effectiveness of austerity measures and reforms in addressing these issues.\n\nNow, constructing the conceptual graph... We have core nodes like \"Greece,\" \"economic crisis,\" \"default,\" and \"public sector.\" First-order connections include relationships like \"Greece\" having a \"public sector\" with issues of \"corruption\" and \"tax evasion,\" leading to an \"economic crisis.\" Second-order connections might involve \"austerity measures,\" \"reforms,\" and the influence of external entities like the \"IMF,\" \"ECB,\" and \"European Commission.\" Domain contexts include economics, politics, and international relations.\n\nFor expansion path selection, several directions seem promising:\n- Synonymous terms, such as \"sovereign debt crisis\" for \"economic crisis,\"\n- Hierarchical terms, like \"fiscal policy\" as a broader concept related to \"austerity measures,\"\n- Compositional terms, such as \"public sector reforms\" as a component of addressing \"corruption\" and \"tax evasion,\"\n- Contextual terms, like \"Eurozone debt crisis\" to provide a specific setting,\n- Domain-specific terminology, such as \"macroeconomic stability\" and \"fiscal discipline.\"\n\nExtracting and filtering terms for each path, we look for relevance, distinctiveness, specificity, and searchability. For synonymous terms, \"fiscal crisis\" and \"debt restructuring\" could be valuable. Under hierarchical terms, \"economic policy\" and \"financial stability\" might be useful. For compositional terms, \"structural reforms\" and \"public finance management\" are relevant. Contextual terms could include \"European economic policy\" and \"international financial assistance.\" Domain-specific terms like \"monetary policy\" and \"eurozone integration\" could also enhance the query.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the following terms would be most effective for expanding the query: \"Greece economic crisis,\" \"sovereign debt,\" \"fiscal policy,\" \"public sector reforms,\" \"Eurozone debt crisis,\" \"macroeconomic stability,\" \"fiscal discipline,\" \"structural reforms,\" \"public finance management,\" \"European economic policy,\" \"international financial assistance,\" \"monetary policy,\" and \"eurozone integration.\" These terms capture both the explicit and implicit aspects of what the user is seeking, providing a comprehensive basis for document retrieval that aligns with the original search intent.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

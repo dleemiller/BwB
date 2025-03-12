@@ -1,0 +1,60 @@
+{
+  "reasoning": "The original query 'Does Rama eat meat?' seeks to understand the dietary practices of Lord Rama, a central figure in Hindu mythology. The current search results indicate a lack of focus on this specific context and instead cover general discussions about meat consumption, animal diets, health guidelines, and cultural perspectives without any reference to Lord Rama's mythological narratives or religious texts. The strengths of the existing results lie in their broad coverage of dietary practices, but they miss the mark due to their irrelevance to the query's intent regarding a specific mythological figure. To address this issue, a conceptual graph must be constructed to identify relevant semantic connections and domain-specific terms that can guide the search toward authoritative sources on Lord Rama's diet. By selecting expansion paths based on synonymous terms within Hindu mythology, hierarchical concepts related to Vedic dietary practices, contextual terms linked to Indian epic narratives, and domain-specific terminology from religious texts, we aim to enhance the query with precise and relevant expansion terms.",
+  "query_goals": [
+    "Identify core concepts in the original query focusing on Lord Rama's diet within a mythological context",
+    "Determine search intent as informational, targeting specific cultural or religious insights",
+    "Recognize implicit assumptions regarding Hindu mythology, specifically related to Vedic or epic texts"
+  ],
+  "node_classes": [
+    "Core Concepts: Specific figures and dietary references",
+    "First-order Connections: Religious practices and narratives",
+    "Second-order Connections: Cultural significance and interpretations",
+    "Domain Contexts: Hindu mythology, religious texts, cultural discussions"
+  ],
+  "query_nodes": [
+    "Rama",
+    "Meat consumption",
+    "Dietary habits"
+  ],
+  "nearest_neighbors": [
+    "Ramayana dietary practices",
+    "Hindu mythological diet",
+    "Vedic vegetarianism",
+    "Lord Rama's lifestyle",
+    "Epic narratives food customs"
+  ],
+  "augmented_query": "Does Lord Rama eat meat according to Ramayana? Explore Hindu mythology and Vedic dietary practices",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.64379,
+  "instruction": "graph",
+  "query": "Does rama eat meat?",
+  "query_id": "155873",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Does Rama eat meat?\"... this makes me think of Lord Rama, a central figure in Hindu mythology, and the stories surrounding his lifestyle and dietary habits. Though the user might actually be trying to understand the broader context of meat consumption in Hindu mythology or specifically within the narratives of the Ramayana. Hmm, not sure yet, but it seems like the query is aiming to uncover specific, culturally or religiously grounded information about Lord Rama's diet.\n\nI'm seeing several possibilities here... Let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, and extracting high-value terms. This should help because it systematically breaks down the query into its core concepts, related ideas, and domain-specific contexts, allowing for a more nuanced and relevant search.\n\nFollowing the Query Expansion via Conceptual Graph Traversal approach, I should first identify the core concepts in the query. Here, we have \"Rama\" and \"meat consumption\" as central ideas. The search intent is informational, targeting specific insights into Hindu mythology, particularly the Ramayana and Vedic dietary practices. There's an implicit assumption about Lord Rama's adherence to certain dietary restrictions based on his role in Hindu mythology.\n\nNow, constructing the conceptual graph... Core nodes include \"Rama,\" \"meat,\" and \"dietary habits.\" First-order connections involve religious practices, narratives from the Ramayana, and the cultural significance of diet in Hindu mythology. Second-order connections could include the broader context of Indian epic narratives, the symbolism of food in these stories, and historical practices of vegetarianism in Hinduism. Domain contexts are clearly rooted in Hindu mythology, religious texts like the Ramayana, and cultural discussions around diet and spirituality.\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"Lord Rama\" instead of \"Rama\"), hierarchical terms (like \"Vedic dietary practices\" as a broader concept), compositional terms (components of a diet in Hindu mythology), contextual terms (settings in the Ramayana where diet is discussed), and domain-specific terminology (terms used in Hindu texts to describe dietary habits).\n\nLet's extract and filter terms... For synonymous terms, \"Lord Rama\" and \"King Rama\" could be useful. Hierarchical terms might include \"Vedic diet\" or \"Hindu dietary practices.\" Compositional terms could be \"vegetarianism in Hinduism\" or \"meat consumption in the Ramayana.\" Contextual terms might involve \"Ayodhya's dietary customs\" (Ayodhya being Rama's kingdom) or \"dietary habits of Hindu deities.\" Domain-specific terms could include \"ahimsa\" (the principle of non-violence, often leading to a vegetarian diet) or \"sattvic diet\" (a diet based on the concept of sattva, which emphasizes purity and harmony).\n\nWait, that's not quite right for this query. Let me adjust... Considering the user's likely interest in a specific mythological context, terms directly related to the Ramayana and Lord Rama's character would be more relevant. This step of the technique is revealing the importance of cultural and religious context... which actually reminds me of the concept of \"dharma\" and how it influences dietary choices in Hindu mythology.\n\nI need to consider the next step in the technique, which involves filtering these terms for relevance, distinctiveness, specificity, and searchability. But I'm also noticing this interesting pattern where discussions about Lord Rama's diet often touch upon the broader themes of spirituality and the pursuit of a virtuous life. Following the technique pointed me toward terms like \"Ramayana dietary practices\" and \"Vedic vegetarianism,\" but my instinct says we should also consider how these terms reflect the values and principles of Hinduism, such as non-violence and self-discipline.\n\nApplying the specific aspect of the technique regarding domain-specific terminology leads me to discover terms like \"lacto-vegetarian\" in the context of Hindu diets, which could be relevant. I just had a realization that connects to what we were exploring earlier... the concept of a \"sattvic diet\" is not just about the food itself but about the intention and the harmony it brings to the individual and the environment. This is crucial in understanding Lord Rama's dietary habits within the mythological narrative.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe these terms would be most effective for enhancing the query: \"Lord Rama,\" \"Ramayana dietary practices,\" \"Vedic vegetarianism,\" \"Hindu mythology,\" \"sattvic diet,\" \"ahimsa,\" and \"dharma.\" They capture both the explicit and implicit aspects of what the user is seeking, providing a balanced approach to",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

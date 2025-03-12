@@ -1,0 +1,77 @@
+{
+  "reasoning": "The query asks about the link between climate change and Hurricane Harvey based on climate scientists' opinions. To improve search results, the query should be augmented with terms that reflect how this topic is discussed in Q&A settings, focusing on personal experiences, debates, and specific impacts. Question variations will help anticipate different ways people might ask about this link. Underlying motivations address the reasons why people are seeking this information and the type of support they may need. Valuable responses highlight informative and helpful answers. Interaction patterns show how the community might react to the question. QA terminology shows how people generally communicate about climate change concepts. Finally, the augmented query combines these to enhance and focus the search for specific and relevant answers.",
+  "question_variations": [
+    "What's it like to experience a hurricane after hearing about climate change effects?",
+    "How should I prepare for hurricanes given what climate scientists are saying?",
+    "What do people think about the connection between Hurricane Harvey and global warming?",
+    "Is Hurricane Harvey a direct consequence of climate change?",
+    "Has anyone seen evidence that climate change worsened Hurricane Harvey?"
+  ],
+  "underlying_motivations": [
+    "Seeking validation that their concerns about climate change are justified.",
+    "Support for making personal or community-level decisions about disaster preparedness.",
+    "Access to expert opinions and interpretations of complex scientific data.",
+    "Wanting to understand the specific ways climate change might affect future hurricanes.",
+    "Looking for emotional support to feel less afraid of the weather."
+  ],
+  "valuable_responses": [
+    "First-hand accounts of Harvey and related climate change effects",
+    "Expert analyses of climate change data, clearly explaining the links.",
+    "Practical guides on preparing for more extreme weather events",
+    "Alternative expert viewpoints and contrarian opinions about role of climate change",
+    "Explanations of the multiple ways climate change could have affected Harvey."
+  ],
+  "interaction_patterns": [
+    "What specific aspects of Harvey were worsened by climate change?",
+    "Is it accurate to attribute a single event to global warming?",
+    "What other natural disasters should we be worried about?",
+    "How do you know that climate change is the cause, not just natural variation?",
+    "Have climate models been accurate in predicting increased hurricane severity?"
+  ],
+  "qa_terminology": [
+    "freak weather",
+    "storm surge",
+    "ocean warming",
+    "extreme weather events",
+    "climate crisis",
+    "sea level rise",
+    "global warming impact",
+    "affected families",
+    "climate resilience",
+    "ecological damage"
+  ],
+  "augmented_query": "Hurricane Harvey climate change \"climate scientists\" link \"extreme weather\" \"storm surge\" global warming impact \"affected families\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.74518,
+    "NDCG@1000": 0.74518,
+    "NDCG@10000": 0.74518
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.54167,
+    "MAP@1000": 0.54167,
+    "MAP@10000": 0.54167
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.03389999999999993,
+  "instruction": "community",
+  "query": "[climate scientists] say that aspects of the case of Hurricane Harvey suggest global warming is making a bad situation worse.",
+  "query_id": "95",
+  "dataset": "climatefever",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"climate scientists say that aspects of the case of Hurricane Harvey suggest global warming is making a bad situation worse,\" this makes me think of how people might discuss and seek information about the link between climate change and extreme weather events in a community Q&A setting. The user might actually be trying to understand the personal and community-level implications of climate change on natural disasters, or perhaps seeking validation for their concerns about global warming. However, it's not entirely clear yet what specific aspects of this topic they're most interested in.\n\nI'm seeing several possibilities here, from wanting to know how to prepare for future hurricanes in the context of climate change, to seeking expert opinions on whether Hurricane Harvey was indeed worsened by global warming. Let me approach this using the Query Expansion via Community Q&A Patterns technique, which involves reframing the query into different question types, identifying underlying motivations, categorizing valuable response patterns, mapping community interactions, and extracting relevant terminology from these interactions. This should help because it simulates how people naturally explore topics in a Q&A platform, allowing us to anticipate and include a wide range of relevant terms and perspectives in our query expansion.\n\nFollowing the Query Expansion technique, I should first reframe the original query into various question types. For instance, \"What's it like to experience a hurricane after hearing about climate change effects?\" reframes the query as a personal experience question. Similarly, \"How should I prepare for hurricanes given what climate scientists are saying?\" turns it into an advice-seeking question. This process helps in understanding the different angles from which users might approach the topic.\n\nNext, identifying hidden motivations behind the query, such as seeking validation for concerns about climate change or needing support for making personal decisions about disaster preparedness, can guide us toward including terms that address these motivations directly. For example, if someone is seeking validation, terms related to \"climate crisis\" or \"global warming impact\" might be more relevant.\n\nThe technique also involves categorizing valuable response patterns, such as first-person experience narratives, expert opinions, or practical advice. This step is crucial because it helps in identifying what types of information users find most useful when discussing the link between climate change and hurricanes. For instance, including terms like \"storm surge\" or \"extreme weather events\" could attract more relevant results, as these are specific aspects of hurricanes that might be influenced by climate change.\n\nFurthermore, mapping typical community interactions around this topic can reveal common follow-up questions, frequently debated aspects, and clarifications people often request. This could lead to the inclusion of terms that reflect these dynamics, such as \"climate resilience\" or \"ecological damage,\" which might not be immediately apparent from the original query but are crucial for a comprehensive discussion.\n\nFinally, extracting relevant terminology from these interactions, such as \"freak weather,\" \"ocean warming,\" or \"affected families,\" ensures that our expanded query captures the conversational and subjective aspects of how people discuss climate change and its impacts. This step is vital for creating a query that can fetch results that are not just informative but also engaging and relevant to the user's concerns.\n\nApplying this technique systematically, we start to see how the original query can be expanded to include a variety of perspectives, motivations, and terminology that reflect real-world discussions about climate change and Hurricane Harvey. For example, the term \"climate scientists\" is directly from the original query, but terms like \"extreme weather,\" \"storm surge,\" and \"global warming impact\" emerge from considering how people discuss and seek information about this topic in a Q&A context.\n\nThrough this process of applying the Query Expansion via Community Q&A Patterns technique and exploring related threads, I believe the expanded query should include terms that reflect both the explicit and implicit aspects of what the user is seeking. The final expanded query, \"Hurricane Harvey climate change 'climate scientists' link 'extreme weather' 'storm surge' global warming impact 'affected families',\" captures not just the factual link between climate change and Hurricane Harvey but also the personal, experiential, and communal dimensions of discussing this topic.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

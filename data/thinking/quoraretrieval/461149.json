@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query explores societal norms surrounding laughter at one's own jokes.  It seeks to understand why this behavior is sometimes perceived as inappropriate and delves into individual experiences with it.",
+  "query_goals": [
+    "understand social etiquette",
+    "identify reasons for disapproval",
+    "explore personal experiences"
+  ],
+  "node_classes": [
+    "social norms",
+    "humor",
+    "etiquette",
+    "perception",
+    "self-deprecating humor",
+    "laughter"
+  ],
+  "query_nodes": [
+    "laughing",
+    "jokes",
+    "own",
+    "societal",
+    "perceptions"
+  ],
+  "nearest_neighbors": [
+    "self-esteem",
+    "confidence",
+    "audience",
+    "appropriateness",
+    "social cues",
+    "humor styles"
+  ],
+  "augmented_query": "Is laughing at one's own jokes considered inappropriate by society?  What are the reasons behind these perceptions? How do people feel about self-deprecating humor?",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "graph",
+  "query": "Is it okay to laugh at your own jokes?",
+  "query_id": "461149",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Is it okay to laugh at your own jokes?\"... this makes me think of societal norms and how they influence our behavior, especially in terms of humor and self-perception. Though the user might actually be trying to understand why laughing at one's own jokes is sometimes seen as inappropriate, it also touches on deeper aspects like self-esteem, confidence, and audience reception. Hmm, not sure yet how to fully capture the essence of this query, but it seems like there's a rich tapestry of concepts to unravel.\n\nI'm seeing several possibilities here... Let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph to systematically identify and explore relevant terms and concepts related to the original query. This should help because it allows for a structured yet flexible analysis that can uncover both obvious and nuanced connections.\n\nFirst, I need to analyze the query. The core concepts here are \"laughing,\" \"jokes,\" \"own,\" and the societal aspect of perceptions. The search intent is informational, aiming to understand social etiquette and reasons behind disapproval. There's an implicit assumption that societal norms play a significant role in how we perceive laughing at our own jokes.\n\nNow, constructing the conceptual graph... The core nodes will be \"laughter,\" \"jokes,\" \"self,\" and \"societal norms.\" First-order connections include properties like \"humor styles,\" \"audience reception,\" and \"self-perception.\" Second-order connections bring in concepts such as \"confidence,\" \"self-esteem,\" and \"social cues.\" Domain contexts might involve psychology, sociology, and perhaps entertainment or media studies.\n\nFor expansion path selection, I identify several promising directions:\n- Synonymous terms for \"laughing at one's own jokes\" could include \"self-deprecating humor\" or \"self-amusement.\"\n- Hierarchical terms might explore broader concepts like \"humor\" or narrower ones such as \"wit\" or \"sarcasm.\"\n- Compositional terms could delve into components of jokes, like \"punchlines\" or \"setup,\" and attributes of laughter, such as \"spontaneity\" or \"appropriateness.\"\n- Contextual terms might consider settings where this behavior occurs, such as \"social gatherings,\" \"workplaces,\" or \"online communities.\"\n- Domain-specific terminology could involve terms from psychology, like \"self-efficacy\" or \"social identity theory.\"\n\nAs I traverse the graph and extract terms, I'm looking for relevance, distinctiveness, specificity, and searchability. Some high-value terms that emerge include \"self-deprecation,\" \"humor theory,\" \"social norms,\" \"audience,\" \"confidence,\" \"self-perception,\" \"inappropriateness,\" \"social etiquette,\" \"laughter types,\" and \"cultural differences.\"\n\nFollowing the technique leads me to discover terms like \"social learning theory\" and \"emotional intelligence,\" which actually remind me of related concepts like \"observational learning\" and \"emotional regulation.\" These connections are intuitive but also systematically grounded in the expansion paths I've chosen.\n\nI just had a realization that connects to what we were exploring earlier... The perception of laughing at one's own jokes isn't just about the act itself but about how others perceive it, which ties back to social cues, confidence, and the context in which the laughter occurs. This insight complements the structured approach and suggests that terms like \"social cognition\" and \"interpersonal perception\" could also be valuable.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the final expanded terms would effectively enhance the search query. These terms capture both the explicit and implicit aspects of what the user is seeking, offering a nuanced exploration of societal norms, humor, and self-perception.\n\nOriginal Query: Is it okay to laugh at your own jokes?\nCore Concepts: laughter, jokes, self, societal norms\nExpansion Paths: \n- Synonymous terms (e.g., self-deprecating humor)\n- Hierarchical terms (e.g., humor, wit)\n- Compositional terms (e.g., punchlines, setup)\n- Contextual terms (e.g., social gatherings, workplaces)\n- Domain-specific terminology (e.g., self-efficacy, social identity theory)\nExpanded Terms: self-deprecation, humor theory, social norms, audience, confidence, self-perception, inappropriateness, social etiquette, laughter types, cultural differences, social learning theory, emotional intelligence, observational learning, emotional regulation, social cognition, interpersonal perception\nAugmented Query: Is laughing at one's own jokes considered inappropriate by society due to social norms and perceptions of self-deprecation, humor theory, and audience reception, reflecting on confidence, self-perception, and cultural differences in laughter types and social etiquette?",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

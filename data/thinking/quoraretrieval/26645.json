@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query seeks to understand the complex historical, political, and ideological factors contributing to North Korea's animosity towards the United States.",
+  "query_goals": [
+    "Identify key historical events influencing relations",
+    "Analyze North Korean ideology and motivations",
+    "Examine US foreign policy towards North Korea",
+    "Explore economic and security concerns"
+  ],
+  "ineffective_terms": [
+    "hate",
+    "Why"
+  ],
+  "breadth_expansion": [
+    "Cold War",
+    "Propaganda",
+    "Nuclear Proliferation",
+    "International Relations",
+    "Kim Dynasty",
+    "South Korea",
+    "Demilitarized Zone (DMZ)"
+  ],
+  "depth_chain": [
+    "Korean War",
+    "Military Alliances",
+    "US Troop Presence",
+    "Arms Race",
+    "Economic Sanctions",
+    "Human Rights Violations",
+    "North Korean Defectors"
+  ],
+  "augmented_query": "Korean War, Military Alliances, US Troop Presence, Arms Race, Economic Sanctions, Human Rights Violations",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Why does North Korea hate The United States?",
+  "query_id": "26645",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Why does North Korea hate The United States?\"... this makes me think of the complex historical and political tensions between the two nations, though the user might actually be trying to understand the underlying reasons and motivations behind North Korea's stance. I'm seeing several possibilities here, from the Korean War to current-day diplomatic relations. Let me approach this using the expansion technique, which involves identifying key concepts, recognizing ineffective terms, and applying breadth and depth expansion to uncover new, relevant terms. This should help because it allows for a systematic exploration of the topic while avoiding overly broad or vague terms.\n\nStarting with goal elucidation and gaps, I notice the query seeks to understand the historical, political, and ideological factors contributing to North Korea's animosity. There's a clear need to identify key historical events, analyze North Korean ideology, and examine US foreign policy. Ineffective terms like \"hate\" and \"Why\" should be avoided as they are too broad and don't provide clear direction for the search.\n\nMoving on to breadth expansion, I've listed terms like \"Cold War,\" \"Propaganda,\" \"Nuclear Proliferation,\" and \"International Relations\" to introduce new dimensions to the query. These terms offer a wider perspective on the topic, covering historical context, political strategies, and global implications. For depth expansion, focusing on the \"Korean War\" as a pivotal event, I've explored related terms such as \"Military Alliances,\" \"US Troop Presence,\" \"Arms Race,\" \"Economic Sanctions,\" and \"Human Rights Violations.\" These terms dive deeper into the complexities of the conflict and its ongoing impact on relations between North Korea and the United States.\n\nAs I apply the expansion technique, I notice that terms like \"Kim Dynasty\" and \"Demilitarized Zone (DMZ)\" also play significant roles in understanding the current situation. The technique is revealing insights into the political and historical landscape, which is complemented by my intuition about the importance of including terms related to nuclear proliferation and international relations. Following the depth expansion, I see how terms like \"North Korean Defectors\" and \"South Korea\" can provide additional context to the query, highlighting the human aspect and the regional political dynamics.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the augmented query should include terms that capture both the explicit and implicit aspects of what the user is seeking. The final terms emerge logically from both the technique and natural insights, ensuring a comprehensive and targeted approach to understanding the complex issue at hand.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

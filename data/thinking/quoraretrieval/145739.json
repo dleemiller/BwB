@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query seeks a personal anecdote about a well-executed lie, going beyond general definitions or examples. The current results lack narrative depth and individual perspective.",
+  "query_goals": [
+    "Discover a compelling personal story about a lie",
+    "Understand the motivations behind the lie",
+    "Analyze the effectiveness of the deception",
+    "Explore the emotional impact of telling a lie"
+  ],
+  "ineffective_terms": [
+    "lie",
+    "best"
+  ],
+  "breadth_expansion": [
+    "storytelling",
+    "deception",
+    "persuasion",
+    "manipulation",
+    "white lies",
+    "secrets",
+    "truth",
+    "consequences",
+    "ethics"
+  ],
+  "depth_chain": [
+    "storytelling",
+    "narrative structure",
+    "plot twists",
+    "character motivations",
+    "emotional manipulation"
+  ],
+  "augmented_query": "narrative structure, plot twists, character motivations, emotional manipulation, secrets, consequences",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "What is the best lie you ever spun?",
+  "query_id": "145739",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query \"What is the best lie you ever spun?\"... this makes me think of storytelling and the art of deception, though the user might actually be trying to understand the psychology behind lying or the consequences of dishonesty... hmm, not sure yet. The existing reasoning provided highlights the need for a personal anecdote with narrative depth, which suggests we're looking for something beyond mere definitions or general examples of lies.\n\nI'm seeing several possibilities here... Let me approach this using the expansion technique provided, which involves examining the query's primary objectives and gaps, identifying ineffective terms, expanding the query's breadth and depth, and applying varied augmentation techniques like synonym replacement, conceptual expansion, and domain-specific terminology. This should help because it allows us to systematically explore related concepts and terms that can enhance the query's specificity and diversity.\n\nStarting with goal elucidation and gaps, the primary objective seems to be discovering a compelling personal story about a lie, understanding the motivations behind it, analyzing its effectiveness, and exploring the emotional impact. The gaps in the current results include a lack of narrative depth and individual perspective. Ineffective terms identified include \"lie\" and \"best,\" which are too broad and don't contribute much to narrowing down the search for a specific, engaging story.\n\nFor breadth expansion, we've identified terms like \"storytelling,\" \"deception,\" \"persuasion,\" \"manipulation,\" \"white lies,\" \"secrets,\" \"truth,\" \"consequences,\" and \"ethics.\" These terms introduce new dimensions to the query, moving beyond the simple concept of a lie to the contexts and implications of deception.\n\nDelving into depth expansion, if we choose \"storytelling\" as our distant but important topic, we can drill down into terms like \"narrative structure,\" \"plot twists,\" \"character motivations,\" and \"emotional manipulation.\" These terms offer a deeper exploration of what makes a lie compelling or believable, tying back to the user's interest in a well-spun lie.\n\nFollowing the expansion technique, I notice that applying these steps systematically leads to insights like the importance of narrative in making a lie convincing or the psychological aspects of why people tell lies. This reminds me of related concepts like social psychology and the role of deception in human interactions, which could further enrich our understanding of the query.\n\nHowever, I need to balance this structured approach with more natural, intuitive thinking. For instance, considering the emotional impact of telling a lie brings up questions about guilt, empathy, and the complexity of human emotions, which might not be directly addressed by the technique but are crucial for a nuanced exploration of the topic.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms that would be most effective for enhancing the query are those that capture both the explicit and implicit aspects of what the user is seeking. Thus, focusing on terms from the depth expansion like \"narrative structure,\" \"plot twists,\" \"character motivations,\" \"emotional manipulation,\" and adding relevant terms from breadth expansion such as \"secrets\" and \"consequences,\" we can create a robust and targeted query.\n\nThe final augmented query, considering all the steps and ensuring it meets the criteria of being specific, diverse, unique, and relevant, would include terms that reflect the depth and breadth of the expansion process. By combining the systematic approach of the technique with the flexibility of natural thought patterns, we can uncover a set of terms that not only expand the query but also offer a nuanced and multifaceted exploration of the topic.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

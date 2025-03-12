@@ -1,0 +1,71 @@
+{
+  "reasoning": "The query is about 'clean coal' and its carbon capture and storage method. The document types are informational articles and technical websites. The strengths are accurate definitions and descriptions of technologies. The weaknesses are a lack of diverse perspectives on practicality, effectiveness, viability, and cost.\n\nThe primary goals are to find documents that provide:\n1. Alternative viewpoints on clean coal's effectiveness and feasibility.\n2. Up-to-date information on project status and cost.\n3. Critiques of the technology.\n\nI will expand the query with terms related to:\n1. Alternative names for the process and technology.\n2. The economics associated with it.\n3. The actual impact of the technology if implemented.\nThis should lead to more recent and diverse information on the topic.",
+  "query_goals": [
+    "Find alternative viewpoints on clean coal's effectiveness and feasibility.",
+    "Find up-to-date information on project status and cost.",
+    "Find critiques of the technology."
+  ],
+  "node_classes": [
+    "Energy Technology",
+    "Environmental Issue",
+    "Climate Change Mitigation",
+    "Geological Storage",
+    "Power Generation",
+    "Economic Feasibility",
+    "Policy and Regulation"
+  ],
+  "query_nodes": [
+    "Clean Coal",
+    "Carbon Capture",
+    "Carbon Storage",
+    "CCS",
+    "Power Plants",
+    "Emissions"
+  ],
+  "nearest_neighbors": [
+    "Carbon Sequestration",
+    "Underground Injection",
+    "Enhanced Oil Recovery",
+    "Coal Gasification",
+    "Integrated Gasification Combined Cycle (IGCC)",
+    "Fossil Fuel Power Generation",
+    "Environmental Impact Assessment",
+    "Climate Policy",
+    "Cost-Benefit Analysis",
+    "Renewable Energy Alternatives"
+  ],
+  "augmented_query": "\"clean coal\" OR \"carbon capture and storage\" OR CCS OR \"carbon sequestration\" OR \"underground injection\" AND (\"economic viability\" OR \"cost effectiveness\" OR \"environmental impact\" OR \"project status\" OR \"feasibility studies\" OR \"climate policy implications\" OR \"lifecycle assessment\" OR \"environmental risk assessment\" OR \"renewable energy alternatives\") AND (criticism OR \"challenges\" OR \"drawbacks\" OR \"limitations\" OR \"controversies\")",
+  "ndcg": {
+    "NDCG@10": 0.76536,
+    "NDCG@100": 0.84513,
+    "NDCG@1000": 0.84513,
+    "NDCG@10000": 0.84513
+  },
+  "map": {
+    "MAP@10": 0.66667,
+    "MAP@100": 0.68391,
+    "MAP@1000": 0.68391,
+    "MAP@10000": 0.68391
+  },
+  "recall": {
+    "Recall@10": 0.66667,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.03,
+    "P@1000": 0.003,
+    "P@10000": 0.0003
+  },
+  "delta": 0.017900000000000027,
+  "instruction": "graph",
+  "query": "\u2018Clean coal\u2019 is an approach in which the emissions from coal-burning power plants would be captured and pumped underground.",
+  "query_id": "791",
+  "dataset": "climatefever",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query 'clean coal' and its carbon capture and storage method, this makes me think of the environmental and economic implications of such a technology. Though the user might actually be trying to understand the effectiveness and feasibility of clean coal, I'm also considering the potential controversies and criticisms surrounding it. The existing reasoning provided is quite insightful, highlighting the strengths and weaknesses of the current query and the primary goals of finding alternative viewpoints, up-to-date information, and critiques of the technology.\n\nI'm seeing several possibilities here, but let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph and traversing it to find high-value expansion terms. This should help because it allows us to systematically explore related concepts and terms that can enhance our query.\n\nFollowing the technique, I first analyze the query to identify core concepts and entities. In this case, we have 'clean coal,' 'carbon capture,' 'carbon storage,' and 'emissions' as central concepts. The search intent seems informational, aiming to gather a wide range of perspectives and data on the topic.\n\nNext, I construct a conceptual graph with core nodes representing these concepts, first-order connections like properties and attributes (e.g., economic viability, environmental impact), and second-order connections to related concepts (e.g., renewable energy alternatives, climate policy). Domain contexts include energy technology, environmental issues, and climate change mitigation.\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., 'carbon sequestration' for 'carbon capture'), hierarchical terms (e.g., 'power generation' as a broader concept), compositional terms (e.g., 'carbon capture and storage technology' as a component), and contextual terms (e.g., 'project status' as a setting).\n\nNow, I extract and filter terms for each expansion path. For synonymous terms, I consider 'CCS' and 'carbon sequestration.' For hierarchical terms, 'energy technology' and 'fossil fuel power generation' are relevant. Compositional terms like 'carbon capture technology' and 'geological storage' are also important. Contextual terms such as 'feasibility studies,' 'lifecycle assessment,' and 'environmental risk assessment' provide valuable insights into the practical aspects of clean coal.\n\nAs I apply the technique's steps systematically, I also allow for natural thought patterns to emerge. Occasionally, I reconsider certain terms or explore tangents that might yield unexpected insights. For instance, thinking about 'renewable energy alternatives' leads me to consider how clean coal compares to solar or wind power in terms of cost-effectiveness and environmental impact. This reminds me of the importance of including terms related to economic feasibility and policy implications in our expanded query.\n\nThrough this process, insights emerge from both the structured approach and my intuition. Applying the conceptual graph traversal technique leads me to discover terms like 'underground injection' and 'enhanced oil recovery,' which are closely related to carbon capture and storage. My instinct also suggests including terms that reflect the controversies and challenges associated with clean coal, such as 'criticism,' 'challenges,' and 'drawbacks.'\n\nAfter synthesizing these thoughts, I believe the augmented query provided effectively captures the essence of what we're looking for: diverse perspectives on clean coal's effectiveness, up-to-date project information, and critiques of the technology. The terms we've selected balance the need for accuracy and relevance with the goal of exploring related concepts and terms that can enrich our search results.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

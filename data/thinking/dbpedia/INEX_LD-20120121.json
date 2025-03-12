@@ -1,0 +1,86 @@
+{
+  "reasoning": "The user is explicitly looking for Vietnamese recipes, but the current results are providing mostly general information or descriptions. To enhance the search, I will assemble experts who can provide diverse recipe resources, cooking techniques, cultural context, dietary considerations, ingredient information, and recipe variations. This multi-faceted approach should address the user's need for actual recipes, while also broadening the user's understanding of Vietnamese cuisine.",
+  "selected_experts": [
+    "Vietnamese Culinary Historian",
+    "Professional Vietnamese Chef",
+    "Registered Dietitian specializing in Southeast Asian Cuisine",
+    "Ethnobotanist specializing in Vietnamese Ingredients",
+    "Food Blogger specializing in Vietnamese Home Cooking"
+  ],
+  "expert_insights": [
+    "Vietnamese Culinary Historian: Focus on regional variations in recipes, historical influences (e.g., French colonial period), and the evolution of popular dishes. Recipes should be authentic and well-researched, with explanations of origin and ingredients. Discuss the importance of family recipes and oral traditions in Vietnamese cooking.",
+    "Professional Vietnamese Chef: Provide classic Vietnamese recipes, cooking techniques (e.g., stir-frying, steaming, grilling), and tips for achieving authentic flavors. Focus on foundational recipes like Pho, Bun Cha, and Spring Rolls, and elaborate on variations and modern interpretations. Emphasize the importance of high-quality ingredients and proper preparation techniques within a professional kitchen setting.",
+    "Registered Dietitian specializing in Southeast Asian Cuisine: Discuss the nutritional benefits of Vietnamese cuisine, focusing on fresh herbs, vegetables, and lean proteins. Offer recipe modifications for dietary restrictions (e.g., gluten-free, vegan, low-sodium). Advise on portion control and healthy cooking methods. Examine the role of traditional Vietnamese medicine in food choices.",
+    "Ethnobotanist specializing in Vietnamese Ingredients: Provide in-depth information on native Vietnamese herbs, spices, and produce. Discuss their traditional uses, flavor profiles, and availability. Offer tips for sourcing and substituting ingredients, especially for those outside of Vietnam. Investigate the specific growing conditions of certain Vietnamese crops.",
+    "Food Blogger specializing in Vietnamese Home Cooking: Share easy-to-follow Vietnamese recipes for home cooks of all skill levels. Incorporate personal anecdotes and cultural insights to make the cooking experience more engaging. Provide tips for adapting recipes based on available ingredients and preferences. Focus on popular and accessible dishes that can be easily replicated at home."
+  ],
+  "cross_connections": [
+    "The Culinary Historian and the Chef can collaborate on authentic recipes with historical context, highlighting regional variations and evolutions.",
+    "The Dietitian and the Ethnobotanist can work together to showcase the health benefits of specific Vietnamese ingredients and suggest substitutions for dietary needs.",
+    "The Food Blogger and the Chef can bridge the gap between professional techniques and home cooking, offering adaptations that make dishes accessible to home cooks.",
+    "All experts can contribute to a deeper understanding of the cultural significance embedded in Vietnamese cuisine, enriching recipe understanding beyond mere instructions."
+  ],
+  "recommended_resources": [
+    "*Authentic Vietnamese Recipes* by Andrea Nguyen",
+    "*The Food of Vietnam* by Luke Nguyen",
+    "Vietnamese Food Any Day: Simple Recipes for True, Fresh Flavors by Andrea Nguyen",
+    "*Pleasures of the Vietnamese Table* by Mai Pham",
+    "Websites: hungryhuy.com, vietnammm.com"
+  ],
+  "extracted_terms": [
+    "Nuoc Cham",
+    "Pho",
+    "Banh Mi",
+    "Goi Cuon",
+    "Bun Cha",
+    "Com Tam",
+    "Rau Ram",
+    "Do Chua",
+    "Ca Kho To",
+    "Lemongrass",
+    "Galangal",
+    "Fish Sauce",
+    "Rice Paper",
+    "Rice Noodles",
+    "Star Anise",
+    "Cilantro",
+    "Mint",
+    "Holy Basil",
+    "Betel Leaf",
+    "Vietnamese Coriander"
+  ],
+  "augmented_query": "vietnamese recipes authentic regional variations easy home cooking techniques ingredients substitutions gluten-free vegan pho banh mi bun cha goi cuon com tam nuoc cham vegetarian low sodium",
+  "ndcg": {
+    "NDCG@10": 0.4441,
+    "NDCG@100": 0.5641,
+    "NDCG@1000": 0.64408,
+    "NDCG@10000": 0.66205
+  },
+  "map": {
+    "MAP@10": 0.23636,
+    "MAP@100": 0.27434,
+    "MAP@1000": 0.28648,
+    "MAP@10000": 0.28682
+  },
+  "recall": {
+    "Recall@10": 0.27273,
+    "Recall@100": 0.63636,
+    "Recall@1000": 0.90909,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.3,
+    "P@100": 0.07,
+    "P@1000": 0.01,
+    "P@10000": 0.0011
+  },
+  "delta": 0.06066000000000005,
+  "instruction": "expert",
+  "query": "vietnam food recipes",
+  "query_id": "INEX_LD-20120121",
+  "dataset": "dbpedia",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"vietnam food recipes,\" this makes me think of the vibrant streets of Hanoi or the bustling markets of Saigon, filled with the aromas of sizzling street food and the sounds of vendors calling out their daily specials. Though the user might actually be trying to find something more specific, like a recipe for Pho or Banh Mi, I'm not sure yet what their true culinary quest is. \n\nAs I delve deeper, I start seeing several possibilities here - the query could be about traditional Vietnamese recipes, modern twists on classic dishes, or even the cultural and historical context of Vietnamese cuisine. Let me approach this using the Query Expansion via Multi-Disciplinary Expert Panel technique, which involves gathering insights from a diverse group of experts to enrich the search query. This should help because it allows us to tap into a wide range of knowledge and experiences, from culinary history to dietary considerations, and from cooking techniques to ingredient sourcing.\n\nFollowing the expert panel approach, I first need to select our panel of experts. For this query, I've identified a Vietnamese Culinary Historian, a Professional Vietnamese Chef, a Registered Dietitian specializing in Southeast Asian Cuisine, an Ethnobotanist specializing in Vietnamese Ingredients, and a Food Blogger specializing in Vietnamese Home Cooking. Each of these experts brings a unique perspective to the table, ensuring our query expansion is comprehensive and well-rounded.\n\nNow, let's consider the insights from each expert:\n- The Vietnamese Culinary Historian can provide depth on regional variations, historical influences, and the evolution of popular dishes. This could lead to terms like \"regional Vietnamese recipes,\" \"French colonial influence on Vietnamese cuisine,\" and \"traditional family recipes.\"\n- The Professional Vietnamese Chef will offer classic recipes, cooking techniques, and tips for achieving authentic flavors. This might include terms like \"Pho recipe,\" \"Bun Cha cooking method,\" and \"Vietnamese cooking techniques.\"\n- The Registered Dietitian can discuss nutritional benefits, recipe modifications for dietary restrictions, and healthy cooking methods. This could introduce terms such as \"gluten-free Vietnamese recipes,\" \"vegan Vietnamese options,\" and \"healthy Vietnamese cooking.\"\n- The Ethnobotanist will provide in-depth information on native herbs, spices, and produce, along with tips for sourcing and substituting ingredients. This might add terms like \"Vietnamese herbs,\" \"traditional Vietnamese spices,\" and \"sustainable ingredient sourcing.\"\n- The Food Blogger will share easy-to-follow recipes and personal anecdotes, making the cooking experience more engaging for home cooks. This could lead to terms like \"easy Vietnamese recipes,\" \"Vietnamese home cooking,\" and \"adapting Vietnamese recipes for Western kitchens.\"\n\nAs I apply the expert panel technique, I notice that certain terms and concepts start to emerge as particularly relevant. For example, the combination of \"Pho,\" \"Banh Mi,\" and \"Bun Cha\" seems crucial for capturing the essence of popular Vietnamese dishes. Additionally, terms like \"Nuoc Cham,\" \"Rau Ram,\" \"Lemongrass,\" and \"Galangal\" reflect the importance of specific ingredients and flavors in Vietnamese cuisine.\n\nOccasionally, I find myself reconsidering the importance of certain terms or wondering if I've overlooked any critical aspects of Vietnamese cuisine. For instance, should we prioritize dishes that are more commonly found in the north versus the south of Vietnam? Or perhaps we should focus on recipes that cater to specific dietary needs, like vegetarian or low-sodium options.\n\nStepping back to reassess, I realize that the synthesis of our experts' insights is key. By combining their contributions, we not only cover a broad spectrum of Vietnamese cuisine but also ensure that our expanded query is rich in detail and nuance. The recommended resources, such as cookbooks by Andrea Nguyen and Luke Nguyen, and websites like hungryhuy.com, further enrich our understanding and provide practical guides for both beginners and seasoned cooks.\n\nThrough this process of applying the expert panel technique and exploring related threads, I believe the terms that would be most effective for expanding the query are those that reflect the diversity, richness, and specificity of Vietnamese cuisine. These include not just the names of dishes and ingredients but also terms that capture the cultural, historical, and nutritional aspects of the cuisine.\n\nSynthesizing all these insights, the expanded query becomes a comprehensive reflection of what the user might be seeking: \"vietnamese recipes authentic regional variations easy home cooking techniques ingredients substitutions gluten-free vegan pho banh mi bun cha goi cuon com tam nuoc cham vegetarian low sodium.\" This query not only seeks recipes but also delves into the heart of Vietnamese cuisine, exploring its many facets and nuances.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

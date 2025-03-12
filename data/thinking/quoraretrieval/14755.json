@@ -1,0 +1,60 @@
+{
+  "reasoning": "The query seeks information about the frequency of masturbation, likely driven by curiosity or concerns about its health implications. The current results indicate a lack of definitive answers and highlight the need for authoritative sources on sexual health.",
+  "query_goals": [
+    "understand appropriate masturbation frequency",
+    "identify potential health impacts of masturbation frequency",
+    "determine if there are cultural norms around masturbation frequency"
+  ],
+  "node_classes": [
+    "health",
+    "sexuality",
+    "behavior",
+    "frequency",
+    "well-being"
+  ],
+  "query_nodes": [
+    "masturbation",
+    "frequency"
+  ],
+  "nearest_neighbors": [
+    "sexual health",
+    "wellness",
+    "body image",
+    "self-care",
+    "relationships"
+  ],
+  "augmented_query": "how often is it healthy to masturbate and what are the potential effects on well-being",
+  "ndcg": {
+    "NDCG@10": 0.91972,
+    "NDCG@100": 0.91972,
+    "NDCG@1000": 0.91972,
+    "NDCG@10000": 0.91972
+  },
+  "map": {
+    "MAP@10": 0.83333,
+    "MAP@100": 0.83333,
+    "MAP@1000": 0.83333,
+    "MAP@10000": 0.83333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "How often is it good to masturbate?",
+  "query_id": "14755",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"How often is it good to masturbate?\"... this makes me think of health and wellness, though the user might actually be trying to understand if there's a \"normal\" frequency or if it has any impact on their well-being. Hmm, not sure yet, but it seems like we're dealing with a mix of physical and psychological aspects. The existing reasoning provided highlights the complexity of the topic, lacking definitive answers and pointing towards the need for authoritative sources on sexual health.\n\nI'm seeing several possibilities here... Let me approach this using the \"Query Expansion via Conceptual Graph Traversal\" technique, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, and extracting high-value terms. This should help because it allows us to systematically explore related concepts and terms that might not be immediately apparent but are semantically relevant.\n\nStarting with query analysis, the core concepts are \"masturbation\" and \"frequency,\" with an intent that seems informational, aiming to understand health implications and possibly cultural or societal norms. There's an implicit assumption that there might be a recommended frequency, but that's not explicitly stated.\n\nMoving to graph construction, our core nodes are \"masturbation\" and \"frequency.\" First-order connections would include aspects like \"health,\" \"well-being,\" and \"sexual health.\" Second-order connections could involve \"psychological impacts,\" \"physical health effects,\" and \"social stigma.\" Domain contexts include psychology, health sciences, and possibly sociology.\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"self-pleasure\"), hierarchical terms (broader concepts like \"sexual activity\" or narrower ones like \"orgasm frequency\"), compositional terms (aspects like \"physical effects\" or \"emotional well-being\"), contextual terms (e.g., \"during adolescence\" or \"in relationships\"), and domain-specific terminology (like \"sexual health\" or \"reproductive well-being\").\n\nFollowing the technique's approach, I should first extract terms from each expansion path. For synonymous terms, we have \"self-pleasure\" and \"solo sex.\" Hierarchical terms give us \"sexual health\" and \"reproductive well-being.\" Compositional terms lead to \"physical effects\" and \"emotional well-being.\" Contextual terms might include \"teenage years\" or \"partnership dynamics.\" Domain-specific terminology could involve \"sexology\" or \"psychosexual health.\"\n\nApplying the filtering criteria for relevance, distinctiveness, specificity, and searchability, I find high-value terms such as \"sexual wellness,\" \"self-pleasure frequency,\" \"orgasm health benefits,\" \"masturbation effects on mental health,\" \"teen masturbation,\" and \"healthy sexual behavior.\"\n\nThis step of the technique is revealing insights into how masturbation is perceived and discussed in different contexts, which actually reminds me of the importance of considering both physical and psychological aspects of sexual health. I just had a realization that connects to what we were exploring earlier - the need for authoritative sources to address these questions comprehensively.\n\nI need to consider the next step in the technique, which involves synthesizing these findings into an augmented query, but I'm also noticing this interesting pattern where the terms we've identified could be grouped into those focusing on physical health, psychological well-being, and social or relational aspects.\n\nThrough this process of applying the \"Query Expansion via Conceptual Graph Traversal\" technique and exploring related threads, I believe these terms would be most effective for a BM25 index: \"sexual wellness,\" \"self-pleasure,\" \"orgasm health benefits,\" \"masturbation effects on mental health,\" \"healthy sexual behavior,\" and \"sexual health benefits.\" They capture both the explicit and implicit aspects of what the user is seeking, from the frequency and physical effects to the psychological and social implications.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query \"view pay stub\" is simple and navigational. The user likely wants to find instructions on how to access their pay stub, most likely online. The current results are too general. I need to generate terms that are more specific to accessing pay stubs online or through specific platforms. I will focus on terms related to online portals, payroll systems, and common access methods.",
+  "query_goals": [
+    "Find specific instructions for viewing pay stubs online",
+    "Identify common platforms or systems used to access pay stubs",
+    "Provide direct links or guidance on accessing pay stubs through these systems"
+  ],
+  "node_classes": [
+    "Payroll Systems",
+    "Employee Portals",
+    "Access Methods",
+    "Document Types",
+    "User Roles"
+  ],
+  "query_nodes": [
+    "Pay Stub",
+    "View"
+  ],
+  "nearest_neighbors": [
+    "access pay stub online",
+    "download pay stub",
+    "print pay stub",
+    "check pay stub",
+    "find my paystub",
+    "where to view paystub",
+    "adp paystub portal",
+    "paychex paystub login",
+    "viewing electronic paystub"
+  ],
+  "augmented_query": "view pay stub online access portal \"employee self-service\" login download \"digital paystub\"",
+  "ndcg": {
+    "NDCG@10": 0.35621,
+    "NDCG@100": 0.35621,
+    "NDCG@1000": 0.35621,
+    "NDCG@10000": 0.35621
+  },
+  "map": {
+    "MAP@10": 0.16667,
+    "MAP@100": 0.16667,
+    "MAP@1000": 0.16667,
+    "MAP@10000": 0.16667
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.06715000000000004,
+  "instruction": "graph",
+  "query": "view pay stub",
+  "query_id": "536995",
+  "dataset": "msmarco",
+  "thought_process": "Looking at the query \"view pay stub\", this makes me think of an individual trying to access their pay information, possibly online. The user might actually be trying to find instructions on how to navigate through a specific payroll system or employee portal to view their pay stub. At first glance, it seems like a straightforward navigational query, but upon closer inspection, there are various nuances to consider, such as the type of payroll system or the specific steps required to access the pay stub.\n\nI'm seeing several possibilities here, but to approach this systematically, I'll use the Query Expansion via Conceptual Graph Traversal technique. This involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting terms, and filtering them based on relevance, distinctiveness, specificity, and searchability.\n\nFirst, let's identify the core concepts and entities in the original query. We have \"view\" and \"pay stub\" as the central elements. The search intent is clearly navigational, with the user aiming to find a way to access their pay stub, likely through an online platform. There's an implicit assumption that the user has access to a payroll system or employee portal.\n\nNext, I'll construct a conceptual graph. The core nodes are \"pay stub\" and \"view\". First-order connections include \"online access\", \"employee portal\", and \"payroll system\". Second-order connections might involve \"digital paystub\", \"login\", and \"self-service\". Domain contexts include human resources, payroll management, and employee services.\n\nFor expansion path selection, I'll consider synonymous terms, hierarchical terms, compositional terms, contextual terms, and domain-specific terminology. Promising directions include exploring terms related to online access methods, types of payroll systems, and employee portal functionalities.\n\nNow, let's extract high-value terms for each expansion path. For synonymous terms, we have \"access pay stub online\" and \"view digital paystub\". Hierarchical terms might include \"payroll management\" and \"employee services\". Compositional terms could be \"login credentials\" and \"self-service portal\". Contextual terms might involve \"HR department\" and \"company intranet\". Domain-specific terminology includes \"ADP paystub portal\" and \"Paychex paystub login\".\n\nFiltering these terms based on the criteria, we get a final set of expanded terms: \"online access\", \"employee portal\", \"payroll system\", \"digital paystub\", \"login\", \"self-service\", \"ADP paystub portal\", \"Paychex paystub login\", \"access pay stub online\", \"view digital paystub\".\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the augmented query should include terms that capture both the explicit and implicit aspects of what the user is seeking. The final expanded query is: \"view pay stub online access portal 'employee self-service' login download 'digital paystub'\".\n\nThis approach balances structured technique with natural cognitive patterns, allowing for a systematic expansion of the query while incorporating intuitive connections and reconsiderations. The resulting augmented query is designed to improve document retrieval by incorporating semantically relevant terms that align with the user's navigational intent.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

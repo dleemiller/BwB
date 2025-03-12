@@ -1,0 +1,63 @@
+{
+  "reasoning": "The original query, \"who is next in line to inherit the British throne,\" seeks current information about the line of succession. The existing results are strong in providing historical context and legal frameworks, but they lack up-to-date specifics, such as current individuals in line for the throne. To address this weakness, we need to expand the search by focusing on current monarchy details, recent changes to succession laws, and identifying key figures today.\n\nThe strategy involves using a conceptual graph that captures core concepts from the query, like the British monarchy, succession rules, and specific historical events or legal acts mentioned in documents. We will then extend these ideas with nodes for contemporary elements and terms directly related to current line of succession details. The expansion paths we focus on include synonymous and domain-specific terminology such as recent royal family members and changes due to laws enacted after 2011 (e.g., Succession to the Crown Act).\n\nTo improve retrieval, our aim is to incorporate these expansions into an augmented query that still aligns with the original search intent \u2014 identifying who currently stands next in line for the British throne. By integrating high-value terms related to recent historical developments and contemporary monarchy dynamics, we can better address gaps left by existing documents.",
+  "query_goals": [
+    "Identify current individuals next in line to inherit the British throne.",
+    "Highlight any recent legislative changes affecting succession.",
+    "Provide context for how succession laws have evolved with emphasis on contemporary updates."
+  ],
+  "node_classes": [
+    "Monarchy",
+    "Line of Succession",
+    "Succession Laws",
+    "Historical Context",
+    "Current Royal Figures"
+  ],
+  "query_nodes": [
+    "British throne",
+    "inheritance",
+    "line of succession",
+    "monarchy",
+    "succession laws"
+  ],
+  "nearest_neighbors": [
+    "William, Duke of Cambridge",
+    "Charles, Prince of Wales",
+    "Prince William's children",
+    "Succession to the Crown Act 2013",
+    "Current British royal family members"
+  ],
+  "augmented_query": "\"Who is next in line to inherit the British throne considering current succession laws and recent updates? Include key figures like Charles, Prince of Wales, and William, Duke of Cambridge, along with impacts from Succession to the Crown Act 2013.\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.76459,
+  "instruction": "graph",
+  "query": "who is next in line to inherit the british throne",
+  "query_id": "test740",
+  "dataset": "nq",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "thought_process": "As I begin to expand the query \"who is next in line to inherit the British throne,\" my initial thoughts are centered around the concept of the British monarchy and the rules of succession. The user's intent seems clear: they want to know who is currently next in line for the throne. However, my experience with similar queries tells me that the answer might not be as straightforward as it seems, given the complexities of royal succession and the potential for recent changes in laws or family dynamics.\n\nMy first instinct is to think about the key figures currently involved in the line of succession, such as Charles, Prince of Wales, and William, Duke of Cambridge, along with their children. I also consider the significance of the Succession to the Crown Act 2013, which removed the disqualification of individuals married to Catholics and gave women equal rights in the line of succession. This tells me that any expansion of the query should include not just historical context but also contemporary updates.\n\nTo structure my approach, I decide to use the query expansion via conceptual graph traversal technique. This involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting and filtering terms, and finally, formulating an augmented query.\n\nStarting with query analysis, I identify the core concepts as the British throne, inheritance, line of succession, monarchy, and succession laws. The search intent is informational, aiming to provide current details about who is next in line for the throne. There's an implicit assumption that the query is seeking information based on the most recent succession laws and family dynamics.\n\nNext, I construct a conceptual graph with core nodes like \"British monarchy,\" \"line of succession,\" and \"succession laws.\" First-order connections include current royal figures and historical legal acts like the Succession to the Crown Act 2013. Second-order connections might involve broader concepts like constitutional law or narrower concepts such as specific royal titles and their holders. Domain contexts include British history, constitutional law, and current events related to the royal family.\n\nFor expansion path selection, I choose paths that include synonymous terms, hierarchical terms, and domain-specific terminology. For example, synonymous terms could include \"successor to the throne\" or \"next in line to the throne.\" Hierarchical terms might involve broader concepts like \"heir apparent\" or narrower concepts like \"Prince of Wales.\" Domain-specific terms could include names of current royal family members or specific laws affecting succession.\n\nWhen extracting and filtering terms, I prioritize relevance, distinctiveness, specificity, and searchability. Terms like \"Charles, Prince of Wales,\" \"William, Duke of Cambridge,\" \"Prince William's children,\" and \"Succession to the Crown Act 2013\" are highly relevant and provide a good balance of specificity and searchability.\n\nAs I synthesize these elements, my thought process is not linear but rather iterative, with constant reassessment and refinement. I consider how each potential expansion term enhances the query's ability to retrieve relevant documents without straying from the original intent. The process involves a back-and-forth between the structured approach of the conceptual graph traversal and my intuitive understanding of how these terms relate to the real-world context of the British monarchy.\n\nThe emergence of insights during this process is fascinating. Applying the conceptual graph traversal technique leads me to discover terms that I hadn't initially considered, such as the impact of the Succession to the Crown Act on current succession laws. My instinct also suggests including terms related to recent updates in the royal family, such as births or marriages that could affect the line of succession.\n\nThrough this systematic yet flexible approach, I believe the augmented query \"Who is next in line to inherit the British throne considering current succession laws and recent updates? Include key figures like Charles, Prince of Wales, and William, Duke of Cambridge, along with impacts from Succession to the Crown Act 2013\" effectively captures the essence of the original query while providing a richer context for retrieval. This balance of structure and intuition not only ensures that the search intent is preserved but also enhances the likelihood of retrieving the most relevant and up-to-date information regarding the British throne's line of succession.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

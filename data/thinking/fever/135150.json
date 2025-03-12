@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query suggests an interest in theatrical productions of Kung Fu Panda. While the existing results focus on the film franchise, they don't address potential stage adaptations. To improve retrieval, we need to expand the query to include terms related to theater, performance, and live adaptations.",
+  "query_goals": [
+    "find information about a Kung Fu Panda stage production",
+    "identify potential theaters hosting a Kung Fu Panda play",
+    "discover cast and crew involved in a Kung Fu Panda stage adaptation"
+  ],
+  "node_classes": [
+    "film",
+    "animation",
+    "theater",
+    "performance",
+    "stage production",
+    "adaptation"
+  ],
+  "query_nodes": [
+    "Kung Fu Panda",
+    "stage",
+    "release"
+  ],
+  "nearest_neighbors": [
+    "Broadway",
+    "West End",
+    "musical",
+    "playwright",
+    "director"
+  ],
+  "augmented_query": "Kung Fu Panda stage production Broadway musical",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "Kung Fu Panda was released on stage.",
+  "query_id": "135150",
+  "dataset": "fever",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Kung Fu Panda was released on stage,\" this makes me think of theatrical productions, musicals, and live adaptations of the popular film franchise. Though the user might actually be trying to find information about a specific stage production, such as a musical or play, the query as it stands doesn't provide enough detail to pinpoint exactly what they're looking for. Hmm, not sure yet, but it seems like we need to expand this query to capture the essence of what the user is seeking.\n\nI'm seeing several possibilities here, but let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph and traversing it to find high-value expansion terms. This should help because it allows us to systematically explore related concepts and identify terms that are semantically relevant to the original query.\n\nFirst, I'll analyze the query to identify core concepts and entities. Here, we have \"Kung Fu Panda\" as the central entity, \"stage\" indicating the context of the query, and \"release\" suggesting we're talking about a production or premiere of some sort. The search intent seems informational, as the user is likely looking for details about a stage production.\n\nNext, I'll construct a conceptual graph. Core nodes will include \"Kung Fu Panda,\" \"stage,\" and \"theater.\" First-order connections might involve terms like \"musical,\" \"play,\" and \"adaptation,\" as these are direct properties or relationships of the core concepts. Second-order connections could include \"Broadway,\" \"West End,\" \"cast,\" and \"crew,\" as these are related concepts one step removed. Domain contexts would involve the entertainment industry, specifically theater and film.\n\nFor expansion path selection, I identify several promising directions:\n- Synonymous terms, such as \"theatrical production\" instead of \"stage production\"\n- Hierarchical terms, like \"live show\" which is broader than \"stage production\"\n- Compositional terms, including \"actors,\" \"directors,\" and \"playwrights\"\n- Contextual terms, such as \"tickets,\" \"theaters,\" and \"schedules\"\n- Domain-specific terminology, including \"premiere,\" \"musical adaptation,\" and \"stage play\"\n\nNow, extracting and filtering terms for each path, I look for relevance, distinctiveness, specificity, and searchability. For synonymous terms, \"theatrical production\" and \"live adaptation\" stand out. For hierarchical terms, \"entertainment\" and \"performing arts\" could be useful. Compositional terms like \"cast,\" \"crew,\" and \"musical score\" are relevant. Contextual terms such as \"Broadway show\" and \"theater tickets\" could help, and domain-specific terms like \"musical theater\" and \"stage adaptation\" seem promising.\n\nThrough this process, I've identified a range of terms that could enhance the query. The core concepts were \"Kung Fu Panda,\" \"stage,\" and \"theater.\" Expansion paths included looking at synonymous, hierarchical, compositional, contextual, and domain-specific terms. Expanded terms that seem particularly useful include \"theatrical production,\" \"live adaptation,\" \"Broadway,\" \"West End,\" \"musical,\" \"play,\" \"adaptation,\" \"cast,\" \"crew,\" \"directors,\" \"playwrights,\" \"tickets,\" \"theaters,\" \"schedules,\" \"premiere,\" \"musical adaptation,\" and \"stage play.\"\n\nThe augmented query, combining the original with the best expansion terms, could be \"Kung Fu Panda stage production Broadway musical adaptation.\" This captures the essence of the user's search intent while providing enough specificity and breadth to retrieve relevant documents about any Kung Fu Panda stage productions, especially musical adaptations on notable stages like Broadway.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

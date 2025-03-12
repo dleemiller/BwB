@@ -1,0 +1,103 @@
+{
+  "reasoning": "The query \"Applying for and receiving business credit\" needs to be analyzed through a temporal lens to better understand its evolution. The historical foundation involves traditional lending practices. Development milestones include the rise of credit scoring and online lending platforms. The current landscape encompasses diverse funding options, including fintech lenders and crowdfunding. Emerging trends involve AI-driven credit assessments and blockchain-based lending. By extracting relevant terms from each of these phases, we can augment the original query to retrieve more relevant results focused on the application process.",
+  "historical_foundation": [
+    "Relationship banking",
+    "Collateral-based lending",
+    "Merchant banking",
+    "Character loans",
+    "Small Business Administration (SBA) loans",
+    "Traditional bank loans",
+    "Personal guarantees",
+    "Line of credit",
+    "Term Loans",
+    "Creditworthiness",
+    "Dun & Bradstreet (D&B)"
+  ],
+  "development_milestones": [
+    "Credit scoring models (e.g., FICO Small Business Scoring Service)",
+    "Online lending platforms",
+    "Alternative lenders",
+    "Microloans",
+    "Peer-to-peer lending",
+    "Business credit cards",
+    "Expansion of SBA loan programs",
+    "Specialized industry lending",
+    "Equipment financing",
+    "Invoice factoring"
+  ],
+  "current_landscape": [
+    "Fintech lenders",
+    "Crowdfunding",
+    "Venture debt",
+    "Revenue-based financing",
+    "Angel investors",
+    "Business lines of credit",
+    "SBA 7(a) loans",
+    "SBA 504 loans",
+    "Startup loans",
+    "Small business grants",
+    "Online application portals",
+    "Automated underwriting",
+    "Financial statement analysis"
+  ],
+  "emerging_trends": [
+    "AI in credit assessment",
+    "Blockchain-based lending",
+    "Decentralized finance (DeFi) for business",
+    "Embedded finance",
+    "Open banking",
+    "Sustainable financing options",
+    "ESG lending",
+    "Biometric identification for loan applications",
+    "Personalized financing products",
+    "Data-driven risk assessment"
+  ],
+  "temporal_terms": [
+    "Relationship banking",
+    "Credit scoring models",
+    "Online lending",
+    "Fintech lenders",
+    "AI credit assessment",
+    "Collateral",
+    "Personal Guarantee",
+    "SBA Loans",
+    "Microloans",
+    "Revenue based financing",
+    "Invoice Factoring",
+    "Creditworthiness"
+  ],
+  "augmented_query": "\"Applying for business credit\" \"SBA loans\" \"online lending\" fintech credit \"creditworthiness criteria\" \"business loan application process\" \"credit scoring models\" \"small business financing options\" \"revenue based financing\" \"invoice factoring\" \"collateral requirements\" \"personal guarantee\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.72998,
+    "NDCG@1000": 0.72998,
+    "NDCG@10000": 0.72998
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.52703,
+    "MAP@1000": 0.52703,
+    "MAP@10000": 0.52703
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.32642,
+  "instruction": "timetravel",
+  "query": "Applying for and receiving business credit",
+  "query_id": "26",
+  "dataset": "fiqa2018",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Applying for and receiving business credit,\" this makes me think of the various stages a business goes through when seeking financial assistance. Though the user might actually be trying to navigate the complex landscape of business credit options, I'm not sure yet what specific aspects they're interested in. Are they looking for traditional lending routes or perhaps something more innovative like fintech or crowdfunding? The query seems straightforward, but it's rich with potential paths to explore, from the initial application process to the criteria used for creditworthiness.\n\nI'm seeing several possibilities here, but to organize my approach, let me apply the Temporal Evolution Analysis technique, which involves dissecting how a topic has evolved over time and will likely continue to develop. This should help because it allows us to capture not just the current state of business credit but also its historical context and future directions. By doing so, we can create a more comprehensive query that includes terms from different eras, making it more effective for retrieving relevant information.\n\nStarting with the historical foundation, I note that traditional lending practices were heavily based on relationship banking, collateral, and character loans. This era also saw the inception of the Small Business Administration (SBA) loans and the importance of creditworthiness, often assessed through services like Dun & Bradstreet (D&B). Moving into developmental milestones, we see the rise of credit scoring models, such as the FICO Small Business Scoring Service, and the emergence of online lending platforms and alternative lenders. Terms like \"credit scoring models,\" \"online lending,\" and \"alternative lenders\" become pertinent here.\n\nNow, examining the current landscape, it's clear that fintech lenders, crowdfunding, and specialized industry lending have become significant. The expansion of SBA loan programs, the use of business credit cards, and the growth of equipment financing and invoice factoring also play crucial roles. This gives us terms like \"fintech lenders,\" \"crowdfunding,\" and \"revenue-based financing\" to consider. Lastly, looking at emerging trends, AI-driven credit assessments, blockchain-based lending, and decentralized finance (DeFi) for businesses are on the horizon. Terms such as \"AI credit assessment\" and \"blockchain-based lending\" are thus also relevant.\n\nAs I apply the Temporal Evolution Analysis technique, I'm systematically extracting terms from each phase: historical, developmental, current, and emerging. However, I'm also noticing interesting patterns and connections that aren't strictly linear. For instance, the concept of creditworthiness has evolved significantly from its origins in character loans to today's complex credit scoring models, and it will likely continue to evolve with AI-driven assessments. Similarly, the move from traditional banking to fintech and potentially blockchain-based solutions shows a trend towards more decentralized and technologically driven financing options.\n\nIntuitively, I'm making connections between these phases, recognizing that terms like \"collateral\" and \"personal guarantee,\" which were once central, are now complemented by \"revenue-based financing\" and \"invoice factoring.\" The technique is helping me uncover a temporal spectrum of terminology, from \"relationship banking\" to \"embedded finance\" and \"sustainable financing options.\" This blend of structured analysis and natural connections is crucial, as it ensures that our expanded query captures both the explicit and implicit aspects of what the user is seeking.\n\nThrough this process, I believe the terms that would be most effective for a BM25 index are those that span the temporal evolution of business credit, including \"SBA loans,\" \"online lending,\" \"fintech credit,\" \"creditworthiness criteria,\" \"business loan application process,\" \"credit scoring models,\" \"small business financing options,\" \"revenue-based financing,\" \"invoice factoring,\" \"collateral requirements,\" and \"personal guarantee.\" These terms, derived from both the systematic application of the Temporal Evolution Analysis technique and the natural flow of connections and insights, should provide a comprehensive foundation for exploring the topic of applying for and receiving business credit.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

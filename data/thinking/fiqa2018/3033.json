@@ -1,0 +1,82 @@
+{
+  "reasoning": "The query seeks practical information about the tax implications of changing state residency. The existing results are scattered and lack authoritative guidance. To improve, we need to create a conceptual map that clarifies the key aspects of this complex topic.\n\nThe map will center on the concept of \"State Residency\" with dimensions spanning Legal Requirements, Tax Implications, Filing Procedures, and Potential Benefits/Drawbacks. We'll explore neighboring territories like Immigration Status, Financial Planning, and Estate Law, as they intersect with residency changes.",
+  "central_coordinates": [
+    "State Residency",
+    "Legal Requirements",
+    "Tax Implications",
+    "Filing Procedures",
+    "Benefits/Drawbacks"
+  ],
+  "boundary_areas": [
+    "Immigration Status",
+    "Financial Planning",
+    "Estate Law",
+    "Income Tax Code",
+    "Relocation Services"
+  ],
+  "key_landmarks": [
+    "Domicile",
+    "Residency Requirements",
+    "Nexus",
+    "Form 1040",
+    "State Income Tax Brackets",
+    "Capital Gains Tax",
+    "Property Tax",
+    "Professional Licensing"
+  ],
+  "detail_features": [
+    "Exemptions",
+    "Deductions",
+    "Filing Deadlines",
+    "Withholding",
+    "Tax Treaties",
+    "Moving Expenses",
+    "Financial Advisors",
+    "Legal Counsel"
+  ],
+  "navigation_terms": [
+    "Domicile",
+    "Residency",
+    "Nexus",
+    "Tax Implications",
+    "State Income Tax",
+    "Capital Gains",
+    "Filing Requirements",
+    "Immigration Status",
+    "Financial Planning"
+  ],
+  "augmented_query": "\"tax implications of changing state residency\", \"legal requirements for establishing domicile\", \"impact of residency on income tax filings\", \"best practices for relocation and taxes\", \"state-specific tax guides for new residents\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.76643,
+    "NDCG@1000": 0.76643,
+    "NDCG@10000": 0.76643
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.56667,
+    "MAP@1000": 0.56667,
+    "MAP@10000": 0.56667
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.40875999999999996,
+  "instruction": "cartography",
+  "query": "Tax consequences of changing state residency?",
+  "query_id": "3033",
+  "dataset": "fiqa2018",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at \"Tax consequences of changing state residency\", this makes me think of all the complexities involved in relocating to a new state, from legal requirements to financial planning. Though the user might actually be trying to understand how their tax situation would change, hmm, not sure yet... The query seems straightforward, but it opens up a vast territory of considerations, including immigration status, estate law, and the intricacies of income tax codes. I'm seeing several possibilities here, from the purely legal aspects of establishing domicile to the practical financial implications of changing one's residency.\n\nLet me approach this using the Query Expansion via Conceptual Territory Mapping technique, which involves creating a detailed map of the conceptual territory surrounding the topic. This should help because it allows us to visualize and organize the complex relationships between different aspects of changing state residency, ensuring we cover both the explicit and implicit aspects of what the user is seeking.\n\nFollowing the technique, I first identify the central coordinates of our query: the concept of \"State Residency\" with its dimensions spanning Legal Requirements, Tax Implications, Filing Procedures, and Potential Benefits/Drawbacks. This gives us a clear center point and directions to explore. Now, setting the appropriate scale for exploration, I decide to delve into both granular details and broad overviews to capture the full spectrum of information relevant to our user.\n\nNext, I chart the boundaries of our query's immediate territory, noting neighboring domains such as Immigration Status, Financial Planning, and Estate Law. These areas often intersect with residency changes, so understanding these connections is crucial. Identifying landmarks within our territory, key concepts like \"Domicile\", \"Nexus\", and \"State Income Tax Brackets\" emerge as essential points of reference. The routes or methodologies for navigating these concepts include understanding legal requirements for establishing residency, the impact on income tax filings, and best practices for relocation.\n\nAs I fill in the detail features within each region, terms like \"Exemptions\", \"Deductions\", \"Filing Deadlines\", and \"Tax Treaties\" become important. These represent the finer details that can significantly affect an individual's tax situation when changing residency. Noting historical developments and emerging trends in tax law and policy can also provide valuable context for our user.\n\nCreating a cartographic legend, I classify the most important terms by region and significance. Terms like \"Domicile\", \"Residency\", \"Nexus\", \"Tax Implications\", and \"State Income Tax\" emerge as crucial for navigating the knowledge landscape surrounding tax consequences of changing state residency. These terms, derived from both the systematic application of the conceptual mapping technique and intuitive insights into the complexities of the topic, should help our user find authoritative guidance on their query.\n\nThrough this process of applying the conceptual territory mapping technique and exploring related threads, I believe the extracted navigation terms\u2014such as \"tax implications of changing state residency\", \"legal requirements for establishing domicile\", \"impact of residency on income tax filings\", \"best practices for relocation and taxes\", and \"state-specific tax guides for new residents\"\u2014would be most effective for a BM25 index. They capture both the explicit and implicit aspects of what the user is seeking, providing a comprehensive basis for further research or consultation.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

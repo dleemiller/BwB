@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query seeks guidance on identifying career interests, indicating a need for exploration and self-discovery. The results currently lack personalization and actionable insights. To improve upon this, we can focus on expanding the query to encompass:\n\n* **Individual attributes:** Skills, experiences, values, and personality traits.\n* **Career domains:**  Broad fields of interest (e.g., technology, healthcare, arts).\n* **Job roles:** Specific positions that align with interests and skills.",
+  "query_goals": [
+    "identify career interests",
+    "explore relevant skills and experiences",
+    "discover potential career paths",
+    "understand different job roles",
+    "gain insights into career domains"
+  ],
+  "node_classes": [
+    "Person",
+    "Skill",
+    "Experience",
+    "Value",
+    "Personality",
+    "CareerDomain",
+    "JobRole"
+  ],
+  "query_nodes": [
+    "career interests"
+  ],
+  "nearest_neighbors": [
+    "skills",
+    "experiences",
+    "values",
+    "personality traits",
+    "job search",
+    "career exploration",
+    "occupational pathways"
+  ],
+  "augmented_query": "How can I identify my career interests based on my skills, experiences, values, and personality traits? What are some potential career paths and job roles that align with my interests in [insert specific interests from user profile]?",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "How do I determine my career interest?",
+  "query_id": "362950",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "The query \"How do I determine my career interest?\" sparks a cascade of thoughts and associations in my mind. Initially, I think about the general process of self-discovery and the various factors that influence career choices, such as skills, experiences, values, and personality traits. It seems like the user is embarking on a journey to explore and understand their career aspirations, but the current query lacks specificity and personalization.\n\nAs I delve deeper, I consider the broader context of career development and the numerous resources available online. I think about the potential pitfalls of providing generic advice and the importance of tailoring guidance to individual needs. The user might be looking for a more nuanced and personalized approach to uncovering their career interests.\n\nTo expand this query effectively, I'll employ the Conceptual Graph Traversal technique. This method involves constructing a conceptual graph to visually represent the relationships between core concepts, entities, and attributes. By traversing this graph, I can identify high-value expansion terms that will enhance the search query and improve document retrieval.\n\nFirst, I analyze the original query to identify core concepts and entities. The primary concept here is \"career interest,\" which is closely tied to individual attributes like skills, experiences, values, and personality traits. The search intent is informational, as the user seeks guidance on determining their career interests.\n\nNext, I construct the conceptual graph, starting with core nodes representing the original query's entities and concepts. I add first-order connections, such as direct properties and attributes, and then expand to second-order connections, which include related concepts and relationships. Domain contexts, like career development and self-discovery, provide additional depth to the graph.\n\nWith the graph in place, I select promising directions for query expansion. I consider synonymous terms, hierarchical terms, compositional terms, contextual terms, and domain-specific terminology. For example, synonymous terms like \"career aspirations\" or \"professional interests\" could be useful, while hierarchical terms like \"job roles\" or \"industry sectors\" might provide additional specificity.\n\nAs I traverse the graph, I extract high-value terms from each expansion path and filter them based on relevance, distinctiveness, specificity, and searchability. Terms like \"skills assessment,\" \"personality tests,\" \"career values,\" and \"job market trends\" emerge as strong candidates for expansion.\n\nThrough this process, I begin to see connections between the original query and the expanded terms. The user's search intent remains focused on determining their career interests, but the expanded terms provide a richer context for exploration and discovery.\n\nAs I synthesize the results, I realize that the expanded terms can be grouped into themes, such as self-assessment, career exploration, and job market analysis. These themes can be used to construct an augmented query that better captures the user's needs and provides a more effective search experience.\n\nThe final expanded terms will include a mix of these themes, such as \"career interests assessment,\" \"skills-based job matching,\" \"personality-driven career guidance,\" and \"industry trends analysis.\" These terms maintain the original search intent while providing valuable alternative pathways for retrieval.\n\nUltimately, the augmented query will be a weighted selection of the best expansion terms, carefully crafted to balance specificity and generality. The resulting query will be more effective at retrieving relevant documents and providing the user with personalized guidance on determining their career interests.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

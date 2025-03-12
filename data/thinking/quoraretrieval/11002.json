@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query \"How do I raise funds?\" is broad and requires understanding the user's intent. \n\nIt could be seeking general information about fundraising principles, specific strategies for startups or nonprofits, or legal aspects of raising capital in a particular context (like India).  \n\nTo improve results, we need to refine the search by identifying:\n\n* **Target audience:**  Individual entrepreneur? Nonprofit organization?\n* **Funding type:** Debt financing? Equity investment? Grants? Donations?\n* **Context:**  Stage of business development? Geographical location?",
+  "query_goals": [
+    "Identify fundraising methods",
+    "Understand legal considerations for raising funds",
+    "Discover resources for securing funding"
+  ],
+  "node_classes": [
+    "Funding",
+    "Business",
+    "Nonprofit",
+    "Legal",
+    "Strategy",
+    "Resources"
+  ],
+  "query_nodes": [
+    "Funds",
+    "Raise"
+  ],
+  "nearest_neighbors": [
+    "Investment",
+    "Capital",
+    "Donations",
+    "Grants",
+    "Crowdfunding",
+    "Venture Capital"
+  ],
+  "augmented_query": "\"Fundraising methods for [Target Audience] in India, legal considerations for raising capital\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "How do I raise funds?",
+  "query_id": "11002",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"How do I raise funds?\"... this makes me think of various scenarios where individuals or organizations might need to secure funding, though the user might actually be trying to understand the legal aspects of fundraising or perhaps seeking strategies for a specific context, like startups in India. Hmm, not sure yet... \n\nI'm seeing several possibilities here, and to organize my thoughts, I'll approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting and filtering terms, and finally, forming an augmented query. This should help because it systematically breaks down the complex task of understanding and expanding a query into manageable steps, allowing for a more holistic understanding of the user's intent.\n\nFirst, let's analyze the query. The core concepts here are \"raising funds,\" which could imply fundraising methods, legal considerations, and resources for securing funding. The search intent seems informational, as the user is likely looking for guidance or strategies rather than navigating to a specific site or transactional page. An implicit assumption could be that the user is looking for general advice, but it's possible they're interested in a specific type of funding or context, such as nonprofit organizations or entrepreneurs in a particular geographical location.\n\nNow, constructing the conceptual graph... The core nodes would be \"funds,\" \"raise,\" and potentially \"legal considerations\" and \"strategies.\" First-order connections could include types of funding like \"debt financing,\" \"equity investment,\" \"grants,\" and \"donations.\" Second-order connections might involve the contexts in which these types of funding are relevant, such as \"startups,\" \"nonprofit organizations,\" and \"small businesses.\" Domain contexts could include \"finance,\" \"law,\" and \"entrepreneurship.\"\n\nFor expansion path selection, I identify the following promising directions:\n- Synonymous terms, such as \"capital\" for \"funds,\"\n- Hierarchical terms, like \"venture capital\" as a type of \"equity investment,\"\n- Compositional terms, such as \"investors\" as a component of \"fundraising,\"\n- Contextual terms, like \"India\" as a setting for \"fundraising strategies,\"\n- Domain-specific terminology, such as \"crowdfunding\" as a field-specific variant of \"fundraising.\"\n\nFollowing the technique, I should first identify core concepts and then extract expansion terms along these paths. However, wait, that's not quite right for this query. Let me adjust... Considering the user's potential interest in legal aspects or specific strategies, I might prioritize terms related to \"legal considerations\" and \"strategies\" over purely synonymous terms.\n\nThis step of the technique is revealing that the user's query could be narrowed down by considering the target audience and funding type. Which actually reminds me of the importance of geographical location in determining legal considerations and available resources for fundraising. I need to consider the next step in the technique, which involves term extraction and filtering, but I'm also noticing this interesting pattern where the distinction between \"funds\" for individuals versus organizations could significantly impact the relevance of the search results.\n\nApplying the specific aspect of the technique that involves filtering terms based on relevance, distinctiveness, specificity, and searchability leads me to discover terms like \"venture capital funding,\" \"nonprofit grants,\" and \"small business loans.\" I just had a realization that connects to what we were exploring earlier - the importance of understanding the stage of business development for the user. This could range from seed funding for startups to expansion funding for established businesses.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the following terms would be most effective for expanding the query: \"fundraising strategies,\" \"legal considerations for startups,\" \"venture capital,\" \"crowdfunding,\" \"nonprofit grants,\" \"small business loans,\" \"seed funding,\" \"expansion funding,\" \"funding for entrepreneurs in India,\" and \"capital investment options.\" These capture both the explicit and implicit aspects of what the user is seeking, balancing the need for general information with the specificity required for actionable advice.\n\nThe final step involves synthesizing these insights into an augmented query that maintains the original search intent while providing valuable alternative pathways for retrieval. Therefore, an effective augmented query could be: \"Fundraising methods and legal considerations for startups and small businesses in India, including venture capital, crowdfunding, grants, and loans.\"",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,63 @@
+{
+  "reasoning": "The original query seeks to understand how control theory is applied in radar tracking, particularly in the context of developing \"cognitive\" radar systems. The existing results primarily cover the historical development and basic principles of radar technology without delving into the specific application of control theory for cognitive functions.",
+  "query_goals": [
+    "Understand control theory applications in radar tracking",
+    "Explore algorithms and methodologies used for implementing control strategies in radar",
+    "Identify research on cognitive radar and its relation to control theory"
+  ],
+  "ineffective_terms": [
+    "First step",
+    "towards",
+    "cognition"
+  ],
+  "breadth_expansion": [
+    "adaptive",
+    "predictive",
+    "decision-making",
+    "pattern recognition",
+    "environment modeling",
+    "artificial intelligence",
+    "machine learning",
+    "robustness"
+  ],
+  "depth_chain": [
+    "adaptive control",
+    "adaptive filtering",
+    "optimal control",
+    "Kalman filter",
+    "Bayesian estimation",
+    "model predictive control"
+  ],
+  "augmented_query": "adaptive control  optimal control Kalman filter Bayesian estimation model predictive control radar target tracking",
+  "ndcg": {
+    "NDCG@10": 0.46928,
+    "NDCG@100": 0.57451,
+    "NDCG@1000": 0.57451,
+    "NDCG@10000": 0.61937
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.36508,
+    "MAP@1000": 0.36508,
+    "MAP@10000": 0.36579
+  },
+  "recall": {
+    "Recall@10": 0.33333,
+    "Recall@100": 0.66667,
+    "Recall@1000": 0.66667,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0003
+  },
+  "delta": 0.047069999999999945,
+  "instruction": "expand",
+  "query": "Control theoretic approach to tracking radar: First step towards cognition",
+  "query_id": "39959bc480d2972d8bb925708e6e8ad59664bcdb",
+  "dataset": "scidocs",
+  "thought_process": "Looking at the original query, \"Control theoretic approach to tracking radar: First step towards cognition,\" this makes me think of how control theory is applied in radar tracking, particularly in the context of developing \"cognitive\" radar systems. Though the user might actually be trying to understand the application of control theory for cognitive functions in radar, the existing results primarily cover the historical development and basic principles of radar technology without delving into the specific application of control theory. \n\nI'm seeing several possibilities here... Let me approach this using the expansion technique, which involves being specific and diverse, applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. This should help because it will allow me to introduce new dimensions to the query, making it novel and free from overlapping the original terms.\n\nFirst, I need to identify the primary objectives and gaps in the original query. The main goal is to understand control theory applications in radar tracking, explore algorithms and methodologies used for implementing control strategies in radar, and identify research on cognitive radar and its relation to control theory. The gaps are in the ineffective terms such as \"first step,\" \"towards,\" and \"cognition,\" which are too broad or non-precise.\n\nFollowing the expansion technique, I should first list the breadth expansion terms, which include \"adaptive,\" \"predictive,\" \"decision-making,\" \"pattern recognition,\" \"environment modeling,\" \"artificial intelligence,\" \"machine learning,\" and \"robustness.\" These terms introduce new dimensions to the query, making it more specific and diverse.\n\nNext, I need to choose one distant but important topic from the breadth expansion and go increasingly deeper in the related terms on that one selection. Let me choose \"adaptive control\" as it seems closely related to control theory and radar tracking. The depth expansion terms include \"adaptive control,\" \"adaptive filtering,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" and \"model predictive control.\" These terms are more targeted and relevant to the original query, and they do not overlap with the original terms.\n\nAs I apply the expansion technique, I'm noticing that the terms \"Kalman filter\" and \"Bayesian estimation\" are closely related to \"adaptive control\" and \"optimal control.\" This reminds me of the concept of \"state estimation\" in control theory, which is crucial for radar tracking. I'm also seeing a connection between \"model predictive control\" and \"environment modeling,\" which could be useful for cognitive radar systems.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the augmented query should include terms such as \"adaptive control,\" \"optimal control,\" \"Kalman filter,\" \"Bayesian estimation,\" \"model predictive control,\" and \"radar target tracking.\" These terms capture both the explicit and implicit aspects of what the user is seeking, and they are novel, diverse, and relevant to the original query.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

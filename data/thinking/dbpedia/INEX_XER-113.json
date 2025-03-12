@@ -1,0 +1,77 @@
+{
+  "reasoning": "To comprehensively answer the query 'Formula 1 drivers that won the Monaco Grand Prix', we need insights from experts in motorsport history, racing statistics, and perhaps even automotive engineering. Each expert will provide a unique perspective on driver performance, car specifications, and the historical context of the Monaco Grand Prix.",
+  "selected_experts": [
+    "Motorsport Historian",
+    "Formula 1 Statistician",
+    "Automotive Engineer",
+    "Racing Journalist",
+    "Driver Psychologist"
+  ],
+  "expert_insights": [
+    "**Motorsport Historian:** The Monaco Grand Prix has a rich history dating back to the early days of Formula One. Understanding the evolution of the race track, regulations, and car technology is crucial to identifying dominant drivers.",
+    "**Formula 1 Statistician:** Analyzing driver win percentages, podium finishes, fastest laps, and qualifying positions at Monaco can reveal patterns and trends that highlight successful strategies and skill sets.",
+    "**Automotive Engineer:**  The unique challenges of the Monaco circuit (narrow streets, tight corners, elevation changes) require specific car setups and driving techniques. An engineer's perspective can shed light on which cars and drivers excelled in adapting to these demands.",
+    "**Racing Journalist:** Journalists provide contextual insights into driver personalities, team dynamics, and key moments that contributed to victories at Monaco. Their coverage often highlights the human element behind the racing achievements.",
+    "**Driver Psychologist:**  A psychologist can analyze the mental fortitude, focus, and decision-making skills required to navigate the high-pressure environment of the Monaco Grand Prix."
+  ],
+  "cross_connections": [
+    "The influence of car technology on driver success",
+    "The psychological impact of the unique Monaco circuit",
+    "The historical evolution of racing strategies at Monaco"
+  ],
+  "recommended_resources": [
+    "Official Formula 1 archives",
+    "Motorsport history books and documentaries",
+    "Racing statistics websites (e.g., Racing-Reference.info)",
+    "Engineering journals focusing on Formula One",
+    "Interviews with former Monaco Grand Prix winners and experts"
+  ],
+  "extracted_terms": [
+    "Monaco Grand Prix",
+    "Formula 1",
+    "racing strategy",
+    "car setup",
+    "driver skill",
+    "track history",
+    "podium finish",
+    "qualifying position",
+    "circuit layout",
+    "tire management",
+    "aerodynamics",
+    "braking performance"
+  ],
+  "augmented_query": "Formula One drivers who have won the Monaco Grand Prix, including historical analysis of winning strategies, car technology, driver psychology, and notable performances throughout the race's history.",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 0.59155,
+    "NDCG@1000": 0.85722,
+    "NDCG@10000": 0.85722
+  },
+  "map": {
+    "MAP@10": 0.15625,
+    "MAP@100": 0.41336,
+    "MAP@1000": 0.49992,
+    "MAP@10000": 0.49992
+  },
+  "recall": {
+    "Recall@10": 0.15625,
+    "Recall@100": 0.48438,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 1.0,
+    "P@100": 0.31,
+    "P@1000": 0.064,
+    "P@10000": 0.0064
+  },
+  "delta": 0.009719999999999951,
+  "instruction": "expert",
+  "query": "Formula 1 drivers that won the Monaco Grand Prix",
+  "query_id": "INEX_XER-113",
+  "dataset": "dbpedia",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "As I delve into the query \"Formula 1 drivers that won the Monaco Grand Prix,\" my initial thoughts are about the prestigious nature of this race and the skill required to win it. This makes me think of legendary drivers like Ayrton Senna and Michael Schumacher, though the user might actually be trying to compile a comprehensive list or understand the strategic elements that contribute to a win. I'm not sure yet, but it seems like there's more to this query than just naming drivers.\n\nTo approach this systematically, I'll use the \"Query Expansion via Multi-Disciplinary Expert Panel\" technique, which involves convening a panel of experts from diverse backgrounds to analyze the query. This technique is beneficial because it brings together a wide range of perspectives, from the historical context of the race to the technical aspects of the cars and the psychological factors influencing driver performance.\n\nFirst, I identify the key disciplines: motorsport history, Formula 1 statistics, automotive engineering, racing journalism, and driver psychology. Each of these areas will provide a unique lens through which to view the query. For instance, a motorsport historian can offer insights into how the Monaco Grand Prix has evolved over the years, while a statistician can analyze win rates, pole positions, and other data points to identify patterns among successful drivers.\n\nAs I imagine the panel discussion, I see the motorsport historian highlighting the importance of understanding the track's evolution and how different eras of racing have impacted the types of drivers who succeed. The statistician is likely to emphasize the role of data in identifying top performers and trends in qualifying and racing strategies. Meanwhile, the automotive engineer will dive into the specifics of car design and setup, explaining how these factors can significantly affect a driver's ability to navigate the challenging Monaco circuit.\n\nThe racing journalist will provide stories and anecdotes about the drivers, their teams, and the races themselves, offering a more personal and contextual understanding of what it takes to win at Monaco. Lastly, the driver psychologist will explore the mental aspects of racing, discussing how focus, strategy, and adaptability under pressure are crucial for success in such a demanding environment.\n\nAs the experts share their insights, cross-connections become apparent. For example, the influence of car technology on driver success is a point where the automotive engineer and the statistician might find common ground, discussing how advancements in car design have affected race outcomes over the years. Similarly, the psychological impact of the unique Monaco circuit could be explored by both the driver psychologist and the racing journalist, as they discuss how drivers prepare for and react to the pressures of this particular race.\n\nThe recommended resources will likely include a mix of historical archives, statistical databases, engineering journals, and psychological studies, along with personal accounts from drivers and team principals. Terms that might be extracted for an expanded query could include \"Monaco Grand Prix winners,\" \"Formula 1 racing strategies,\" \"car aerodynamics,\" \"driver mental preparation,\" and \"historical context of Monaco Grand Prix.\"\n\nThrough this process of convening a multi-disciplinary expert panel and synthesizing their insights, the query can be expanded to capture a broader range of relevant information. The expanded query might look like this: \"Formula One drivers who have won the Monaco Grand Prix, including historical analysis of winning strategies, car technology, driver psychology, and notable performances throughout the race's history.\" This approach not only provides a list of winners but also delves into the complexities and nuances that underpin success in this iconic race.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

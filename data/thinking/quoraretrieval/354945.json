@@ -1,0 +1,58 @@
+{
+  "reasoning": "The query seeks a factual list of bariatric surgery types. The current results misunderstand the intent, offering related questions instead of direct answers. To improve, we need to identify core concepts related to \"bariatric surgery\" and explore relevant subcategories or classifications within that domain.",
+  "query_goals": [
+    "List bariatric surgery types",
+    "Understand different surgical procedures for weight loss"
+  ],
+  "node_classes": [
+    "Surgery",
+    "Weight Loss",
+    "Medical Procedures",
+    "Obesity Treatment",
+    "Gastrointestinal Surgery"
+  ],
+  "query_nodes": [
+    "Bariatric Surgery"
+  ],
+  "nearest_neighbors": [
+    "Gastric Bypass",
+    "Sleeve Gastrectomy",
+    "Roux-en-Y",
+    "Adjustable Gastric Band",
+    "Lap-Band"
+  ],
+  "augmented_query": "What are the types of bariatric surgery for weight loss?",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "What are the types of bariatric surgery?",
+  "query_id": "354945",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"What are the types of bariatric surgery?\"... this makes me think of various surgical procedures for weight loss, though the user might actually be trying to understand the different approaches to bariatric surgery, not just their names. Hmm, not sure yet... Let me start by breaking down the core concepts in the query. We have \"bariatric surgery\" as the central concept, and the user is seeking \"types\" of this surgery, implying a desire for a list or classification.\n\nI'm seeing several possibilities here... Let me approach this using the Conceptual Graph Traversal technique, which involves analyzing the query, constructing a conceptual graph, and then traversing it to find relevant expansion terms. This should help because it will allow me to systematically explore related concepts and identify high-value terms for query expansion.\n\nFirst, I need to identify the core concepts and entities in the original query. We have \"bariatric surgery\" as the main entity, and the intent is informational, seeking types of surgery. There are no explicit constraints, but implicitly, the user is looking for surgical procedures related to weight loss.\n\nNow, let's construct the conceptual graph. The core node is \"bariatric surgery.\" First-order connections include properties like \"surgical procedures,\" \"weight loss,\" and \"obesity treatment.\" Second-order connections might include related concepts like \"gastrointestinal surgery,\" \"surgical techniques,\" and \"post-operative care.\" The domain context is clearly medical, specifically surgical procedures for weight loss.\n\nFollowing the Conceptual Graph Traversal approach, I should next identify promising directions for query expansion. Let's consider synonymous terms like \"weight loss surgery,\" hierarchical terms such as \"gastric bypass\" or \"sleeve gastrectomy,\" compositional terms like \"laparoscopic surgery,\" and contextual terms such as \"obesity management\" or \"surgical weight loss options.\"\n\nFor each expansion path, I need to extract high-value terms. For synonymous terms, we have \"weight loss surgery\" and \"obesity surgery.\" Hierarchical terms give us \"gastric bypass,\" \"sleeve gastrectomy,\" and \"Roux-en-Y.\" Compositional terms include \"laparoscopic\" and \"minimally invasive surgery.\" Contextual terms provide \"obesity management,\" \"surgical weight loss options,\" and \"bariatric surgical procedures.\"\n\nApplying the filtering criteria, we prioritize terms based on relevance, distinctiveness, specificity, and searchability. This leads to a set of expanded terms that include \"gastric bypass,\" \"sleeve gastrectomy,\" \"Roux-en-Y,\" \"laparoscopic surgery,\" \"minimally invasive surgery,\" \"obesity management,\" \"surgical weight loss options,\" and \"bariatric surgical procedures.\"\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe these terms would be most effective for expanding the query: \"types of bariatric surgery for weight loss,\" including specific procedures like \"gastric bypass,\" \"sleeve gastrectomy,\" and broader concepts like \"obesity management\" and \"surgical weight loss options.\" These terms capture both the explicit and implicit aspects of what the user is seeking, providing a comprehensive basis for a more effective search.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,96 @@
+{
+  "reasoning": "The query \"Which are the best laptops for CS students?\" is a straightforward request for recommendations. To expand it using community Q&A patterns, I'll consider how people might rephrase the question, what motivations underlie it, what valuable responses look like, how community members interact with such questions, and what terminology arises in these interactions. This will help generate more specific and contextually relevant query terms.",
+  "question_variations": [
+    "What laptop do current CS students recommend?",
+    "What's it like using a Macbook for CS?",
+    "How should I choose a laptop for computer science?",
+    "What do people think about Dell XPS for programming?",
+    "Which is better for coding, a Mac or a PC laptop?",
+    "Has anyone regretted buying a particular laptop for CS?",
+    "What are must-have features in a laptop for a computer science student?",
+    "Best laptops for specific CS tasks like machine learning or game development?",
+    "Recommend a durable laptop that can withstand daily use on campus?",
+    "What are some budget-friendly laptops that still handle CS coursework well?"
+  ],
+  "underlying_motivations": [
+    "Seeking validation that their potential laptop choice is a good one.",
+    "Looking for personal decision support in choosing the right laptop.",
+    "Wanting insider knowledge about real-world performance and usability.",
+    "Needing diverse perspectives on subjective aspects like keyboard feel or trackpad quality.",
+    "Hoping to avoid common pitfalls or regrets when buying a laptop for CS.",
+    "Desire to find a laptop that caters specifically to the demands of programming and other CS-related activities.",
+    "Wanting to understand which features are essential versus which are merely nice-to-haves."
+  ],
+  "valuable_responses": [
+    "First-person accounts of using specific laptops for CS coursework.",
+    "Expert opinions from experienced programmers or IT professionals.",
+    "Step-by-step guides on configuring a laptop for a CS environment.",
+    "Comparisons of different laptop brands and models, highlighting pros and cons.",
+    "Nuanced answers considering the specific CS specializations (e.g., AI, web dev).",
+    "Recommendations based on budget, portability, and battery-life considerations.",
+    "Insights into long-term reliability and maintainability."
+  ],
+  "interaction_patterns": [
+    "Users asking for clarification on specific laptop specs, like RAM or CPU.",
+    "Debates about the merits of different operating systems (Windows, macOS, Linux).",
+    "Follow-up questions about software compatibility and ease of installation.",
+    "Related questions about accessories like external monitors or keyboards.",
+    "Discussions about repairability and availability of support.",
+    "Requests for coupon codes or discounts.",
+    "Sharing of personal experiences with specific laptop models within the context of CS coursework."
+  ],
+  "qa_terminology": [
+    "daily driver",
+    "bloatware",
+    "portability",
+    "thermals",
+    "keyboard feel",
+    "screen real estate",
+    "dongle life",
+    "code warrior",
+    "compiling",
+    "IDE",
+    "virtual machines",
+    "dual boot",
+    "command line",
+    "specs",
+    "bang for your buck",
+    "future-proof",
+    "ergonomics",
+    "eye strain"
+  ],
+  "augmented_query": "\"best laptops for CS students\" programming coding \"computer science\" \"software development\" \"college\" \"university\" \"recommendations\" \"reviews\" \"specs\" \"Intel\" \"AMD\" \"MacBook\" \"Dell XPS\" \"ThinkPad\" \"HP Spectre\" \"battery life\" \"portability\" \"keyboard feel\" \"screen resolution\" \"RAM\" \"SSD\" \"daily driver\" \"dual boot\" \"virtual machines\" \"budget friendly\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.3,
+    "P@100": 0.03,
+    "P@1000": 0.003,
+    "P@10000": 0.0003
+  },
+  "delta": 0.23784000000000005,
+  "instruction": "community",
+  "query": "Which are the best laptops for CS students?",
+  "query_id": "309865",
+  "dataset": "quoraretrieval",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Which are the best laptops for CS students?\"... this makes me think of several possibilities here. The user might be looking for laptops that can handle specific tasks such as programming, data analysis, or software development, but they also might be concerned about budget, portability, or durability. At first glance, it seems like a straightforward request for recommendations, but upon closer inspection, there are many underlying motivations and nuances to consider. \n\nI'm seeing several possibilities here... Let me approach this using the community Q&A pattern technique, which involves analyzing how people would discuss this topic in a Q&A platform. This should help because it allows us to tap into the organic, conversational aspects of how users interact with this type of query. By examining question variations, underlying motivations, valuable response patterns, community interactions, and vocabulary extraction, we can generate a more comprehensive and contextually relevant expanded query.\n\nFirst, I'll consider how people might rephrase the question. This involves creating variations that reflect different aspects of the query, such as personal experience questions like \"What laptop do current CS students recommend?\" or advice-seeking questions like \"How should I choose a laptop for computer science?\" These variations give us insight into the different angles from which users might approach the topic.\n\nNext, I need to identify the underlying motivations behind the query. Users might be seeking validation for their potential laptop choice, looking for personal decision support, wanting insider knowledge about real-world performance, or hoping to avoid common pitfalls. Understanding these motivations helps us to create an expanded query that addresses the user's needs more effectively.\n\nValuable responses in this context would include first-person accounts of using specific laptops for CS coursework, expert opinions from experienced programmers, step-by-step guides on configuring a laptop for a CS environment, and nuanced comparisons of different laptop models. These response patterns indicate what users find helpful and can guide our selection of terms for the expanded query.\n\nCommunity interactions also play a crucial role. Users might ask for clarification on specific laptop specs, engage in debates about operating systems, or request recommendations based on budget and portability considerations. By mapping these dynamics, we can identify common themes and terminology that are relevant to the query.\n\nFinally, extracting vocabulary from these interactions is key. Terms like \"daily driver,\" \"bloatware,\" \"portability,\" and \"future-proof\" reflect how users discuss laptops in a conversational context. Incorporating these terms into our expanded query can help it better match the natural language people use when searching for information on this topic.\n\nThrough this process of applying the community Q&A pattern technique and exploring related threads, I believe the terms from the augmented query would be most effective. They capture both the explicit and implicit aspects of what the user is seeking, from technical specifications like \"Intel,\" \"AMD,\" and \"RAM\" to more subjective considerations like \"keyboard feel,\" \"screen resolution,\" and \"budget friendly.\" This approach ensures that our expanded query is comprehensive, relevant, and aligned with how real people discuss and interact with the topic of laptops for CS students.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,63 @@
+{
+  "reasoning": "The original query seeks a clear understanding of the definition of voluntary muscles. The existing document types suggest an academic or educational context, which aligns with the need for detailed, scientifically accurate information. The current results provide a comprehensive look at voluntary muscles but lack focus and clarity due to information redundancy and verbosity. Thus, the augmentation requires emphasizing clarity, covering key aspects of voluntary muscles succinctly, and addressing misunderstandings by eliminating repetitive content. Recognizing core concepts and potential connections in a conceptual graph aids in pinpointing valuable expansion terms. These terms can enhance the search by covering synonyms, hierarchical terms, and domain-specific relevant aspects. The augmented query should secure relevant, concise results focused on the essence of voluntary muscles without redundant phrasing or excessive detail deviations.",
+  "query_goals": [
+    "Understand the clear definition of voluntary muscles.",
+    "Distinguish voluntary muscles from other muscle types concisely.",
+    "Identify examples and practical applications of voluntary muscles.",
+    "Clarify biological distinctions between voluntary and involuntary muscles.",
+    "Streamline information to avoid redundancy and enhance clarity."
+  ],
+  "node_classes": [
+    "Muscle Types",
+    "Muscle Control",
+    "Skeletal System",
+    "Neurological Influence",
+    "Muscle Examples"
+  ],
+  "query_nodes": [
+    "voluntary muscle",
+    "definition",
+    "striated muscle",
+    "conscious control",
+    "skeletal system"
+  ],
+  "nearest_neighbors": [
+    "skeletal muscle",
+    "sarcoplasmic contraction",
+    "neuromuscular junction",
+    "voluntary movement",
+    "myofibrils"
+  ],
+  "augmented_query": "voluntary muscle definition in skeletal system striated muscle with conscious control distinguish from involuntary muscles examples neurology",
+  "ndcg": {
+    "NDCG@10": 0.5,
+    "NDCG@100": 0.5,
+    "NDCG@1000": 0.5,
+    "NDCG@10000": 0.5
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.33333,
+    "MAP@1000": 0.33333,
+    "MAP@10000": 0.33333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.32855999999999996,
+  "instruction": "graph",
+  "query": "voluntary muscle definition",
+  "query_id": "538333",
+  "dataset": "msmarco",
+  "thought_process": "As I begin to tackle the query \"voluntary muscle definition,\" my initial thoughts revolve around the core concept of voluntary muscles and what the user might be seeking. This makes me think of the distinction between voluntary and involuntary muscles, and how the user might actually be trying to understand the role of voluntary muscles in the human body, perhaps for academic or professional purposes. However, I'm not sure yet how deep they want to dive into the specifics.\n\nTo approach this systematically, I decide to use the \"Query Expansion via Conceptual Graph Traversal\" technique. This involves constructing a conceptual graph around the query and then traversing it to find relevant expansion terms. The technique is appealing because it allows for a structured exploration of related concepts while still leaving room for intuitive connections and insights.\n\nFirst, I analyze the query to identify core concepts and entities. Here, \"voluntary muscle\" and \"definition\" stand out as central. The search intent appears to be informational, with the user seeking a clear understanding of what voluntary muscles are. There's an implicit assumption that the user is looking for information within a biological or medical context.\n\nNext, I construct the conceptual graph. Core nodes include \"voluntary muscle,\" \"muscle types,\" \"skeletal system,\" and \"conscious control.\" First-order connections involve properties like \"striated muscle\" and \"neurological influence.\" Second-order connections might include related concepts such as \"involuntary muscles\" for comparison and \"muscle examples\" for practical illustration. The domain context is clearly within biology or physiology.\n\nFor expansion path selection, I identify several promising directions: synonymous terms for clarity, hierarchical terms to broaden or narrow the search, compositional terms to delve into specifics, and contextual to apply the concept to real scenarios. Given the query's focus, terms related to the distinction between voluntary and involuntary muscles, as well as terms that highlight the role of the skeletal system and neurological control, seem particularly relevant.\n\nAs I extract and filter terms, I look for those that are not only relevant and distinctive but also specific and likely to appear in relevant documents. Terms like \"skeletal muscle,\" \"conscious control,\" \"striated muscle,\" and \"neuromuscular junction\" emerge as strong candidates. I also consider terms that might help distinguish voluntary muscles from involuntary ones, such as \"smooth muscle\" and \"cardiac muscle\" for contrast.\n\nThe process involves some reconsideration and adjustment. For instance, while \"sarcoplasmic contraction\" is relevant, it might be too specific and not directly contribute to a broader understanding of voluntary muscles. Similarly, \"myofibrils\" is an important component but might not be directly relevant to the user's quest for a definition.\n\nThrough this structured approach, complemented by natural thought patterns and intuitive leaps, I start to see a clearer picture of what terms will enhance the search query without making it overly complex or redundant. The technique helps in systematically exploring related concepts, but it's the balance with natural cognitive elements\u2014like recognizing patterns, making connections, and occasionally stepping back to reassess\u2014that truly refines the process.\n\nApplying the technique leads to insights such as recognizing the importance of \"conscious control\" in defining voluntary muscles and understanding how \"striated muscle\" is a key characteristic. These insights, combined with the structured approach, guide the selection of expansion terms that will improve the search results.\n\nUpon synthesizing the information, I conclude that the most effective terms for expanding the query \"voluntary muscle definition\" would include those that clarify the nature of voluntary muscles, distinguish them from other types, and relate them to relevant biological systems. This leads to an augmented query that is both focused and comprehensive, capturing the essence of what the user is seeking without unnecessary complexity.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

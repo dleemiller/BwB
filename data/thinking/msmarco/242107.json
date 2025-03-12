@@ -1,0 +1,65 @@
+{
+  "reasoning": "The query asks a straightforward question about food safety. The core concepts are \"cooked Italian sausage\" and \"refrigerator\" implying a search for safe storage duration. The document types are food safety guidelines and cooking advice, so the goal is to find reliable recommendations from trusted sources.\nThe strengths and weaknesses analysis suggests expanding the terms from this specific query to related terms, such as general types of sausages to increase retrieval and clarifying the temperature to be used when talking of refrigerator.",
+  "query_goals": [
+    "Determine safe storage duration",
+    "Identify reputable sources for food safety guidelines",
+    "Clarify storage conditions (temperature of refrigerator)"
+  ],
+  "node_classes": [
+    "Food Product",
+    "Cooking State",
+    "Cuisine",
+    "Storage Method",
+    "Time Duration",
+    "Temperature"
+  ],
+  "query_nodes": [
+    "italian sausage",
+    "cooked",
+    "refrigerator"
+  ],
+  "nearest_neighbors": [
+    "cooked sausage",
+    "refrigeration",
+    "pork sausage",
+    "beef sausage",
+    "poultry sausage",
+    "storage time",
+    "food safety",
+    "40\u00b0F",
+    "0-4\u00b0C",
+    "shelf life"
+  ],
+  "augmented_query": "\"how long can i keep cooked italian sausage in refrigerator OR refrigeration OR cooked sausage OR pork sausage at 40\u00b0F for food safety\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.36907,
+  "instruction": "graph",
+  "query": "how long can i keep cooked italian sausage in refrigerator",
+  "query_id": "242107",
+  "dataset": "msmarco",
+  "thought_process": "Looking at the query \"how long can i keep cooked italian sausage in refrigerator,\" my initial impression is that this is a straightforward question about food safety. The user is seeking information on the safe storage duration of cooked Italian sausage in a refrigerator, which implies a search for reliable recommendations from trusted sources. My first association is with general food safety guidelines and cooking advice, suggesting that the document types we're looking for are likely to be from reputable sources such as health departments, culinary experts, or food safety organizations.\n\nAs I delve deeper, I start to think about the core concepts involved: \"cooked Italian sausage\" and \"refrigerator.\" These terms suggest that we're dealing with a specific type of food product (Italian sausage), its cooking state (cooked), and a storage method (refrigeration). This makes me consider related concepts, such as the storage conditions (temperature of the refrigerator), which could significantly impact the safety and quality of the stored food.\n\nTo systematically approach this query expansion, I decide to use the Conceptual Graph Traversal technique. This involves constructing a conceptual graph with core nodes (direct entities/concepts from the query), first-order connections (direct properties, attributes, and relationships), second-order connections (related concepts one step removed), and domain contexts (specialized fields where this query has meaning).\n\nThe core concepts from our query are \"Italian sausage,\" \"cooked,\" and \"refrigerator.\" First-order connections include the type of sausage (pork, beef, poultry), the cooking method, and storage conditions (temperature). Second-order connections might involve related food products, cooking techniques, or storage methods. Domain contexts include food safety, culinary arts, and health guidelines.\n\nFor expansion path selection, I identify several promising directions:\n1. **Synonymous terms:** Using terms like \"refrigeration\" instead of \"refrigerator\" to capture a broader range of relevant documents.\n2. **Hierarchical terms:** Considering broader categories like \"sausages\" or narrower ones like \"sweet Italian sausage\" to capture variations in user queries.\n3. **Compositional terms:** Including terms related to the composition of Italian sausage, such as \"pork\" or \"beef,\" to cover different types of sausages.\n4. **Contextual terms:** Adding terms related to the context of storage, such as \"food safety\" or \"shelf life,\" to ensure the query captures the user's intent regarding safe storage practices.\n5. **Domain-specific terminology:** Incorporating terms from the culinary or food safety domains, such as \"40\u00b0F\" or \"0-4\u00b0C,\" to specify the storage conditions accurately.\n\nWhen extracting and filtering terms, I look for relevance, distinctiveness, specificity, and searchability. Terms like \"cooked sausage,\" \"pork sausage,\" \"beef sausage,\" \"poultry sausage,\" \"storage time,\" \"food safety,\" \"40\u00b0F,\" and \"0-4\u00b0C\" are considered because they are semantically connected to the original query, provide a range of specificity, and are likely to appear in relevant documents.\n\nAs I apply the Conceptual Graph Traversal technique, I notice that terms like \"refrigeration\" and \"food safety\" are crucial for capturing the intent of the query accurately. The technique also highlights the importance of considering the temperature (\"40\u00b0F\" or \"0-4\u00b0C\") for safe storage, which might not be immediately apparent but is vital for precise advice.\n\nThrough this process, I realize that the original query can be significantly enhanced by incorporating these expansion terms. The augmented query becomes: \"how long can i keep cooked italian sausage in refrigerator OR refrigeration OR cooked sausage OR pork sausage at 40\u00b0F for food safety.\" This expansion maintains the original search intent while providing valuable alternative pathways for retrieval, increasing the likelihood of finding relevant and reliable information on the safe storage duration of cooked Italian sausage.\n\nThe insights emerging from both the structured technique and my intuition suggest that balancing specific terms related to the food product (e.g., \"Italian sausage,\" \"pork sausage\") with terms related to the storage conditions (e.g., \"refrigeration,\" \"40\u00b0F\") and the context of food safety is key to creating an effective augmented query. This approach ensures that the query is comprehensive, covering various aspects of the user's question, and targeted, focusing on the most relevant information that can be found in trusted sources.\n\nIn synthesizing the information gathered through the Conceptual Graph Traversal technique and my natural thought patterns, I conclude that the final terms selected for the augmented query effectively capture both the explicit and implicit aspects of what the user is seeking. These terms are not only relevant and distinctive but also specific and searchable, making them highly effective for a BM25 index. The process of applying the technique and exploring related threads has led to a clear and logical expansion of the original query, ensuring that the user's information needs are met comprehensively.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

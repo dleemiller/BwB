@@ -1,0 +1,93 @@
+{
+  "reasoning": "To provide a more comprehensive understanding of \"pork\", I will explore its history, technological advancements in pork production, current practices, and potential future trends. This will allow me to identify terms associated with pork production and consumption across different time periods for query expansion.",
+  "historical_foundation": [
+    "Domestication of wild boar",
+    "Early pork consumption in ancient civilizations (China, Rome)",
+    "Development of pig breeds",
+    "Traditional farming methods",
+    "Curing and preservation techniques (salting, smoking)",
+    "Lard production",
+    "Butchering practices"
+  ],
+  "development_milestones": [
+    "Industrialization of pig farming (20th century)",
+    "Development of concentrated animal feeding operations (CAFOs)",
+    "Advances in pig genetics and breeding",
+    "Improved animal nutrition",
+    "Introduction of antibiotics and growth promoters",
+    "Mechanization of slaughtering and processing",
+    "Refrigeration and transportation advancements",
+    "Development of processed pork products (ham, bacon, sausage)"
+  ],
+  "current_landscape": [
+    "Modern pig farming practices",
+    "Global pork market",
+    "Focus on animal welfare",
+    "Concerns about antibiotic resistance",
+    "Traceability and food safety regulations",
+    "Organic and sustainable pork production",
+    "Diverse pork products and culinary applications",
+    "Consumer preferences and trends"
+  ],
+  "emerging_trends": [
+    "Precision livestock farming",
+    "Genome editing and genetic engineering",
+    "Alternative protein sources for pig feed",
+    "Reduction of antibiotic use",
+    "Improved waste management techniques",
+    "Cultured meat (lab-grown pork)",
+    "Personalized nutrition and pork products",
+    "Blockchain for supply chain transparency"
+  ],
+  "temporal_terms": [
+    "Wild boar",
+    "Swine",
+    "Bacon",
+    "Ham",
+    "Sausage",
+    "Lard",
+    "Pig farming",
+    "CAFO",
+    "Antibiotic resistance",
+    "Organic pork",
+    "Sustainable pork",
+    "Processed pork",
+    "Cultured meat",
+    "Precision livestock farming",
+    "Genome editing"
+  ],
+  "augmented_query": "pork OR swine OR bacon OR ham OR sausage OR lard OR pig farming OR \"concentrated animal feeding operation\" OR \"antibiotic resistance\" OR \"organic pork\" OR \"sustainable pork\" OR \"processed pork\" OR \"cultured meat\" OR \"precision livestock farming\" OR \"genome editing\"",
+  "ndcg": {
+    "NDCG@10": 0.86431,
+    "NDCG@100": 0.6062,
+    "NDCG@1000": 0.47842,
+    "NDCG@10000": 0.81623
+  },
+  "map": {
+    "MAP@10": 0.01685,
+    "MAP@100": 0.08272,
+    "MAP@1000": 0.19656,
+    "MAP@10000": 0.28964
+  },
+  "recall": {
+    "Recall@10": 0.01728,
+    "Recall@100": 0.11879,
+    "Recall@1000": 0.473,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.8,
+    "P@100": 0.55,
+    "P@1000": 0.219,
+    "P@10000": 0.0463
+  },
+  "delta": 0.05527000000000004,
+  "instruction": "timetravel",
+  "query": "pork",
+  "query_id": "PLAIN-1909",
+  "dataset": "nfcorpus",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"pork\", this makes me think of not just the meat itself, but the entire industry and history surrounding it. The user might actually be trying to understand the broader context of pork, from its historical roots to current production methods and future trends. At first glance, it seems like a simple query, but as I delve deeper, I realize there's a wealth of information to uncover.\n\nI'm seeing several possibilities here, but to organize my thoughts, let me approach this using the Temporal Evolution Analysis technique, which involves analyzing how a topic has evolved over time and will likely develop in the future to discover temporally diverse terminology. This should help because it allows me to systematically consider the historical, current, and future aspects of pork production and consumption, ensuring a comprehensive query expansion.\n\nStarting with the historical foundation, I consider the domestication of wild boar, early pork consumption in ancient civilizations like China and Rome, the development of pig breeds, and traditional farming methods. This step of the technique is revealing the rich history behind pork, which actually reminds me of how different cultures have valued pork throughout history, leading to various culinary and preservation techniques.\n\nMoving on to developmental milestones, I map key evolutionary stages such as the industrialization of pig farming, the development of concentrated animal feeding operations (CAFOs), advances in pig genetics and breeding, and the introduction of antibiotics and growth promoters. Applying the Temporal Evolution Analysis approach, I notice that each milestone not only changed the pork industry's efficiency and output but also its terminology and consumer perception.\n\nWhen assessing the current landscape, I identify modern pig farming practices, the global pork market, concerns about animal welfare, antibiotic resistance, and the push for organic and sustainable pork production. This step of the technique leads me to realize the complexity of the current pork industry, balancing production needs with ethical and health concerns, which in turn suggests additional relevant terms such as \"traceability,\" \"food safety regulations,\" and \"consumer preferences.\"\n\nProjecting how the pork industry is likely to evolve, I consider emerging trends like precision livestock farming, genome editing, alternative protein sources for pig feed, and the development of cultured meat. Following the Temporal Evolution Analysis, this points me toward a future where technology plays a significant role in pork production, potentially leading to more sustainable and personalized products.\n\nThrough this process of applying Temporal Evolution Analysis and exploring related threads, I've compiled a list of terms from each time period, including \"wild boar,\" \"swine,\" \"bacon,\" \"ham,\" \"sausage,\" \"lard,\" \"pig farming,\" \"CAFO,\" \"antibiotic resistance,\" \"organic pork,\" \"sustainable pork,\" \"processed pork,\" \"cultured meat,\" \"precision livestock farming,\" and \"genome editing.\" These terms capture both the explicit and implicit aspects of what the user is seeking regarding pork, from historical context to future developments.\n\nI believe these terms would be most effective for a BM25 index, as they encapsulate the temporal evolution of the pork industry, reflecting its past, present, and future. By combining structured analysis with intuitive connections, I've generated a comprehensive expanded query that should provide a robust search experience.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,61 @@
+{
+  "reasoning": "The query seeks a clear definition of \"concurrent disorders.\" While existing results touch upon related concepts and complexities, they lack a direct, concise definition upfront.  To improve retrieval, we need to: 1) identify core concepts like \"disorders\" and \"concurrent,\" 2) explore synonyms and related terms, 3) consider the domain context (psychology, psychiatry), and 4) structure the augmented query for clarity.",
+  "query_goals": [
+    "define concurrent disorders",
+    "identify types of concurrent disorders",
+    "understand challenges in diagnosing concurrent disorders"
+  ],
+  "node_classes": [
+    "Mental Health Disorder",
+    "Diagnostic Criteria",
+    "Co-occurrence",
+    "Psychiatry",
+    "Psychology"
+  ],
+  "query_nodes": [
+    "concurrent disorders",
+    "disorders",
+    "definition"
+  ],
+  "nearest_neighbors": [
+    "comorbidity",
+    "dual diagnosis",
+    "overlapping diagnoses",
+    "multiple mental illnesses"
+  ],
+  "augmented_query": "\"definition concurrent disorders comorbidity dual diagnosis multiple mental illnesses psychiatry psychology\"",
+  "ndcg": {
+    "NDCG@10": 0.38685,
+    "NDCG@100": 0.38685,
+    "NDCG@1000": 0.38685,
+    "NDCG@10000": 0.38685
+  },
+  "map": {
+    "MAP@10": 0.2,
+    "MAP@100": 0.2,
+    "MAP@1000": 0.2,
+    "MAP@10000": 0.2
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.16875000000000004,
+  "instruction": "graph",
+  "query": "concurrent disorders definition",
+  "query_id": "96749",
+  "generator_model": "gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "source": "zeta-alpha-ai/NanoMSMARCO",
+  "dataset": "msmarco",
+  "thought_process": "Looking at the query \"concurrent disorders definition,\" this makes me think of the complexities involved in diagnosing and treating multiple mental health issues simultaneously. Though the user might actually be trying to understand the concept of concurrent disorders, I'm not sure yet how deep they want to dive into specifics like types of disorders or diagnostic challenges. \n\nMy initial impression is that we need to clarify what \"concurrent disorders\" means, possibly touching upon its relation to comorbidity, dual diagnosis, and the overarching context of psychiatry and psychology. The structured data provided outlines a clear path towards understanding and expanding this query, emphasizing the need to identify core concepts, explore synonyms and related terms, and consider the domain context.\n\nTransitioning to a more structured approach, I'll be using the Query Expansion via Conceptual Graph Traversal technique. This involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting and filtering terms, and finally, formulating an augmented query. \n\nStarting with query analysis, the core concepts here are \"concurrent disorders\" and \"definition,\" with an informational search intent. Implicit assumptions include the user's interest in understanding the concept within the realms of psychology and psychiatry.\n\nConstructing the conceptual graph, we have core nodes like \"concurrent disorders\" and \"definition.\" First-order connections include properties like \"comorbidity\" and \"dual diagnosis.\" Second-order connections might involve related concepts such as \"mental health treatment\" or \"diagnostic criteria.\" The domain context is clearly psychology and psychiatry.\n\nFor expansion path selection, I identify several promising directions: \n- Synonymous terms like \"co-occurring conditions\" or \"comorbid mental illnesses.\"\n- Hierarchical terms such as \"mental health disorders\" (broader) or \"specific concurrent disorders like depression and anxiety\" (narrower).\n- Compositional terms including \"types of concurrent disorders\" or \"symptoms of comorbidity.\"\n- Contextual terms such as \"concurrent disorders in adolescents\" or \"treatment approaches for comorbid conditions.\"\n- Domain-specific terminology like \"psychiatric comorbidity\" or \"dual diagnosis treatment centers.\"\n\nExtracting and filtering terms, I look for relevance, distinctiveness, specificity, and searchability. Terms like \"comorbidity,\" \"dual diagnosis,\" \"psychiatry,\" and \"psychology\" are highly relevant and specific. \"Mental health treatment\" and \"diagnostic criteria\" offer a broader yet still relevant context. \n\nAs I apply the technique, I notice that terms like \"co-occurring conditions\" and \"comorbid mental illnesses\" provide synonymous pathways, while \"mental health disorders\" gives a hierarchical perspective. The compositional term \"types of concurrent disorders\" and the contextual term \"concurrent disorders treatment\" add depth to our query. Domain-specific terms like \"psychiatric comorbidity\" ensure we're targeting the right field.\n\nThrough this process, insights emerge from both the structured approach and natural intuition. Applying the conceptual graph traversal technique leads to the discovery of terms like \"comorbidity\" and \"dual diagnosis,\" which are crucial for understanding concurrent disorders. My instinct also suggests including terms that reflect the challenges and complexities of diagnosing and treating these conditions.\n\nSynthesizing my findings, I believe the most effective terms for expanding the query \"concurrent disorders definition\" would include \"comorbidity,\" \"dual diagnosis,\" \"psychiatry,\" \"psychology,\" \"mental health treatment,\" \"diagnostic criteria,\" \"co-occurring conditions,\" \"comorbid mental illnesses,\" and \"concurrent disorders treatment.\" These terms capture both the explicit and implicit aspects of what the user is seeking, providing a comprehensive basis for an augmented query.\n\nThe final augmented query could be: \"definition of concurrent disorders, including comorbidity, dual diagnosis, and treatment approaches in psychiatry and psychology.\" This query balances the need for a clear definition with the complexity of the topic, incorporating both structured technique and natural cognitive patterns to enhance document retrieval.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

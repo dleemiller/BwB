@@ -1,0 +1,70 @@
+{
+  "reasoning": "The query presents a multifaceted argument against random drug testing, emphasizing privacy rights, the harm to innocent individuals, and the lack of justification when students are not exhibiting problematic behavior. The weaknesses highlight a need for deeper analysis and more diverse sources. To improve retrieval, the query needs to be expanded with terms that capture the legal, ethical, and practical aspects of the debate, including alternative arguments and relevant case law or policy documents.",
+  "query_goals": [
+    "Find legal precedents related to student privacy rights in schools, specifically concerning drug testing.",
+    "Identify ethical arguments for and against random drug testing, including utilitarian and deontological perspectives.",
+    "Explore the effectiveness of random drug testing as a deterrent to drug use among students.",
+    "Uncover policy recommendations and best practices for addressing drug use in schools that respect student rights.",
+    "locate case studies or examples of legal challenges to random drug testing programs in educational institutions."
+  ],
+  "node_classes": [
+    "Legal Principles",
+    "Ethical Theories",
+    "Drug Testing Methods",
+    "Privacy Rights",
+    "Educational Policies"
+  ],
+  "query_nodes": [
+    "Right to Privacy",
+    "Random Drug Testing",
+    "Students",
+    "Harm",
+    "Reasonable Suspicion"
+  ],
+  "nearest_neighbors": [
+    "Fourth Amendment",
+    "Invasion of privacy",
+    "Student Rights",
+    "Probable Cause",
+    "Deterrence Theory",
+    "Utilitarianism",
+    "Deontology",
+    "School Safety",
+    "Zero Tolerance Policies",
+    "Due Process"
+  ],
+  "augmented_query": "\"Right to privacy AND (random drug testing OR drug screening) AND students AND (Fourth Amendment OR privacy rights OR invasion of privacy) (ethical considerations OR utilitarianism OR deontology) (school safety OR deterrence OR student rights)\"",
+  "ndcg": {
+    "NDCG@10": 0.5,
+    "NDCG@100": 0.5,
+    "NDCG@1000": 0.5,
+    "NDCG@10000": 0.5
+  },
+  "map": {
+    "MAP@10": 0.33333,
+    "MAP@100": 0.33333,
+    "MAP@1000": 0.33333,
+    "MAP@10000": 0.33333
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.23735,
+  "instruction": "graph",
+  "query": "Right to privacy  Even if a right to privacy (which would prevent random drug testing with no reason for suspicion) does not exist in law in every country, many students being affected by drugs tests will perceive that the notional right to privacy which they believe they possess is being violated. Because they would perceive this violation as a harm, it should not be imposed without good reason. This problematizes the nature of 'random' testing, which by definition means forcing drug tests on individuals on whom there is no reasonable suspicion of drug use.  Firstly, the majority of those being tested will most likely test negative (as the previously cited statistics suggest) and so a majority will be harmed for no fault of their own, but rather as a consequence of the crimes of others. This may be seen as the equivalent of searching all homes in a neighbourhood for an illegal weapon on the suspicion that one of them was hiding it -an action which would be illegal in almost every western liberal democracy.  Further, however, even if students do engage in illegal drug use, random drug tests will additionally catch only those on whom there was previously no suspicion against (as students who show signs of drug use are already usually tested). In order to not already be under suspicion, these drug-using students would have to be engaging in their education, not disrupting the education of others, and not displaying erratic or harmful behaviour. As they are not actively harming others, these students should be subject only to the same standards as individuals in other areas of society: to only have their privacy violated by drugs tests if their behaviour actively brings them under suspicion.",
+  "query_id": "test-education-egscphsrdt-con01a",
+  "dataset": "arguana",
+  "generator_model": "openrouter/google/gemini-2.0-flash-001",
+  "temperature": 1.0,
+  "thought_process": "As I begin to expand the query related to the right to privacy and random drug testing in schools, my initial thoughts are centered around understanding the core concepts and the intent behind the query. The original query presents a multifaceted argument against random drug testing, emphasizing privacy rights, the harm to innocent individuals, and the lack of justification when students are not exhibiting problematic behavior. This makes me think about the legal, ethical, and practical aspects of the debate. \n\nThe first step in my thought process is to identify the core concepts and entities within the query. These include \"right to privacy,\" \"random drug testing,\" \"students,\" and the broader contexts of \"legal principles,\" \"ethical theories,\" and \"educational policies.\" Understanding these core elements provides a foundation for further expansion. \n\nNext, I consider the search intent, which appears to be informational, aiming to find legal precedents, ethical arguments, and policy recommendations related to drug testing in schools. Recognizing this intent helps guide the expansion process towards terms and concepts that are likely to yield relevant and informative results.\n\nWith the core concepts and intent in mind, I transition to constructing a conceptual graph. This involves creating nodes for the core concepts and then adding first-order and second-order connections. First-order connections include direct properties and attributes like \"Fourth Amendment\" for \"right to privacy\" and \"deterrence theory\" for \"random drug testing.\" Second-order connections bring in related concepts such as \"invasion of privacy,\" \"student rights,\" and \"school safety.\"\n\nThe process of graph construction naturally leads to identifying promising directions for query expansion. I consider synonymous terms, hierarchical terms, compositional terms, contextual terms, and domain-specific terminology. For instance, synonymous terms for \"random drug testing\" could include \"drug screening\" or \"mandatory drug tests.\" Hierarchical terms might involve broader concepts like \"substance abuse prevention\" or narrower terms such as \"urine tests.\" Compositional terms could include \"drug test kits\" or \"testing protocols,\" while contextual terms might encompass \"school environments\" or \"educational settings.\" Domain-specific terminology could involve legal terms like \"due process\" or educational terms such as \"zero-tolerance policies.\"\n\nAs I traverse the conceptual graph and explore these expansion paths, I extract high-value terms and filter them based on relevance, distinctiveness, specificity, and searchability. This systematic approach ensures that the expanded terms not only maintain the original search intent but also provide alternative pathways for document retrieval that are both precise and relevant.\n\nThrough this process, insights begin to emerge from both the structured approach of graph traversal and the natural, intuitive connections made during the exploration of related concepts. For example, applying the conceptual graph technique leads to the discovery of terms like \"probable cause\" and \"invasion of privacy,\" which are directly relevant to the legal aspects of random drug testing. Meanwhile, my intuition suggests considering the ethical arguments from utilitarian and deontological perspectives, which could reveal additional insights into the justification and impact of such testing.\n\nAs I synthesize the information gathered from both the structured technique and natural thought patterns, I believe the expanded terms should include a mix of legal, ethical, and practical aspects. These could encompass terms like \"Fourth Amendment rights,\" \"privacy violations,\" \"drug deterrence strategies,\" \"school safety measures,\" \"student privacy laws,\" and \"ethical considerations in drug testing.\" The final augmented query should effectively capture the complexity of the issue, facilitating a comprehensive search that yields relevant legal precedents, ethical discussions, and policy analyses related to random drug testing in schools.\n\nThe resulting augmented query, combining the original query with the selected expansion terms, would look something like: \"Right to privacy AND (random drug testing OR drug screening) AND students AND (Fourth Amendment OR privacy rights OR invasion of privacy) AND (ethical considerations OR utilitarianism OR deontology) AND (school safety OR deterrence OR student rights).\" This query aims to balance the need for specific, relevant information with the breadth of perspectives required to fully understand the issue of random drug testing in educational settings.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

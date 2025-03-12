@@ -1,0 +1,72 @@
+{
+  "reasoning": "The query explores the intersection of open justice principles and televised criminal trials, particularly in cases with numerous victims.  It highlights the potential benefits (victim access, transparency) and challenges (manipulation, resource allocation). A conceptual graph analysis can help identify key concepts related to these aspects, including legal frameworks, victim support mechanisms, broadcasting ethics, and international perspectives on open justice.",
+  "query_goals": [
+    "understand the impact of televising criminal trials",
+    "explore the benefits and challenges of televised trials for victims",
+    "analyze the legal and ethical considerations surrounding televised trials",
+    "investigate international practices regarding open justice and televised trials",
+    "evaluate the effectiveness of televised trials in promoting transparency and accountability"
+  ],
+  "node_classes": [
+    "Open Justice",
+    "Criminal Trial",
+    "Victims",
+    "Television Broadcasting",
+    "Legal Frameworks",
+    "Ethics",
+    "Transparency",
+    "Accessibility",
+    "Resource Allocation",
+    "International Law"
+  ],
+  "query_nodes": [
+    "Open Justice",
+    "Crimes",
+    "Victims",
+    "Televised Trials",
+    "Legal Systems",
+    "Trial Proceedings"
+  ],
+  "nearest_neighbors": [
+    "Public Access to Courts",
+    "Judicial Transparency",
+    "Victim Advocacy",
+    "Media Coverage of Trials",
+    "International Criminal Tribunals",
+    "Broadcasting Regulations"
+  ],
+  "augmented_query": "\"Open Justice principles, televised criminal trials, crimes with many victims, legal frameworks, victim support, transparency, accessibility, resource allocation, international law\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "Open justice \u2013 crimes with large numbers of victims  The principle of open justice, including the right to a public trial [1] , is enshrined in many legal systems. The best show of commitment to open justice is to allow everyone to watch it, the best method of doing so is for the trial to be televised. This is all the more the case when the victims can't all be in court, either because of the numbers or because of the distance.  Television coverage will help bring the trial closer to the victims. International criminal trials regularly take place outside the location of the offences, either in The Netherlands such as the ICTY, ICC and Charles Taylor trial, or elsewhere, such as the ICTR sitting in Arusha, Tanzania. It would be helpful in terms of providing closure to the victims, who should be witnessing proceedings.  [1] See the 6th Amendment to the US Constitution, Article 6 of the European Convention on Human Rights",
+  "query_id": "test-law-umtlilhotac-con02a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"Open justice \u2013 crimes with large numbers of victims,\" this makes me think of the importance of transparency and accessibility in the justice system, especially for victims who cannot be physically present in court. Though the user might actually be trying to understand the impact of televising criminal trials on the victims and the legal system as a whole, I'm not sure yet how deep they want to dive into the legal frameworks and international practices. \n\nAs I begin to approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting and filtering terms, and then forming an augmented query, I realize this should help because it systematically breaks down the complex concepts and relationships within the query. \n\nFirst, let's identify the core concepts and entities in the original query: Open Justice, Crimes, Victims, Televised Trials, and Legal Systems. The search intent seems to be informational, aiming to understand the principles, benefits, and challenges of open justice in the context of crimes with many victims. There's an implicit assumption that televised trials could be a method to enhance open justice, but we need to explore this further.\n\nNext, constructing the conceptual graph, we have core nodes like \"Open Justice\" and \"Crimes.\" First-order connections include properties like \"transparency,\" \"accessibility,\" and relationships such as \"victim support\" and \"legal frameworks.\" Second-order connections bring in related concepts like \"international law,\" \"judicial transparency,\" and \"victim advocacy.\" Domain contexts include legal studies, criminal justice, and human rights.\n\nFor expansion path selection, we can consider synonymous terms like \"public trials\" for \"televised trials,\" hierarchical terms such as \"criminal proceedings\" for \"crimes,\" compositional terms like \"trial proceedings\" and \"court accessibility,\" contextual terms including \"international criminal tribunals\" and \"media coverage of trials,\" and domain-specific terminology such as \"restorative justice\" and \"victim-centered approach.\"\n\nFollowing the technique, I should first identify promising expansion directions. Let's select the paths of synonymous terms, hierarchical terms, and contextual terms. For synonymous terms, \"public trials\" and \"broadcasted justice\" could be useful. Hierarchical terms could include \"criminal justice system\" and \"judicial processes.\" Contextual terms might involve \"war crime tribunals\" and \"human rights violations.\"\n\nNow, extracting and filtering terms, we look for relevance, distinctiveness, specificity, and searchability. Relevant terms might include \"public access to courts,\" \"judicial transparency,\" and \"victim support mechanisms.\" Distinctive terms could be \"restorative justice practices\" and \"international human rights law.\" Specific terms like \"criminal trial broadcasting regulations\" and \"victim advocacy groups\" are also valuable. Searchable terms that are likely to appear in relevant documents include \"open justice reforms,\" \"televised trial benefits,\" and \"access to justice for victims.\"\n\nAs I apply the technique, I'm realizing that the terms \"public trials,\" \"criminal justice system,\" \"victim-centered approach,\" \"international human rights law,\" and \"access to justice\" are emerging as key expansion terms. They capture the essence of open justice, the impact of televised trials, and the legal and ethical considerations involved. My instinct says we should also consider terms like \"transparency in judicial processes\" and \"media's role in criminal trials\" to cover the informational intent comprehensively.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the following terms would be most effective for enhancing the original query: \"Open Justice principles,\" \"televised criminal trials,\" \"crimes with many victims,\" \"public access to courts,\" \"judicial transparency,\" \"victim support,\" \"international human rights law,\" \"restorative justice practices,\" \"access to justice,\" and \"criminal trial broadcasting regulations.\" These terms capture both the explicit and implicit aspects of what the user is seeking, balancing the need for information on open justice, the benefits and challenges of televised trials, and the legal and ethical frameworks surrounding these concepts.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

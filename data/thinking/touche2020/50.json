@@ -1,0 +1,75 @@
+{
+  "reasoning": "The original query is a complex socio-economic issue, likely to be debated in a Q&A setting.  While existing documents provide structured arguments, community discussions would delve into personal experiences, practical implications, and diverse opinions.",
+  "question_variations": [
+    "What are the real-life impacts of universal basic income?",
+    "Is UBI a realistic solution to poverty?",
+    "How would UBI affect the job market?",
+    "Would you support giving everyone a guaranteed minimum income?",
+    "Has anyone tried implementing UBI successfully?"
+  ],
+  "underlying_motivations": [
+    "Seeking validation for personal views on wealth inequality",
+    "Looking for practical guidance on potential impacts of UBI",
+    "Desiring diverse perspectives on alternative economic models",
+    "Interested in real-world stories and experiences related to UBI",
+    "Hoping to connect with others who share similar concerns about social welfare"
+  ],
+  "valuable_responses": [
+    "Personal anecdotes of how UBI has (or hasn't) improved people's lives",
+    "Expert analysis from economists or sociologists on the potential effects of UBI",
+    "Step-by-step plans for implementing UBI at a local or national level",
+    "Counterarguments to common UBI claims, highlighting potential downsides",
+    "Comparisons between UBI and other social welfare programs"
+  ],
+  "interaction_patterns": [
+    "Questions about funding sources for UBI",
+    "Discussions on the definition of 'basic income' and its adequacy",
+    "Debate around the impact of UBI on work motivation",
+    "Follow-up questions asking for specific examples of successful UBI implementations",
+    "People sharing their personal experiences with poverty or social safety nets"
+  ],
+  "qa_terminology": [
+    "struggling financially",
+    "make ends meet",
+    "cost of living crisis",
+    "fair share",
+    "dignity",
+    "community support",
+    "safety net",
+    "economic justice"
+  ],
+  "augmented_query": "\"Universal basic income effects on individuals, communities and economy\"",
+  "ndcg": {
+    "NDCG@10": 0.86695,
+    "NDCG@100": 0.82041,
+    "NDCG@1000": 0.86866,
+    "NDCG@10000": 0.88382
+  },
+  "map": {
+    "MAP@10": 0.60684,
+    "MAP@100": 0.68146,
+    "MAP@1000": 0.6902,
+    "MAP@10000": 0.6904
+  },
+  "recall": {
+    "Recall@10": 0.61538,
+    "Recall@100": 0.76923,
+    "Recall@1000": 0.92308,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.8,
+    "P@100": 0.1,
+    "P@1000": 0.012,
+    "P@10000": 0.0013
+  },
+  "delta": 0.023990000000000067,
+  "instruction": "community",
+  "query": "Should everyone get a universal basic income?",
+  "query_id": "50",
+  "dataset": "touche2020",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "As I delve into the query \"Should everyone get a universal basic income?\", my initial impressions lean towards the complexity of the issue, knowing it's a topic that sparks intense debate in both economic and social spheres. The question itself seems straightforward, but it branches out into numerous aspects such as poverty, employment, social welfare, and the overall structure of economies. It makes me think about the diverse perspectives people might have, ranging from those who see it as a solution to alleviate poverty and inequality to those who believe it could have negative impacts on work motivation and the economy as a whole.\n\nTo approach this systematically, I'll use the Query Expansion via Community Q&A Patterns technique. This involves several steps, starting with reframing the original query into different types of questions that could arise in a community Q&A setting. For instance, personal experience questions like \"What is it like to live off a universal basic income?\" or advice-seeking questions such as \"How should governments implement a universal basic income effectively?\" This step helps in understanding the various dimensions of the query and the information seekers' potential needs.\n\nNext, identifying the hidden motivations behind the query is crucial. The asker might not just be seeking a yes or no answer but possibly looking for validation of their views on wealth inequality, guidance on the practical implications of UBI, or hoping to find diverse perspectives that go beyond the traditional arguments for and against UBI. Recognizing these motivations can guide the expansion towards more relevant and useful information.\n\nThe technique also emphasizes the importance of answer archetypes\u2014identifying what types of responses would be most valuable to the information seeker. In the context of UBI, first-person narratives about living with or without UBI, expert analyses from economists, step-by-step guides for implementation, and contrarian viewpoints could all offer unique insights. \n\nFurthermore, analyzing community interactions around UBI can provide insights into common misconceptions, frequently asked follow-up questions, and how discussions evolve over time. This includes understanding the vocabulary and terminology people use when discussing UBI in informal settings, such as \"struggling financially,\" \"cost of living crisis,\" and \"economic justice.\" These terms can serve as essential keywords in the expanded query, ensuring it captures the nuances of real-world discussions.\n\nApplying the Query Expansion via Community Q&A Patterns technique systematically involves considering each of these aspects: reframing questions, understanding hidden motivations, identifying valuable answer types, mapping community interactions, and extracting relevant vocabulary. This structured approach complements my natural thought process by ensuring that no aspect of the query's potential evolution in a community setting is overlooked.\n\nAs I apply this technique, I notice my thoughts jumping between the potential benefits and drawbacks of UBI, the various ways it could be implemented, and the importance of personal stories in understanding its impact. The technique helps me to organize these thoughts, ensuring that my expanded query is comprehensive and reflective of how people actually discuss and debate UBI.\n\nThrough this process, I start to see how my initial impressions and associations with the query evolve into a more nuanced understanding. The Query Expansion via Community Q&A Patterns technique provides a framework that not only structures my thought process but also encourages the exploration of diverse perspectives and the integration of intuitive insights that arise from considering the query in a community Q&A context.\n\nThe insights emerging from this process lead me to believe that an effective expanded query should incorporate terms that reflect both the explicit and implicit aspects of discussions around UBI. This includes considering the effects of UBI on individuals, communities, and the economy, as well as the diverse perspectives and experiences that shape these discussions.\n\nIn synthesizing my thoughts and the insights gained from applying the Query Expansion via Community Q&A Patterns technique, I conclude that the expanded query should indeed capture the complexity and nuance of real-world discussions about UBI. This involves moving beyond a simple yes or no question to an exploration of UBI's multifaceted impacts and the various ways it is perceived and experienced by different individuals and communities.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

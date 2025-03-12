@@ -1,0 +1,63 @@
+{
+  "reasoning": "The goal is to enhance the retrieval effectiveness of documents related to 'Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization' by identifying and integrating semantically relevant terms into an augmented query. The original query indicates a focus on computational methods (specifically Cholesky factorization) for learning Gaussian Markov Random Fields in a sparse setting, often discussed within academic literature on machine learning or signal processing. This suggests the search intent is informational with constraints emphasizing computational efficiency and sparsity. Current results show relevance but lack depth in areas specific to sparse learning and Cholesky factorization, highlighting the need to broaden coverage using conceptually related terms.",
+  "query_goals": [
+    "Identify core concepts within the original query relevant to Gaussian Markov Random Fields (GMRFs), sparsity, and Cholesky factorization",
+    "Determine additional computational techniques that complement or extend Cholesky factorization for sparse data structures",
+    "Explore mathematical foundations and algorithmic strategies related to GMRF learning in sparse environments",
+    "Capture domain-specific terminology that may provide alternative pathways into the existing literature on this topic"
+  ],
+  "node_classes": [
+    "Computational Methods",
+    "Mathematical Concepts",
+    "Statistical Models",
+    "Algorithmic Strategies",
+    "Domain-Specific Terminology"
+  ],
+  "query_nodes": [
+    "Gaussian Markov Random Fields (GMRFs)",
+    "Sparse Learning",
+    "Cholesky Factorization"
+  ],
+  "nearest_neighbors": [
+    "Graphical Lasso",
+    "Conjugate Gradient Methods",
+    "Banded Matrices",
+    "Precision Matrices",
+    "Block Diagonal Matrices",
+    "Sparse Inverse Covariance Estimation",
+    "Efficient Sampling Algorithms",
+    "Matrix Decomposition Techniques"
+  ],
+  "augmented_query": "Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization, Graphical Lasso, Conjugate Gradient Methods, Precision Matrices, Efficient Sampling Algorithms",
+  "ndcg": {
+    "NDCG@10": 0.14607,
+    "NDCG@100": 0.20003,
+    "NDCG@1000": 0.24351,
+    "NDCG@10000": 0.27503
+  },
+  "map": {
+    "MAP@10": 0.05,
+    "MAP@100": 0.05519,
+    "MAP@1000": 0.0579,
+    "MAP@10000": 0.05836
+  },
+  "recall": {
+    "Recall@10": 0.2,
+    "Recall@100": 0.4,
+    "Recall@1000": 0.6,
+    "Recall@10000": 0.8
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.003,
+    "P@10000": 0.0004
+  },
+  "delta": 0.09692,
+  "instruction": "graph",
+  "query": "Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization",
+  "query_id": "2a8bcf35e6b5b3910eea160b3a1fb3e6bcb3966e",
+  "dataset": "scidocs",
+  "thought_process": "Looking at the original query, \"Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization,\" this makes me think of advanced computational methods for machine learning and signal processing, particularly those dealing with sparse data structures and efficient algorithmic strategies. Though the user might actually be trying to find more generalized approaches to learning Gaussian Markov Random Fields, it seems the emphasis is on the speed and sparsity aspects, possibly for applications where computational resources are limited or where the data itself is sparse. Hmm, not sure yet how broad or deep the user wants to explore these topics, but it's clear there's a strong interest in both the mathematical foundations and the practical, algorithmic aspects.\n\nI'm seeing several possibilities here, so let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph around the core concepts of the query and then traversing this graph to identify relevant expansion terms. This should help because it systematically explores the semantic space around the original query, uncovering related terms and concepts that might not be immediately apparent but are highly relevant for improving document retrieval.\n\nFirst, I identify the core concepts: Gaussian Markov Random Fields (GMRFs), sparsity, and Cholesky factorization. These terms are at the heart of the query and represent the primary interests of the user. The search intent appears to be informational, with the user seeking detailed information on computational methods for learning GMRFs efficiently, especially in sparse settings.\n\nNow, let's construct the conceptual graph. The core nodes are GMRFs, sparse learning, and Cholesky factorization. First-order connections include properties like computational efficiency, data structure sparsity, and algorithmic complexity. Second-order connections might involve related computational techniques such as graphical lasso, conjugate gradient methods, and matrix decomposition techniques, which either complement or extend the capabilities of Cholesky factorization in sparse contexts.\n\nFor expansion path selection, I'll consider several directions: synonymous terms (e.g., \"fast learning\" for \"efficient learning\"), hierarchical terms (broader concepts like \"machine learning\" or narrower ones like \"banded matrices\"), compositional terms (components of GMRFs or specific algorithms for sparse learning), contextual terms (applications in signal processing or computer vision), and domain-specific terminology (specialized terms used within the machine learning or statistics communities).\n\nGiven these directions, I'll extract high-value terms. For synonymous terms, \"efficient algorithms\" could be a good expansion. Hierarchical terms might include \"machine learning models\" or \"statistical signal processing.\" Compositional terms could involve \"precision matrices\" or \"block diagonal matrices,\" which are relevant to the structure and computation of GMRFs. Contextual terms might include \"image processing\" or \"network analysis,\" where GMRFs are commonly applied. Domain-specific terminology could encompass \"sparse inverse covariance estimation\" or \"efficient sampling algorithms,\" which directly relate to the computational aspects of sparse GMRF learning.\n\nNow, filtering these terms for relevance, distinctiveness, specificity, and searchability, I find that terms like \"graphical lasso,\" \"conjugate gradient methods,\" \"precision matrices,\" and \"efficient sampling algorithms\" are not only highly relevant but also distinctive and specific, offering new pathways into the literature without merely duplicating the original query terms.\n\nThrough this process of applying the conceptual graph traversal technique and exploring related threads, I believe the terms \"Graphical Lasso,\" \"Conjugate Gradient Methods,\" \"Precision Matrices,\" and \"Efficient Sampling Algorithms\" would be most effective for expanding the query. They capture both the explicit and implicit aspects of what the user is seeking, enhancing the retrieval effectiveness for documents related to fast sparse Gaussian Markov Random Fields learning based on Cholesky factorization.\n\nThe final step is synthesizing these insights into an augmented query that balances the original intent with the newly identified expansion terms. The original query was \"Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization.\" With the expansion terms, the augmented query becomes \"Fast Sparse Gaussian Markov Random Fields Learning Based on Cholesky Factorization, Graphical Lasso, Conjugate Gradient Methods, Precision Matrices, Efficient Sampling Algorithms.\" This augmented query maintains the focus on efficient learning of GMRFs in sparse contexts while incorporating complementary computational techniques and concepts that should significantly improve the relevance and depth of the search results.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

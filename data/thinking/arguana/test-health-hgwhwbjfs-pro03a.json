@@ -1,0 +1,75 @@
+{
+  "reasoning": "The query explores the relationship between nutrition and academic performance in school children.  It argues that healthier meals lead to better student outcomes, benefiting both individuals and the education system. The provided text leans towards an opinion piece advocating for policy changes regarding school lunches.",
+  "query_goals": [
+    "Understand the link between nutrition and academic achievement",
+    "Explore the impact of unhealthy food on students' performance",
+    "Identify potential benefits of healthier school meals",
+    "Analyze arguments for government intervention in school nutrition policies",
+    "Examine societal implications of poor student nutrition"
+  ],
+  "node_classes": [
+    "Nutrition",
+    "Education",
+    "Health",
+    "Policy",
+    "Socioeconomics",
+    "School Meals",
+    "Academic Performance",
+    "Obesity",
+    "Children",
+    "Government"
+  ],
+  "query_nodes": [
+    "nutrition",
+    "students",
+    "school meals",
+    "academic performance",
+    "healthy lifestyle",
+    "junk food"
+  ],
+  "nearest_neighbors": [
+    "Student Wellbeing",
+    "Educational Outcomes",
+    "School Health Programs",
+    "Childhood Obesity",
+    "Food Security",
+    "Dietary Guidelines",
+    "Public Health Policy",
+    "Teacher Training",
+    "Early Childhood Education"
+  ],
+  "augmented_query": "Better nutrition for students leads to better academic performance. How do healthy school meals impact student wellbeing, educational outcomes, and obesity rates?",
+  "ndcg": {
+    "NDCG@10": 0.43068,
+    "NDCG@100": 0.43068,
+    "NDCG@1000": 0.43068,
+    "NDCG@10000": 0.43068
+  },
+  "map": {
+    "MAP@10": 0.25,
+    "MAP@100": 0.25,
+    "MAP@1000": 0.25,
+    "MAP@10000": 0.25
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.16803,
+  "instruction": "graph",
+  "query": "Better nutrition leads to better students.  There is a growing body of evidence linking a healthy lifestyle, comprising of both adequate nutrition and physical exercise, with improved memory, concentration and general academic performance. [1] A study has shown that when primary school students consume three or more junk food meals a week literacy and numeracy scores dropped by up to 16% compared to the average. [2]  This is a clear incentive for governments to push forward for healthier meals in schools for two reasons. The first obvious benefit is to the student, whose better grades award her improved upward mobility \u2013 especially important for ethnic groups stuck worst by the obesity epidemic and a lower average socioeconomic status.  The second benefit is to the schools, who benefit on standardized testing scores and reduced absenteeism, as well as reduced staff time and attention devoted to students with low academic performance or behavior problems and other hidden costs of low concentration and performance of students. [3]  [1] CDC, 'Student Health and Academic Achievement', 19 October 2010,  , accessed 9/11/2011  [2] Paton, Graeme, \u2018Too much fast food \u2018harms children\u2019s test scores\u2019\u2019, The Telegraph, 22 May 2009,  accessed 20 September 2011  [3] Society for the Advancement of Education, 'Overweight students cost schools plenty', December 2004,  , 9/11/2011",
+  "query_id": "test-health-hgwhwbjfs-pro03a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"Better nutrition leads to better students.  There is a growing body of evidence linking a healthy lifestyle, comprising of both adequate nutrition and physical exercise, with improved memory, concentration and general academic performance,\" this makes me think of the intricate relationship between what we eat and how our brains function, especially in the context of academic performance. Though the user might actually be trying to understand the broader implications of nutrition on educational outcomes, it seems the query is angled towards advocating for healthier school meals. \n\nI'm seeing several possibilities here, but let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves constructing a conceptual graph to find high-value expansion terms. This should help because it systematically breaks down the query into core concepts, entities, and their relationships, allowing for a more thorough exploration of relevant terms.\n\nFirst, I need to analyze the query to identify core concepts and entities. The original query primarily deals with \"nutrition,\" \"students,\" \"academic performance,\" and the impact of \"healthy lifestyle\" choices such as consuming \"junk food\" or opting for \"healthy school meals.\" The search intent seems informational, aiming to understand how nutrition affects academic outcomes.\n\nNext, I'll construct a conceptual graph. The core nodes include \"nutrition,\" \"students,\" \"academic performance,\" and \"school meals.\" First-order connections involve the relationships between these concepts, such as how nutrition affects academic performance. Second-order connections could include related concepts like \"physical exercise,\" \"obesity,\" and \"socioeconomic status.\" Domain contexts include education, health, and policy-making.\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"healthy eating\" for \"nutrition\"), hierarchical terms (e.g., \"diet\" as a broader concept than \"nutrition\"), compositional terms (e.g., \"meal planning\" as a part of \"school meals\"), contextual terms (e.g., \"school environment\"), and domain-specific terminology (e.g., \"educational outcomes\" in the context of \"academic performance\").\n\nNow, let's extract and filter terms for each expansion path. For synonymous terms, \"healthy eating\" and \"dietary habits\" could be relevant. For hierarchical terms, \"health and wellness\" could encompass the broader benefits of good nutrition. Compositional terms might include \"school meal programs\" or \"nutrition education.\" Contextual terms could involve \"school policies\" or \"community programs.\" Domain-specific terms might include \"academic achievement,\" \"educational equity,\" or \"child development.\"\n\nAs I apply the technique, I'm also considering natural thought patterns. For instance, the impact of socioeconomic status on access to healthy food options is a critical factor. This reminds me of related concepts like food security and public health policy, which could further inform our query.\n\nOccasionally, I reconsider certain paths, like when thinking about the role of physical exercise. While it's crucial for overall health, the query specifically mentions nutrition. However, acknowledging its importance in a healthy lifestyle, terms related to physical activity could provide a more holistic view of factors influencing academic performance.\n\nThrough this process, insights are emerging from both the structured approach and intuition. Applying the conceptual graph traversal technique leads me to terms like \"school nutrition programs\" and \"childhood obesity prevention,\" which directly address the query's focus. My instinct also suggests considering the psychological impact of nutrition on students, such as \"mental health\" and \"concentration,\" which could complement the physical and academic aspects.\n\nSynthesizing these thoughts, I believe the expanded query should include terms that capture the essence of nutrition's impact on academic performance, the benefits of healthy school meals, and the broader societal implications. Terms like \"academic achievement,\" \"educational equity,\" \"nutrition education,\" \"school meal programs,\" \"childhood obesity prevention,\" and \"public health policy\" would be invaluable for a more comprehensive search.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I've identified key terms that enhance the original query. These terms balance the explicit and implicit aspects of the user's search intent, providing a robust foundation for document retrieval.\n\nThe final expanded query could look like this: \"How do healthy school meals and nutrition education impact student wellbeing, educational outcomes, and obesity rates, considering factors like socioeconomic status, access to healthy food options, and public health policy?\"\n\nExpanded terms include:\n- Healthy eating\n- Dietary habits\n- Health and wellness\n- School meal programs\n- Nutrition education\n- Academic achievement\n- Educational equity\n- Childhood obesity prevention\n- Public health policy\n- School policies\n- Community programs\n- Food security\n\nThese terms are selected based on their relevance, distinctiveness, specificity, and searchability, ensuring they maintain the original search intent while offering valuable alternative pathways for retrieval.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

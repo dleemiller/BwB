@@ -1,0 +1,67 @@
+{
+  "reasoning": "The query focuses on understanding cyberattacks perpetrated by non-state actors. Existing results touch upon the complexities of cyberwarfare but lack specific details about non-state actors' motivations, tactics, and capabilities. \n\nTo improve results, we need to delve deeper into the motivations and actions of these actors.  We'll analyze the query to identify key concepts related to non-state actors and cyberattacks, construct a conceptual graph representing these relationships, and explore expansion paths that lead to more specific and relevant information about this topic.",
+  "query_goals": [
+    "Identify motivations of non-state actors in cyberattacks",
+    "Describe tactics employed by non-state actors",
+    "Analyze the impact of non-state actor cyberattacks",
+    "Explore legal and ethical implications of non-state actor cyberattacks"
+  ],
+  "node_classes": [
+    "Cyberattack",
+    "Non-State Actor",
+    "Motivation",
+    "Tactic",
+    "Impact",
+    "Cybersecurity Policy",
+    "International Law"
+  ],
+  "query_nodes": [
+    "Cyberattacks",
+    "Non-state actors"
+  ],
+  "nearest_neighbors": [
+    "Hacktivists",
+    "Cyberterrorists",
+    "Anonymous",
+    "APT Groups",
+    "Espionage",
+    "Sabotage",
+    "Data Breaches",
+    "Ransomware",
+    "Nation-State Proxies"
+  ],
+  "augmented_query": "Cyber attacks by non-state actors, motivations of hacktivists, tactics used by cyberterrorists",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.13093,
+  "instruction": "graph",
+  "query": "Cyber attacks are often carried out by non-state actors  Cyber attacks are often carried out by non-state actors, such as cyberterrorists or hacktivists (social activists who hack), without any involvement of the actual state. For instance, in 2007 a massive cyber attack launched on Estonia was blamed on Russia due to the then on-going tensions between these two states [17]. However, the attacks on Estonia were generated from all over the world; and even those from Russia could not have been linked to the Russian authorities, who denied involvement. Similarly, a huge wave of cyber attacks dubbed GhostNet that compromised computers in 103 countries in 2009 was blamed on China, not the least for hacking computers of Tibetan authorities. However, it could not be conclusively proven that this was an attack perpetrated by the Chinese authorities [18]. Any retaliation against a state for a cyber attack can never be certain to be against the right target \u2013 the state should not be blamed for the actions of its individual citizens.",
+  "query_id": "test-science-wsihwclscaaw-con01a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query \"Cyber attacks are often carried out by non-state actors,\" this makes me think of the complexities and challenges in identifying the perpetrators of such attacks. The user might actually be trying to understand the motivations, tactics, and impacts of these non-state actors in the realm of cyberattacks. However, the query seems somewhat broad, so I need to delve deeper into what specific aspects of non-state actors in cyberattacks the user is interested in.\n\nI'm seeing several possibilities here, including the exploration of hacktivists, cyberterrorists, and other types of non-state actors, as well as the legal and ethical implications of their actions. Let me approach this using the \"Query Expansion via Conceptual Graph Traversal\" technique, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting and filtering terms, and finally, augmenting the query. This should help because it provides a structured method for identifying relevant terms and concepts that can enhance the search query.\n\nFollowing the Query Expansion via Conceptual Graph Traversal approach, I should first identify the core concepts and entities in the original query. The core concepts here are \"cyber attacks\" and \"non-state actors.\" The search intent appears to be informational, aiming to gather insights into the actions, motivations, and impacts of non-state actors in cyberattacks.\n\nNext, I need to construct a conceptual graph with core nodes like \"cyber attacks\" and \"non-state actors,\" and then consider first-order connections such as the types of non-state actors (e.g., hacktivists, cyberterrorists), their tactics, and the impacts of their cyberattacks. I also need to think about second-order connections, which could include related concepts like cybersecurity policies, international law, and the role of nation-states in cyberattacks.\n\nFor expansion path selection, I identify several promising directions. One is looking into synonymous terms for \"non-state actors\" and \"cyber attacks,\" which could include \"cyberterrorists,\" \"hacktivists,\" and \"cyber warfare.\" Another direction is exploring hierarchical terms, such as specific types of cyberattacks (e.g., \"ransomware,\" \"data breaches\") and the motivations behind them (e.g., financial gain, political activism). Compositional terms could involve the tools and techniques used by non-state actors, such as \"malware\" and \"social engineering.\" Contextual terms might include the settings in which these cyberattacks occur, such as \"financial institutions\" or \"government databases.\"\n\nAs I extract and filter terms, I need to ensure they are relevant, distinctive, specific, and searchable. Terms like \"hacktivism,\" \"cyber espionage,\" \"denial of service,\" and \"cybersecurity legislation\" seem promising because they directly relate to the actions and implications of non-state actors in cyberattacks.\n\nThroughout this process, I'm also considering natural cognitive elements like occasional false starts or reconsiderations. For instance, initially, I thought focusing solely on \"cyberterrorists\" might be too narrow, but then realized that exploring specific types of non-state actors could provide valuable insights. Additionally, intuitive connections, such as recognizing the importance of cybersecurity policies in preventing or mitigating cyberattacks, are complementing my structured approach.\n\nThe insights emerging from both the structured technique and my intuition are leading me to terms that capture the breadth of non-state actor involvement in cyberattacks. Applying the Query Expansion via Conceptual Graph Traversal technique has systematically pointed me toward terms like \"cyber attack motivations,\" \"non-state actor tactics,\" and \"legal implications of cyberattacks,\" while my instinct suggests also considering \"cyberattack prevention strategies\" and \"international cooperation on cybersecurity.\"\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the expanded terms would be most effective for enhancing the search query. These terms capture both the explicit and implicit aspects of what the user is seeking, providing a more nuanced and detailed exploration of non-state actors in cyberattacks.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

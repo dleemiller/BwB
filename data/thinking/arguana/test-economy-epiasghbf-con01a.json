@@ -1,0 +1,69 @@
+{
+  "reasoning": "The query delves into the \"double burden\" faced by women, exploring the intersection of paid work and unpaid domestic/care labor. It highlights the persistent inequality despite a feminizing labor market, emphasizing the increased time, physical, and mental demands placed on women. The goal is to understand the extent to which increased labor force participation empowers women when their essential contributions in caregiving remain undervalued and unrecognized.",
+  "query_goals": [
+    "understand the concept of the 'double burden' faced by women",
+    "analyze the impact of feminization of labor on unpaid care work",
+    "evaluate the empowerment potential of increased female labor force participation",
+    "identify the societal factors contributing to the persistence of this burden",
+    "explore potential solutions or interventions to address this issue"
+  ],
+  "node_classes": [
+    "Labor Market",
+    "Gender Roles",
+    "Care Work",
+    "Economic Inequality",
+    "Social Expectations",
+    "Feminism",
+    "Work-Life Balance"
+  ],
+  "query_nodes": [
+    "Women",
+    "Labor Force Participation",
+    "Unpaid Care Work",
+    "Double Burden",
+    "Breadwinner",
+    "Survival"
+  ],
+  "nearest_neighbors": [
+    "Gendered Division of Labor",
+    "Care Economy",
+    "Feminist Economics",
+    "Reproductive Rights",
+    "Time Poverty",
+    "Occupational Segregation"
+  ],
+  "augmented_query": "\"The double burden: labor force participation and unpaid care work for women - intersectionality, gender roles, feminist economics\"",
+  "ndcg": {
+    "NDCG@10": 0.63093,
+    "NDCG@100": 0.63093,
+    "NDCG@1000": 0.63093,
+    "NDCG@10000": 0.63093
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.5,
+    "MAP@1000": 0.5,
+    "MAP@10000": 0.5
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.24407999999999996,
+  "instruction": "graph",
+  "query": "The double burden  Despite a feminising labour market there has been no convergence, or equalisation, in unpaid domestic and care work. Women still play key roles in working the reproductive sphere and family care; therefore labour-force participation increases the overall burden placed on women. The burden is placed on time, physical, and mental demands.  We need to recognise the anxieties and burdens women face of being the bread-winner, as survival is becoming \u2018feminised\u2019 (Sassen, 2002). Additionally, women have always accounted for a significant proportion of the labour market - although their work has not been recognised. Therefore to what extent can we claim increased labour force participation is empowering when it is only just being recognised?",
+  "query_id": "test-economy-epiasghbf-con01a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "As I delve into the query about the \"double burden\" faced by women, I'm immediately struck by the complexity of the issue. It's not just about labor force participation, but also about the unseen, undervalued work women do in the domestic and care spheres. My initial impression is that we're looking at a deeply ingrained societal problem, where despite changes in the labor market, traditional gender roles persist, affecting women's lives profoundly. The query's focus on the empowerment potential of increased labor force participation for women, when their contributions in caregiving remain unrecognized, suggests we're exploring the intersection of economic, social, and feminist theories.\n\nTransitioning to a more structured approach, I'll utilize the Conceptual Graph Traversal technique for query expansion. This involves constructing a graph of concepts related to the original query and then traversing it to identify high-value expansion terms. The first step is query analysis, where I identify core concepts like \"double burden,\" \"labor force participation,\" \"unpaid care work,\" and \"gender roles.\" The search intent is clearly informational, aiming to understand the extent and implications of the double burden on women's empowerment.\n\nNext, I construct the conceptual graph. Core nodes include \"women,\" \"labor force participation,\" and \"unpaid care work.\" First-order connections involve relationships like \"women's roles in the labor market\" and \"the impact of unpaid care work on women's time and mental health.\" Second-order connections might include related concepts such as \"feminist economics,\" \"care economy,\" and \"occupational segregation.\" Domain contexts include sociology, economics, and gender studies.\n\nFor expansion path selection, I identify several promising directions: synonymous terms (e.g., \"caregiving\" for \"unpaid care work\"), hierarchical terms (broader concepts like \"gender inequality\" or narrower ones like \"time poverty\"), compositional terms (components of the labor market or care work), contextual terms (settings where the double burden is particularly relevant, such as in single-parent households), and domain-specific terminology (terms used in feminist economics or sociology).\n\nExtracting and filtering terms, I consider their relevance, distinctiveness, specificity, and searchability. For synonymous terms, \"caregiving responsibilities\" and \"domestic labor\" are relevant. Hierarchical terms could include \"gendered division of labor\" (broader) and \"emotional labor\" (narrower). Compositional terms might be \"part-time work\" or \"flexible employment,\" reflecting components of the labor market that impact women's experiences. Contextual terms could include \"work-life balance\" or \"single-parent households,\" highlighting specific scenarios. Domain-specific terminology might encompass \"reproductive rights\" or \"feminization of poverty,\" terms that are particularly meaningful within the context of feminist economics and sociology.\n\nSynthesizing these insights, the expanded terms not only enhance the original query's scope but also deepen its focus on the critical issues surrounding women's labor force participation and unpaid care work. The process of applying Conceptual Graph Traversal has illuminated paths that connect the original query to a broader and more nuanced exploration of gender roles, economic inequality, and social expectations.\n\nThe final set of expanded terms includes:\n- Caregiving responsibilities\n- Domestic labor\n- Gendered division of labor\n- Emotional labor\n- Part-time work\n- Flexible employment\n- Work-life balance\n- Single-parent households\n- Reproductive rights\n- Feminization of poverty\n- Occupational segregation\n- Time poverty\n- Care economy\n- Feminist economics\n\nThese terms maintain the original search intent while providing alternative pathways for retrieval, enhancing the query's ability to capture relevant documents and insights into the complex issue of the double burden faced by women.\n\nThe original query, \"The double burden: labor force participation and unpaid care work for women - intersectionality, gender roles, feminist economics,\" can now be augmented with these high-value expansion terms to form a robust and informative search query.\n\nThe augmented query becomes: \"The double burden: labor force participation, unpaid care work, caregiving responsibilities, domestic labor, gendered division of labor, emotional labor, part-time work, flexible employment, work-life balance, single-parent households, reproductive rights, feminization of poverty, occupational segregation, time poverty, care economy, feminist economics - intersectionality, gender roles, feminist economics.\"\n\nThrough this process of applying Conceptual Graph Traversal and balancing structured steps with natural thought patterns, I've generated an expanded query that captures both the explicit and implicit aspects of the original query, offering a comprehensive framework for exploring the critical issues surrounding women's labor force participation and the double burden.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

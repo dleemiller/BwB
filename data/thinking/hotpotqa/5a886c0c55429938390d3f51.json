@@ -1,0 +1,56 @@
+{
+  "reasoning": "The query aims to identify the specific broadcasting platform used by Games Done Quick.  While Twitch is correctly identified, the results lack focus and include extraneous information. To improve the query, we need to refine it to emphasize the core objective: identifying the platform hosting GDQ.",
+  "query_goals": [
+    "identify broadcasting platform",
+    "Games Done Quick",
+    "streaming service"
+  ],
+  "ineffective_terms": [
+    "platform"
+  ],
+  "breadth_expansion": [
+    "online events",
+    "video game streaming",
+    "charity fundraising"
+  ],
+  "depth_chain": [
+    "live streaming",
+    "interactive content",
+    "community engagement",
+    "viewer interaction"
+  ],
+  "augmented_query": "Games Done Quick live streaming interactive content charity viewers",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Who owns the broadcasting platform where Games Done Quick is broadcast?",
+  "query_id": "5a886c0c55429938390d3f51",
+  "dataset": "hotpotqa",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Who owns the broadcasting platform where Games Done Quick is broadcast?\"... this makes me think of live streaming and video game communities, though the user",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

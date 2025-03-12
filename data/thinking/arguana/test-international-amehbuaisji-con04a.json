@@ -1,0 +1,70 @@
+{
+  "reasoning": "The query expresses concern about potential due process violations by the ICC compared to US standards.  Core concepts include \"ICC trials\", \"US Constitution\", \"due process\", \"jury trial\", \"judicial independence\", and \"double jeopardy\". The search intent is likely informational, seeking to understand the legal basis for these concerns.",
+  "query_goals": [
+    "Identify potential due process violations at the ICC compared to US law",
+    "Analyze the role of jury trials in US vs. ICC proceedings",
+    "Evaluate the independence and neutrality of ICC judges",
+    "Examine the issue of double jeopardy at the ICC",
+    "Compare the speed and efficiency of US vs. ICC trials"
+  ],
+  "node_classes": [
+    "Legal Institutions",
+    "International Law",
+    "US Constitutional Law",
+    "Criminal Justice System",
+    "Judicial Processes",
+    "Human Rights"
+  ],
+  "query_nodes": [
+    "ICC",
+    "Trials",
+    "Due Process",
+    "US Constitution",
+    "Jury Trial",
+    "Judges",
+    "Double Jeopardy",
+    "Pre-Trial Detention",
+    "Witnesses"
+  ],
+  "nearest_neighbors": [
+    "European Court of Human Rights",
+    "International Criminal Tribunal for the former Yugoslavia (ICTY)",
+    "International Court of Justice (ICJ)",
+    "United Nations Security Council",
+    "Geneva Conventions"
+  ],
+  "augmented_query": "ICC trials, US Constitution, due process violations, jury trial rights, judicial independence, double jeopardy, speedy trial, witness protection procedures",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "ICC trials violate the due process guarantees of the US constitution  US ratification of the Rome Statute would lead to the possibility of Americans being subject to trials with procedures that violate the American Constitution. For example, there are no jury trials at the ICC \u2013 a majority vote of the judges is enough to convict - is a violation of the Sixth Amendment to the US Constitution.  The independence and neutrality of some of the judges may be doubtful if they come from countries with definite foreign policy interests that run contrary to those of the US. This is particularly pertaining to judges who are from backgrounds where judicial independence from the executive is not a defining feature of the legal system who will be more likely swayed by political considerations.  There is, in addition, a lack of rules against double jeopardy, and the glacial rate of progress made by the ICC with lengthy waits in pre-trial detention for defendants, affecting the right to a speedy trial. It has also been argued that the procedures for special measures to protect witnesses hamper the defence.",
+  "query_id": "test-international-amehbuaisji-con04a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"ICC trials violate the due process guarantees of the US constitution,\" this makes me think of the potential legal implications and comparisons between the International Criminal Court (ICC) and the United States' legal system. The user might actually be trying to understand the legal basis for these concerns, possibly for a research paper or to grasp the nuances of international law versus domestic law. The query touches on several core concepts, including \"ICC trials,\" \"US Constitution,\" \"due process,\" \"jury trial,\" \"judicial independence,\" and \"double jeopardy.\"\n\nTo approach this query expansion systematically, I will apply the Conceptual Graph Traversal technique. This involves constructing a conceptual graph with core nodes, first-order connections, second-order connections, and domain contexts, and then traversing this graph to find high-value expansion terms.\n\nStarting with query analysis, I identify the core concepts and entities in the original query: ICC trials, US Constitution, due process violations, jury trial rights, judicial independence, double jeopardy, speedy trial, and witness protection procedures. The search intent appears to be informational, seeking to understand the legal basis for concerns about due process violations by the ICC compared to US standards.\n\nNext, I construct the conceptual graph. Core nodes include ICC, US Constitution, trials, due process, jury trials, judges, double jeopardy, pre-trial detention, and witnesses. First-order connections involve direct properties and attributes such as the right to a fair trial, the role of judges, and the process of witness protection. Second-order connections introduce related concepts like human rights, international law, and the comparison with other international courts. Domain contexts include international criminal law, human rights law, and US constitutional law.\n\nFor expansion path selection, I identify several promising directions:\n1. **Synonymous terms**: Looking for terms that convey the same meaning as the core concepts but with different wording, such as \"fair trial\" instead of \"due process.\"\n2. **Hierarchical terms**: Broader concepts like \"international justice\" or narrower concepts such as \"war crimes trials.\"\n3. **Compositional terms**: Parts or components of the core concepts, like \"judicial proceedings\" or \"criminal prosecution.\"\n4. **Contextual terms**: Settings or scenarios where these concepts apply, such as \"international tribunals\" or \"human rights violations.\"\n5. **Domain-specific terminology**: Field-specific variants, including \"genocide,\" \"crimes against humanity,\" or \"universal jurisdiction.\"\n\nNow, I extract and filter terms for each expansion path, focusing on relevance, distinctiveness, specificity, and searchability. For synonymous terms, \"fair trial rights\" and \"legal proceedings\" could be useful. Hierarchical terms might include \"global justice\" or \"transnational criminal law.\" Compositional terms could be \"court proceedings\" or \"legal adjudication.\" Contextual terms such as \"post-conflict justice\" or \"international humanitarian law\" might also be relevant. Lastly, domain-specific terms like \"command responsibility\" or \"sexual violence as a war crime\" could provide specific insights.\n\nAs I delve deeper into the expansion process, I realize the importance of balancing structured technique with natural cognitive patterns. Occasionally, I reconsider my initial impressions or explore tangents that might yield unexpected insights. For example, thinking about the role of witnesses in ICC trials leads me to consider the broader context of victim and witness protection in international criminal law, which in turn suggests additional expansion terms related to \"victim rights\" or \"trauma-informed justice.\"\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the following terms would be most effective for expanding the query: ICC trials, US Constitution, due process violations, jury trial rights, judicial independence, double jeopardy, speedy trial, witness protection procedures, fair trial rights, international justice, war crimes, human rights violations, global justice, transnational criminal law, court proceedings, legal adjudication, post-conflict justice, international humanitarian law, command responsibility, sexual violence as a war crime, victim rights, and trauma-informed justice.\n\nThese terms capture both the explicit and implicit aspects of what the user is seeking, providing a comprehensive basis for a search that aims to understand the legal and procedural comparisons between ICC trials and the US legal system, with a focus on due process guarantees and the rights of the accused.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

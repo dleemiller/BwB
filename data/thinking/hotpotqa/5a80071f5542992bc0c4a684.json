@@ -1,0 +1,57 @@
+{
+  "reasoning": "The query seeks to identify the video game development company responsible for a specific iteration of the Tomb Raider franchise where Alice David voiced Lara Croft.  \n\nTo achieve this, we need to leverage knowledge about:\n\n* **Alice David:**  Her identity as an actress and her connection to the role of Lara Croft.\n* **Lara Croft:**  The iconic video game character and the franchise she belongs to (Tomb Raider). \n* **Video Game Development Companies:** Identifying companies known for developing Tomb Raider games.",
+  "query_goals": [
+    "Identify the video game development company",
+    "Find a specific Tomb Raider game featuring Alice David as Lara Croft"
+  ],
+  "node_classes": [
+    "Actor",
+    "Video Game Character",
+    "Video Game Franchise",
+    "Game Developer"
+  ],
+  "query_nodes": [
+    "Alice David",
+    "Lara Croft",
+    "Tomb Raider"
+  ],
+  "nearest_neighbors": [
+    "Crystal Dynamics",
+    "Eidos Interactive",
+    "Square Enix"
+  ],
+  "augmented_query": "\"video game company that developed Tomb Raider featuring Alice David as Lara Croft\"",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.12278,
+  "instruction": "graph",
+  "query": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+  "query_id": "5a80071f5542992bc0c4a684",
+  "dataset": "hotpotqa",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"Alice David is the voice of Lara Croft in a video game developed by which company?\" this makes me think of the Tomb Raider franchise and the various companies that have been involved in its development over the years. Though the user might actually be trying to find a specific game where Alice David voiced Lara Croft, I'm not sure yet if Alice David is indeed associated with this role, as my initial impression is that other voice actors might have been more commonly linked to Lara Croft. However, the question specifically asks about Alice David, so I'll have to delve deeper into the world of Tomb Raider and its development history.\n\nI'm seeing several possibilities here, but to approach this systematically, let me use the Query Expansion via Conceptual Graph Traversal technique. This involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting terms, and finally filtering them for relevance and distinctiveness. This should help because it allows me to visually and systematically explore the connections between Alice David, Lara Croft, Tomb Raider, and video game development companies.\n\nFirst, I identify the core concepts: Alice David, Lara Croft, Tomb Raider, and video game development companies. The search intent seems informational, aiming to identify a specific company. Implicit assumptions include the existence of a Tomb Raider game where Alice David voices Lara Croft and that there's a notable video game company associated with this specific iteration.\n\nConstructing the conceptual graph, I start with core nodes like \"Alice David,\" \"Lara Croft,\" \"Tomb Raider,\" and \"video game development companies.\" First-order connections would include \"voice acting,\" \"video game character,\" \"video game franchise,\" and \"game development.\" Second-order connections might involve specific games within the Tomb Raider series, other voice actors for Lara Croft, and subsidiaries or parent companies of the game developers. Domain contexts include the video game industry, specifically action-adventure games and franchises with strong female protagonists.\n\nFor expansion path selection, I'm interested in synonymous terms (e.g., \"game studio\" instead of \"video game development company\"), hierarchical terms (like \"action-adventure games\" as a broader category), compositional terms (such as \"game engine\" or \"platform\"), contextual terms (e.g., \"playstation\" or \"xbox\" as specific platforms), and domain-specific terminology (e.g., \"polygon\" or \"game development software\").\n\nFollowing the technique, I should first look at synonymous terms for \"video game development company,\" which could include \"game studio,\" \"game developer,\" or \"software company.\" However, wait, that's not quite right for this query, as we're looking for a company specifically associated with a Tomb Raider game featuring Alice David. Let me adjust my approach to focus more on the Tomb Raider series and its development history.\n\nThis step of the technique is revealing the importance of the Tomb Raider franchise and its various iterations, which actually reminds me of the companies that have developed these games over the years, such as Crystal Dynamics, Eidos Interactive, and Square Enix. I need to consider the context of voice acting in video games and how it relates to the overall gaming experience, but I'm also noticing this interesting pattern where certain game developers are more closely associated with specific franchises.\n\nApplying the technique leads me to discover terms like \"Crystal Dynamics,\" \"Tomb Raider series,\" \"action-adventure games,\" and \"female protagonists in gaming,\" which could be valuable for expanding the query. I just had a realization that connects to what we were exploring earlier - the significance of specific voice actors in video games and how they can become closely associated with certain characters or franchises.\n\nThrough this process of applying the Query Expansion via Conceptual Graph Traversal technique and exploring related threads, I believe the following terms would be most effective for expanding the query: \"Tomb Raider series,\" \"Crystal Dynamics,\" \"Eidos Interactive,\" \"Square Enix,\" \"action-adventure games,\" \"female protagonists in gaming,\" \"voice acting in video games,\" and \"game development companies.\" These terms capture both the explicit and implicit aspects of what the user is seeking and should provide a comprehensive set of expansion terms for improving document retrieval.\n\nThe original query was, \"Alice David is the voice of Lara Croft in a video game developed by which company?\" Core concepts include \"Alice David,\" \"Lara Croft,\" \"Tomb Raider,\" and \"video game development companies.\" Expansion paths selected include synonymous terms, hierarchical terms, and domain-specific terminology, with a focus on the video game industry and the Tomb Raider franchise. Expanded terms are \"Tomb Raider series,\" \"Crystal Dynamics,\" \"Eidos Interactive,\" \"Square Enix,\" \"action-adventure games,\" \"female protagonists in gaming,\" \"voice acting in video games,\" and \"game development companies.\" The augmented query could be, \"Video game company that developed Tomb Raider series featuring Alice David as",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

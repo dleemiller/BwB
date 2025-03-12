@@ -1,0 +1,64 @@
+{
+  "reasoning": "The query seeks specific biographical information about professional surfers from a particular region. The existing results are broad in scope, lacking focus on Filipino surfers or a strong connection to surfing specifically. To improve results, we need to narrow the search and delve deeper into relevant knowledge domains.",
+  "central_coordinates": [
+    "Filipino Surfers",
+    "Professional Surfing",
+    "Biographical Data"
+  ],
+  "boundary_areas": [
+    "Asian Surfing Culture",
+    "Philippine Sports History",
+    "World Surf League Rankings"
+  ],
+  "key_landmarks": [
+    "Siargao Island (surfing destination)",
+    "Gerry Lopez (legendary surfer, potential connection)",
+    " Philippine Surfing Association"
+  ],
+  "detail_features": [
+    "Local surfing styles",
+    "Major surf breaks in the Philippines",
+    "Training academies for Filipino surfers"
+  ],
+  "navigation_terms": [
+    "Filipino",
+    "Surfer",
+    "Biography",
+    "Siargao",
+    "Philippine Surfing Association"
+  ],
+  "augmented_query": "Professional surfers born in the Philippines, biographical details, Siargao Island surfing scene",
+  "ndcg": {
+    "NDCG@10": 0.0,
+    "NDCG@100": 0.21939,
+    "NDCG@1000": 0.21939,
+    "NDCG@10000": 0.21939
+  },
+  "map": {
+    "MAP@10": 0.0,
+    "MAP@100": 0.02878,
+    "MAP@1000": 0.02878,
+    "MAP@10000": 0.02878
+  },
+  "recall": {
+    "Recall@10": 0.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.0,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": -0.004379999999999995,
+  "instruction": "cartography",
+  "query": "Which professional surfers were born on the Philippines?",
+  "query_id": "QALD2_te-46",
+  "dataset": "dbpedia",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"Which professional surfers were born on the Philippines?\" this makes me think of the vibrant surfing culture in Southeast Asia, though the user might actually be trying to find specific names or biographical information about surfers from the Philippines.Hmm, not sure yet, but I'm getting a sense that the search needs to balance general surfing knowledge with very specific geographic and biographic details.\n\nI'm seeing several possibilities here... Let me approach this using Query Expansion via Conceptual Territory Mapping, which involves treating the query as a geographical map of concepts and then systematically exploring its central coordinates, boundaries, landmarks, and detailed features. This should help because it allows us to visually organize and connect different pieces of information related to the query, ensuring we cover all relevant aspects.\n\nFirst, identifying the central coordinates: The query revolves around \"Filipino Surfers\" and \"Professional Surfing,\" with a key interest in \"Biographical Data.\" These are my cardinal directions - the practical aspect of surfing, the technical side of being a professional, and the social aspect of biography. My scale for exploration is fairly granular since we're looking for specific individuals.\n\nNext, I explore the boundaries. Neighboring domains include \"Asian Surfing Culture,\" \"Philippine Sports History,\" and the broader \"World Surf League Rankings.\" It's interesting to note how these domains overlap, especially how Philippine sports history can provide context for the development of surfing in the country.\n\nIdentifying landmarks is crucial. \"Siargao Island\" is a significant landmark as it's a well-known surfing destination in the Philippines. Figures like \"Gerry Lopez,\" although not Filipino, represent a connection to the broader surfing world and could influence Filipino surfing styles. The \"Philippine Surfing Association\" is another key landmark, as it would be a central organization for professional surfers in the Philippines.\n\nNow, detailing the map: Local surfing styles, major surf breaks in the Philippines, and training academies for Filipino surfers are all important features. These details help in understanding the environment and support system available for professional surfers in the Philippines.\n\nCreating a cartographic legend involves selecting the most important terms that would help navigate this knowledge landscape. Terms like \"Filipino,\" \"Surfer,\" \"Biography,\" \"Siargao,\" and \"Philippine Surfing Association\" are essential. They serve as our navigation terms, guiding us through the conceptual territory mapped out by the query.\n\nThrough this process of applying Conceptual Territory Mapping and exploring related threads, I believe these terms would be most effective for a BM25 index: \"Filipino professional surfers,\" \"Siargao Island surfing,\" \"Philippine Surfing Association members,\" and \"biographies of Filipino surfers.\" They capture both the explicit and implicit aspects of what the user is seeking, balancing the need for specific biographical information with the broader context of professional surfing in the Philippines.\n\nOccasionally, my mind wandered to how Gerry Lopez's influence might have shaped surfing in the Philippines, or the potential for local surfing competitions to be a breeding ground for professional talent. These tangents, while not directly part of the technique, enriched my understanding of the query's context and helped in selecting more relevant terms.\n\nBy systematically applying the Conceptual Territory Mapping technique and intertwining it with natural thought processes, reconsiderations, and intuitive leaps, the final expanded query emerges as a structured yet organically developed response to the original question. This approach ensures that the search for professional surfers born in the Philippines is comprehensive, detailed, and grounded in the specific domains and territories relevant to the query.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,68 @@
+{
+  "reasoning": "The query expresses concern about South Africa annexing Lesotho, citing economic and social burdens on South Africa.  It highlights existing problems in South Africa like poverty and inequality, arguing that these should be addressed before taking on additional responsibilities. The analysis aims to identify terms that capture the core concerns:  economic hardship, social inequality, and the potential negative consequences of annexation for South Africa.",
+  "query_goals": [
+    "understand the economic implications of annexing Lesotho",
+    "analyze the social impact of annexation on South Africa",
+    "evaluate the potential costs and benefits of annexation"
+  ],
+  "node_classes": [
+    "Economics",
+    "Politics",
+    "Social Issues",
+    "International Relations",
+    "Demographics"
+  ],
+  "query_nodes": [
+    "South Africa",
+    "Lesotho",
+    "annexation",
+    "poverty",
+    "inequality",
+    "resources",
+    "stability",
+    "economic burden",
+    "social problems"
+  ],
+  "nearest_neighbors": [
+    "Namibia",
+    "Botswana",
+    "Swaziland",
+    "Development Aid",
+    "Regional Integration",
+    "Economic Dependency"
+  ],
+  "augmented_query": "South Africa Lesotho annexation economic burden poverty inequality resources stability social problems  international relations regional integration",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "It is not in the interest of South Africa to annex a poor, underdeveloped country  It is not in South Africa\u2019s interests to annex Lesotho. Lesotho would be a burden; it is poor, might cause instability, and has no resources as compensation. On a simple cost-benefit analysis made by the SA government they would clearly see they would have more responsibility towards the Basotho population but new resources to fulfil those responsibilities. South Africa has its own problems that it should be focusing on first. Poverty is officially at 52.3% [1] and unemployment is a great problem for South Africans; a quarter of the majority black workforce is unemployed. [2] Moreover, Only 40.2% of black infants live in a home with a flush toilet, a convenience enjoyed by almost all their white and Indian counterparts showing the inequality that still exists in the \u2018rainbow nation\u2019. [3] Why add more people under your protection when you can\u2019t take care of your own?  [1] \u2018Statement by Minister in The Presidency for Performance Monitoring and Evaluation, Collins Chabane, on the occasion of the launch of the Development Indicators 2012 Report\u2019, thepresidency.gov.za, 20 August 2013,   [2] Mcgroarty, Patrick, \u2018Poverty Still Plagues South Africa's Black Majority\u2019, The Wall Street Journal, 8 December 2013,   [3] Kielburger, Craig &amp; Marc, \u2018Why South Africa is Still Dealing With Segregation and Poverty\u2019, Huffington Post, 18 December 2013,",
+  "query_id": "test-international-appghblsba-con03a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query about South Africa annexing Lesotho, this makes me think of the potential economic and social implications for both countries. Though the user might actually be trying to understand the feasibility of such an annexation from a political and economic standpoint, it seems the underlying concern is whether South Africa can afford to take on the responsibilities that come with annexing a poorer, less developed nation. This initial impression leads me to consider the structured approach of query expansion via conceptual graph traversal, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, and extracting high-value terms.\n\nI'm seeing several possibilities here, but let's approach this using the conceptual graph traversal technique. This technique is particularly useful because it allows for a systematic exploration of related concepts and entities, which can help uncover terms that might not be immediately apparent from the original query. By applying this technique, we can identify core concepts such as \"South Africa,\" \"Lesotho,\" \"annexation,\" \"economic burden,\" \"poverty,\" and \"inequality.\" The search intent appears to be informational, aiming to understand the implications of annexation.\n\nAs I start constructing the conceptual graph, I consider the core nodes (South Africa, Lesotho, annexation), first-order connections (economic implications, social impact), and second-order connections (regional integration, economic dependency). Domain contexts include international relations, economics, and social issues. It's also important to list any implicit assumptions, such as the economic and social disparities between South Africa and Lesotho being significant enough to impact South Africa's decision-making process.\n\nNow, let's identify promising directions for query expansion. I select paths that include synonymous terms (e.g., \"economic integration\" for \"annexation\"), hierarchical terms (broader concepts like \"regional politics\" or narrower concepts like \"border control\"), compositional terms (parts of the annexation process, such as \"trade agreements\"), contextual terms (settings like \"post-apartheid era\"), and domain-specific terminology (terms used in international law or economic development).\n\nFor each expansion path, I extract terms like \"regional development,\" \"poverty reduction,\" \"border management,\" and \"economic sanctions.\" Filtering these terms based on relevance, distinctiveness, specificity, and searchability, I prioritize terms that are directly related to the economic and social impacts of annexation, such as \"economic dependency,\" \"social inequality,\" and \"regional stability.\"\n\nFollowing the conceptual graph traversal approach, I also consider related concepts that might not have been immediately apparent, such as the role of international organizations in facilitating or hindering annexation efforts. This step involves a bit of intuitive thinking, connecting the dots between economic hardship, social inequality, and the potential for regional instability if annexation were to occur.\n\nAs I step back to reassess, I realize that while the technique provides a structured way to expand the query, it's equally important to trust my instincts and consider the broader context of international relations and economic development. This balance between structure and intuition leads me to include terms that might capture the nuances of public opinion, political will, and the historical context of South Africa and Lesotho's relationship.\n\nThrough this process, insights emerge from both the structured approach and my natural thought patterns. Applying the conceptual graph traversal technique leads to the discovery of specific terms related to economic and social impacts, while my intuition suggests considering the geopolitical implications and historical precedents.\n\nSynthesizing these findings with clarity, I conclude that the most effective terms for expanding the query would include a mix of economic, social, and political concepts directly related to the annexation of Lesotho by South Africa. These terms should capture the essence of the economic burden, social inequality, and regional dynamics at play.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

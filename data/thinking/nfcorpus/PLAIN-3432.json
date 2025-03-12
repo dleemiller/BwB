@@ -1,0 +1,62 @@
+{
+  "reasoning": "The original query 'Healthy Chocolate Milkshakes' aims to explore scientific research articles or study reports focused on chocolate milkshakes with health benefits. The strengths of existing results highlight detailed data and broad product analysis but also show weaknesses like possible causality limitations, lack of methodological clarity, and potential selection bias towards top-selling products. To enhance the query, we need to shift focus from 'top-selling' attributes, which may carry inherent biases, to specific health benefits or alternative ingredients that align with scientifically validated health impacts. This involves expanding the query terms conceptually while avoiding broad, non-specific terms and introducing depth into specific scientific aspects such as nutritional components.",
+  "query_goals": [
+    "Identify research focusing on the nutritional profile of chocolate milkshakes",
+    "Explore studies about alternative sweeteners or ingredients for enhancing health benefits",
+    "Investigate links between chocolate milkshakes and specific health outcomes (e.g., blood sugar levels, cholesterol)",
+    "Understand methodological rigor in existing studies to evaluate causality better"
+  ],
+  "ineffective_terms": [
+    "top-selling",
+    "popular products",
+    "market trends"
+  ],
+  "breadth_expansion": [
+    "nutritional value",
+    "alternative sweeteners (e.g., stevia, agave)",
+    "antioxidants in chocolate",
+    "benefits of dark chocolate",
+    "protein content"
+  ],
+  "depth_chain": [
+    "antioxidants in chocolate",
+    "flavanols and catechins",
+    "anti-inflammatory properties",
+    "cardiovascular benefits",
+    "blood pressure regulation"
+  ],
+  "augmented_query": "flavanols catechins cardiovascular benefits blood pressure dark chocolate health antioxidants anti-inflammatory properties",
+  "ndcg": {
+    "NDCG@10": 0.36211,
+    "NDCG@100": 0.28693,
+    "NDCG@1000": 0.50531,
+    "NDCG@10000": 0.57719
+  },
+  "map": {
+    "MAP@10": 0.03889,
+    "MAP@100": 0.08492,
+    "MAP@1000": 0.11051,
+    "MAP@10000": 0.11475
+  },
+  "recall": {
+    "Recall@10": 0.07143,
+    "Recall@100": 0.2619,
+    "Recall@1000": 0.78571,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.3,
+    "P@100": 0.11,
+    "P@1000": 0.033,
+    "P@10000": 0.0042
+  },
+  "delta": 0.08413999999999999,
+  "instruction": "expand",
+  "query": "Healthy Chocolate Milkshakes",
+  "query_id": "PLAIN-3432",
+  "dataset": "nfcorpus",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query \"Healthy Chocolate Milkshakes,\" this makes me think of how chocolate milkshakes can be considered healthy, though the user might actually be trying to find information on how to make a traditionally unhealthy treat into something more nutritious. Hmm, not sure yet, but it seems like we're on the cusp of exploring nutritional science and culinary innovation. The existing reasoning points towards a scientific approach, focusing on research articles and study reports, which suggests that we're aiming for a very specific and informed kind of query expansion.\n\nI'm seeing several possibilities here, but let me approach this using a structured technique for query expansion, which involves systematically identifying gaps in the original query, eliminating ineffective terms, and then applying breadth and depth expansion strategies. This should help because it ensures that we cover a wide range of relevant topics without getting bogged down in overly broad or non-specific terms.\n\nFirst, examining the primary objectives of the original query, it's clear that there's a desire to understand the health benefits of chocolate milkshakes, likely from a nutritional or scientific standpoint. The gaps in the query seem to revolve around the specifics of what makes a chocolate milkshake \"healthy\" and how different ingredients or nutritional components contribute to its health profile. \n\nFollowing the expansion technique, I should first identify ineffective terms that don't contribute much to the specificity or clarity of the query. Terms like \"top-selling,\" \"popular products,\" and \"market trends\" seem too broad and focused on consumer preferences rather than health benefits. These terms should be avoided as they don't align well with the goal of exploring health benefits from a scientific or nutritional perspective.\n\nNext, for breadth expansion, I consider terms that introduce new dimensions but are still conceptually related to the original query. This includes terms like \"nutritional value,\" \"alternative sweeteners\" (such as stevia or agave), \"antioxidants in chocolate,\" \"benefits of dark chocolate,\" and \"protein content.\" These terms start to build a more comprehensive picture of what could make a chocolate milkshake healthy.\n\nThen, for depth expansion, I choose a topic from the breadth expansion that seems particularly promising for deeper exploration. The topic of \"antioxidants in chocolate\" stands out because it directly links to specific health benefits. Going deeper into this topic, I consider terms like \"flavanols,\" \"catechins,\" \"anti-inflammatory properties,\" \"cardiovascular benefits,\" and \"blood pressure regulation.\" These terms not only provide a deeper understanding of the health benefits associated with chocolate but also start to connect to broader health outcomes.\n\nAs I delve deeper, I start to see connections between the antioxidant properties of chocolate and potential health benefits, such as improved cardiovascular health or better blood pressure regulation. This realization makes me think about how these specific health benefits could be key to understanding what makes a chocolate milkshake \"healthy.\" The technique is revealing insights that complement my initial intuitive leaps, suggesting that we're on the right track by focusing on specific nutritional and health-related aspects of chocolate milkshakes.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms that would be most effective for a refined search query are those that capture the essence of health benefits, nutritional value, and specific scientific aspects of chocolate and its ingredients. These include terms like \"flavanols,\" \"catechins,\" \"cardiovascular benefits,\" \"blood pressure regulation,\" \"dark chocolate,\" \"health,\" \"antioxidants,\" and \"anti-inflammatory properties.\" These terms emerge logically from both the structured technique and the natural insights gained during the expansion process, ensuring a query that is both targeted and diverse.\n\nThe final augmented query seems to effectively balance the structured approach with natural cognitive patterns, avoiding generic terms and focusing on depth and specificity. It's not just about listing terms but understanding how they connect to the core question of what makes a chocolate milkshake healthy from a scientific and nutritional standpoint.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

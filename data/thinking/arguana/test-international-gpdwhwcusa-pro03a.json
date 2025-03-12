@@ -1,0 +1,74 @@
+{
+  "reasoning": "The query explores the concept of a UN standing army, weighing its potential effectiveness against existing peacekeeping mechanisms.  It highlights issues of national interest, training, equipment, command structure, and cultural integration.  To improve retrieval, we need to expand on these core themes, considering synonyms for \"effective,\" alternatives to \"standing army,\" and specific examples of successful multinational forces.",
+  "query_goals": [
+    "effectiveness",
+    "UN peace operations",
+    "national interests",
+    "military training",
+    "command structure",
+    "multinational forces"
+  ],
+  "node_classes": [
+    "International Relations",
+    "Peacekeeping Operations",
+    "Military Organizations",
+    "National Security",
+    "Training and Doctrine",
+    "Command Structure",
+    "Cultural Integration"
+  ],
+  "query_nodes": [
+    "UN",
+    "standing army",
+    "effectiveness",
+    "troops",
+    "missions",
+    "training",
+    "equipment",
+    "command",
+    "control",
+    "cultural reasons"
+  ],
+  "nearest_neighbors": [
+    "NATO",
+    "European Union Military Force",
+    "Commonwealth Armed Forces",
+    "Coalition Warfare",
+    "Peacekeeping Missions",
+    "Military Intervention"
+  ],
+  "augmented_query": "UN peace operations effectiveness + multinational forces training + command structure + alternatives to standing army + cultural integration challenges",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "A UN standing army would be more effective in operations themselves.  A UN standing army would be more effective than the variety of troops staffing missions under the current system. At present most UN operations are supplied by developing nations who hope to make a profit from the payments they receive for their services, but who are under-equipped and badly trained. Forces from the major powers are provided sparingly and only after substantial public pressure or when there exists an incentive for their use. A UN standing army would be better prepared, both in regards to training and equipment, and its soldiers would have greater motivation as they would have made a choice to enlist, rather than being conscripts forced by their own states to fight someone else\u2019s war. A single UN force would also have better command and control than in current situations, when different national forces and their commanders often fail to work effectively together in the field for cultural and linguistic reasons. Successful forces such as the French Foreign Legion, the Indian army and the Roman army show that issues of language and culture need not be problems in combat situations. They can be overcome through a strong professional ethos and a commitment to a mutual cause, values that can only be expected to develop if troops prepare, train and fight together.",
+  "query_id": "test-international-gpdwhwcusa-pro03a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query about a UN standing army being more effective in operations, this makes me think of the challenges current peacekeeping missions face, such as coordination issues among different national forces and the varying levels of training and equipment. Though the user might actually be trying to understand how a unified force could overcome these challenges, I'm not sure yet how to best capture this in an expanded query. The query seems to touch on several key areas: the effectiveness of peace operations, the role of national interests, the importance of military training, command structure, and the potential benefits of a multinational force.\n\nI'm seeing several possibilities here, but let me approach this using the Query Expansion via Conceptual Graph Traversal technique, which involves analyzing the query, constructing a conceptual graph, and then traversing it to find relevant expansion terms. This should help because it allows for a systematic exploration of related concepts and terms that can enhance the search query.\n\nFirst, I identify the core concepts and entities: \"UN standing army,\" \"effectiveness,\" \"peace operations,\" \"multinational forces,\" and \"command structure.\" The search intent appears to be informational, aiming to understand the potential benefits and operational aspects of a UN standing army. Implicit assumptions include the current inefficiencies in peacekeeping missions and the potential for a unified force to improve outcomes.\n\nNext, I construct a conceptual graph with core nodes like \"UN,\" \"peace operations,\" and \"multinational forces.\" First-order connections include \"training,\" \"equipment,\" and \"command structure,\" while second-order connections might involve \"national interests,\" \"cultural integration,\" and \"coalition warfare.\" The domain context is clearly within international relations and military operations.\n\nFor expansion path selection, I identify promising directions such as synonymous terms (e.g., \"unified force\" for \"standing army\"), hierarchical terms (e.g., \"peacekeeping\" as a broader concept), compositional terms (e.g., \"logistics\" as a component of military operations), contextual terms (e.g., \"conflict zones\" as a setting), and domain-specific terminology (e.g., \"collective security\" as a field-specific concept).\n\nFollowing the technique, I extract and filter terms for each path. For synonymous terms, \"unified force\" and \"collective defense\" seem relevant. Under hierarchical terms, \"international security\" and \"conflict resolution\" are promising. Compositional terms like \"military logistics\" and \"tactical training\" could be useful, while contextual terms such as \"post-conflict reconstruction\" and \"humanitarian intervention\" provide additional depth. Domain-specific terms like \"peacebuilding\" and \"stabilization forces\" also have potential.\n\nAs I apply the technique's steps, I notice that the issue of cultural integration and language barriers in multinational forces is crucial, which reminds me of the success of the French Foreign Legion in managing diverse troops. This leads to considering terms related to \"professional ethos\" and \"mutual cause\" as important for a unified force's effectiveness.\n\nApplying the specific aspect of the technique regarding synonymous terms leads me to discover \"global peacekeeping\" as a relevant expansion term. My instinct also suggests considering \"regional security initiatives\" as a complementary concept to a UN standing army, highlighting the importance of local cooperation and buy-in for peace operations.\n\nThrough this process of applying Conceptual Graph Traversal and exploring related threads, I believe the expanded terms would be most effective for enhancing the query. These terms capture both the explicit and implicit aspects of what the user is seeking, including the operational, strategic, and cultural dimensions of a UN standing army.\n\nThe final expanded query could incorporate terms such as \"UN peace operations effectiveness,\" \"multinational forces training,\" \"command structure,\" \"alternatives to standing army,\" \"cultural integration challenges,\" \"global peacekeeping,\" \"regional security initiatives,\" \"collective defense,\" \"international security,\" \"conflict resolution,\" \"military logistics,\" \"tactical training,\" \"post-conflict reconstruction,\" \"humanitarian intervention,\" \"peacebuilding,\" and \"stabilization forces.\" These terms aim to balance the structured approach of the technique with natural thought patterns, ensuring a comprehensive and nuanced exploration of the topic.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

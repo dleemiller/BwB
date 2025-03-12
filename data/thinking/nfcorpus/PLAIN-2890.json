@@ -1,0 +1,60 @@
+{
+  "reasoning": "The query \"To Snack or Not to Snack?\" aims to explore health-related outcomes of snacking, focusing on the effects on blood glucose levels, heart rate, satiety, and body weight. The strengths in existing results lie in detailed scientific evidence about specific snacks like raisins but show limitations in generalizability across different snack types and populations. To enhance the query's effectiveness, we should target broader contexts of snacking, varied snack options, diverse demographics, and behavioral aspects that influence snacking beyond physiological impacts.",
+  "query_goals": [
+    "Explore diverse health outcomes related to various snacks",
+    "Investigate demographic variations in snacking behavior",
+    "Examine behavioral factors influencing snack choices",
+    "Assess the generalizability of health impacts across different snack types"
+  ],
+  "ineffective_terms": [
+    "or Not to Snack"
+  ],
+  "breadth_expansion": [
+    "types of snacks",
+    "health outcomes beyond glucose and weight",
+    "demographic differences in snacking behavior",
+    "behavioral influences on snacking habits",
+    "stress-related eating patterns"
+  ],
+  "depth_chain": [
+    "snack types",
+    "fruit vs. processed snacks",
+    "satiety impact across different foods",
+    "cross-cultural snacking behaviors",
+    "psychological drivers of snacking"
+  ],
+  "augmented_query": "\"health impacts of various snack types demographic studies on snacking behavioral influences stress-related eating patterns satiety cross-cultural snacking psychological factors\"",
+  "ndcg": {
+    "NDCG@10": 0.13886,
+    "NDCG@100": 0.11157,
+    "NDCG@1000": 0.31252,
+    "NDCG@10000": 0.41547
+  },
+  "map": {
+    "MAP@10": 0.01724,
+    "MAP@100": 0.02132,
+    "MAP@1000": 0.03295,
+    "MAP@10000": 0.03754
+  },
+  "recall": {
+    "Recall@10": 0.03448,
+    "Recall@100": 0.10345,
+    "Recall@1000": 0.65517,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.03,
+    "P@1000": 0.019,
+    "P@10000": 0.0029
+  },
+  "delta": -0.009780000000000011,
+  "instruction": "expand",
+  "query": "To Snack or Not to Snack?",
+  "query_id": "PLAIN-2890",
+  "dataset": "nfcorpus",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"To Snack or Not to Snack?\", this makes me think of the broader implications of snacking on health, though the user might actually be trying to understand the specific effects on blood glucose levels, heart rate, satiety, and body weight. However, the query seems too simplistic and doesn't capture the complexity of snacking behaviors and their health outcomes. I'm seeing several possibilities here, but the challenge is to expand this query effectively without overlapping with the original terms and ensuring the new terms are novel, diverse, and relevant.\n\nLet me approach this using the expansion technique provided, which involves being specific and diverse, applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. This should help because it allows for a systematic exploration of the query's objectives, identification of gaps, and targeted expansion into new, relevant areas.\n\nFirst, examining the original query's primary objectives and gaps, it's clear that the query aims to explore health-related outcomes of snacking but lacks specificity and breadth in terms of snack types, demographic variations, and behavioral aspects. The ineffective terms here are \"or Not to Snack,\" as they don't contribute to a specific search for information on snacking's health impacts.\n\nFor breadth expansion, candidate terms could include types of snacks (e.g., fruit, nuts, processed snacks), health outcomes beyond glucose and weight (e.g., cardiovascular health, dental health), demographic differences in snacking behavior (e.g., age, gender, cultural background), behavioral influences on snacking habits (e.g., stress, emotional eating), and stress-related eating patterns. This step is about casting a wider net to capture the complexity of snacking behaviors and their health implications.\n\nHowever, to truly enhance the query, we need to go deeper into one of these areas. Let's choose \"stress-related eating patterns\" as it's a critical aspect of snacking behavior that can significantly influence health outcomes. Going deeper, we can explore terms like emotional eating, comfort foods, mindfulness and eating, stress management techniques, and the psychological drivers of snacking. This depth expansion allows us to uncover more specific and relevant terms that can lead to high-quality search results.\n\nApplying the technique systematically, I should first identify specific snack types and their health impacts, then consider how demographic factors influence these impacts, and finally, delve into the psychological aspects of snacking, especially under stress. Wait, that's not quite right for this query; let me adjust my approach to focus more on the expansion of terms related to stress and psychological factors, as these seem to be crucial gaps in the original query.\n\nThis step of the technique is revealing the importance of psychological factors in snacking, which actually reminds me of the concept of mindful eating and how it can mitigate stress-related eating patterns. I need to consider the next step in the technique, which involves exploring domain-specific terminology, but I'm also noticing an interesting pattern where the literature on emotional eating and stress management could provide valuable insights into why certain snack choices are made under different conditions.\n\nFollowing the technique pointed me toward terms like \"emotional eating\" and \"mindful eating,\" but my instinct says we should also consider \"food addiction,\" \"eating disorders,\" and \"nutrition counseling\" as they are closely related to the psychological drivers of snacking and offer a more comprehensive view of the health impacts of snacking behaviors.\n\nThrough this process of applying the expansion technique and exploring related threads, I believe the terms that would be most effective for enhancing the query are those that capture the psychological and behavioral aspects of snacking, including stress-related eating patterns, emotional eating, mindful eating, and the demographic factors influencing these behaviors. These terms are novel, diverse, and relevant, offering a deeper and broader exploration of the original query's objectives without overlapping with the original terms.\n\nThe final augmented query, ensuring it contains only high-quality search terms and adhering to the guidelines of uniqueness, diversity, relevance, and precision, could be: \"stress-related eating patterns emotional eating mindful eating food addiction nutrition counseling demographic snacking behaviors.\"",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

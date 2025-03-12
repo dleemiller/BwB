@@ -1,0 +1,73 @@
+{
+  "reasoning": "The 2025 NCAA Men's Basketball Championship Final Four will be held at the Alamodome in San Antonio, Texas. This conclusion is supported by multiple authoritative sources including NCAA.com, Wikipedia, and ESPN, all explicitly naming San Antonio as the host city and the Alamodome as the venue[1][2][3][4]. The event is scheduled for April 5 and 7, marking San Antonio's fifth time hosting the Final Four.",
+  "question_variations": [
+    "Where is the 2025 Final Four happening?",
+    "What city is hosting March Madness 2025?",
+    "Location of final four in 2025 men's basketball",
+    "Where will the NCAA championship game be this year?",
+    "What stadium is the NCAA Final Four in 2025?",
+    "San Antonio Final Four dates 2025"
+  ],
+  "underlying_motivations": [
+    "Planning to attend the event",
+    "Understanding the tournament locations",
+    "Verifying official hosts",
+    "Searching for travel logistics",
+    "Comparing historical host cities"
+  ],
+  "valuable_responses": [
+    "Detailed venue and host information",
+    "Historical context of host cities",
+    "Transportation and lodging tips",
+    "Parking and ticket purchase advice",
+    "Local attractions for fan experience"
+  ],
+  "interaction_patterns": [
+    "Seeking updates on schedule changes",
+    "Comparing past vs. future locations",
+    "Clarifying between championship game and Final Four",
+    "Inquiring about alternate travel plans",
+    "Asking about host institution roles"
+  ],
+  "qa_terminology": [
+    "championship locations",
+    "host city confirmation",
+    "tournament venues",
+    "basketball finals site",
+    "Final Four site"
+  ],
+  "augmented_query": "\"San Antonio Alamodome Final Four location 2025\"",
+  "ndcg": {
+    "NDCG@10": 0.61315,
+    "NDCG@100": 0.77884,
+    "NDCG@1000": 0.77884,
+    "NDCG@10000": 0.77884
+  },
+  "map": {
+    "MAP@10": 0.5,
+    "MAP@100": 0.58333,
+    "MAP@1000": 0.58333,
+    "MAP@10000": 0.58333
+  },
+  "recall": {
+    "Recall@10": 0.5,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.63691,
+  "instruction": "community",
+  "query": "where is final four being held this year",
+  "query_id": "test495",
+  "dataset": "nq",
+  "generator_model": "openrouter/perplexity/sonar-reasoning",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query \"where is final four being held this year,\" my first instinct is to think of major sporting events and their typical venues. The user might be specifically interested in the 2025 NCAA Men's Basketball Championship, but there's also a chance they're asking about the general location of the Final Four, perhaps to plan a trip or understand the tournament's structure better. \n\nThe existing reasoning provides clear information that the 2025 Final Four will be held at the Alamodome in San Antonio, Texas, supported by authoritative sources like NCAA.com, Wikipedia, and ESPN. This gives me a solid foundation but doesn't immediately reveal how to expand the query effectively for a broader search.\n\nLet's approach this using the query expansion technique via community Q&A patterns. This technique involves analyzing how questions evolve in community forums like Quora, focusing on both variations of the question and patterns in the answers provided. \n\nFirst, I'll reframe the original query into different question types:\n- \"What's it like to attend the Final Four in San Antonio?\" (personal experience)\n- \"How should I plan my trip to the 2025 Final Four?\" (advice-seeking)\n- \"What do people think about San Antonio as a host city for the Final Four?\" (opinion-based)\n- \"Which is better for attending the Final Four, San Antonio or previous host cities?\" (comparison)\n- \"Has anyone ever attended the Final Four and had a particularly memorable experience?\" (story-soliciting)\n\nNext, I consider the hidden motivations behind the user's query:\n- Are they seeking validation for their travel plans?\n- Do they need personal decision support in choosing between attending the Final Four or another event?\n- Are they looking for insider knowledge on the best experiences in San Antonio during the tournament?\n\nThen, I look at answer archetypes that would be valuable:\n- First-person accounts of attending the Final Four\n- Expert advice on navigating San Antonio during the event\n- Step-by-step guides to planning the perfect Final Four weekend\n- Contrarian views on why one might prefer a different host city\n- Conditional answers discussing the pros and cons of attending based on different circumstances\n\nConsidering community interactions, I think about common follow-up questions, frequently debated aspects (like the best host city), clarifications people often request (such as ticket information), related questions (e.g., about March Madness), and how these questions evolve through discussions.\n\nFinally, I extract vocabulary from emotional and subjective language, personal context descriptions, and community-specific jargon. Terms like \" Alamodome,\" \"San Antonio,\" \"2025 Final Four,\" \"March Madness,\" \"NCAA Championship,\" and \"tournament locations\" become key components of our expanded query.\n\nThrough this process, applying the query expansion technique and exploring related threads, I believe the augmented query \"San Antonio Alamodome Final Four location 2025\" effectively captures both the explicit and implicit aspects of what the user is seeking. This expansion is not just about adding keywords but understanding the context, motivations, and potential follow-up questions that arise in a community setting.\n\nBy combining the structured approach of the query expansion technique with natural cognitive patterns, such as considering various question reframings and answer types, we can create a more comprehensive and user-centric search query. This approach ensures that the final expanded query is not only technically sound but also reflects how real people discuss and interact with the topic in conversational Q&A contexts.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

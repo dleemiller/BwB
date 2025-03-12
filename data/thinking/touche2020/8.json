@@ -1,0 +1,76 @@
+{
+  "reasoning": "The query 'Should abortion be legal?' is a highly charged and complex ethical issue. Existing documents primarily present arguments without delving into personal experiences or nuanced perspectives.  Therefore, it's crucial to explore how this question might evolve in a community Q&A setting to uncover hidden motivations and generate more valuable responses.",
+  "question_variations": [
+    "What are your thoughts on abortion?",
+    "How do you feel about the legality of abortion?",
+    "Is it ever okay to have an abortion?",
+    "As someone who has had an abortion, what was your experience like?",
+    "I'm struggling with a decision about abortion. What advice would you give me?"
+  ],
+  "underlying_motivations": [
+    "Seeking validation for their own beliefs",
+    "Looking for personal guidance or support in making a difficult decision",
+    "Wanting to understand different perspectives on a morally complex issue",
+    "Feeling isolated and seeking connection with others who share similar views",
+    "Hoping to find answers to questions that formal sources haven't adequately addressed"
+  ],
+  "valuable_responses": [
+    "Personal stories of people who have had abortions or been affected by abortion laws",
+    "Expert opinions from medical professionals, ethicists, or legal scholars",
+    "Practical advice for navigating the emotional and logistical complexities of abortion",
+    "Diverse viewpoints that challenge common assumptions or biases",
+    "Empathetic and non-judgmental support for those struggling with this issue"
+  ],
+  "interaction_patterns": [
+    "Follow-up questions about specific circumstances or legal implications",
+    "Debates about the role of religion, morality, or personal responsibility",
+    "Requests for clarification on medical procedures or emotional support resources",
+    "Related questions about reproductive rights, contraception, or adoption",
+    "Evolution of the discussion through comments and counter-arguments"
+  ],
+  "qa_terminology": [
+    "tough decision",
+    "difficult situation",
+    "emotional rollercoaster",
+    "moral dilemma",
+    "finding my voice",
+    "personal experience",
+    "gut feeling",
+    "my story",
+    "unwavering support"
+  ],
+  "augmented_query": "abortion personal stories, emotional impact of abortion laws, advice for facing an unplanned pregnancy, diverse perspectives on abortion rights",
+  "ndcg": {
+    "NDCG@10": 0.69366,
+    "NDCG@100": 0.60696,
+    "NDCG@1000": 0.77445,
+    "NDCG@10000": 0.77445
+  },
+  "map": {
+    "MAP@10": 0.16631,
+    "MAP@100": 0.28929,
+    "MAP@1000": 0.36035,
+    "MAP@10000": 0.36035
+  },
+  "recall": {
+    "Recall@10": 0.19355,
+    "Recall@100": 0.64516,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.6,
+    "P@100": 0.2,
+    "P@1000": 0.031,
+    "P@10000": 0.0031
+  },
+  "delta": 0.13639,
+  "instruction": "community",
+  "query": "Should abortion be legal?",
+  "query_id": "8",
+  "dataset": "touche2020",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query 'Should abortion be legal?'... this makes me think of a wide range of perspectives and experiences, though the user might actually be trying to understand the personal, ethical, and legal implications of abortion. Hmm, not sure yet... Let me break it down. \n\nI'm seeing several possibilities here. The original query seems straightforward but hides a multitude of underlying motivations and questions. To expand it effectively, I need to approach this using the Community Q&A Patterns technique, which involves analyzing how questions evolve in community forums and identifying key patterns in both questions and answers. This should help because it allows us to tap into the natural language and concerns of people discussing this topic in a more informal, personal setting.\n\nFirst, I should reframe the original query into different types of questions that people might ask in a community Q&A setting. So, we have personal experience questions like \"What is it like to have an abortion?\" or \"How did you decide whether to have an abortion?\" Then, there are advice-seeking questions such as \"How should I approach the decision of whether to have an abortion?\" or \"What are the most important factors to consider when deciding about abortion?\" Opinion-based questions could be \"What do people think about the legality of abortion?\" and comparison questions might include \"Which is more morally justifiable, having an abortion or carrying an unwanted pregnancy to term?\" Story-soliciting questions like \"Has anyone ever had a positive experience with abortion?\" or \"Can you share a story about deciding to have an abortion?\" can also provide valuable insights.\n\nNow, considering the hidden motivations behind the query... The person asking might be seeking validation for their beliefs, looking for personal guidance or support in making a difficult decision, wanting to understand different perspectives on the issue, feeling isolated and seeking connection with others who share similar views, or hoping to find answers to questions that formal sources haven't adequately addressed. \n\nFor answer archetypes, we're looking for first-person experience narratives, expert opinions, practical advice, contrarian viewpoints, and nuanced conditional answers. These types of responses can offer a well-rounded view of the topic, from personal stories to expert analysis.\n\nIn terms of community interactions, we can expect follow-up questions about specific circumstances or legal implications, debates about morality or personal responsibility, requests for clarification on medical procedures, and related questions about reproductive rights or adoption. The discussion will likely evolve through comments and counter-arguments, revealing deeper insights into how people think about and discuss abortion.\n\nFinally, extracting vocabulary from emotional and subjective language, personal context descriptions, informal explanations, and community-specific jargon will help us craft an expanded query that captures the essence of how people naturally discuss this topic. Terms like \"personal stories,\" \"emotional impact,\" \"advice for facing an unplanned pregnancy,\" \"diverse perspectives,\" and \"abortion rights\" can be crucial.\n\nBy systematically applying the Community Q&A Patterns technique and balancing it with natural thought patterns and intuitive connections, I've been able to expand the original query into something more nuanced and reflective of real people's discussions and concerns. Applying this technique has led to the discovery of terms like \"tough decision,\" \"difficult situation,\" \"emotional rollercoaster,\" \"moral dilemma,\" and \"personal experience,\" which are integral to how individuals discuss and seek information on sensitive topics like abortion.\n\nThrough this process, insights emerge from both the structured approach of analyzing community Q&A patterns and the intuitive understanding of how people discuss complex, personal issues. The expanded query reflects a deeper understanding of the user's potential motivations and the types of information and support they might be seeking.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

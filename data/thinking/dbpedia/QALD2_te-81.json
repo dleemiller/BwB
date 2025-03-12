@@ -1,0 +1,59 @@
+{
+  "reasoning": "The original query is focused on identifying books by Jack Kerouac that were specifically published by Viking Press. The main strengths of existing results are directly relevant information about a specific book (\"Atop an Underwood: Early Stories and Other Writings\"). However, weaknesses include a lack of comprehensive listing or details beyond one example. To enhance the search query:\n\n1. **Clarify objectives** (Task 1): Focus on identifying all works by Kerouac published by Viking Press rather than isolated examples.\n2. **Identify ineffective terms** (Task 2): Avoid general terms that do not contribute to specifying the publisher's identity or limit results excessively, such as \"Beat Generation.\"\n3. **Expand breadth** (Task 3): Introduce more specific concepts related to publishing and literary works by Kerouac.\n4. **Deepen depth** (Task 4): Focus on a detailed aspect such as the types of publications under Viking Press or particular periods in Kerouac's career with this publisher.",
+  "query_goals": [
+    "Identify all books published by Viking Press",
+    "Ensure inclusion of titles specifically from Viking Press catalog",
+    "Exclude unrelated biographical or tangential content"
+  ],
+  "ineffective_terms": [
+    "Beat Generation",
+    "literary works in general"
+  ],
+  "breadth_expansion": [
+    "novels",
+    "anthologies",
+    "unpublished manuscripts",
+    "Viking Press publications",
+    "Kerouac's Viking collaborations"
+  ],
+  "depth_chain": [
+    "Viking Press catalog",
+    "mid-20th century American literature publishers",
+    "The Dharma Bums and its publication history",
+    "On the Road publication background"
+  ],
+  "augmented_query": "\"Jack Kerouac novels anthologies unpublished manuscripts Viking collaborations The Dharma Bums On the Road mid-century American literature publishers\"",
+  "ndcg": {
+    "NDCG@10": 0.67073,
+    "NDCG@100": 0.81707,
+    "NDCG@1000": 0.81707,
+    "NDCG@10000": 0.81707
+  },
+  "map": {
+    "MAP@10": 0.46181,
+    "MAP@100": 0.54123,
+    "MAP@1000": 0.54123,
+    "MAP@10000": 0.54123
+  },
+  "recall": {
+    "Recall@10": 0.625,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.5,
+    "P@100": 0.08,
+    "P@1000": 0.008,
+    "P@10000": 0.0008
+  },
+  "delta": 0.11815999999999993,
+  "instruction": "expand",
+  "query": "Which books by Kerouac were published by Viking Press?",
+  "query_id": "QALD2_te-81",
+  "dataset": "dbpedia",
+  "generator_model": "ollama_chat/phi4:14b-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, \"Which books by Kerouac were published by Viking Press?\"... this makes me think of Jack Kerouac's influential works within the Beat Generation, though the user might actually be trying to pinpoint specific publications rather than exploring his broader literary contributions. Hmm, not sure yet... The original query seems to be focused on identifying books by Jack Kerouac that were specifically published by Viking Press, with existing results highlighting a specific example but lacking a comprehensive listing.\n\nI'm seeing several possibilities here... Let me approach this using the expansion technique, which involves being specific and diverse, applying varied augmentation techniques such as synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. This should help because it allows for a systematic exploration of relevant terms while avoiding generic or overlapping information.\n\nFollowing the expansion technique approach, I should first elucidate the primary objectives and gaps in the original query. The main goal is to identify all books published by Viking Press, ensuring inclusion of titles specifically from Viking Press's catalog and excluding unrelated biographical or tangential content. The gaps include a lack of comprehensive listing and details beyond isolated examples.\n\nNext, I identify ineffective terms that should be avoided, such as \"Beat Generation\" and general terms like \"literary works,\" as they do not contribute to specifying the publisher's identity or limit results excessively.\n\nFor breadth expansion, I introduce more specific concepts related to publishing and literary works by Kerouac, such as \"novels,\" \"anthologies,\" \"unpublished manuscripts,\" \"Viking collaborations,\" and terms directly related to Viking Press and its catalog. This step helps in casting a wider net to capture relevant information without duplicating the original query's focus.\n\nThen, for depth expansion, I choose a topic like \"The Dharma Bums\" and its publication history, or \"On the Road\" publication background, and delve deeper into related terms. This involves exploring mid-20th century American literature publishers, Viking Press's role in it, and specific collaborations or notable publications by Kerouac under Viking Press. This process reveals a richer context and more targeted terms for the search.\n\nApplying the technique's steps systematically, I also allow for natural cognitive elements to influence the process. Occasional reconsiderations, like adjusting the focus from general literary movements to specific publication details, help refine the search terms. Intuitive connections, such as recognizing the significance of \"The Dharma Bums\" in Kerouac's bibliography published by Viking Press, complement the structured approach. Brief tangents, like exploring the broader impact of Viking Press on mid-century American literature, sometimes yield unexpected insights that can be woven back into the query expansion.\n\nThrough this process, insights emerge from both the structured technique and natural intuition. Applying specific aspects of the technique leads to term discoveries like \"Viking collaborations\" and \"mid-century American literature publishers,\" which are directly relevant to the user's query. Intuitive realizations, such as the importance of focusing on specific publication histories of Kerouac's works with Viking Press, further refine the search terms.\n\nSynthesizing the information with clarity, I believe the terms that would be most effective for enhancing the search query are those that capture both the explicit and implicit aspects of what the user is seeking. This involves combining the systematically derived terms from the expansion technique with the intuitively connected concepts, ensuring a balance between structure and natural cognitive patterns.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

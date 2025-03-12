@@ -1,0 +1,66 @@
+{
+  "reasoning": "The original query focuses on comparing economic performance under Democratic and Republican presidencies, relying heavily on unemployment rates and budget deficits.  It exhibits a clear bias towards favoring Democratic policies. To create a more comprehensive and balanced analysis, we need to: \n\n1. **Clarify the specific economic indicators** beyond unemployment and deficits that are relevant to the comparison (e.g., GDP growth, income inequality).\n2. **Explore different time periods and contexts**  to account for the impact of global events or policy shifts.\n3. **Consider a wider range of sources** to mitigate potential bias and gain diverse perspectives on economic performance under both parties.",
+  "query_goals": [
+    "Compare economic performance under Democratic and Republican presidencies",
+    "Analyze specific economic indicators beyond unemployment and deficits",
+    "Investigate the impact of global events and policy shifts on economic performance",
+    "Explore diverse perspectives on economic performance under both parties"
+  ],
+  "ineffective_terms": [
+    "boom and Bust",
+    "more likely"
+  ],
+  "breadth_expansion": [
+    "GDP growth",
+    "inflation",
+    "income inequality",
+    "tax policies",
+    "regulation",
+    "international trade",
+    "monetary policy",
+    "fiscal policy",
+    "social welfare programs"
+  ],
+  "depth_chain": [
+    "Income Inequality",
+    "Wealth Gap",
+    "Minimum Wage",
+    "Social Safety Net",
+    "Labor Market Flexibility",
+    "Globalization Impact"
+  ],
+  "augmented_query": "GDP growth, inflation, income inequality, wealth gap, minimum wage, social safety net, labor market flexibility, globalization impact",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Historically Democrats have presided over more economic stability whereas the GOP is the party of boom and Bust  During the past 60 years Democrats have been considerably more likely to preside over a balanced budget than their Republican rivals. Since the OPEC shocks of the mid-70s the average unemployment rate under Republican Presidents has been 6.7 % as opposed to 5.5% under democrats. Even expanding that period out to the whole of the post-war period, unemployment has averaged 4.8% under democrats and 6.3% under democrats [i] .  Republican presidencies have been marked by higher unemployment, bigger deficits and lower wages.  [i] Larry Bartels. \u201cWhy the economy fares much better under Democrats.\u201d Christian Science Monitor. October 21st, 2010 .",
+  "query_id": "test-economy-eptpghdtre-pro02a",
+  "dataset": "arguana",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the original query, it's clear that the focus is on comparing economic performance under Democratic and Republican presidencies, with a emphasis on unemployment rates and budget deficits. However, the query exhibits a clear bias towards favoring Democratic policies, which might not provide a comprehensive view of the situation. To create a more balanced analysis, I need to consider a wider range of economic indicators, explore different time periods and contexts, and take into account diverse perspectives on the topic.\n\nI'll start by examining the primary objectives and gaps in the original query. The main goal is to compare economic performance, but the query lacks specificity in terms of the economic indicators used and the time periods considered. The gaps in the query include the lack of consideration of other relevant economic indicators, such as GDP growth, inflation, and income inequality, as well as the impact of global events and policy shifts on economic performance.\n\nTo address these gaps, I'll apply various augmentation techniques, including synonym replacement, conceptual expansion, contextual expansion, and domain-specific terminology. For synonym replacement, I can use terms like \"economic growth\" instead of \"GDP growth\" or \"income disparity\" instead of \"income inequality\". For conceptual expansion, I can consider related concepts like \"fiscal policy\" or \"monetary policy\" to provide a more comprehensive view of economic performance. Contextual expansion can involve considering the impact of global events, such as the OPEC shocks, on economic performance, while domain-specific terminology can include terms like \"labor market flexibility\" or \"social safety net\".\n\nThe ineffective terms in the original query, such as \"boom and Bust\" and \"more likely\", should be avoided as they are too broad or non-precise. Instead, I can use more specific terms like \"recession\" or \"economic downturn\" to describe periods of economic instability.\n\nFor breadth expansion, I can consider a range of candidate terms that introduce new dimensions to the query. These terms can include \"tax policies\", \"regulation\", \"international trade\", and \"social welfare programs\", among others. By considering these terms, I can gain a more comprehensive understanding of the factors that influence economic performance under different presidencies.\n\nTo further deepen my understanding, I'll choose one distant but important topic from the breadth expansion, such as \"income inequality\", and explore related terms in more depth. This can include terms like \"wealth gap\", \"minimum wage\", and \"labor market flexibility\", which can provide insight into the factors that contribute to income inequality and its impact on economic performance.\n\nThrough this process of applying various augmentation techniques and exploring related terms in depth, I can create a more comprehensive and balanced analysis of economic performance under Democratic and Republican presidencies. The augmented query should include terms that are specific, diverse, and relevant to the original query, while avoiding ineffective terms and logical operators.\n\nThe final augmented query should contain high-quality search terms that are unique, non-overlapping, and contextually relevant to the original query. By focusing on targeted terms from the depth expansion, with additional high-relevance terms, I can ensure that the augmented query provides a precise and comprehensive view of the topic.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

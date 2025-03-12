@@ -1,0 +1,62 @@
+{
+  "reasoning": "The query expresses a conspiracy theory, implying a desire to find evidence supporting the claim that cancer is a fabricated issue driven by financial motives.  The existing results fail to address this underlying intent.",
+  "query_goals": [
+    "Find evidence supporting the idea of cancer as a profitable industry",
+    "Identify organizations potentially profiting from cancer",
+    "Discover arguments used to promote the 'cancer as business' theory"
+  ],
+  "ineffective_terms": [
+    "disease",
+    "is"
+  ],
+  "breadth_expansion": [
+    "pharmaceutical companies",
+    "medical research funding",
+    "health insurance industry",
+    "profit margins in healthcare",
+    "alternative medicine",
+    "government regulation of healthcare"
+  ],
+  "depth_chain": [
+    "big pharma",
+    "drug pricing",
+    "clinical trials",
+    "cancer treatment costs",
+    "lobbying efforts",
+    "public perception of cancer"
+  ],
+  "augmented_query": "big pharma drug pricing clinical trials cancer treatment costs lobbying",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "Is it true that cancer is not a disease its a business?",
+  "query_id": "177580",
+  "dataset": "quoraretrieval",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "As I delve into the query \"Is it true that cancer is not a disease its a business?\", my initial impression is that this is a conspiracy theory-driven inquiry, seeking validation for the notion that cancer's perception and treatment are heavily influenced by financial interests. The user's underlying intent seems to be to uncover evidence that supports the idea of cancer being a profitable industry, rather than a purely medical issue. This makes me think about the pharmaceutical industry, medical research funding, and how these elements might intersect with the concept of cancer as a business.\n\nTo approach this systematically, I'll apply the expansion technique, which involves identifying ineffective terms, performing breadth expansion, and then depth expansion. The ineffective terms in this query, such as \"disease\" and \"is\", are too broad and don't contribute significantly to the search for specific information about the business aspect of cancer. \n\nMy breadth expansion leads me to consider terms like \"pharmaceutical companies\", \"medical research funding\", \"health insurance industry\", \"profit margins in healthcare\", \"alternative medicine\", and \"government regulation of healthcare\". These terms start to paint a picture of the various sectors that could be involved in the business side of cancer. However, to really drill down into the query's intent, I need to go deeper.\n\nFor depth expansion, I choose \"big pharma\" as a starting point because it's a central figure in the business of cancer treatment and research. From here, I can explore related terms such as \"drug pricing\", \"clinical trials\", \"cancer treatment costs\", \"lobbying efforts\", and \"public perception of cancer\". These terms not only provide insight into how pharmaceutical companies operate within the context of cancer but also touch on the financial and regulatory aspects that are crucial to understanding the business side of cancer.\n\nAs I navigate through these terms, I start to see a more complex picture emerge. The high costs of cancer treatments, the influence of lobbying on healthcare policies, and the role of clinical trials in drug development all point to a sophisticated and multifaceted industry. My thought process is not linear; it involves revisiting earlier considerations and making connections between them. For instance, considering \"drug pricing\" leads me to think about \"profit margins in healthcare\" and how they might be influenced by the costs associated with clinical trials and the lobbying efforts of pharmaceutical companies.\n\nThrough this process of expansion and exploration, I'm aiming to craft an augmented query that captures the essence of the user's intent without using the original terms. The terms \"big pharma\", \"drug pricing\", \"clinical trials\", \"cancer treatment costs\", and \"lobbying efforts\" emerge as central to understanding the business aspect of cancer. These terms are specific, diverse, and targeted, avoiding the broad and non-precise language of the original query.\n\nBy synthesizing my findings, I conclude that the augmented query should reflect the depth and complexity of the business side of cancer, incorporating terms that reveal the financial, regulatory, and industrial facets of the issue. This approach ensures that the search results will provide the user with a comprehensive understanding of how cancer operates as a business, fulfilling the intent behind the original query.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

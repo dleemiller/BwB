@@ -1,0 +1,61 @@
+{
+  "reasoning": "The query seeks information about historical dramas featuring Joseph Merrick.  While current results cover his biography and related topics, they lack focus on the specific dramatic adaptations. To improve retrieval, we need to expand the query to include terms directly related to theatre, performance, and film genres associated with historical dramas.",
+  "query_goals": [
+    "find historical dramas",
+    "identify film & play adaptations",
+    "discover actors portraying Joseph Merrick"
+  ],
+  "node_classes": [
+    "Person",
+    "Drama",
+    "Film",
+    "Play",
+    "Biography",
+    "Historical Event"
+  ],
+  "query_nodes": [
+    "Joseph Merrick",
+    "historical drama"
+  ],
+  "nearest_neighbors": [
+    "The Elephant Man",
+    "John Hurt",
+    "David Lynch",
+    "Bernard Pomerance",
+    "theatre production"
+  ],
+  "augmented_query": "historical dramas about Joseph Merrick film adaptations The Elephant Man",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.2,
+    "P@100": 0.02,
+    "P@1000": 0.002,
+    "P@10000": 0.0002
+  },
+  "delta": 0.0,
+  "instruction": "graph",
+  "query": "Joseph Merrick's was the subject of a historical drama.",
+  "query_id": "17376",
+  "dataset": "fever",
+  "generator_model": "ollama_chat/gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "thought_process": "Looking at the query about Joseph Merrick being the subject of a historical drama, this makes me think of the various adaptations and interpretations of his story over the years, though the user might actually be trying to find specific film or play adaptations. The mention of historical drama immediately brings to mind \"The Elephant Man,\" a well-known film and play about Joseph Merrick's life. However, I need to approach this systematically to ensure I capture all relevant aspects.\n\nI'm seeing several possibilities here, but let me approach this using Query Expansion via Conceptual Graph Traversal, which involves analyzing the query, constructing a conceptual graph, selecting expansion paths, extracting terms, and filtering them based on relevance, distinctiveness, specificity, and searchability. This should help because it allows for a structured exploration of related concepts and terms.\n\nStarting with query analysis, the core concepts are Joseph Merrick and historical drama. The search intent seems informational, aiming to find adaptations and possibly actors involved in these dramas. An implicit assumption is that the user is interested in both film and stage adaptations.\n\nMoving on to graph construction, the core nodes are Joseph Merrick and historical drama. First-order connections include film adaptations, plays, actors, and possibly the time period in which these dramas are set. Second-order connections might involve the directors, writers, or other notable figures associated with these adaptations. Domain contexts include film studies, theatre history, and possibly medical or historical interests due to Merrick's condition and the time period.\n\nFor expansion path selection, promising directions include synonymous terms (e.g., \"biographical drama\" instead of \"historical drama\"), hierarchical terms (e.g., \"drama\" as a broader term), compositional terms (parts of the drama, like \"screenplay\" or \"stageplay\"), contextual terms (e.g., \"Victorian era\" for setting), and domain-specific terminology (e.g., \"cinematic portrayal\" or \"theatrical performance\").\n\nApplying the technique, I should first identify synonymous terms. However, it's also crucial to consider the unique aspects of Joseph Merrick's story and how it has been dramatized. This step of the technique is revealing the importance of terms like \"The Elephant Man,\" which is not just a title but a concept closely associated with Merrick's story. This actually reminds me of the playwright Bernard Pomerance and the actor John Hurt, who played Merrick in the film adaptation, illustrating how the technique can lead to relevant names and titles.\n\nI need to consider the next step in the technique, which involves hierarchical terms. But I'm also noticing an interesting pattern where the adaptations of Merrick's story often highlight themes of identity, society, and human condition, which might suggest additional terms related to these themes.\n\nFollowing the technique pointed me toward terms like \"biographical film\" and \"theatrical adaptation,\" but my instinct says we should also consider terms related to the emotional and psychological aspects of Merrick's life, as these are often focal points in dramas.\n\nThrough this process of applying Query Expansion via Conceptual Graph Traversal and exploring related threads, I believe the terms that would be most effective for expanding the query are those that capture the essence of historical dramas, film and play adaptations, and the specific story of Joseph Merrick. Terms like \"The Elephant Man,\" \"John Hurt,\" \"Bernard Pomerance,\" \"historical film adaptations,\" \"biographical dramas,\" \"Victorian era dramas,\" and \"dramatizations of rare conditions\" seem particularly relevant.\n\nThese terms maintain the original search intent while providing alternative pathways for retrieval, enhancing the likelihood of finding relevant historical dramas about Joseph Merrick, including film adaptations and stage productions.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}

@@ -1,0 +1,63 @@
+{
+  "reasoning": "The query seeks to understand PHP's application in mental healthcare.  Results highlight different care models but lack a clear definition of PHP within that context. \n\nTo improve results, we need to:\n\n1. **Clarify the goal:** Determine if the user wants a general overview or specifics about PHP implementation.\n2. **Refine search terms:** Avoid overly broad terms like \"mental health care\" and focus on specific aspects of PHP programs.",
+  "query_goals": [
+    "define php in mental healthcare",
+    "explain php structure",
+    "identify php target population",
+    "describe php therapeutic approaches"
+  ],
+  "ineffective_terms": [
+    "mental health care"
+  ],
+  "breadth_expansion": [
+    "partial hospitalization program",
+    "rehabilitation services",
+    "outpatient treatment",
+    "intensive therapy",
+    "day treatment program",
+    "crisis intervention"
+  ],
+  "depth_chain": [
+    "structured day program",
+    "therapy groups",
+    "medication management",
+    "psychoeducation",
+    "family support",
+    "vocational rehabilitation"
+  ],
+  "augmented_query": "partial hospitalization program structured day program therapy groups medication management psychoeducation",
+  "ndcg": {
+    "NDCG@10": 1.0,
+    "NDCG@100": 1.0,
+    "NDCG@1000": 1.0,
+    "NDCG@10000": 1.0
+  },
+  "map": {
+    "MAP@10": 1.0,
+    "MAP@100": 1.0,
+    "MAP@1000": 1.0,
+    "MAP@10000": 1.0
+  },
+  "recall": {
+    "Recall@10": 1.0,
+    "Recall@100": 1.0,
+    "Recall@1000": 1.0,
+    "Recall@10000": 1.0
+  },
+  "precision": {
+    "P@10": 0.1,
+    "P@100": 0.01,
+    "P@1000": 0.001,
+    "P@10000": 0.0001
+  },
+  "delta": 0.0,
+  "instruction": "expand",
+  "query": "what is php in mental health care",
+  "query_id": "1048359",
+  "generator_model": "gemma2:9b-instruct-q8_0",
+  "temperature": 1.0,
+  "source": "zeta-alpha-ai/NanoMSMARCO",
+  "dataset": "msmarco",
+  "thought_process": "Looking at the original query \"what is php in mental health care\", this makes me think of the various ways PHP could be applied or interpreted within the context of mental health care. Though the user might actually be trying to understand a specific program or treatment approach, the acronym PHP is not immediately clear without context. My initial impression is that PHP could stand for a variety of things, but in the context of mental health, it's likely referring to a Partial Hospitalization Program. \n\nTo expand on this query effectively, I'll approach it using the technique of query augmentation, which involves identifying the primary objectives of the query, recognizing gaps in the existing query, pinpointing ineffective terms, and then applying breadth and depth expansion techniques. This should help because it allows for a systematic exploration of related concepts and terms, potentially uncovering more specific and relevant information that the user might be seeking.\n\nI'm seeing several possibilities here, but let's start by clarifying the goal: the user seems to want a definition and understanding of PHP in mental healthcare, possibly including its structure, target population, and therapeutic approaches. The existing reasoning highlights a lack of clear definition, so refining search terms to be more specific will be key. Terms like \"mental health care\" are too broad and should be avoided.\n\nFollowing the query augmentation approach, I first identify the primary objective: to understand PHP in mental health care. The gaps in the existing query include the lack of specificity about what aspects of PHP the user is interested in. Ineffective terms, such as \"mental health care\", should be replaced or expanded upon.\n\nFor breadth expansion, I consider terms that introduce new dimensions to the query but are still related to PHP or mental health care, such as \"partial hospitalization program\", \"rehabilitation services\", \"outpatient treatment\", and \"intensive therapy\". These terms start to paint a picture of the services and treatments that might be involved in PHP.\n\nNext, for depth expansion, I choose one of these terms, \"partial hospitalization program\", and delve deeper into related concepts. This includes terms like \"structured day program\", \"therapy groups\", \"medication management\", \"psychoeducation\", \"family support\", and \"vocational rehabilitation\". These terms not only provide a clearer picture of what PHP entails but also offer a more nuanced understanding of the services and support systems in place.\n\nAs I apply the technique, I notice that the process is revealing insights into the structure and components of PHP programs. For instance, the inclusion of \"therapy groups\" and \"medication management\" suggests a comprehensive approach to treatment. This systematic approach, combined with intuitive connections to related concepts, is helping to build a robust and specific query that can yield more targeted results.\n\nApplying the specific aspect of the technique regarding depth expansion leads me to terms like \"psychoeducation\" and \"vocational rehabilitation\", which are crucial for understanding the supportive and rehabilitative aspects of PHP. My instinct says that including terms related to the daily structure and therapeutic approaches of PHP programs will be essential for capturing the essence of the user's query.\n\nThrough this process of applying query augmentation and exploring related threads, I believe the terms that would be most effective for a BM25 index include those from the depth expansion, particularly focusing on the components and services of PHP programs. These terms capture both the explicit and implicit aspects of what the user is seeking, providing a clear and comprehensive query that can yield relevant and diverse results.",
+  "though_generator": "openrouter/meta-llama/llama-3.3-70b-instruct"
+}
