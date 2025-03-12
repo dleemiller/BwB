@@ -1,101 +1,32 @@
-from dataclasses import dataclass, field
-from typing import List, Optional
+#!/usr/bin/env python
+"""
+SFT Training Script using a preprocessed dataset and LoRA PEFT.
+This script loads a pretrained model and fine-tunes it using SFTTrainer.
+It also supports dataset packing, quantization, and optional LoRA adapters.
+"""
+
+import os
+import logging
+import yaml
+from functools import partial
+
 import torch
 from datasets import load_dataset, concatenate_datasets
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
-    DefaultDataCollator,
     BitsAndBytesConfig,
+    DefaultDataCollator,
 )
 from trl import SFTConfig, SFTTrainer, DataCollatorForCompletionOnlyLM
-from peft import LoraConfig, prepare_model_for_kbit_training
-import os
-import logging
-import yaml
+from peft import LoraConfig, prepare_model_for_kbit_training, get_peft_model
+
+# Import our dataclasses from config module.
+from config import ModelArguments, DataArguments, LoraArguments
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-
-@dataclass
-class ModelArguments:
-    model_name: str = field(
-        default="google/gemma-2-2b",
-        metadata={
-            "help": "Path to pretrained model or model identifier from huggingface.co/models"
-        },
-    )
-    attn_implementation: str = field(
-        default="eager",
-        metadata={
-            "help": "Attention implementation to use: 'eager', 'flash_attention_2', etc."
-        },
-    )
-    padding_side: str = field(
-        default="right", metadata={"help": "The padding side: 'left' or 'right'"}
-    )
-    use_liger: bool = field(
-        default=False,
-        metadata={"help": "Whether to use Liger Kernels for optimization"},
-    )
-    torch_dtype: str = field(
-        default="bfloat16",
-        metadata={
-            "help": "Floating-point format to use: 'float16', 'bfloat16', or 'float32'"
-        },
-    )
-    trust_remote_code: bool = field(
-        default=True,
-        metadata={"help": "Whether to trust remote code when loading the model"},
-    )
-
-
-@dataclass
-class DataArguments:
-    dataset_name: List[str] = field(
-        default_factory=lambda: ["dleemiller/lm25"],
-        metadata={"help": "The name of the dataset to use."},
-    )
-    dataset_config_name: List[str] = field(
-        default_factory=lambda: ["sft", "sft-concise"],
-        metadata={"help": "The configuration name of the dataset to use."},
-    )
-    max_seq_length: int = field(
-        default=2048, metadata={"help": "Maximum sequence length for training"}
-    )
-    packing: bool = field(
-        default=True,
-        metadata={
-            "help": "Whether to pack multiple sequences into one for efficient training"
-        },
-    )
-
-
-@dataclass
-class LoraArguments:
-    use_peft: bool = field(
-        default=True, metadata={"help": "Whether to use PEFT for training"}
-    )
-    load_in_4bit: bool = field(
-        default=False, metadata={"help": "Whether to use 4-bit quantization"}
-    )
-    load_in_8bit: bool = field(
-        default=False, metadata={"help": "Whether to use 8-bit quantization"}
-    )
-    lora_r: int = field(default=64, metadata={"help": "LoRA rank"})
-    lora_alpha: int = field(default=32, metadata={"help": "LoRA alpha scaling factor"})
-    lora_dropout: float = field(
-        default=0.05, metadata={"help": "LoRA dropout probability"}
-    )
-    lora_target_modules: str = field(
-        default="all-linear", metadata={"help": "Which modules to apply LoRA to"}
-    )
-    lora_modules_to_save: Optional[List[str]] = field(
-        default_factory=lambda: ["lm_head", "embed_tokens"],
-        metadata={"help": "List of modules to save alongside LoRA adapters"},
-    )
 
 
 def gemma_formatting_func(example):
@@ -112,7 +43,7 @@ def gemma_formatting_func(example):
             f"<augmented_query>{example['augmented_query'][i]}</augmented_query>"
         )
         message = (
-            f"Below is an instruction that describes a task. Write a response that appropriately completes the request.\n"
+            "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n"
             f"{gemma_formatting_func.tokenizer.bos_token}<start_of_turn>user\n"
             f"{instruction}<end_of_turn>\n"
             f"<start_of_turn>model\n"
@@ -123,36 +54,22 @@ def gemma_formatting_func(example):
     return messages
 
 
-def main():
-    # Load configuration from YAML file (no CLI arguments assumed)
-    config_path = "config.yaml"
+def load_configuration(config_path: str = "sft/config.yaml"):
+    """Load configuration from YAML and initialize argument dataclasses and trainer config."""
     logger.info(f"Loading configuration from {config_path}")
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
 
-    # Initialize arguments using YAML configuration
     model_args = ModelArguments(**config.get("model_args", {}))
     data_args = DataArguments(**config.get("data_args", {}))
     lora_args = LoraArguments(**config.get("lora_args", {}))
     training_config = config.get("training_args", {})
-    print(config)
-    training_args = SFTConfig(**training_config)
-    # training_args.max_seq_length = data_args.max_seq_length
+    sft_config = SFTConfig(**training_config)
+    return model_args, data_args, lora_args, sft_config
 
-    # Enable TF32 if specified
-    # if getattr(training_args, "tf32", False):
-    #    torch.backends.cuda.matmul.allow_tf32 = True
-    #    logger.info("TF32 enabled for matmul operations")
 
-    # Configure Liger Kernels if requested
-    # if model_args.use_liger:
-    #    try:
-    #        import liger.config
-    #        logger.info("Liger Kernels enabled for optimization")
-    #    except ImportError:
-    #        logger.warning("Liger Kernels requested but not installed. Proceeding without Liger.")
-
-    # Load and prepare datasets
+def load_datasets(data_args: DataArguments):
+    """Load and concatenate datasets from the provided names and configurations."""
     logger.info(
         f"Loading datasets: {data_args.dataset_name} with configs {data_args.dataset_config_name}"
     )
@@ -167,32 +84,29 @@ def main():
         datasets_list.append(dataset["train"])
     train_dataset = concatenate_datasets(datasets_list).shuffle(seed=33)
     logger.info(f"Loaded {len(train_dataset)} training examples")
+    return train_dataset
 
-    # Load tokenizer with model-specific settings
+
+def load_tokenizer(model_args: ModelArguments):
+    """Load the tokenizer and assign it to the formatting function."""
     logger.info(f"Loading tokenizer for {model_args.model_name}")
     tokenizer = AutoTokenizer.from_pretrained(
         model_args.model_name, trust_remote_code=model_args.trust_remote_code
     )
-    #tokenizer.padding_side = model_args.padding_side
-    # if tokenizer.pad_token is None:
-    #    if tokenizer.eos_token is not None:
-    #        tokenizer.pad_token = tokenizer.eos_token
-    #        logger.info("Setting pad_token to eos_token")
-    #    else:
-    #        logger.warning("Tokenizer has no pad_token or eos_token!")
     gemma_formatting_func.tokenizer = tokenizer
+    return tokenizer
 
-    # Setup model loading configuration
+
+def load_model_and_prepare(model_args: ModelArguments, lora_args: LoraArguments):
+    """Load the model with quantization options and prepare it for PEFT if requested."""
     torch_dtype = getattr(torch, model_args.torch_dtype)
     logger.info(f"Loading model with dtype: {model_args.torch_dtype}")
     model_kwargs = {
         "torch_dtype": torch_dtype,
         "trust_remote_code": model_args.trust_remote_code,
         "device_map": "auto",
-        # "device_map": "balanced_low_0",
         "attn_implementation": model_args.attn_implementation,
     }
-    print(model_kwargs)
     if lora_args.load_in_4bit:
         logger.info("Loading model in 4-bit quantization mode")
         quantization_config = BitsAndBytesConfig(
@@ -206,11 +120,10 @@ def main():
         logger.info("Loading model in 8-bit quantization mode")
         model_kwargs["load_in_8bit"] = True
 
-    # Load the model
-    model = AutoModelForCausalLM.from_pretrained(model_args.model_name, **model_kwargs, use_cache=False)
-    #model.config.eos_token_id = tokenizer.eos_token_id
+    model = AutoModelForCausalLM.from_pretrained(
+        model_args.model_name, **model_kwargs, use_cache=False
+    )
 
-    # Prepare model for PEFT if requested
     peft_config = None
     if lora_args.use_peft:
         logger.info("Preparing model for PEFT with LoRA")
@@ -224,47 +137,74 @@ def main():
             bias="none",
             task_type="CAUSAL_LM",
             target_modules=lora_args.lora_target_modules,
-            # modules_to_save=lora_args.lora_modules_to_save
+            # Optionally, modules_to_save can be passed if needed.
         )
         logger.info(
             f"LoRA config: r={lora_args.lora_r}, alpha={lora_args.lora_alpha}, dropout={lora_args.lora_dropout}"
         )
+        model = get_peft_model(model, peft_config)
+    return model, peft_config
 
-    # Initialize the SFTTrainer with the proper SFTConfig
+
+def create_data_collator(tokenizer):
+    """Create the data collator for completion-only LM training."""
     response_template = "<start_of_turn>model\n"
-    data_collator = DataCollatorForCompletionOnlyLM(
+    return DataCollatorForCompletionOnlyLM(
         response_template=response_template,
         tokenizer=tokenizer,
         mlm=False
     )
 
+
+def create_trainer(model, train_dataset, sft_config, peft_config, tokenizer):
+    """Initialize the SFTTrainer with the given model, dataset, and configurations."""
     trainer = SFTTrainer(
         model=model,
         train_dataset=train_dataset,
         peft_config=peft_config,
-        args=training_args,
-        formatting_func=gemma_formatting_func if not training_args.packing else None,
-        data_collator=data_collator
+        args=sft_config,
+        formatting_func=gemma_formatting_func if not sft_config.packing else None,
+        data_collator=create_data_collator(tokenizer)
     )
     trainer.processing_class.tokenizer = tokenizer
+    return trainer
 
+
+def main():
+    # 1. Load configuration and initialize argument objects.
+    model_args, data_args, lora_args, sft_config = load_configuration()
+
+    # 2. Load and prepare datasets.
+    train_dataset = load_datasets(data_args)
+
+    # 3. Load tokenizer.
+    tokenizer = load_tokenizer(model_args)
+
+    # 4. Load model and prepare for PEFT if requested.
+    model, peft_config = load_model_and_prepare(model_args, lora_args)
+
+    # 5. Initialize trainer.
+    trainer = create_trainer(model, train_dataset, sft_config, peft_config, tokenizer)
+
+    # 6. Train and save the model.
     logger.info("Starting training")
     trainer.train()
 
-    logger.info(f"Saving model to {training_args.output_dir}")
-    trainer.save_model(training_args.output_dir)
+    logger.info(f"Saving model to {sft_config.output_dir}")
+    trainer.save_model(sft_config.output_dir)
 
     if lora_args.use_peft:
-        adapter_path = os.path.join(training_args.output_dir, "adapter")
+        adapter_path = os.path.join(sft_config.output_dir, "adapter")
         trainer.model.save_pretrained(adapter_path)
         logger.info(f"Saved LoRA adapter to {adapter_path}")
 
-    if training_args.push_to_hub:
+    if sft_config.push_to_hub:
         trainer.push_to_hub()
         logger.info(
-            f"Model pushed to {training_args.hub_model_id or os.path.basename(training_args.output_dir)}"
+            f"Model pushed to {sft_config.hub_model_id or os.path.basename(sft_config.output_dir)}"
         )
 
 
 if __name__ == "__main__":
     main()
+
